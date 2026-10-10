@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img">
+<title>After: one endpoint, multiple healthy backends</title>
+<rect width="1100" height="390" fill="#0b1020"/>
+<text x="40" y="47" fill="#f5f7ff" font-family="Arial,sans-serif" font-size="26" font-weight="bold">After: one endpoint, multiple healthy backends</text>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6" fill="none" stroke="#b7c7db" stroke-width="1.5"/></marker></defs>
+<path d="M210 190 L300 190" stroke="#b7c7db" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M500 190 L650 92" stroke="#b7c7db" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M500 190 L650 192" stroke="#b7c7db" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M500 190 L650 292" stroke="#b7c7db" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M830 192 L905 192" stroke="#b7c7db" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<rect x="40" y="145" width="170" height="90" rx="13" fill="#17243a" stroke="#28d6e7" stroke-width="2.5"/>
+<text x="125.0" y="185.0" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="bold">Clients</text>
+<text x="125.0" y="212.0" text-anchor="middle" fill="#b6c7db" font-family="Arial" font-size="14">HTTPS</text>
+<rect x="300" y="145" width="200" height="90" rx="13" fill="#17243a" stroke="#ac8cff" stroke-width="2.5"/>
+<text x="400.0" y="185.0" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="bold">Load balancer</text>
+<text x="400.0" y="212.0" text-anchor="middle" fill="#b6c7db" font-family="Arial" font-size="14">Public endpoint</text>
+<rect x="650" y="55" width="180" height="75" rx="13" fill="#17243a" stroke="#43dba1" stroke-width="2.5"/>
+<text x="740.0" y="87.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="bold">API A</text>
+<text x="740.0" y="114.5" text-anchor="middle" fill="#b6c7db" font-family="Arial" font-size="14">Healthy</text>
+<rect x="650" y="155" width="180" height="75" rx="13" fill="#17243a" stroke="#43dba1" stroke-width="2.5"/>
+<text x="740.0" y="187.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="bold">API B</text>
+<text x="740.0" y="214.5" text-anchor="middle" fill="#b6c7db" font-family="Arial" font-size="14">Healthy</text>
+<rect x="650" y="255" width="180" height="75" rx="13" fill="#17243a" stroke="#43dba1" stroke-width="2.5"/>
+<text x="740.0" y="287.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="bold">API C</text>
+<text x="740.0" y="314.5" text-anchor="middle" fill="#b6c7db" font-family="Arial" font-size="14">Healthy</text>
+<rect x="905" y="155" width="170" height="90" rx="13" fill="#17243a" stroke="#ffbd59" stroke-width="2.5"/>
+<text x="990.0" y="195.0" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="bold">Database</text>
+<text x="990.0" y="222.0" text-anchor="middle" fill="#b6c7db" font-family="Arial" font-size="14">Shared</text>
+<text x="550" y="355" text-anchor="middle" fill="#e1b56a" font-family="Arial" font-size="16">Load balancing spreads requests; it does not multiply database capacity.</text>
+</svg>

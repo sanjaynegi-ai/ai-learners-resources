@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img">
+<title>Routing policies: same pool, different decisions</title>
+<rect width="1100" height="390" fill="#0b1020"/>
+<text x="40" y="47" fill="#f5f7ff" font-family="Arial,sans-serif" font-size="26" font-weight="bold">Routing policies: same pool, different decisions</text>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6" fill="none" stroke="#b7c7db" stroke-width="1.5"/></marker></defs>
+<path d="M220 190 L310 190" stroke="#b7c7db" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M535 190 L690 92" stroke="#b7c7db" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M535 190 L690 192" stroke="#b7c7db" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M535 190 L690 292" stroke="#b7c7db" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<rect x="35" y="145" width="185" height="90" rx="13" fill="#17243a" stroke="#28d6e7" stroke-width="2.5"/>
+<text x="127.5" y="185.0" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="bold">New request</text>
+<text x="127.5" y="212.0" text-anchor="middle" fill="#b6c7db" font-family="Arial" font-size="14">Policy input</text>
+<rect x="310" y="145" width="225" height="90" rx="13" fill="#17243a" stroke="#ac8cff" stroke-width="2.5"/>
+<text x="422.5" y="185.0" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="bold">Load balancer</text>
+<text x="422.5" y="212.0" text-anchor="middle" fill="#b6c7db" font-family="Arial" font-size="14">Choose a backend</text>
+<rect x="690" y="55" width="230" height="75" rx="13" fill="#17243a" stroke="#43dba1" stroke-width="2.5"/>
+<text x="805.0" y="87.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="bold">Round robin</text>
+<text x="805.0" y="114.5" text-anchor="middle" fill="#b6c7db" font-family="Arial" font-size="14">Rotate A → B → C</text>
+<rect x="690" y="155" width="230" height="75" rx="13" fill="#17243a" stroke="#ffbd59" stroke-width="2.5"/>
+<text x="805.0" y="187.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="bold">Least connections</text>
+<text x="805.0" y="214.5" text-anchor="middle" fill="#b6c7db" font-family="Arial" font-size="14">Choose lower active load</text>
+<rect x="690" y="255" width="230" height="75" rx="13" fill="#17243a" stroke="#ff7185" stroke-width="2.5"/>
+<text x="805.0" y="287.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="bold">Sticky sessions</text>
+<text x="805.0" y="314.5" text-anchor="middle" fill="#b6c7db" font-family="Arial" font-size="14">Prefer prior backend</text>
+<text x="550" y="355" text-anchor="middle" fill="#e1b56a" font-family="Arial" font-size="16">Policy is a choice, not three policies running simultaneously.</text>
+</svg>
