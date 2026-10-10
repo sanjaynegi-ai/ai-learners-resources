@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Retries and idempotency protect business outcomes">
+<rect width="1160" height="410" fill="#0b1220"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" stroke-width="1.5" fill="none"/></marker></defs>
+<text x="32" y="45" font-family="Arial" font-size="25" font-weight="bold" fill="#f8fafc">Retries and idempotency protect business outcomes</text>
+<path d="M260 195 L345 195" stroke="#cbd5e1" stroke-width="2.3" fill="none" marker-end="url(#arr)"/>
+<path d="M580 195 L665 195" stroke="#cbd5e1" stroke-width="2.3" fill="none" marker-end="url(#arr)"/>
+<rect x="25" y="145" width="235" height="100" rx="12" fill="#18253b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="142.5" y="188.0" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">Request / event</text>
+<text x="142.5" y="213.0" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">May repeat</text>
+<rect x="345" y="145" width="235" height="100" rx="12" fill="#18253b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="462.5" y="188.0" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">Idempotency key</text>
+<text x="462.5" y="213.0" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">Stable operation ID</text>
+<rect x="665" y="145" width="235" height="100" rx="12" fill="#18253b" stroke="#34d399" stroke-width="2.5"/>
+<text x="782.5" y="188.0" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">Authoritative state</text>
+<text x="782.5" y="213.0" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">Commit once logically</text>
+<text x="32" y="377" font-size="15" font-family="Arial" fill="#fbbf24">At-least-once delivery does not imply exactly-once side effects.</text></svg>

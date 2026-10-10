@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="One consumer becomes the processing bottleneck">
+<rect width="1120" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="38" y="47" fill="#f8fafc" font-family="Arial" font-weight="bold" font-size="25">One consumer becomes the processing bottleneck</text>
+<path d="M245 190 L360 190" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M580 190 L720 190" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="40" y="140" width="205" height="100" rx="12" fill="#19263b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="142.5" y="183.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Producer</text>
+<text x="142.5" y="209.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">2,000 jobs/min</text>
+<rect x="360" y="140" width="220" height="100" rx="12" fill="#19263b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="470.0" y="183.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Queue</text>
+<text x="470.0" y="209.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">Backlog grows</text>
+<rect x="720" y="140" width="220" height="100" rx="12" fill="#19263b" stroke="#34d399" stroke-width="2.5"/>
+<text x="830.0" y="183.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker A</text>
+<text x="830.0" y="209.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">200 jobs/min</text>
+<text x="38" y="373" fill="#fbbf24" font-family="Arial" font-size="16">One worker can only complete work at its own sustainable rate.</text>
+</svg>

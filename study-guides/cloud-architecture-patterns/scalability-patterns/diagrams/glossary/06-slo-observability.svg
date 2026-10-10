@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Observe the business journey, not just components">
+<rect width="1160" height="410" fill="#0b1220"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" stroke-width="1.5" fill="none"/></marker></defs>
+<text x="32" y="45" font-family="Arial" font-size="25" font-weight="bold" fill="#f8fafc">Observe the business journey, not just components</text>
+<path d="M260 195 L350 195" stroke="#cbd5e1" stroke-width="2.3" fill="none" marker-end="url(#arr)"/>
+<path d="M585 195 L675 195" stroke="#cbd5e1" stroke-width="2.3" fill="none" marker-end="url(#arr)"/>
+<rect x="25" y="145" width="235" height="100" rx="12" fill="#18253b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="142.5" y="188.0" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">Signals</text>
+<text x="142.5" y="213.0" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">Metrics / logs / traces</text>
+<rect x="350" y="145" width="235" height="100" rx="12" fill="#18253b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="467.5" y="188.0" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">SLI</text>
+<text x="467.5" y="213.0" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">Measured performance</text>
+<rect x="675" y="145" width="235" height="100" rx="12" fill="#18253b" stroke="#34d399" stroke-width="2.5"/>
+<text x="792.5" y="188.0" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">SLO</text>
+<text x="792.5" y="213.0" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">Target / budget</text>
+<text x="32" y="377" font-size="15" font-family="Arial" fill="#fbbf24">Track checkout success, notification delay, search completeness, and media ready time.</text></svg>

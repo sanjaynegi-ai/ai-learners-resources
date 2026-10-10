@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 490" role="img" aria-label="02 | Integrated architecture: distinct responsibilities">
+<rect width="1200" height="490" fill="#0B1020"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="35" y="43" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">02 | Integrated architecture: distinct responsibilities</text>
+<path d="M205 125 L265 125" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M470 125 L530 125" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M740 125 L815 125" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M635 170 L635 255" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<text x="635.0" y="203.5" text-anchor="middle" fill="#fbbf24" font-family="Arial" font-size="13">events</text>
+<path d="M740 300 L815 300" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M1035 300 L1050 300" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="25" y="80" width="180" height="90" rx="12" fill="#17253c" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="115.0" y="118.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Customers</text>
+<text x="115.0" y="143.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Web / mobile</text>
+<rect x="265" y="80" width="205" height="90" rx="12" fill="#17253c" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="367.5" y="118.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Load balancer</text>
+<text x="367.5" y="143.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Healthy API routing</text>
+<rect x="530" y="80" width="210" height="90" rx="12" fill="#17253c" stroke="#34d399" stroke-width="2.5"/>
+<text x="635.0" y="118.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Stateless APIs</text>
+<text x="635.0" y="143.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Autoscaled replicas</text>
+<rect x="815" y="80" width="220" height="90" rx="12" fill="#17253c" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="925.0" y="118.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Order DB</text>
+<text x="925.0" y="143.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Sharded by customer</text>
+<rect x="530" y="255" width="210" height="90" rx="12" fill="#17253c" stroke="#fb7185" stroke-width="2.5"/>
+<text x="635.0" y="293.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Durable outbox</text>
+<text x="635.0" y="318.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Atomic with order</text>
+<rect x="815" y="255" width="220" height="90" rx="12" fill="#17253c" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="925.0" y="293.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Queue + workers</text>
+<text x="925.0" y="318.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Notifications</text>
+<rect x="1050" y="255" width="125" height="90" rx="12" fill="#17253c" stroke="#c084fc" stroke-width="2.5"/>
+<text x="1112.5" y="293.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Provider</text>
+<text x="1112.5" y="318.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Rate capped</text>
+<text x="35" y="456" fill="#fbbf24" font-family="Arial" font-size="15">Illustrative logical architecture; outbox belongs to the order transaction boundary.</text></svg>

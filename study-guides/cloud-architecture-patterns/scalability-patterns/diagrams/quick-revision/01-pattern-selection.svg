@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Start with the limiting resource"><rect width="1160" height="410" fill="#0b1220"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs><text x="32" y="44" font-family="Arial" font-size="25" font-weight="bold" fill="#f8fafc">Start with the limiting resource</text>
+<path d="M235 200 L325 200" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M535 200 L625 200" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M835 200 L925 200" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="25" y="150" width="210" height="100" rx="13" fill="#17243b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="130.0" y="193.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Measure</text>
+<text x="130.0" y="219.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">What is saturated?</text>
+<rect x="325" y="150" width="210" height="100" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="430.0" y="193.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Classify</text>
+<text x="430.0" y="219.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Traffic / data / work</text>
+<rect x="625" y="150" width="210" height="100" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2.4"/>
+<text x="730.0" y="193.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Select</text>
+<text x="730.0" y="219.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Smallest pattern</text>
+<rect x="925" y="150" width="210" height="100" rx="13" fill="#17243b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="1030.0" y="193.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Verify</text>
+<text x="1030.0" y="219.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Next bottleneck</text>
+<text x="32" y="375" fill="#fbbf24" font-family="Arial" font-size="15">Architecture begins with evidence, not with a preferred technology.</text></svg>

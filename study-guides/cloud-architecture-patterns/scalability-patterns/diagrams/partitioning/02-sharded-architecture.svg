@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 405" role="img" aria-label="After: route each tenant key to its data shard"><rect width="1120" height="405" fill="#0b1220"/><defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" stroke-width="1.5" fill="none"/></marker></defs><text x="38" y="46" font-size="24" font-weight="bold" fill="#f8fafc" font-family="Arial">After: route each tenant key to its data shard</text>
+<path d="M215 192 L295 192" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M505 180 L660 105" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M505 192 L660 205" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M505 205 L660 305" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<rect x="35" y="145" width="180" height="95" rx="13" fill="#18243a" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="125.0" y="185.5" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">QuickCart API</text>
+<text x="125.0" y="211.5" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Read or write</text>
+<rect x="295" y="145" width="210" height="95" rx="13" fill="#18243a" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="400.0" y="185.5" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Shard router</text>
+<text x="400.0" y="211.5" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Key → shard</text>
+<rect x="660" y="65" width="215" height="80" rx="13" fill="#18243a" stroke="#34d399" stroke-width="2.5"/>
+<text x="767.5" y="98.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Shard 0</text>
+<text x="767.5" y="124.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Customers subset</text>
+<rect x="660" y="165" width="215" height="80" rx="13" fill="#18243a" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="767.5" y="198.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Shard 1</text>
+<text x="767.5" y="224.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Customers subset</text>
+<rect x="660" y="265" width="215" height="80" rx="13" fill="#18243a" stroke="#fb7185" stroke-width="2.5"/>
+<text x="767.5" y="298.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Shard 2</text>
+<text x="767.5" y="324.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Customers subset</text>
+<text x="38" y="372" fill="#fbbf24" font-family="Arial" font-size="15">A request for one customer can be routed to the owning shard.</text></svg>

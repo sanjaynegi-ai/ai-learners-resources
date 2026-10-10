@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Architectural diagnosis: evidence before patterns">
+<rect width="1160" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="34" y="46" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">Architectural diagnosis: evidence before patterns</text>
+<path d="M230 200 L300 200" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M505 200 L575 200" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M780 200 L850 200" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<rect x="25" y="150" width="205" height="100" rx="12" fill="#18253b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="127.5" y="193.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Observe</text>
+<text x="127.5" y="219.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">Latency / errors</text>
+<rect x="300" y="150" width="205" height="100" rx="12" fill="#18253b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="402.5" y="193.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Locate</text>
+<text x="402.5" y="219.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">Limiting resource</text>
+<rect x="575" y="150" width="205" height="100" rx="12" fill="#18253b" stroke="#34d399" stroke-width="2.4"/>
+<text x="677.5" y="193.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Choose</text>
+<text x="677.5" y="219.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">Smallest change</text>
+<rect x="850" y="150" width="255" height="100" rx="12" fill="#18253b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="977.5" y="193.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Validate</text>
+<text x="977.5" y="219.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">Load + failure tests</text>
+<text x="34" y="376" fill="#fbbf24" font-family="Arial" font-size="15">Never select a pattern solely from a symptom.</text></svg>

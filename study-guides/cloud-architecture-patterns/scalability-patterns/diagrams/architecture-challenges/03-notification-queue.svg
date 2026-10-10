@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Challenge: backlog versus provider rate limit">
+<rect width="1160" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="34" y="46" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">Challenge: backlog versus provider rate limit</text>
+<path d="M240 195 L335 195" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M550 195 L640 195" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M845 195 L930 195" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<rect x="30" y="145" width="210" height="100" rx="12" fill="#18253b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="135.0" y="188.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Order outbox</text>
+<text x="135.0" y="214.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">12,000/min burst</text>
+<rect x="335" y="145" width="215" height="100" rx="12" fill="#18253b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="442.5" y="188.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Queue</text>
+<text x="442.5" y="214.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">Backlog</text>
+<rect x="640" y="145" width="205" height="100" rx="12" fill="#18253b" stroke="#34d399" stroke-width="2.4"/>
+<text x="742.5" y="188.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Workers</text>
+<text x="742.5" y="214.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">200/min each</text>
+<rect x="930" y="145" width="190" height="100" rx="12" fill="#18253b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="1025.0" y="188.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Provider</text>
+<text x="1025.0" y="214.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">1,000/min cap</text>
+<text x="34" y="376" fill="#fbbf24" font-family="Arial" font-size="15">Queue buffering and worker parallelism are different levers.</text></svg>

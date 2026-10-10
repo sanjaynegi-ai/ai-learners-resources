@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 430" role="img" aria-label="Artifact identity prevents duplicate side effects">
+<rect width="1160" height="430" fill="#0B1020"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="35" y="46" fill="#fff" font-family="Arial" font-size="25" font-weight="bold">Artifact identity prevents duplicate side effects</text>
+<path d="M255 197 L335 197" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M560 197 L640 197" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M865 197 L945 197" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<rect x="30" y="150" width="225" height="95" rx="12" fill="#19253b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="142.5" y="190.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Input identity</text>
+<text x="142.5" y="215.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">video42 + v3</text>
+<rect x="335" y="150" width="225" height="95" rx="12" fill="#19253b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="447.5" y="190.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Stage identity</text>
+<text x="447.5" y="215.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">encode + profileA</text>
+<rect x="640" y="150" width="225" height="95" rx="12" fill="#19253b" stroke="#34d399" stroke-width="2.4"/>
+<text x="752.5" y="190.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Artifact key</text>
+<text x="752.5" y="215.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Deterministic output</text>
+<rect x="945" y="150" width="180" height="95" rx="12" fill="#19253b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="1035.0" y="190.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Manifest</text>
+<text x="1035.0" y="215.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Completed</text>
+<text x="35" y="395" fill="#fbbf24" font-family="Arial" font-size="15">Retries should converge on the same logical output, not create extra publications.</text></svg>

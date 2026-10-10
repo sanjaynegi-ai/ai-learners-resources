@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Capstone: integrate patterns without losing correctness">
+<rect width="1160" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="34" y="46" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">Capstone: integrate patterns without losing correctness</text>
+<path d="M200 202 L275 202" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M470 185 L545 110" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M470 215 L545 290" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M755 110 L865 180" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M755 290 L865 225" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<rect x="25" y="155" width="175" height="95" rx="12" fill="#18253b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="112.5" y="195.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Gateway</text>
+<text x="112.5" y="221.5" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">LB + replicas</text>
+<rect x="275" y="155" width="195" height="95" rx="12" fill="#18253b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="372.5" y="195.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Checkout</text>
+<text x="372.5" y="221.5" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">DB + outbox</text>
+<rect x="545" y="65" width="210" height="85" rx="12" fill="#18253b" stroke="#34d399" stroke-width="2.4"/>
+<text x="650.0" y="100.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Notifications</text>
+<text x="650.0" y="126.5" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">Queue + workers</text>
+<rect x="545" y="245" width="210" height="85" rx="12" fill="#18253b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="650.0" y="280.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Search</text>
+<text x="650.0" y="306.5" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">Scatter + gather</text>
+<rect x="865" y="155" width="245" height="95" rx="12" fill="#18253b" stroke="#fb7185" stroke-width="2.4"/>
+<text x="987.5" y="195.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Operations</text>
+<text x="987.5" y="221.5" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">SLO + recovery</text>
+<text x="34" y="376" fill="#fbbf24" font-family="Arial" font-size="15">Each added pattern must address a measured limit and preserve invariants.</text></svg>

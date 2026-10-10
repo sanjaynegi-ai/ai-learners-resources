@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Pipeline throughput is limited by the slowest required stage"><rect width="1160" height="410" fill="#0b1220"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs><text x="32" y="44" font-family="Arial" font-size="25" font-weight="bold" fill="#f8fafc">Pipeline throughput is limited by the slowest required stage</text>
+<path d="M270 200 L355 200" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M595 200 L680 200" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="30" y="150" width="240" height="100" rx="13" fill="#17243b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="150.0" y="193.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Validate</text>
+<text x="150.0" y="219.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">120/min</text>
+<rect x="355" y="150" width="240" height="100" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="475.0" y="193.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Encode</text>
+<text x="475.0" y="219.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">20/min</text>
+<rect x="680" y="150" width="240" height="100" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2.4"/>
+<text x="800.0" y="193.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Thumbnail</text>
+<text x="800.0" y="219.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">100/min</text>
+<text x="32" y="375" fill="#fbbf24" font-family="Arial" font-size="15">Add capacity at the limiting stage, not at a stage that already has headroom.</text></svg>

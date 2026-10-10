@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 340" role="img" aria-label="Message lifecycle and failure recovery"><rect width="1100" height="340" fill="#0b1220"/><text x="35" y="44" font-size="24" font-weight="bold" font-family="Arial" fill="#fff">Message lifecycle and failure recovery</text><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<rect x="30" y="130" width="195" height="95" rx="12" fill="#182338" stroke="#a78bfa" stroke-width="2"/>
+<text x="127.5" y="172.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="17" font-weight="bold">Queue</text>
+<text x="127.5" y="196.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="12">Available</text>
+<rect x="305" y="130" width="205" height="95" rx="12" fill="#182338" stroke="#22d3ee" stroke-width="2"/>
+<text x="407.5" y="172.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="17" font-weight="bold">Worker</text>
+<text x="407.5" y="196.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="12">Process + ack</text>
+<rect x="610" y="80" width="200" height="80" rx="12" fill="#182338" stroke="#fbbf24" stroke-width="2"/>
+<text x="710.0" y="115.0" text-anchor="middle" fill="#fff" font-family="Arial" font-size="17" font-weight="bold">Success</text>
+<text x="710.0" y="139.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="12">Acknowledge</text>
+<rect x="610" y="210" width="200" height="80" rx="12" fill="#182338" stroke="#34d399" stroke-width="2"/>
+<text x="710.0" y="245.0" text-anchor="middle" fill="#fff" font-family="Arial" font-size="17" font-weight="bold">Failure</text>
+<text x="710.0" y="269.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="12">Retry later</text>
+<rect x="875" y="210" width="195" height="80" rx="12" fill="#182338" stroke="#a78bfa" stroke-width="2"/>
+<text x="972.5" y="245.0" text-anchor="middle" fill="#fff" font-family="Arial" font-size="17" font-weight="bold">DLQ</text>
+<text x="972.5" y="269.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="12">After retry policy</text>
+<path d="M225 177 L305 177" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M510 160 L610 120" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M510 195 L610 250" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M810 250 L875 250" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="35" y="308" fill="#fbbf24" font-family="Arial" font-size="15">A worker can complete the side effect and crash before acknowledgment.</text>
+</svg>

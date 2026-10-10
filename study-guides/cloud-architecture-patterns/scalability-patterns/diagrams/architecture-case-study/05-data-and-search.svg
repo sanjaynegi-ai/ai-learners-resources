@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 490" role="img" aria-label="05 | Customer-local routing and global product search">
+<rect width="1200" height="490" fill="#0B1020"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="35" y="43" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">05 | Customer-local routing and global product search</text>
+<path d="M220 205 L300 115" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M220 215 L300 315" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M530 115 L670 100" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M530 300 L670 210" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M530 325 L670 320" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="30" y="170" width="190" height="95" rx="12" fill="#17253c" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="125.0" y="210.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">API</text>
+<text x="125.0" y="235.5" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Customer or search</text>
+<rect x="300" y="70" width="230" height="90" rx="12" fill="#17253c" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="415.0" y="108.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Shard router</text>
+<text x="415.0" y="133.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">customerId owner</text>
+<rect x="300" y="270" width="230" height="90" rx="12" fill="#17253c" stroke="#34d399" stroke-width="2.5"/>
+<text x="415.0" y="308.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Search coordinator</text>
+<text x="415.0" y="333.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Scatter / gather</text>
+<rect x="670" y="60" width="205" height="80" rx="12" fill="#17253c" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="772.5" y="93.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Customer shard</text>
+<text x="772.5" y="118.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Local orders</text>
+<rect x="670" y="170" width="205" height="80" rx="12" fill="#17253c" stroke="#fb7185" stroke-width="2.5"/>
+<text x="772.5" y="203.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Product shard A</text>
+<text x="772.5" y="228.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Partial matches</text>
+<rect x="670" y="280" width="205" height="80" rx="12" fill="#17253c" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="772.5" y="313.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Product shard B</text>
+<text x="772.5" y="338.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Partial matches</text>
+<text x="35" y="456" fill="#fbbf24" font-family="Arial" font-size="15">Key-local writes and global searches need different routing strategies.</text></svg>

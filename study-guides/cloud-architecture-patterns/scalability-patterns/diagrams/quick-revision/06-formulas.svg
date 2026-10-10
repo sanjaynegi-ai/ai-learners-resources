@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Four calculations to remember"><rect width="1160" height="410" fill="#0b1220"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs><text x="32" y="44" font-family="Arial" font-size="25" font-weight="bold" fill="#f8fafc">Four calculations to remember</text>
+<rect x="20" y="130" width="255" height="120" rx="13" fill="#17243b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="147.5" y="183.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Replicas</text>
+<text x="147.5" y="209.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">ceil(demand / rate)</text>
+<rect x="305" y="130" width="255" height="120" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="432.5" y="183.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Backlog growth</text>
+<text x="432.5" y="209.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">arrival - completion</text>
+<rect x="590" y="130" width="255" height="120" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2.4"/>
+<text x="717.5" y="183.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Drain time</text>
+<text x="717.5" y="209.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">backlog / net rate</text>
+<rect x="875" y="130" width="255" height="120" rx="13" fill="#17243b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="1002.5" y="183.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Fan-out latency</text>
+<text x="1002.5" y="209.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">max(required times)</text>
+<text x="32" y="375" fill="#fbbf24" font-family="Arial" font-size="15">Assumptions matter: steady rates, independent work, and bounded overhead.</text></svg>

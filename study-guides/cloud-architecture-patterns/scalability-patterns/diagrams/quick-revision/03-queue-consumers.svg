@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Buffering does not increase downstream capacity"><rect width="1160" height="410" fill="#0b1220"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs><text x="32" y="44" font-family="Arial" font-size="25" font-weight="bold" fill="#f8fafc">Buffering does not increase downstream capacity</text>
+<path d="M230 195 L320 195" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M525 195 L615 195" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M820 195 L910 195" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="25" y="145" width="205" height="100" rx="13" fill="#17243b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="127.5" y="188.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Producer</text>
+<text x="127.5" y="214.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">12,000/min</text>
+<rect x="320" y="145" width="205" height="100" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="422.5" y="188.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Queue</text>
+<text x="422.5" y="214.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Absorb burst</text>
+<rect x="615" y="145" width="205" height="100" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2.4"/>
+<text x="717.5" y="188.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Worker pool</text>
+<text x="717.5" y="214.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Parallel jobs</text>
+<rect x="910" y="145" width="210" height="100" rx="13" fill="#17243b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="1015.0" y="188.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Provider</text>
+<text x="1015.0" y="214.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">1,000/min cap</text>
+<text x="32" y="375" fill="#fbbf24" font-family="Arial" font-size="15">Backlog grows whenever arrival rate exceeds successful completion rate.</text></svg>

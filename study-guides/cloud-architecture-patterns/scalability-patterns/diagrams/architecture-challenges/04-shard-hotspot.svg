@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Challenge: three shards but one is hot">
+<rect width="1160" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="34" y="46" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">Challenge: three shards but one is hot</text>
+<path d="M235 185 L340 105" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M235 195 L340 205" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M235 205 L340 305" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M555 205 L765 205" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<rect x="30" y="150" width="205" height="95" rx="12" fill="#18253b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="132.5" y="190.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Shard router</text>
+<text x="132.5" y="216.5" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">Customer key</text>
+<rect x="340" y="65" width="215" height="80" rx="12" fill="#18253b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="447.5" y="98.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Shard 0</text>
+<text x="447.5" y="124.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">15% traffic</text>
+<rect x="340" y="165" width="215" height="80" rx="12" fill="#18253b" stroke="#34d399" stroke-width="2.4"/>
+<text x="447.5" y="198.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Shard 1 HOT</text>
+<text x="447.5" y="224.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">70% traffic</text>
+<rect x="340" y="265" width="215" height="80" rx="12" fill="#18253b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="447.5" y="298.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Shard 2</text>
+<text x="447.5" y="324.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">15% traffic</text>
+<rect x="765" y="165" width="245" height="80" rx="12" fill="#18253b" stroke="#fb7185" stroke-width="2.4"/>
+<text x="887.5" y="198.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Latency</text>
+<text x="887.5" y="224.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">p99 rises</text>
+<text x="34" y="376" fill="#fbbf24" font-family="Arial" font-size="15">Average load hides tenant and key skew.</text></svg>

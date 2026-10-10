@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="Autoscale consumers using backlog and completion time">
+<rect width="1120" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="38" y="47" fill="#f8fafc" font-family="Arial" font-weight="bold" font-size="25">Autoscale consumers using backlog and completion time</text>
+<path d="M240 195 L320 195" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M530 195 L625 195" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M830 195 L915 195" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="30" y="145" width="210" height="100" rx="12" fill="#19263b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="135.0" y="188.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Queue metrics</text>
+<text x="135.0" y="214.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">Age, depth, arrivals</text>
+<rect x="320" y="145" width="210" height="100" rx="12" fill="#19263b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="425.0" y="188.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Scaling policy</text>
+<text x="425.0" y="214.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">Target + guardrails</text>
+<rect x="625" y="145" width="205" height="100" rx="12" fill="#19263b" stroke="#34d399" stroke-width="2.5"/>
+<text x="727.5" y="188.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker pool</text>
+<text x="727.5" y="214.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">Desired vs ready</text>
+<rect x="915" y="145" width="175" height="100" rx="12" fill="#19263b" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="1002.5" y="188.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Provider</text>
+<text x="1002.5" y="214.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">Rate cap</text>
+<text x="38" y="373" fill="#fbbf24" font-family="Arial" font-size="16">Scale for useful completions, not simply the largest possible worker count.</text>
+</svg>

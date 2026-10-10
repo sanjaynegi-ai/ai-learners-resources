@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="Parallel workers can finish messages out of order">
+<rect width="1120" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="38" y="47" fill="#f8fafc" font-family="Arial" font-weight="bold" font-size="25">Parallel workers can finish messages out of order</text>
+<path d="M245 185 L350 130" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M245 205 L350 275" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M565 130 L745 175" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M565 275 L745 215" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="40" y="145" width="205" height="100" rx="12" fill="#19263b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="142.5" y="188.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Queue</text>
+<text x="142.5" y="214.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">M1 then M2</text>
+<rect x="350" y="85" width="215" height="90" rx="12" fill="#19263b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="457.5" y="123.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker A</text>
+<text x="457.5" y="149.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">M1: 4 seconds</text>
+<rect x="350" y="230" width="215" height="90" rx="12" fill="#19263b" stroke="#34d399" stroke-width="2.5"/>
+<text x="457.5" y="268.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker B</text>
+<text x="457.5" y="294.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">M2: 1 second</text>
+<rect x="745" y="145" width="235" height="100" rx="12" fill="#19263b" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="862.5" y="188.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Completion</text>
+<text x="862.5" y="214.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">M2 before M1</text>
+<text x="38" y="373" fill="#fbbf24" font-family="Arial" font-size="16">Delivery order does not imply completion order.</text>
+</svg>

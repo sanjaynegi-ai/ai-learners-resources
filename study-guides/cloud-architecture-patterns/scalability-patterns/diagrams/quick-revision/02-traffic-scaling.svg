@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Routing and capacity are separate decisions"><rect width="1160" height="410" fill="#0b1220"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs><text x="32" y="44" font-family="Arial" font-size="25" font-weight="bold" fill="#f8fafc">Routing and capacity are separate decisions</text>
+<path d="M230 195 L330 195" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M550 195 L660 195" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M880 195 L970 195" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="30" y="145" width="200" height="100" rx="13" fill="#17243b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="130.0" y="188.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Users</text>
+<text x="130.0" y="214.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Changing demand</text>
+<rect x="330" y="145" width="220" height="100" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="440.0" y="188.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Load balancer</text>
+<text x="440.0" y="214.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Where to send?</text>
+<rect x="660" y="145" width="220" height="100" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2.4"/>
+<text x="770.0" y="188.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">API replicas</text>
+<text x="770.0" y="214.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">How many ready?</text>
+<rect x="970" y="145" width="160" height="100" rx="13" fill="#17243b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="1050.0" y="188.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">DB</text>
+<text x="1050.0" y="214.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Shared limit</text>
+<text x="32" y="375" fill="#fbbf24" font-family="Arial" font-size="15">Statelessness makes replicas interchangeable; autoscaling changes their number.</text></svg>

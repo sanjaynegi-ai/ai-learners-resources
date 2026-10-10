@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 430" role="img" aria-label="QuickCart: upload, branch, verify, and publish">
+<rect width="1160" height="430" fill="#0B1020"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="35" y="46" fill="#fff" font-family="Arial" font-size="25" font-weight="bold">QuickCart: upload, branch, verify, and publish</text>
+<path d="M210 197 L275 197" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M460 185 L530 110" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M460 210 L530 290" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M735 110 L850 180" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M735 290 L850 220" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<rect x="25" y="155" width="185" height="95" rx="12" fill="#19253b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="117.5" y="195.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Upload + store</text>
+<text x="117.5" y="220.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Durable original</text>
+<rect x="275" y="155" width="185" height="95" rx="12" fill="#19253b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="367.5" y="195.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Validate</text>
+<text x="367.5" y="220.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Metadata + safety</text>
+<rect x="530" y="65" width="205" height="90" rx="12" fill="#19253b" stroke="#34d399" stroke-width="2.4"/>
+<text x="632.5" y="103.0" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Encode</text>
+<text x="632.5" y="128.0" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Playback output</text>
+<rect x="530" y="245" width="205" height="90" rx="12" fill="#19253b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="632.5" y="283.0" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Thumbnail</text>
+<text x="632.5" y="308.0" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Preview output</text>
+<rect x="850" y="155" width="240" height="95" rx="12" fill="#19253b" stroke="#fb7185" stroke-width="2.4"/>
+<text x="970.0" y="195.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Publish gate</text>
+<text x="970.0" y="220.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Required outputs ready</text>
+<text x="35" y="395" fill="#fbbf24" font-family="Arial" font-size="15">Only publish when the required artifacts and checks have succeeded.</text></svg>

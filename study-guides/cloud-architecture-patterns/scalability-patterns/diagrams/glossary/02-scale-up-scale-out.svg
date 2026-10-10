@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Scale up versus scale out">
+<rect width="1160" height="410" fill="#0b1220"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" stroke-width="1.5" fill="none"/></marker></defs>
+<text x="32" y="45" font-family="Arial" font-size="25" font-weight="bold" fill="#f8fafc">Scale up versus scale out</text>
+<path d="M270 195 L355 195" stroke="#cbd5e1" stroke-width="2.3" fill="none" marker-end="url(#arr)"/>
+<path d="M595 195 L690 195" stroke="#cbd5e1" stroke-width="2.3" fill="none" marker-end="url(#arr)"/>
+<rect x="30" y="145" width="240" height="105" rx="12" fill="#18253b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="150.0" y="190.5" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">Scale up</text>
+<text x="150.0" y="215.5" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">Bigger machine</text>
+<rect x="355" y="145" width="240" height="105" rx="12" fill="#18253b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="475.0" y="190.5" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">Scale out</text>
+<text x="475.0" y="215.5" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">More machines</text>
+<rect x="690" y="145" width="300" height="105" rx="12" fill="#18253b" stroke="#34d399" stroke-width="2.5"/>
+<text x="840.0" y="190.5" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">Shared dependency</text>
+<text x="840.0" y="215.5" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">May remain bottleneck</text>
+<text x="32" y="377" font-size="15" font-family="Arial" fill="#fbbf24">Scaling application replicas cannot remove every database or provider limit.</text></svg>

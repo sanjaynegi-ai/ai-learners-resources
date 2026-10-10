@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="Parallelism increases capacity until a shared limit">
+<rect width="1120" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="38" y="47" fill="#f8fafc" font-family="Arial" font-weight="bold" font-size="25">Parallelism increases capacity until a shared limit</text>
+<path d="M250 195 L350 105" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M250 195 L350 205" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M250 195 L350 305" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M545 105 L735 170" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M545 205 L735 195" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M545 305 L735 220" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="35" y="145" width="215" height="100" rx="12" fill="#19263b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="142.5" y="188.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Queue</text>
+<text x="142.5" y="214.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">Pending jobs</text>
+<rect x="350" y="65" width="195" height="80" rx="12" fill="#19263b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="447.5" y="98.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker A</text>
+<text x="447.5" y="124.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">200/min</text>
+<rect x="350" y="165" width="195" height="80" rx="12" fill="#19263b" stroke="#34d399" stroke-width="2.5"/>
+<text x="447.5" y="198.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker B</text>
+<text x="447.5" y="224.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">200/min</text>
+<rect x="350" y="265" width="195" height="80" rx="12" fill="#19263b" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="447.5" y="298.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker C</text>
+<text x="447.5" y="324.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">200/min</text>
+<rect x="735" y="145" width="255" height="100" rx="12" fill="#19263b" stroke="#fb7185" stroke-width="2.5"/>
+<text x="862.5" y="188.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Provider</text>
+<text x="862.5" y="214.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">1,000/min maximum</text>
+<text x="38" y="373" fill="#fbbf24" font-family="Arial" font-size="16">Three workers: 600/min nominal, if downstream capacity permits.</text>
+</svg>

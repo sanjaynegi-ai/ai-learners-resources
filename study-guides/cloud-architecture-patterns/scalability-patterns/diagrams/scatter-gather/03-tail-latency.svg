@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="One slow shard can dominate total latency"><rect width="1120" height="410" fill="#0B1020"/><defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs><text x="35" y="44" fill="#fff" font-size="24" font-family="Arial" font-weight="bold">One slow shard can dominate total latency</text>
+<path d="M235 178 L355 82" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<path d="M235 185 L355 168" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<path d="M235 195 L355 252" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<path d="M235 205 L355 337" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<path d="M560 337 L755 212" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<text x="657.5" y="264.5" fill="#fbbf24" font-family="Arial" text-anchor="middle" font-size="13">straggler</text>
+<rect x="30" y="140" width="205" height="95" rx="12" fill="#17243b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="132.5" y="180.5" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Coordinator</text>
+<text x="132.5" y="205.5" fill="#c8d5e4" font-family="Arial" font-size="13" text-anchor="middle">Wait for replies</text>
+<rect x="355" y="45" width="205" height="75" rx="12" fill="#17243b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="457.5" y="75.5" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Shard A</text>
+<text x="457.5" y="100.5" fill="#c8d5e4" font-family="Arial" font-size="13" text-anchor="middle">100 ms</text>
+<rect x="355" y="130" width="205" height="75" rx="12" fill="#17243b" stroke="#34d399" stroke-width="2.5"/>
+<text x="457.5" y="160.5" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Shard B</text>
+<text x="457.5" y="185.5" fill="#c8d5e4" font-family="Arial" font-size="13" text-anchor="middle">150 ms</text>
+<rect x="355" y="215" width="205" height="75" rx="12" fill="#17243b" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="457.5" y="245.5" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Shard C</text>
+<text x="457.5" y="270.5" fill="#c8d5e4" font-family="Arial" font-size="13" text-anchor="middle">120 ms</text>
+<rect x="355" y="300" width="205" height="75" rx="12" fill="#17243b" stroke="#fb7185" stroke-width="2.5"/>
+<text x="457.5" y="330.5" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Shard D</text>
+<text x="457.5" y="355.5" fill="#c8d5e4" font-family="Arial" font-size="13" text-anchor="middle">4,000 ms</text>
+<rect x="755" y="140" width="235" height="95" rx="12" fill="#17243b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="872.5" y="180.5" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">All-results wait</text>
+<text x="872.5" y="205.5" fill="#c8d5e4" font-family="Arial" font-size="13" text-anchor="middle">≈ 4,000+ ms</text>
+<text x="35" y="372" fill="#fbbf24" font-size="15" font-family="Arial">Fan-out makes the slowest required response critical.</text></svg>

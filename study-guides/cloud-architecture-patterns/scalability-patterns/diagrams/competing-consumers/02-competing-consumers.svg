@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="Competing consumers share one logical queue">
+<rect width="1120" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="38" y="47" fill="#f8fafc" font-family="Arial" font-weight="bold" font-size="25">Competing consumers share one logical queue</text>
+<path d="M240 178 L395 115" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M240 190 L395 210" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M240 200 L395 305" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M605 115 L790 190" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M605 210 L790 210" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M605 305 L790 230" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="40" y="140" width="200" height="100" rx="12" fill="#19263b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="140.0" y="183.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Queue</text>
+<text x="140.0" y="209.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">M1 M2 M3 M4 M5</text>
+<rect x="395" y="75" width="210" height="80" rx="12" fill="#19263b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="500.0" y="108.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker A</text>
+<text x="500.0" y="134.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">Claims M1</text>
+<rect x="395" y="170" width="210" height="80" rx="12" fill="#19263b" stroke="#34d399" stroke-width="2.5"/>
+<text x="500.0" y="203.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker B</text>
+<text x="500.0" y="229.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">Claims M2</text>
+<rect x="395" y="265" width="210" height="80" rx="12" fill="#19263b" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="500.0" y="298.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker C</text>
+<text x="500.0" y="324.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">Claims M3</text>
+<rect x="790" y="170" width="215" height="80" rx="12" fill="#19263b" stroke="#fb7185" stroke-width="2.5"/>
+<text x="897.5" y="203.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Downstream</text>
+<text x="897.5" y="229.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">Shared capacity</text>
+<text x="38" y="373" fill="#fbbf24" font-family="Arial" font-size="16">Each delivered message is assigned for processing according to broker semantics.</text>
+</svg>

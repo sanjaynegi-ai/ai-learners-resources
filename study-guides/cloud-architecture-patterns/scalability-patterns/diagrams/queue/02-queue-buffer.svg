@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 340" role="img" aria-label="A queue separates acceptance and processing"><rect width="1100" height="340" fill="#0b1220"/><text x="35" y="44" font-size="24" font-weight="bold" font-family="Arial" fill="#fff">A queue separates acceptance and processing</text><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<rect x="25" y="130" width="210" height="95" rx="12" fill="#182338" stroke="#a78bfa" stroke-width="2"/>
+<text x="130.0" y="172.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="17" font-weight="bold">Order API</text>
+<text x="130.0" y="196.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="12">Persist order</text>
+<rect x="300" y="130" width="215" height="95" rx="12" fill="#182338" stroke="#22d3ee" stroke-width="2"/>
+<text x="407.5" y="172.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="17" font-weight="bold">Durable queue</text>
+<text x="407.5" y="196.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="12">Pending jobs</text>
+<rect x="585" y="130" width="210" height="95" rx="12" fill="#182338" stroke="#fbbf24" stroke-width="2"/>
+<text x="690.0" y="172.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="17" font-weight="bold">Workers</text>
+<text x="690.0" y="196.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="12">Controlled rate</text>
+<rect x="865" y="130" width="210" height="95" rx="12" fill="#182338" stroke="#34d399" stroke-width="2"/>
+<text x="970.0" y="172.5" text-anchor="middle" fill="#fff" font-family="Arial" font-size="17" font-weight="bold">Provider</text>
+<text x="970.0" y="196.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="12">1,000/min</text>
+<path d="M235 177 L300 177" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M515 177 L585 177" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M795 177 L865 177" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="35" y="308" fill="#fbbf24" font-family="Arial" font-size="15">Queueing buys time, not additional sustainable throughput.</text>
+</svg>

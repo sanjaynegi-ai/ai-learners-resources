@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Challenge: fan-out with one straggler">
+<rect width="1160" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="34" y="46" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">Challenge: fan-out with one straggler</text>
+<path d="M235 190 L335 105" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M235 195 L335 205" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M235 200 L335 305" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M550 105 L765 175" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M550 205 L765 200" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M550 305 L765 225" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<rect x="25" y="150" width="210" height="100" rx="12" fill="#18253b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="130.0" y="193.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Search</text>
+<text x="130.0" y="219.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">500 ms budget</text>
+<rect x="335" y="65" width="215" height="80" rx="12" fill="#18253b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="442.5" y="98.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Shard A</text>
+<text x="442.5" y="124.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">100 ms</text>
+<rect x="335" y="165" width="215" height="80" rx="12" fill="#18253b" stroke="#34d399" stroke-width="2.4"/>
+<text x="442.5" y="198.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Shard B</text>
+<text x="442.5" y="224.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">150 ms</text>
+<rect x="335" y="265" width="215" height="80" rx="12" fill="#18253b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="442.5" y="298.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Shard D</text>
+<text x="442.5" y="324.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">4,000 ms</text>
+<rect x="765" y="150" width="280" height="100" rx="12" fill="#18253b" stroke="#fb7185" stroke-width="2.4"/>
+<text x="905.0" y="193.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Gather</text>
+<text x="905.0" y="219.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">Completeness policy</text>
+<text x="34" y="376" fill="#fbbf24" font-family="Arial" font-size="15">A timeout is not permission to silently omit required data.</text></svg>

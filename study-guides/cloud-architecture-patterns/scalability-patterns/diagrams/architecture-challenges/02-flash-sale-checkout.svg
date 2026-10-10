@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Challenge: checkout under a flash-sale burst">
+<rect width="1160" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="34" y="46" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">Challenge: checkout under a flash-sale burst</text>
+<path d="M230 197 L315 197" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M535 197 L635 197" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M855 197 L945 197" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<rect x="25" y="145" width="205" height="105" rx="12" fill="#18253b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="127.5" y="190.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Users</text>
+<text x="127.5" y="216.5" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">2,400 req/s</text>
+<rect x="315" y="145" width="220" height="105" rx="12" fill="#18253b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="425.0" y="190.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">API pool</text>
+<text x="425.0" y="216.5" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">400 req/s each</text>
+<rect x="635" y="145" width="220" height="105" rx="12" fill="#18253b" stroke="#34d399" stroke-width="2.4"/>
+<text x="745.0" y="190.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Orders DB</text>
+<text x="745.0" y="216.5" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">Write bottleneck</text>
+<rect x="945" y="145" width="170" height="105" rx="12" fill="#18253b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="1030.0" y="190.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Outbox</text>
+<text x="1030.0" y="216.5" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">Reliable events</text>
+<text x="34" y="376" fill="#fbbf24" font-family="Arial" font-size="15">API scaling alone cannot fix database contention or unsafe retries.</text></svg>

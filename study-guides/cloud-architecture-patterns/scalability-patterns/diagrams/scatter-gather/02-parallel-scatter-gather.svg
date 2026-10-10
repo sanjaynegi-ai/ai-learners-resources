@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="Scatter requests, gather results, then merge"><rect width="1120" height="410" fill="#0B1020"/><defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs><text x="35" y="44" fill="#fff" font-size="24" font-family="Arial" font-weight="bold">Scatter requests, gather results, then merge</text>
+<path d="M210 188 L280 188" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<path d="M490 170 L635 105" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<path d="M490 188 L635 205" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<path d="M490 205 L635 305" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<rect x="30" y="140" width="180" height="95" rx="12" fill="#17243b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="120.0" y="180.5" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Search API</text>
+<text x="120.0" y="205.5" fill="#c8d5e4" font-family="Arial" font-size="13" text-anchor="middle">Client request</text>
+<rect x="280" y="140" width="210" height="95" rx="12" fill="#17243b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="385.0" y="180.5" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Coordinator</text>
+<text x="385.0" y="205.5" fill="#c8d5e4" font-family="Arial" font-size="13" text-anchor="middle">Fan-out / gather</text>
+<rect x="635" y="65" width="195" height="80" rx="12" fill="#17243b" stroke="#34d399" stroke-width="2.5"/>
+<text x="732.5" y="98.0" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Shard A</text>
+<text x="732.5" y="123.0" fill="#c8d5e4" font-family="Arial" font-size="13" text-anchor="middle">Partial results</text>
+<rect x="635" y="165" width="195" height="80" rx="12" fill="#17243b" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="732.5" y="198.0" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Shard B</text>
+<text x="732.5" y="223.0" fill="#c8d5e4" font-family="Arial" font-size="13" text-anchor="middle">Partial results</text>
+<rect x="635" y="265" width="195" height="80" rx="12" fill="#17243b" stroke="#fb7185" stroke-width="2.5"/>
+<text x="732.5" y="298.0" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Shard C</text>
+<text x="732.5" y="323.0" fill="#c8d5e4" font-family="Arial" font-size="13" text-anchor="middle">Partial results</text>
+<text x="35" y="372" fill="#fbbf24" font-size="15" font-family="Arial">Parallel fan-out overlaps latency; coordinator combines responses.</text></svg>

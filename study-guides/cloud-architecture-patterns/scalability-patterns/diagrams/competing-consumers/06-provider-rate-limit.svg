@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="The scaling trap: workers share a provider limit">
+<rect width="1120" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="38" y="47" fill="#f8fafc" font-family="Arial" font-weight="bold" font-size="25">The scaling trap: workers share a provider limit</text>
+<path d="M235 185 L320 105" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M235 200 L320 275" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M530 105 L730 175" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M530 275 L730 210" fill="none" stroke="#cbd5e1" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="30" y="140" width="205" height="100" rx="12" fill="#19263b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="132.5" y="183.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Queue</text>
+<text x="132.5" y="209.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">Backlog</text>
+<rect x="320" y="65" width="210" height="80" rx="12" fill="#19263b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="425.0" y="98.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker pool</text>
+<text x="425.0" y="124.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">10 workers</text>
+<rect x="320" y="235" width="210" height="80" rx="12" fill="#19263b" stroke="#34d399" stroke-width="2.5"/>
+<text x="425.0" y="268.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">Worker pool</text>
+<text x="425.0" y="294.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">20 workers</text>
+<rect x="730" y="140" width="245" height="100" rx="12" fill="#19263b" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="852.5" y="183.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="18" fill="#f8fafc">External API</text>
+<text x="852.5" y="209.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#bfcfe1">1,000 calls/min</text>
+<text x="38" y="373" fill="#fbbf24" font-family="Arial" font-size="16">More workers can increase throttling without increasing completions.</text>
+</svg>

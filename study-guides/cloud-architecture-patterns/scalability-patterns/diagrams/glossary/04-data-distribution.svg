@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Sharding, replication, and distributed queries">
+<rect width="1160" height="410" fill="#0b1220"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" stroke-width="1.5" fill="none"/></marker></defs>
+<text x="32" y="45" font-family="Arial" font-size="25" font-weight="bold" fill="#f8fafc">Sharding, replication, and distributed queries</text>
+<path d="M245 185 L345 110" stroke="#cbd5e1" stroke-width="2.3" fill="none" marker-end="url(#arr)"/>
+<path d="M245 205 L345 285" stroke="#cbd5e1" stroke-width="2.3" fill="none" marker-end="url(#arr)"/>
+<path d="M555 110 L745 185" stroke="#cbd5e1" stroke-width="2.3" fill="none" marker-end="url(#arr)"/>
+<path d="M555 285 L745 220" stroke="#cbd5e1" stroke-width="2.3" fill="none" marker-end="url(#arr)"/>
+<rect x="25" y="145" width="220" height="100" rx="12" fill="#18253b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="135.0" y="188.0" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">Partition key</text>
+<text x="135.0" y="213.0" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">Choose owner</text>
+<rect x="345" y="65" width="210" height="85" rx="12" fill="#18253b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="450.0" y="100.5" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">Shard A</text>
+<text x="450.0" y="125.5" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">Subset of data</text>
+<rect x="345" y="245" width="210" height="85" rx="12" fill="#18253b" stroke="#34d399" stroke-width="2.5"/>
+<text x="450.0" y="280.5" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">Shard B</text>
+<text x="450.0" y="305.5" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">Different subset</text>
+<rect x="745" y="145" width="270" height="100" rx="12" fill="#18253b" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="880.0" y="188.0" fill="#fff" font-size="17" font-weight="bold" font-family="Arial" text-anchor="middle">Scatter–Gather</text>
+<text x="880.0" y="213.0" fill="#cbd5e1" font-size="13" font-family="Arial" text-anchor="middle">Merge multi-shard results</text>
+<text x="32" y="377" font-size="15" font-family="Arial" fill="#fbbf24">Replication copies data; sharding divides distinct ownership.</text></svg>

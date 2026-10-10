@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 440" role="img" aria-label="Capacity must exceed sustained arrivals to drain backlog"><rect width="1160" height="440" fill="#0B1020"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.6"/></marker></defs><text x="35" y="45" fill="#f8fafc" font-family="Arial" font-size="25" font-weight="bold">Capacity must exceed sustained arrivals to drain backlog</text>
+<path d="M260 198 L355 198" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M590 198 L695 198" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="35" y="150" width="225" height="95" rx="12" fill="#18263b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="147.5" y="189.5" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Arrival rate</text>
+<text x="147.5" y="216.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">1,200 jobs/min</text>
+<rect x="355" y="150" width="235" height="95" rx="12" fill="#18263b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="472.5" y="189.5" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Queue</text>
+<text x="472.5" y="216.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Backlog grows</text>
+<rect x="695" y="150" width="275" height="95" rx="12" fill="#18263b" stroke="#34d399" stroke-width="2.4"/>
+<text x="832.5" y="189.5" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Workers + provider</text>
+<text x="832.5" y="216.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">1,000 completions/min</text>
+<text x="35" y="405" fill="#fbbf24" font-family="Arial" font-size="15">Net backlog growth = 1,200 − 1,000 = 200 jobs/min.</text></svg>

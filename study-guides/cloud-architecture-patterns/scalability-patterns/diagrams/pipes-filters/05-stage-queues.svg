@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 430" role="img" aria-label="Durable stage queues enable buffering and recovery">
+<rect width="1160" height="430" fill="#0B1020"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="35" y="46" fill="#fff" font-family="Arial" font-size="25" font-weight="bold">Durable stage queues enable buffering and recovery</text>
+<path d="M200 197 L235 197" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M410 197 L445 197" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M620 197 L655 197" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M830 197 L865 197" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<rect x="25" y="150" width="175" height="95" rx="12" fill="#19253b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="112.5" y="190.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Validate</text>
+<text x="112.5" y="215.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Worker pool</text>
+<rect x="235" y="150" width="175" height="95" rx="12" fill="#19253b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="322.5" y="190.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Queue A</text>
+<text x="322.5" y="215.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Encoded jobs</text>
+<rect x="445" y="150" width="175" height="95" rx="12" fill="#19253b" stroke="#34d399" stroke-width="2.4"/>
+<text x="532.5" y="190.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Encode</text>
+<text x="532.5" y="215.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Worker pool</text>
+<rect x="655" y="150" width="175" height="95" rx="12" fill="#19253b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="742.5" y="190.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Queue B</text>
+<text x="742.5" y="215.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Thumbnail jobs</text>
+<rect x="865" y="150" width="205" height="95" rx="12" fill="#19253b" stroke="#fb7185" stroke-width="2.4"/>
+<text x="967.5" y="190.5" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold" font-size="17">Thumbnail</text>
+<text x="967.5" y="215.5" text-anchor="middle" fill="#c8d5e5" font-family="Arial" font-size="13">Worker pool</text>
+<text x="35" y="395" fill="#fbbf24" font-family="Arial" font-size="15">Queues absorb bursts; workers determine stage throughput.</text></svg>

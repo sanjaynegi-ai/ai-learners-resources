@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 440" role="img" aria-label="Eight patterns solve different scaling problems"><rect width="1160" height="440" fill="#0B1020"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.6"/></marker></defs><text x="35" y="45" fill="#f8fafc" font-family="Arial" font-size="25" font-weight="bold">Eight patterns solve different scaling problems</text>
+<path d="M270 130 L315 130" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M560 130 L605 130" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M850 130 L895 130" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M1010 170 L730 240" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M605 280 L560 280" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="25" y="90" width="245" height="80" rx="12" fill="#18263b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="147.5" y="122.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Stateless + LB</text>
+<text x="147.5" y="149.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Interchangeable APIs</text>
+<rect x="315" y="90" width="245" height="80" rx="12" fill="#18263b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="437.5" y="122.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Autoscaling</text>
+<text x="437.5" y="149.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Change replica count</text>
+<rect x="605" y="90" width="245" height="80" rx="12" fill="#18263b" stroke="#34d399" stroke-width="2.4"/>
+<text x="727.5" y="122.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Queue + consumers</text>
+<text x="727.5" y="149.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Buffer and process</text>
+<rect x="895" y="90" width="235" height="80" rx="12" fill="#18263b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="1012.5" y="122.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Sharding</text>
+<text x="1012.5" y="149.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Divide ownership</text>
+<rect x="315" y="240" width="245" height="80" rx="12" fill="#18263b" stroke="#fb7185" stroke-width="2.4"/>
+<text x="437.5" y="272.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Scatter–Gather</text>
+<text x="437.5" y="299.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Fan out and merge</text>
+<rect x="605" y="240" width="245" height="80" rx="12" fill="#18263b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="727.5" y="272.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Pipes &amp; Filters</text>
+<text x="727.5" y="299.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Transform by stage</text>
+<text x="35" y="405" fill="#fbbf24" font-family="Arial" font-size="15">Patterns are complementary, not mutually exclusive.</text></svg>

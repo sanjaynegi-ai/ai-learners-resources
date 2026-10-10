@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 440" role="img" aria-label="Every improvement reveals another constraint"><rect width="1160" height="440" fill="#0B1020"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.6"/></marker></defs><text x="35" y="45" fill="#f8fafc" font-family="Arial" font-size="25" font-weight="bold">Every improvement reveals another constraint</text>
+<path d="M255 198 L335 198" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M560 198 L640 198" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M865 198 L940 198" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="30" y="150" width="225" height="95" rx="12" fill="#18263b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="142.5" y="189.5" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">API replicas</text>
+<text x="142.5" y="216.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Scaled out</text>
+<rect x="335" y="150" width="225" height="95" rx="12" fill="#18263b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="447.5" y="189.5" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Database</text>
+<text x="447.5" y="216.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Now saturated</text>
+<rect x="640" y="150" width="225" height="95" rx="12" fill="#18263b" stroke="#34d399" stroke-width="2.4"/>
+<text x="752.5" y="189.5" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Sharded DB</text>
+<text x="752.5" y="216.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Hot shard emerges</text>
+<rect x="940" y="150" width="185" height="95" rx="12" fill="#18263b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="1032.5" y="189.5" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Measure again</text>
+<text x="1032.5" y="216.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Iterate</text>
+<text x="35" y="405" fill="#fbbf24" font-family="Arial" font-size="15">Never assume the previous fix remains the current priority.</text></svg>

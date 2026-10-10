@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 490" role="img" aria-label="07 | Failure isolation and recovery decisions">
+<rect width="1200" height="490" fill="#0B1020"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="35" y="43" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">07 | Failure isolation and recovery decisions</text>
+<path d="M235 205 L330 105" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M235 230 L330 315" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M570 105 L710 195" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M570 315 L710 245" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="30" y="170" width="205" height="100" rx="12" fill="#17253c" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="132.5" y="213.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Order committed</text>
+<text x="132.5" y="238.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Order remains valid</text>
+<rect x="330" y="60" width="240" height="90" rx="12" fill="#17253c" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="450.0" y="98.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Relay unavailable</text>
+<text x="450.0" y="123.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Outbox retained</text>
+<rect x="330" y="270" width="240" height="90" rx="12" fill="#17253c" stroke="#34d399" stroke-width="2.5"/>
+<text x="450.0" y="308.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Worker fails</text>
+<text x="450.0" y="333.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Message redelivered</text>
+<rect x="710" y="170" width="235" height="100" rx="12" fill="#17253c" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="827.5" y="213.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Recovery</text>
+<text x="827.5" y="238.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Retry + idempotency</text>
+<text x="35" y="456" fill="#fbbf24" font-family="Arial" font-size="15">A durable order and outbox must not depend on immediate provider availability.</text></svg>

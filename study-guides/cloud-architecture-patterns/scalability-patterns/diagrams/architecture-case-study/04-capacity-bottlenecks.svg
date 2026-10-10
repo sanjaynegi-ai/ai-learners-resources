@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 490" role="img" aria-label="04 | Flash-sale capacity is bounded by each dependency">
+<rect width="1200" height="490" fill="#0B1020"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="35" y="43" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">04 | Flash-sale capacity is bounded by each dependency</text>
+<path d="M260 202 L330 202" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M555 202 L625 202" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M850 202 L920 202" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<text x="885.0" y="193.0" text-anchor="middle" fill="#fbbf24" font-family="Arial" font-size="13">throttle</text>
+<rect x="35" y="150" width="225" height="105" rx="12" fill="#17253c" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="147.5" y="195.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Incoming</text>
+<text x="147.5" y="220.5" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">10,000 jobs/min</text>
+<rect x="330" y="150" width="225" height="105" rx="12" fill="#17253c" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="442.5" y="195.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Queue</text>
+<text x="442.5" y="220.5" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Backlog grows</text>
+<rect x="625" y="150" width="225" height="105" rx="12" fill="#17253c" stroke="#34d399" stroke-width="2.5"/>
+<text x="737.5" y="195.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Worker pool</text>
+<text x="737.5" y="220.5" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Controlled concurrency</text>
+<rect x="920" y="150" width="225" height="105" rx="12" fill="#17253c" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="1032.5" y="195.5" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Email provider</text>
+<text x="1032.5" y="220.5" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">1,000/min hard cap</text>
+<text x="35" y="456" fill="#fbbf24" font-family="Arial" font-size="15">More workers cannot exceed the downstream provider limit.</text></svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 405" role="img" aria-label="Hash partitioning: deterministic key-to-shard routing"><rect width="1120" height="405" fill="#0b1220"/><defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" stroke-width="1.5" fill="none"/></marker></defs><text x="38" y="46" font-size="24" font-weight="bold" fill="#f8fafc" font-family="Arial">Hash partitioning: deterministic key-to-shard routing</text>
+<path d="M255 190 L335 190" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M565 190 L650 190" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M875 190 L955 190" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<rect x="30" y="140" width="225" height="100" rx="13" fill="#18243a" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="142.5" y="183.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">customerId = 42</text>
+<text x="142.5" y="209.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Stable partition key</text>
+<rect x="335" y="140" width="230" height="100" rx="13" fill="#18243a" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="450.0" y="183.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">hash(customerId)</text>
+<text x="450.0" y="209.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Deterministic function</text>
+<rect x="650" y="140" width="225" height="100" rx="13" fill="#18243a" stroke="#34d399" stroke-width="2.5"/>
+<text x="762.5" y="183.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">mod 3</text>
+<text x="762.5" y="209.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">0, 1, or 2</text>
+<rect x="955" y="140" width="130" height="100" rx="13" fill="#18243a" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="1020.0" y="183.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Shard</text>
+<text x="1020.0" y="209.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Owner</text>
+<text x="38" y="372" fill="#fbbf24" font-family="Arial" font-size="15">Changing shard count changes many modulo assignments; use migration planning.</text></svg>

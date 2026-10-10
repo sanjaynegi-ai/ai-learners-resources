@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Challenge: the slow stage determines throughput">
+<rect width="1160" height="410" fill="#0b1220"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="34" y="46" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">Challenge: the slow stage determines throughput</text>
+<path d="M260 200 L350 200" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<path d="M580 200 L670 200" stroke="#cbd5e1" stroke-width="2.4" fill="none" marker-end="url(#arrow)"/>
+<rect x="30" y="150" width="230" height="100" rx="12" fill="#18253b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="145.0" y="193.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Validate</text>
+<text x="145.0" y="219.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">100 videos/min</text>
+<rect x="350" y="150" width="230" height="100" rx="12" fill="#18253b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="465.0" y="193.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Encode</text>
+<text x="465.0" y="219.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">20 videos/min</text>
+<rect x="670" y="150" width="230" height="100" rx="12" fill="#18253b" stroke="#34d399" stroke-width="2.4"/>
+<text x="785.0" y="193.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Thumbnail</text>
+<text x="785.0" y="219.0" fill="#c7d5e6" text-anchor="middle" font-family="Arial" font-size="13">80 videos/min</text>
+<text x="34" y="376" fill="#fbbf24" font-family="Arial" font-size="15">Scaling validation does not increase final output while encoding is limited.</text></svg>

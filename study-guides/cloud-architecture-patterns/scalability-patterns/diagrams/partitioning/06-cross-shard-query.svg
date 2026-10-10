@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 405" role="img" aria-label="Cross-shard query requires fan-out and merge"><rect width="1120" height="405" fill="#0b1220"/><defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" stroke-width="1.5" fill="none"/></marker></defs><text x="38" y="46" font-size="24" font-weight="bold" fill="#f8fafc" font-family="Arial">Cross-shard query requires fan-out and merge</text>
+<path d="M225 190 L300 190" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M520 180 L670 105" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M520 190 L670 205" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M520 200 L670 305" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<rect x="35" y="140" width="190" height="100" rx="13" fill="#18243a" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="130.0" y="183.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Reporting API</text>
+<text x="130.0" y="209.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">All orders</text>
+<rect x="300" y="140" width="220" height="100" rx="13" fill="#18243a" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="410.0" y="183.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Query coordinator</text>
+<text x="410.0" y="209.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Fan-out + merge</text>
+<rect x="670" y="65" width="210" height="80" rx="13" fill="#18243a" stroke="#34d399" stroke-width="2.5"/>
+<text x="775.0" y="98.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Shard 0</text>
+<text x="775.0" y="124.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Partial result</text>
+<rect x="670" y="165" width="210" height="80" rx="13" fill="#18243a" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="775.0" y="198.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Shard 1</text>
+<text x="775.0" y="224.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Partial result</text>
+<rect x="670" y="265" width="210" height="80" rx="13" fill="#18243a" stroke="#fb7185" stroke-width="2.5"/>
+<text x="775.0" y="298.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Shard 2</text>
+<text x="775.0" y="324.0" text-anchor="middle" fill="#c5d3e3" font-family="Arial" font-size="13">Partial result</text>
+<text x="38" y="372" fill="#fbbf24" font-family="Arial" font-size="15">Cross-shard joins and global sorting are more expensive than key-local lookups.</text></svg>

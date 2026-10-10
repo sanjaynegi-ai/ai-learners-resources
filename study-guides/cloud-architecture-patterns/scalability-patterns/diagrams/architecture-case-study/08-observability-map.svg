@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 490" role="img" aria-label="08 | Trace user journeys and monitor capacity boundaries">
+<rect width="1200" height="490" fill="#0B1020"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" stroke="#cbd5e1" fill="none" stroke-width="1.5"/></marker></defs>
+<text x="35" y="43" fill="#f8fafc" font-family="Arial" font-size="24" font-weight="bold">08 | Trace user journeys and monitor capacity boundaries</text>
+<path d="M235 220 L310 220" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M525 200 L605 115" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M525 240 L605 315" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M825 115 L925 195" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M825 315 L925 245" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="25" y="170" width="210" height="100" rx="12" fill="#17253c" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="130.0" y="213.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Client experience</text>
+<text x="130.0" y="238.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Checkout p95 / errors</text>
+<rect x="310" y="170" width="215" height="100" rx="12" fill="#17253c" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="417.5" y="213.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">API + database</text>
+<text x="417.5" y="238.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Latency / locks</text>
+<rect x="605" y="70" width="220" height="90" rx="12" fill="#17253c" stroke="#34d399" stroke-width="2.5"/>
+<text x="715.0" y="108.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Queue / outbox</text>
+<text x="715.0" y="133.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">Age / lag</text>
+<rect x="605" y="270" width="220" height="90" rx="12" fill="#17253c" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="715.0" y="308.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Worker / provider</text>
+<text x="715.0" y="333.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">429s / retries</text>
+<rect x="925" y="170" width="235" height="100" rx="12" fill="#17253c" stroke="#fb7185" stroke-width="2.5"/>
+<text x="1042.5" y="213.0" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Operations</text>
+<text x="1042.5" y="238.0" fill="#cbd5e1" text-anchor="middle" font-family="Arial" font-size="12.5">SLO + alerts</text>
+<text x="35" y="456" fill="#fbbf24" font-family="Arial" font-size="15">Separate order-success, notification-age, search, and media-readiness SLOs.</text></svg>

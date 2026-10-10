@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 410" role="img" aria-label="Sharding distributes data; Scatter–Gather recombines results"><rect width="1160" height="410" fill="#0b1220"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs><text x="32" y="44" font-family="Arial" font-size="25" font-weight="bold" fill="#f8fafc">Sharding distributes data; Scatter–Gather recombines results</text>
+<path d="M240 185 L355 105" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M240 195 L355 205" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M240 205 L355 305" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M570 105 L785 175" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M570 205 L785 200" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<path d="M570 305 L785 225" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="25" y="150" width="215" height="100" rx="13" fill="#17243b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="132.5" y="193.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Query coordinator</text>
+<text x="132.5" y="219.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Search request</text>
+<rect x="355" y="65" width="215" height="80" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="462.5" y="98.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Shard A</text>
+<text x="462.5" y="124.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Partial results</text>
+<rect x="355" y="165" width="215" height="80" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2.4"/>
+<text x="462.5" y="198.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Shard B</text>
+<text x="462.5" y="224.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Partial results</text>
+<rect x="355" y="265" width="215" height="80" rx="13" fill="#17243b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="462.5" y="298.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Shard C</text>
+<text x="462.5" y="324.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Partial results</text>
+<rect x="785" y="150" width="260" height="100" rx="13" fill="#17243b" stroke="#fb7185" stroke-width="2.4"/>
+<text x="915.0" y="193.0" fill="#fff" font-family="Arial" font-weight="bold" font-size="17" text-anchor="middle">Merge</text>
+<text x="915.0" y="219.0" fill="#c8d5e6" font-family="Arial" font-size="13" text-anchor="middle">Completeness + ranking</text>
+<text x="32" y="375" fill="#fbbf24" font-family="Arial" font-size="15">Cross-shard search must define deadlines and partial-result correctness.</text></svg>

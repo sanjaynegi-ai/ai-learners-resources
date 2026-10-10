@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 440" role="img" aria-label="Data ownership and distributed query are different"><rect width="1160" height="440" fill="#0B1020"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.6"/></marker></defs><text x="35" y="45" fill="#f8fafc" font-family="Arial" font-size="25" font-weight="bold">Data ownership and distributed query are different</text>
+<path d="M240 190 L340 110" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M240 190 L340 210" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M240 190 L340 310" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M550 110 L750 185" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M550 210 L750 205" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M550 310 L750 225" stroke="#cbd5e1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="30" y="150" width="210" height="95" rx="12" fill="#18263b" stroke="#22d3ee" stroke-width="2.4"/>
+<text x="135.0" y="189.5" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Shard router</text>
+<text x="135.0" y="216.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Single customer</text>
+<rect x="340" y="70" width="210" height="80" rx="12" fill="#18263b" stroke="#a78bfa" stroke-width="2.4"/>
+<text x="445.0" y="102.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Shard A</text>
+<text x="445.0" y="129.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Customer subset</text>
+<rect x="340" y="170" width="210" height="80" rx="12" fill="#18263b" stroke="#34d399" stroke-width="2.4"/>
+<text x="445.0" y="202.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Shard B</text>
+<text x="445.0" y="229.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Customer subset</text>
+<rect x="340" y="270" width="210" height="80" rx="12" fill="#18263b" stroke="#fbbf24" stroke-width="2.4"/>
+<text x="445.0" y="302.0" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Shard C</text>
+<text x="445.0" y="329.0" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Customer subset</text>
+<rect x="750" y="150" width="260" height="95" rx="12" fill="#18263b" stroke="#fb7185" stroke-width="2.4"/>
+<text x="880.0" y="189.5" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="17" font-weight="bold">Search gather</text>
+<text x="880.0" y="216.5" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Merge shard results</text>
+<text x="35" y="405" fill="#fbbf24" font-family="Arial" font-size="15">Key-local reads route to one owner; global searches may fan out.</text></svg>
