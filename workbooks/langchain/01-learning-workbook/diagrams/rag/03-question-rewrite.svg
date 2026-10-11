@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="470" viewBox="0 0 1040 470" role="img" aria-labelledby="title desc">
+<title id="title">Resolve conversational intent before retrieving evidence</title>
+<desc id="desc">Current-session bounded history and the latest question enter a rewrite prompt. Ambiguity leads to clarification without retrieval. A resolved standalone question enters retrieval and grounded answering. Inspect rewrite drift separately from answer support.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#91a6c4" stroke-width="2"/></marker></defs>
+<rect width="1040" height="470" rx="16" fill="#0b1220"/>
+<g font-family="Arial, sans-serif" text-anchor="middle" fill="#e5edf8">
+<text x="520" y="37" font-size="23" font-weight="bold">Resolve intent first; establish facts from evidence</text>
+<g fill="#142238" stroke="#22d3ee" stroke-width="2"><rect x="25" y="80" width="270" height="80" rx="12"/><rect x="25" y="195" width="270" height="70" rx="12"/></g>
+<text x="160" y="110" font-size="18">Bounded session history</text><text x="160" y="138" font-size="15">Topic: equipment reimbursement</text>
+<text x="160" y="224" font-size="18">Latest original question</text><text x="160" y="249" font-size="16">“And its limit?”</text>
+<rect x="365" y="135" width="270" height="100" rx="12" fill="#142238" stroke="#a78bfa" stroke-width="2"/>
+<text x="500" y="168" font-size="18">Rewrite prompt → model</text><text x="500" y="196" font-size="15">Resolve references; do not answer</text><text x="500" y="220" font-size="15">Preserve intent and qualifiers</text>
+<rect x="710" y="80" width="305" height="105" rx="12" fill="#142238" stroke="#34d399" stroke-width="2"/>
+<text x="862" y="108" font-size="18">Resolved standalone question</text><text x="862" y="136" font-size="15">What is the annual home-office</text><text x="862" y="159" font-size="15">reimbursement limit?</text>
+<rect x="710" y="250" width="305" height="90" rx="12" fill="#142238" stroke="#34d399" stroke-width="2"/>
+<text x="862" y="281" font-size="18">Retrieve → evidence → answer</text><text x="862" y="308" font-size="15">History is not policy evidence</text><text x="862" y="330" font-size="15">Audit passage support</text>
+<rect x="365" y="300" width="270" height="75" rx="12" fill="#142238" stroke="#fbbf24" stroke-width="2"/>
+<text x="500" y="330" font-size="18" fill="#fde68a">Unclear? Ask clarification</text><text x="500" y="357" font-size="15">Skip retrieval and answer call</text>
+<text x="520" y="430" font-size="16" fill="#fde68a">Inspect original → rewrite: a supported answer to a changed question still fails.</text>
+</g>
+<g fill="none" stroke="#91a6c4" stroke-width="2" marker-end="url(#arrow)"><path d="M295 120 H330 V165 H362"/><path d="M295 230 H330 V205 H362"/><path d="M635 165 H675 V133 H707"/><path d="M862 185 V247"/><path d="M500 235 V297"/></g>
+</svg>

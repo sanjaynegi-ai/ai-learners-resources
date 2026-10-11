@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="550" viewBox="0 0 1160 550" role="img" aria-labelledby="title desc">
+  <title id="title">Two-step workflow with explicit data types</title>
+  <desc id="desc">An input dictionary enters a prompt, model, and string parser. The draft string joins copied audience and evidence fields from the original input. The resulting dictionary enters a second prompt, model, and parser. A bare string cannot replace the required bridge dictionary.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker></defs>
+  <rect width="1160" height="550" rx="18" fill="#0f172a"/>
+  <g font-family="Arial, sans-serif" fill="#f1f5f9">
+    <text x="35" y="43" font-size="23" font-weight="bold">Follow the types. Preserve the context.</text>
+    <rect x="35" y="85" width="215" height="125" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="53" y="115" font-size="19" font-weight="bold">Input: dict</text>
+    <text x="53" y="147" font-size="16">topic, audience, evidence</text>
+    <text x="53" y="180" font-size="15" fill="#cbd5e1">One independent request</text>
+    <rect x="300" y="85" width="240" height="125" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="318" y="115" font-size="19" font-weight="bold">Prompt → model</text>
+    <text x="318" y="147" font-size="16">ChatPromptValue</text>
+    <text x="318" y="180" font-size="16">→ AIMessage</text>
+    <rect x="590" y="85" width="220" height="125" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+    <text x="608" y="115" font-size="19" font-weight="bold">String parser</text>
+    <text x="608" y="147" font-size="16">AIMessage → str</text>
+    <text x="608" y="180" font-size="15" fill="#cbd5e1">Draft is candidate text</text>
+    <rect x="860" y="85" width="265" height="125" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+    <text x="878" y="115" font-size="19" font-weight="bold">Bridge: dict</text>
+    <text x="878" y="147" font-size="16">draft + audience + evidence</text>
+    <text x="878" y="180" font-size="15" fill="#cbd5e1">Original context retained</text>
+    <rect x="35" y="305" width="505" height="110" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="53" y="337" font-size="19" font-weight="bold">Copy branches: audience and evidence</text>
+    <text x="53" y="369" font-size="16">Each branch reads the same original input dictionary.</text>
+    <text x="53" y="397" font-size="15" fill="#cbd5e1">No model call in these two branches.</text>
+    <rect x="590" y="305" width="535" height="110" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="608" y="337" font-size="19" font-weight="bold">Second prompt → model → parser</text>
+    <text x="608" y="369" font-size="16">dict → ChatPromptValue → AIMessage → str</text>
+    <text x="608" y="397" font-size="15" fill="#cbd5e1">Checklist text: assess facts and formatting separately.</text>
+    <text x="35" y="480" font-size="18" fill="#fb7185">Failure: a bare draft string does not supply the bridge's three required fields.</text>
+    <text x="35" y="515" font-size="16" fill="#cbd5e1">Two generation calls per successful input. Pipes connect stages; they do not establish truth.</text>
+  </g>
+  <g stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M250 145 H293"/><path d="M540 145 H583"/><path d="M810 145 H853"/>
+    <path d="M140 210 V298"/>
+    <path d="M540 350 H565 V260 H835 V190 H853"/>
+    <path d="M990 210 V255 H1080 V298"/>
+  </g>
+</svg>

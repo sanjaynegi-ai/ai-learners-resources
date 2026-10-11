@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="470" viewBox="0 0 1040 470" role="img" aria-labelledby="title desc">
+<title id="title">Integrated notes assistant with separate ingestion and session history</title>
+<desc id="desc">Explicit ingestion builds a persistent snapshot. A shared backend reopens the store and models. Each UI session passes bounded history to rewriting, then a standalone question retrieves evidence and produces a validated document-only answer. Clarification skips retrieval. Evaluation cases use fresh history.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#91a6c4" stroke-width="2"/></marker></defs>
+<rect width="1040" height="470" rx="16" fill="#0b1220"/>
+<g font-family="Arial, sans-serif" text-anchor="middle" fill="#e5edf8">
+<text x="520" y="36" font-size="23" font-weight="bold">Fernwood notes: inspect the joins and their lifetimes</text>
+<g fill="#142238" stroke-width="2"><rect x="25" y="75" width="290" height="85" rx="12" stroke="#fbbf24"/><rect x="375" y="75" width="290" height="85" rx="12" stroke="#22d3ee"/><rect x="725" y="75" width="290" height="85" rx="12" stroke="#a78bfa"/><rect x="725" y="245" width="290" height="105" rx="12" stroke="#a78bfa"/><rect x="375" y="245" width="290" height="105" rx="12" stroke="#34d399"/><rect x="25" y="245" width="290" height="105" rx="12" stroke="#22d3ee"/></g>
+<text x="170" y="105" font-size="18">Explicit ingestion CLI</text><text x="170" y="133" font-size="15">Five files → chunks → embeddings</text><text x="170" y="154" font-size="14">No ingestion from UI requests</text>
+<text x="520" y="105" font-size="18">Persistent profile-specific index</text><text x="520" y="133" font-size="15">Shared backend reopens snapshot</text><text x="520" y="154" font-size="14">Store + models + reentrant lock</text>
+<text x="870" y="105" font-size="18">Current browser session</text><text x="870" y="133" font-size="15">Original question + bounded history</text><text x="870" y="154" font-size="14">History is never stored in shared cache</text>
+<text x="870" y="275" font-size="18">Resolve intent</text><text x="870" y="303" font-size="15">Standalone query or clarification</text><text x="870" y="329" font-size="14">History informs intent, not policy facts</text>
+<text x="520" y="275" font-size="18">Retrieve → evidence → answer</text><text x="520" y="303" font-size="15">Validate shape and supporting IDs</text><text x="520" y="329" font-size="14">Review factual support separately</text>
+<text x="170" y="275" font-size="18">Display and commit on success</text><text x="170" y="303" font-size="15">Original + query + answer + sources</text><text x="170" y="329" font-size="14">Clear only this session's records/history</text>
+<text x="520" y="397" font-size="16" fill="#fde68a">Shared standalone evaluation cases use fresh history; external tools are a separate provenance route.</text>
+<text x="520" y="435" font-size="15" fill="#a9bad1">No LangGraph custom workflow or LangSmith account is required for this integration.</text>
+</g>
+<g fill="none" stroke="#91a6c4" stroke-width="2" marker-end="url(#arrow)"><path d="M315 117 H372"/><path d="M870 160 V242"/><path d="M725 298 H668"/><path d="M520 160 V242"/><path d="M375 298 H318"/></g>
+</svg>

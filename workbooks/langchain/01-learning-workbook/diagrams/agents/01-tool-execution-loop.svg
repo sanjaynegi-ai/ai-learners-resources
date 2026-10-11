@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="440" viewBox="0 0 1040 440" role="img" aria-labelledby="title desc">
+<title id="title">Application-controlled tool execution loop</title>
+<desc id="desc">A model requests a named tool with arguments and a call ID. Application validation, permission checks, and budgets precede function execution. A correlated tool result or error returns to the model. The application inspects the final answer and execution audit; repeated requests are bounded.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#91a6c4" stroke-width="2"/></marker></defs>
+<rect width="1040" height="440" rx="16" fill="#0b1220"/>
+<g font-family="Arial, sans-serif" text-anchor="middle" fill="#e5edf8">
+<text x="520" y="38" font-size="23" font-weight="bold">A model requests; the application controls execution</text>
+<g fill="#142238" stroke-width="2">
+<rect x="25" y="85" width="260" height="100" rx="12" stroke="#a78bfa"/>
+<rect x="355" y="85" width="310" height="100" rx="12" stroke="#fbbf24"/>
+<rect x="735" y="85" width="280" height="100" rx="12" stroke="#34d399"/>
+<rect x="735" y="265" width="280" height="95" rx="12" stroke="#22d3ee"/>
+<rect x="355" y="265" width="310" height="95" rx="12" stroke="#22d3ee"/>
+<rect x="25" y="265" width="260" height="95" rx="12" stroke="#a78bfa"/>
+</g>
+<text x="155" y="117" font-size="18">Model + tool definitions</text><text x="155" y="146" font-size="15">Request: name, arguments, ID</text><text x="155" y="172" font-size="15">Or answer without a tool</text>
+<text x="510" y="117" font-size="18" fill="#fde68a">Application execution gate</text><text x="510" y="146" font-size="15">Validate inputs; check permission</text><text x="510" y="172" font-size="15">Check budgets before execution</text>
+<text x="875" y="117" font-size="18">Execute Python function</text><text x="875" y="146" font-size="15">Record function-entry audit</text><text x="875" y="172" font-size="15">Success or domain/service failure</text>
+<text x="875" y="296" font-size="18">ToolMessage result / error</text><text x="875" y="326" font-size="15">Matching tool_call_id and status</text><text x="875" y="350" font-size="15">Denial is not successful execution</text>
+<text x="510" y="296" font-size="18">Model reads tool result</text><text x="510" y="326" font-size="15">Answer or request another step</text><text x="510" y="350" font-size="15">Repeated requests stay bounded</text>
+<text x="155" y="296" font-size="18">Inspect answer and audit</text><text x="155" y="326" font-size="15">Prose alone cannot prove a tool ran</text><text x="155" y="350" font-size="15">Review result fidelity</text>
+<text x="520" y="409" font-size="16" fill="#fde68a">Valid arguments do not authorize an action. A tool-call limit is not a timeout.</text>
+</g>
+<g fill="none" stroke="#91a6c4" stroke-width="2" marker-end="url(#arrow)"><path d="M285 135 H352"/><path d="M665 135 H732"/><path d="M875 185 V262"/><path d="M735 312 H668"/><path d="M355 312 H288"/><path d="M510 185 V225 H875 V262"/><path d="M510 265 V240 H320 V135 H352"/></g>
+</svg>

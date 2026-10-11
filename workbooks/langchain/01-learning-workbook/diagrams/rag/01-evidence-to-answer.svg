@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="470" viewBox="0 0 1040 470" role="img" aria-labelledby="title desc">
+  <title id="title">Index once, retrieve and answer for each question</title>
+  <desc id="desc">Indexing loads, splits, and embeds documents into a saved store. Querying retrieves passages from that store, formats evidence, builds messages, invokes a model, validates its answer, and requires human claim review.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#91a6c4" stroke-width="2"/></marker></defs>
+  <rect width="1040" height="470" rx="16" fill="#0b1220"/>
+  <g font-family="Arial, sans-serif" fill="#e5edf8" text-anchor="middle">
+    <text x="520" y="36" font-size="23" font-weight="bold">Grounded RAG: inspect every handoff</text>
+    <text x="150" y="78" font-size="16" fill="#67e8f9">INDEXING — build a snapshot</text>
+    <g fill="#142238" stroke="#22d3ee" stroke-width="2">
+      <rect x="30" y="100" width="270" height="64" rx="12"/>
+      <rect x="30" y="195" width="270" height="64" rx="12"/>
+      <rect x="30" y="290" width="270" height="64" rx="12"/>
+    </g>
+    <text x="165" y="128" font-size="17">Files → documents → chunks</text><text x="165" y="150" font-size="14">Source IDs and chunk IDs preserved</text>
+    <text x="165" y="223" font-size="17">Embed document chunks</text><text x="165" y="245" font-size="14">Runs when building the index</text>
+    <text x="165" y="318" font-size="17">Saved Chroma snapshot</text><text x="165" y="340" font-size="14">Reopen without re-indexing</text>
+    <text x="675" y="78" font-size="16" fill="#c4b5fd">QUERYING — for each question</text>
+    <g fill="#142238" stroke="#a78bfa" stroke-width="2">
+      <rect x="355" y="100" width="285" height="64" rx="12"/>
+      <rect x="700" y="100" width="305" height="64" rx="12"/>
+      <rect x="700" y="205" width="305" height="64" rx="12"/>
+      <rect x="355" y="205" width="285" height="64" rx="12"/>
+    </g>
+    <text x="497" y="128" font-size="17">Question → query embedding</text><text x="497" y="150" font-size="14">Retrieve candidate passages</text>
+    <text x="852" y="128" font-size="17">Display and format evidence</text><text x="852" y="150" font-size="14">Exact text + source/chunk IDs</text>
+    <text x="852" y="233" font-size="17">Prompt messages → chat model</text><text x="852" y="255" font-size="14">Trusted rules + document data</text>
+    <text x="497" y="233" font-size="17">Parse answer and source IDs</text><text x="497" y="255" font-size="14">Shape + membership checks only</text>
+    <rect x="355" y="315" width="650" height="70" rx="12" fill="#142238" stroke="#fbbf24" stroke-width="2"/>
+    <text x="680" y="344" font-size="18" fill="#fde68a">Review each claim against its supplied passage</text>
+    <text x="680" y="368" font-size="15">A retrieved source or valid ID does not prove factual support.</text>
+    <text x="520" y="435" font-size="15" fill="#a9bad1">Empty evidence skips the chat call and returns the defined abstention.</text>
+  </g>
+  <g fill="none" stroke="#91a6c4" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M165 164 V192"/><path d="M165 259 V287"/>
+    <path d="M300 320 H327 V145 H352"/><path d="M640 132 H697"/>
+    <path d="M852 164 V202"/><path d="M700 237 H643"/><path d="M497 269 V312"/>
+  </g>
+</svg>

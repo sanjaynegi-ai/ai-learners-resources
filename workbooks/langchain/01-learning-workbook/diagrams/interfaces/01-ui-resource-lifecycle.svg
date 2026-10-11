@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="430" viewBox="0 0 1040 430" role="img" aria-labelledby="title desc">
+<title id="title">Separate UI reruns, shared resources, and session display state</title>
+<desc id="desc">An explicit CLI builds the persistent snapshot outside the UI. UI events rerun presentation. A resource cache reopens the saved store without indexing. Submitted questions invoke the backend, validate answers, and update per-session display records. Clearing records does not erase the index.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#91a6c4" stroke-width="2"/></marker></defs>
+<rect width="1040" height="430" rx="16" fill="#0b1220"/>
+<g font-family="Arial, sans-serif" text-anchor="middle" fill="#e5edf8">
+<text x="520" y="36" font-size="23" font-weight="bold">Rerun the display; reuse the saved resources</text>
+<g fill="#142238" stroke-width="2"><rect x="25" y="75" width="285" height="90" rx="12" stroke="#fbbf24"/><rect x="375" y="75" width="290" height="90" rx="12" stroke="#22d3ee"/><rect x="730" y="75" width="285" height="90" rx="12" stroke="#a78bfa"/><rect x="25" y="255" width="285" height="95" rx="12" stroke="#a78bfa"/><rect x="375" y="255" width="290" height="95" rx="12" stroke="#34d399"/><rect x="730" y="255" width="285" height="95" rx="12" stroke="#22d3ee"/></g>
+<text x="167" y="106" font-size="18">Explicit indexing CLI</text><text x="167" y="134" font-size="15">Load → split → embed → persist</text><text x="167" y="156" font-size="14">Outside the UI event path</text>
+<text x="520" y="106" font-size="18">Shared resource cache</text><text x="520" y="134" font-size="15">Reopen saved store + model + lock</text><text x="520" y="156" font-size="14">Cache miss never builds the corpus</text>
+<text x="872" y="106" font-size="18">Browser interaction</text><text x="872" y="134" font-size="15">Script rerun / callback</text><text x="872" y="156" font-size="14">Only submission requests an answer</text>
+<text x="167" y="286" font-size="18">Per-session display records</text><text x="167" y="315" font-size="15">Bounded history + evidence</text><text x="167" y="339" font-size="14">Not automatically model context</text>
+<text x="520" y="286" font-size="18">Validated answer + evidence</text><text x="520" y="315" font-size="15">Commit only after success</text><text x="520" y="339" font-size="14">Errors leave records unchanged</text>
+<text x="872" y="286" font-size="18">Backend request</text><text x="872" y="315" font-size="15">Question → retrieve → model</text><text x="872" y="339" font-size="14">Show progress while waiting</text>
+<text x="520" y="397" font-size="16" fill="#fde68a">Clear removes current-session display records; it does not delete the saved index.</text>
+</g>
+<g fill="none" stroke="#91a6c4" stroke-width="2" marker-end="url(#arrow)"><path d="M310 120 H372"/><path d="M872 165 V252"/><path d="M665 120 H695 V280 H727"/><path d="M730 305 H668"/><path d="M375 305 H313"/></g>
+</svg>

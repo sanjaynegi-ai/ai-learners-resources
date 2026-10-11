@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+  <title id="title">Chunk boundaries can separate required facts</title>
+  <desc id="desc">An illustrative small-window split separates the INR 12000 annual amount from the qualification that it is one combined limit. A wider or overlapping window can preserve both facts. Actual splitter offsets and overlap must be inspected, not inferred from the picture.</desc>
+  <rect width="1120" height="430" rx="18" fill="#0f172a"/>
+  <g font-family="Arial, sans-serif" fill="#f1f5f9">
+    <text x="35" y="43" font-size="23" font-weight="bold">Retrieve the qualification as well as the amount.</text>
+    <text x="35" y="85" font-size="17" fill="#cbd5e1">Illustration only: these boxes are not measured splitter offsets.</text>
+    <rect x="35" y="115" width="505" height="110" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="53" y="147" font-size="19" font-weight="bold">Small window A</text>
+    <text x="53" y="180" font-size="17">Up to INR 12000 per calendar year for eligible items...</text>
+    <text x="53" y="208" font-size="15" fill="#cbd5e1">Amount and period visible</text>
+    <rect x="575" y="115" width="510" height="110" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="593" y="147" font-size="19" font-weight="bold">Small window B</text>
+    <text x="593" y="180" font-size="17">...one combined annual limit, not a limit per item.</text>
+    <text x="593" y="208" font-size="15" fill="#cbd5e1">Qualification may be missed when only A is retrieved</text>
+    <rect x="35" y="270" width="1050" height="100" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+    <text x="53" y="302" font-size="19" font-weight="bold">Larger / overlapping candidate window</text>
+    <text x="53" y="335" font-size="17">INR 12000 + calendar year + combined limit can appear together; inspect actual output.</text>
+    <text x="35" y="407" font-size="16" fill="#cbd5e1">Trade-off: more context may preserve support while increasing duplicated or irrelevant text.</text>
+  </g>
+</svg>

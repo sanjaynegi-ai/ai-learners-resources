@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="460" viewBox="0 0 1140 460" role="img" aria-labelledby="title desc">
+  <title id="title">Indexing and querying are separate paths</title>
+  <desc id="desc">Indexing loads UTF-8 files, creates chunks with metadata and IDs, embeds documents, and persists them in Chroma with a manifest. Querying reopens the snapshot, embeds only a question, and returns candidate passages. No query arrow returns to loading or document embedding.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker></defs>
+  <rect width="1140" height="460" rx="18" fill="#0f172a"/>
+  <g font-family="Arial, sans-serif" fill="#f1f5f9">
+    <text x="35" y="43" font-size="23" font-weight="bold">Build a declared snapshot. Search it without rebuilding.</text>
+    <text x="35" y="82" font-size="18" fill="#38bdf8">Indexing — explicit write</text>
+    <rect x="35" y="100" width="220" height="105" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="53" y="132" font-size="19" font-weight="bold">UTF-8 sources</text><text x="53" y="166" font-size="16">Text + source metadata</text>
+    <rect x="305" y="100" width="220" height="105" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="323" y="132" font-size="19" font-weight="bold">Split and identify</text><text x="323" y="166" font-size="16">Chunks + stable IDs</text>
+    <rect x="575" y="100" width="230" height="105" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+    <text x="593" y="132" font-size="19" font-weight="bold">Document embeddings</text><text x="593" y="166" font-size="16">Compatible encoder</text>
+    <rect x="855" y="100" width="250" height="105" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+    <text x="873" y="132" font-size="19" font-weight="bold">Persistent Chroma</text><text x="873" y="166" font-size="16">Records + manifest</text>
+    <text x="35" y="265" font-size="18" fill="#a78bfa">Querying — separate process, same snapshot/configuration</text>
+    <rect x="35" y="285" width="220" height="105" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="53" y="317" font-size="19" font-weight="bold">Question</text><text x="53" y="351" font-size="16">Optional source filter</text>
+    <rect x="305" y="285" width="220" height="105" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+    <text x="323" y="317" font-size="19" font-weight="bold">Query embedding</text><text x="323" y="351" font-size="16">No document embedding</text>
+    <rect x="575" y="285" width="230" height="105" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+    <text x="593" y="317" font-size="19" font-weight="bold">Reopen and search</text><text x="593" y="351" font-size="16">Top-k + optional cutoff</text>
+    <rect x="855" y="285" width="250" height="105" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="873" y="317" font-size="19" font-weight="bold">Candidate passages</text><text x="873" y="351" font-size="16">Text + metadata + distance</text>
+    <text x="35" y="435" font-size="17" fill="#cbd5e1">Unchanged ingestion skips embeddings. Changed sources/configuration require a new snapshot revision.</text>
+  </g>
+  <g stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M255 150 H298"/><path d="M525 150 H568"/><path d="M805 150 H848"/>
+    <path d="M255 335 H298"/><path d="M525 335 H568"/><path d="M805 335 H848"/>
+    <path d="M980 205 V235 H690 V278"/>
+  </g>
+</svg>

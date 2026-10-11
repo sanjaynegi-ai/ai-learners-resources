@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="480" viewBox="0 0 1140 480" role="img" aria-labelledby="title desc">
+  <title id="title">Compatible embeddings produce relative rankings</title>
+  <desc id="desc">Document text and a question use the same compatible embedding model with role-specific preprocessing. Equal-sized vectors are compared using cosine similarity to rank document IDs. Illustrative points show related wording near a question and unrelated text elsewhere, not actual model coordinates. Ranking does not prove relevance or truth.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker></defs>
+  <rect width="1140" height="480" rx="18" fill="#0f172a"/>
+  <g font-family="Arial, sans-serif" fill="#f1f5f9">
+    <text x="35" y="43" font-size="23" font-weight="bold">Compare representations. Assess evidence separately.</text>
+    <rect x="35" y="85" width="220" height="110" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="53" y="117" font-size="19" font-weight="bold">Document text</text>
+    <text x="53" y="148" font-size="16">embed_documents(texts)</text>
+    <text x="53" y="178" font-size="15" fill="#cbd5e1">Document-role prefix</text>
+    <rect x="35" y="265" width="220" height="110" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="53" y="297" font-size="19" font-weight="bold">Question text</text>
+    <text x="53" y="328" font-size="16">embed_query(text)</text>
+    <text x="53" y="358" font-size="15" fill="#cbd5e1">Query-role prefix</text>
+    <rect x="305" y="85" width="240" height="290" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+    <text x="323" y="117" font-size="19" font-weight="bold">Compatible encoder</text>
+    <text x="323" y="158" font-size="16">Same model/configuration</text>
+    <text x="323" y="192" font-size="16">Equal vector dimensions</text>
+    <text x="323" y="226" font-size="16">Document vectors</text>
+    <text x="323" y="260" font-size="16">+ query vector</text>
+    <text x="323" y="307" font-size="16">Cosine comparison</text>
+    <text x="323" y="348" font-size="15" fill="#cbd5e1">Role-aware preprocessing</text>
+    <rect x="595" y="85" width="510" height="290" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+    <text x="613" y="117" font-size="19" font-weight="bold">Relative neighborhood — illustration only</text>
+    <circle cx="660" cy="205" r="8" fill="#a78bfa"/><text x="678" y="211" font-size="16">Question</text>
+    <circle cx="650" cy="248" r="8" fill="#38bdf8"/><text x="668" y="254" font-size="16">Policy wording</text>
+    <circle cx="810" cy="220" r="8" fill="#38bdf8"/><text x="828" y="226" font-size="16">Paraphrase</text>
+    <circle cx="980" cy="300" r="8" fill="#94a3b8"/><text x="824" y="306" font-size="16">Unrelated text</text>
+    <text x="613" y="348" font-size="15" fill="#cbd5e1">Rank document IDs; these are not actual model coordinates.</text>
+    <text x="35" y="430" font-size="18" fill="#fb7185">A top result can still be irrelevant. A similar claim can still be false.</text>
+    <text x="35" y="463" font-size="16" fill="#cbd5e1">Use exact-ID checks when identity matters. Equal dimensions alone do not prove a shared space.</text>
+  </g>
+  <g stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M255 140 H298"/><path d="M255 320 H298"/><path d="M545 230 H588"/>
+  </g>
+</svg>

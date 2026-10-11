@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="510" viewBox="0 0 1140 510" role="img" aria-labelledby="title desc">
+  <title id="title">Separate bounded histories for separate sessions</title>
+  <desc id="desc">Session A selects history A and session B selects history B. Each retains at most two completed human and AI turns. A request uses only its selected history along with a system instruction and current question. Responses append to the same session. Restart loses both in-memory histories. Session IDs are routing keys, not permission checks.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker></defs>
+  <rect width="1140" height="510" rx="18" fill="#0f172a"/>
+  <g font-family="Arial, sans-serif" fill="#f1f5f9">
+    <text x="35" y="43" font-size="23" font-weight="bold">One session selects one history. Memory lives in the application.</text>
+    <rect x="35" y="90" width="195" height="110" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="53" y="122" font-size="19" font-weight="bold">Session A</text>
+    <text x="53" y="153" font-size="16">Choice: monitor</text>
+    <text x="53" y="182" font-size="15" fill="#cbd5e1">Route key: A</text>
+    <rect x="280" y="90" width="240" height="110" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="298" y="122" font-size="19" font-weight="bold">History A</text>
+    <text x="298" y="153" font-size="16">Latest two completed turns</text>
+    <text x="298" y="182" font-size="15" fill="#cbd5e1">At most four messages</text>
+    <rect x="35" y="270" width="195" height="110" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="53" y="302" font-size="19" font-weight="bold">Session B</text>
+    <text x="53" y="333" font-size="16">Choice: keyboard</text>
+    <text x="53" y="362" font-size="15" fill="#cbd5e1">Route key: B</text>
+    <rect x="280" y="270" width="240" height="110" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="298" y="302" font-size="19" font-weight="bold">History B</text>
+    <text x="298" y="333" font-size="16">Latest two completed turns</text>
+    <text x="298" y="362" font-size="15" fill="#cbd5e1">No shared message list</text>
+    <rect x="590" y="90" width="515" height="110" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+    <text x="608" y="122" font-size="19" font-weight="bold">A's current request</text>
+    <text x="608" y="153" font-size="16">System + history A + current human question → model</text>
+    <text x="608" y="182" font-size="15" fill="#cbd5e1">Append successful human/AI pair to A; evict oldest pair.</text>
+    <rect x="590" y="270" width="515" height="110" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+    <text x="608" y="302" font-size="19" font-weight="bold">B's current request</text>
+    <text x="608" y="333" font-size="16">System + history B + current human question → model</text>
+    <text x="608" y="362" font-size="15" fill="#cbd5e1">Append successful human/AI pair to B; evict oldest pair.</text>
+    <text x="35" y="438" font-size="18" fill="#fb7185">Process restart → both in-memory histories lost. A shared list would mix conversations.</text>
+    <text x="35" y="478" font-size="16" fill="#cbd5e1">IDs route state; identity and ownership checks must be enforced separately in an application.</text>
+  </g>
+  <g stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M230 140 H273"/><path d="M520 140 H583"/>
+    <path d="M230 320 H273"/><path d="M520 320 H583"/>
+    <path d="M850 200 V230 H400 V207"/><path d="M850 380 V405 H400 V387"/>
+  </g>
+</svg>

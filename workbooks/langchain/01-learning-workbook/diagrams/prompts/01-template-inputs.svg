@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420" role="img" aria-labelledby="title desc">
+  <title id="title">Template inputs become messages before a model call</title>
+  <desc id="desc">Audience, topic, and evidence fill a chat template. Formatting produces system and human messages without calling a model. Missing variables cause a formatting error. Only a separate model invocation generates an answer.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect width="1120" height="420" rx="18" fill="#0f172a"/>
+  <g font-family="Arial, sans-serif" fill="#f1f5f9">
+    <text x="40" y="45" font-size="23" font-weight="bold">Format first. Generate only when requested.</text>
+    <rect x="40" y="100" width="215" height="140" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="60" y="132" font-size="19" font-weight="bold">Named inputs</text>
+    <text x="60" y="164" font-size="17">audience + topic</text>
+    <text x="60" y="192" font-size="17">supplied evidence</text>
+    <text x="60" y="220" font-size="15" fill="#cbd5e1">Check required values</text>
+    <rect x="305" y="100" width="215" height="140" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="325" y="132" font-size="19" font-weight="bold">Chat template</text>
+    <text x="325" y="164" font-size="17">System instructions</text>
+    <text x="325" y="192" font-size="17">Human request</text>
+    <text x="325" y="220" font-size="15" fill="#cbd5e1">invoke(values): format</text>
+    <rect x="570" y="100" width="215" height="140" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+    <text x="590" y="132" font-size="19" font-weight="bold">Ready messages</text>
+    <text x="590" y="164" font-size="17">SystemMessage</text>
+    <text x="590" y="192" font-size="17">HumanMessage</text>
+    <text x="590" y="220" font-size="15" fill="#cbd5e1">Preview: no model call</text>
+    <rect x="835" y="100" width="245" height="140" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+    <text x="855" y="132" font-size="19" font-weight="bold">Optional generation</text>
+    <text x="855" y="164" font-size="17">model.invoke(messages)</text>
+    <text x="855" y="192" font-size="17">Provider returns answer</text>
+    <text x="855" y="220" font-size="15" fill="#cbd5e1">Assess evidence support</text>
+    <rect x="305" y="295" width="480" height="70" rx="12" fill="#1e293b" stroke="#fb7185" stroke-width="2"/>
+    <text x="325" y="323" font-size="17" font-weight="bold">Missing variable? Formatting stops with KeyError.</text>
+    <text x="325" y="349" font-size="16">Repair the input mapping before any generation.</text>
+  </g>
+  <g stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M255 170 H300"/><path d="M520 170 H565"/><path d="M785 170 H830"/>
+    <path d="M412 240 V288"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="420" viewBox="0 0 1040 420" role="img" aria-labelledby="title desc">
+<title id="title">Locate failures at the handoff before judging a repair</title>
+<desc id="desc">Inspect sources and chunks, the query and retrieved passages, generated answers, and claim-level citations. Compare all stages against fixed cases, keeping failed and unreviewed rows visible. Missing evidence is distinct from unsupported generation.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#91a6c4" stroke-width="2"/></marker></defs>
+<rect width="1040" height="420" rx="16" fill="#0b1220"/>
+<g font-family="Arial, sans-serif" text-anchor="middle" fill="#e5edf8">
+<text x="520" y="36" font-size="23" font-weight="bold">Inspect the failed handoff before changing the system</text>
+<g fill="#142238" stroke-width="2"><rect x="20" y="85" width="220" height="115" rx="12" stroke="#22d3ee"/><rect x="280" y="85" width="220" height="115" rx="12" stroke="#a78bfa"/><rect x="540" y="85" width="220" height="115" rx="12" stroke="#34d399"/><rect x="800" y="85" width="220" height="115" rx="12" stroke="#fbbf24"/><rect x="160" y="275" width="720" height="85" rx="12" stroke="#22d3ee"/></g>
+<text x="130" y="117" font-size="18">Load / split / index</text><text x="130" y="147" font-size="15">Text, metadata, offsets</text><text x="130" y="173" font-size="15">Stable snapshot IDs</text>
+<text x="390" y="117" font-size="18">Retrieve</text><text x="390" y="147" font-size="15">Actual resolved query</text><text x="390" y="173" font-size="15">Exact supporting passages?</text>
+<text x="650" y="117" font-size="18">Generate / validate</text><text x="650" y="147" font-size="15">Raw response and contract</text><text x="650" y="173" font-size="15">Supported and complete?</text>
+<text x="910" y="117" font-size="18">Check citations</text><text x="910" y="147" font-size="15">Claim → supplied passage</text><text x="910" y="173" font-size="15">A real ID is insufficient</text>
+<text x="520" y="306" font-size="19">Evaluate fixed cases; change one variable; compare outcomes</text><text x="520" y="337" font-size="15">Coverage • support • abstention • errors • latency • reported usage</text>
+<text x="520" y="395" font-size="15" fill="#fde68a">Missing evidence ≠ unsupported generation. Unreviewed results are not passes.</text>
+</g>
+<g fill="none" stroke="#91a6c4" stroke-width="2" marker-end="url(#arrow)"><path d="M240 142 H277"/><path d="M500 142 H537"/><path d="M760 142 H797"/><path d="M910 200 V235 H520 V272"/></g>
+</svg>

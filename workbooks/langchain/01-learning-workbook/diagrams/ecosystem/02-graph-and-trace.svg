@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="450" viewBox="0 0 1040 450" role="img" aria-labelledby="title desc">
+<title id="title">Graph transitions control work; traces observe execution</title>
+<desc id="desc">Start validates state, then lookup returns evidence or misses. A conditional edge answers with evidence, retries while attempts remain, or abstains when exhausted. Local updates and optional hosted traces observe these steps. Optional checkpoints save workflow state.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#91a6c4" stroke-width="2"/></marker></defs>
+<rect width="1040" height="450" rx="16" fill="#0b1220"/>
+<g font-family="Arial, sans-serif" text-anchor="middle" fill="#e5edf8">
+<text x="520" y="36" font-size="23" font-weight="bold">Control flow and observation have different roles</text>
+<g fill="#142238" stroke-width="2"><rect x="25" y="80" width="210" height="85" rx="12" stroke="#22d3ee"/><rect x="315" y="80" width="260" height="85" rx="12" stroke="#a78bfa"/><rect x="705" y="65" width="300" height="65" rx="12" stroke="#34d399"/><rect x="705" y="185" width="300" height="65" rx="12" stroke="#fbbf24"/><rect x="25" y="310" width="480" height="85" rx="12" stroke="#22d3ee"/><rect x="555" y="310" width="450" height="85" rx="12" stroke="#a78bfa"/></g>
+<text x="130" y="110" font-size="18">START → validate</text><text x="130" y="140" font-size="15">Check and initialize state</text>
+<text x="445" y="110" font-size="18">Lookup → conditional edge</text><text x="445" y="140" font-size="15">Increment attempts; inspect evidence</text>
+<text x="855" y="92" font-size="18">Evidence → answer → END</text><text x="855" y="117" font-size="14">Scripted response from supplied fixture</text>
+<text x="855" y="212" font-size="18">Budget exhausted → abstain → END</text><text x="855" y="237" font-size="14">No fabricated policy answer</text>
+<text x="445" y="215" font-size="15" fill="#fde68a">No evidence + attempts left: retry</text>
+<text x="265" y="340" font-size="18">Observe: local updates / optional traces</text><text x="265" y="369" font-size="15">Inputs, outputs, transitions, errors, duration</text><text x="265" y="389" font-size="14">Observation does not choose the next node</text>
+<text x="780" y="340" font-size="18">Optional checkpoints: workflow snapshots</text><text x="780" y="369" font-size="15">State is not automatically a chat history</text><text x="780" y="389" font-size="14">In-memory snapshots do not survive restart</text>
+<text x="520" y="430" font-size="15" fill="#a9bad1">Local inspection needs no account, model provider, external renderer, or hosted trace upload.</text>
+</g>
+<g fill="none" stroke="#91a6c4" stroke-width="2" marker-end="url(#arrow)"><path d="M235 122 H312"/><path d="M575 110 H702"/><path d="M575 140 H630 V217 H702"/><path d="M445 165 V240 H285 V145 H312"/></g>
+</svg>
