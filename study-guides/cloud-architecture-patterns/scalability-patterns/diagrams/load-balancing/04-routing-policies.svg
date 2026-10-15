@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img" aria-label="Routing policies: same pool, different decisions"><desc>Diagram labels in document order: Routing policies: same pool, different decisions; New request; Policy input; Load balancer; Choose a backend; Round robin; Rotate A → B → C; Least connections; Choose lower active load; Sticky sessions; Prefer prior backend; Policy is a choice, not three policies running simultaneously.. Arrows and scenario implications are explained in the accompanying chapter walkthrough.</desc>
 <title>Routing policies: same pool, different decisions</title>
 <rect width="1100" height="390" fill="#0b1020"/>
 <text x="40" y="47" fill="#f5f7ff" font-family="Arial,sans-serif" font-size="26" font-weight="bold">Routing policies: same pool, different decisions</text>

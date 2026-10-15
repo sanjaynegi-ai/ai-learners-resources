@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="The scaling trap: workers share a provider limit">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="The scaling trap: workers share a provider limit"><title>The scaling trap: workers share a provider limit</title><desc>Diagram labels in document order: The scaling trap: workers share a provider limit; Queue; Backlog; Worker pool; 10 workers; Worker pool; 20 workers; External API; 1,000 calls/min; More workers can increase throttling without increasing completions.. Arrows and scenario implications are explained in the accompanying chapter walkthrough.</desc>
 <rect width="1120" height="410" fill="#0b1220"/>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
 <text x="38" y="47" fill="#f8fafc" font-family="Arial" font-weight="bold" font-size="25">The scaling trap: workers share a provider limit</text>

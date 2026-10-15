@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="Autoscale consumers using backlog and completion time">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="Autoscale consumers using backlog and completion time"><title>Autoscale consumers using backlog and completion time</title><desc>Diagram labels in document order: Autoscale consumers using backlog and completion time; Queue metrics; Age, depth, arrivals; Scaling policy; Target + guardrails; Worker pool; Desired vs ready; Provider; Rate cap; Scale for useful completions, not simply the largest possible worker count.. Arrows and scenario implications are explained in the accompanying chapter walkthrough.</desc>
 <rect width="1120" height="410" fill="#0b1220"/>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
 <text x="38" y="47" fill="#f8fafc" font-family="Arial" font-weight="bold" font-size="25">Autoscale consumers using backlog and completion time</text>

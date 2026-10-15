@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="Competing consumers share one logical queue">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="Competing consumers share one logical queue"><title>Competing consumers share one logical queue</title><desc>Diagram labels in document order: Competing consumers share one logical queue; Queue; M1 M2 M3 M4 M5; Worker A; Claims M1; Worker B; Claims M2; Worker C; Claims M3; Downstream; Shared capacity; Each delivered message is assigned for processing according to broker semantics.. Arrows and scenario implications are explained in the accompanying chapter walkthrough.</desc>
 <rect width="1120" height="410" fill="#0b1220"/>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
 <text x="38" y="47" fill="#f8fafc" font-family="Arial" font-weight="bold" font-size="25">Competing consumers share one logical queue</text>

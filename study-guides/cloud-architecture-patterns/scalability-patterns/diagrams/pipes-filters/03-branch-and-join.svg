@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 430" role="img" aria-label="Branch after validation, then join required outputs">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 430" role="img" aria-label="Branch after validation, then join required outputs"><title>Branch after validation, then join required outputs</title><desc>Diagram labels in document order: Branch after validation, then join required outputs; Validate; Accepted media; Encode; Playback files; Thumbnail; Preview image; Join / verify; Required artifacts; Parallel branches are possible only after shared prerequisites complete.. Arrows and scenario implications are explained in the accompanying chapter walkthrough.</desc>
 <rect width="1160" height="430" fill="#0B1020"/>
 <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
 <text x="35" y="46" fill="#fff" font-family="Arial" font-size="25" font-weight="bold">Branch after validation, then join required outputs</text>

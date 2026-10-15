@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="One consumer becomes the processing bottleneck">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="One consumer becomes the processing bottleneck"><title>One consumer becomes the processing bottleneck</title><desc>Diagram labels in document order: One consumer becomes the processing bottleneck; Producer; 2,000 jobs/min; Queue; Backlog grows; Worker A; 200 jobs/min; One worker can only complete work at its own sustainable rate.. Arrows and scenario implications are explained in the accompanying chapter walkthrough.</desc>
 <rect width="1120" height="410" fill="#0b1220"/>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
 <text x="38" y="47" fill="#f8fafc" font-family="Arial" font-weight="bold" font-size="25">One consumer becomes the processing bottleneck</text>
