@@ -1,7 +1,12 @@
 # 01 — Stateless Service Pattern
 
-> **Study time:** 50–70 minutes · **Prerequisite:** [00 — Foundations](00-foundations.md)  
+> **Unit ID:** SG-SCALE-01 · **Capability:** AI-STATE-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
+> **Study time:** 50–70 minutes · **Prerequisite:** [SG-SCALE-00 — 00 — Foundations](00-foundations.md)<br>
 > **Central question:** Can *any healthy service instance* handle the next request?  
+> **You will produce:** State-ownership sketch and failover prediction; do not put mutable payment state in a client token.<br>
 > **Running example:** QuickCart, our fictional e-commerce application.
 
 ## Learning objectives
@@ -109,7 +114,7 @@ Instead of making Alice return to one server, let *any* server retrieve the cart
 
 ## 5. Step-by-step request flow
 
-![Request sequence](../diagrams/stateless/04-request-sequence.svg)
+![Request flow: Alice updates her cart. The browser holds an identifier; authoritative cart state lives in a shared store.](../diagrams/stateless/04-request-sequence.svg)
 
 ### Explain the diagram
 
@@ -426,7 +431,15 @@ QuickCart has:
 
 Now QuickCart has interchangeable API instances. But how should an incoming request choose among them? And how should traffic avoid an unhealthy instance?
 
-That leads to **[02 — Load Balancing](02-load-balancing.md)**.
+That leads to **[SG-SCALE-02 — 02 — Load Balancing](02-load-balancing.md)**.
+
+## Completion checkpoint
+
+**You can now:** explain interchangeability while preserving session/business correctness.
+
+**Show it:** State-ownership sketch and failover prediction; do not put mutable payment state in a client token. Then attempt chapter 01's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-02 — Pattern 02 — Load Balancing](02-load-balancing.md).
 
 ---
 

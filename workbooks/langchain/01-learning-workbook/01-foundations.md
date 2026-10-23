@@ -1,11 +1,24 @@
 # Chapter 01 — Foundations: Models, Context, and Application Design
 
-> **Estimated study time:** 45–60 minutes reading; 20–30 minutes for exercises.  
-> **Prerequisite:** [Environment Setup](00-environment-setup.md), basic Python functions and dictionaries.  
-> **Central question:** What does the model do, and what must our application do around it?  
-> **Running example:** Fernwood team-notes assistant.
+**What does the model do, and what must the application do around it?** Before adding an integration framework, inspect the briefing your code would send and explain where evidence, state and control belong.
 
-[Previous: Environment Setup](00-environment-setup.md) · [Index](README.md) · [Next: Models and Messages](02-models-and-messages.md)
+> **Your goal:** Map application responsibilities and inspect a briefing without a model call.<br>
+> **You need:** The Python project from [environment setup](00-environment-setup.md), basic functions/dictionaries and the framework-free [LLM guides](../../../study-guides/llm-foundations/docs/00-how-llms-generate-text.md).<br>
+> **Effort:** 45-60 minutes reading and 20-30 minutes exercises, estimated.<br>
+> **You will produce:** `foundations_lab.py`, a diagnosed input failure and an explained architecture decision. **Status:** Draft; offline exercise, no model-quality claim.
+
+**Fernwood** is a fictional organization whose team needs answers about internal notes and an equipment reimbursement policy. This existing workbook case isolates document evidence and follow-up context; QuickCart remains the recurring commerce scenario in the direct-provider lessons. All policy content here is synthetic.
+
+**Study route:** use sections 1-9 to connect the earlier concepts to application boundaries, build the offline briefing in section 10, then attempt the independent design and quizzes. Revisit familiar token explanations as needed; no hosted key, local model or paid call is required for this chapter. Work in your external `langchain-learning` project with Python 3.11 via uv, preserving its metadata and lockfile.
+
+<details>
+<summary>Reference: unit and execution contract</summary>
+
+**Unit ID:** W-LC-01. **Capability:** AI-LLM-01. Runtime, cleanup and verification limits: [chapter record](lesson-contract.md#w-lc-01). [Course map](../../../README.md#ordered-capability-map).
+
+</details>
+
+[Previous: setup](00-environment-setup.md) | [Workbook index](README.md) | [Next capability: direct provider calls](../../llm/refund-drafts/README.md)
 
 ## Learning objectives
 
@@ -264,7 +277,7 @@ Temporarily change the first cost argument to `-1`. Run again and observe `Value
 | File not found | `Get-Location`, filename | Run from the learner project root |
 | Locked environment fails | Chapter 00's metadata/lock alignment | Resolve the intended setup before this lab |
 | Negative-count error | Supplied numeric inputs | Use nonnegative token counts |
-| Expecting a generated answer | Script contains no model invocation | Explain the briefing first; model calls begin in Chapter 02 |
+| Expecting a generated answer | Script contains no model invocation | Explain the briefing first; the next direct-provider unit introduces a bounded call before Chapter 02's framework comparison |
 
 ## 11. Independent design challenge
 
@@ -349,5 +362,10 @@ USD 0.00240: input USD 0.00120 plus output USD 0.00120. The rates are invented a
 - [ ] I ran the local reasoning lab and diagnosed its deliberate failure.
 - [ ] I can justify a simple design and calculate the illustrative cost.
 
-Next, turn the briefing into a real invocation and inspect the returned message in [Models and Messages](02-models-and-messages.md). That chapter remains a scaffold until implemented.
+## Completion checkpoint
 
+**You can now:** distinguish inference from training and fine-tuning, explain why a model sees only the messages and documents you send, and say what LangChain adds over a direct provider call.
+
+**Show it:** the completed checklist above, your diagnosis of the reasoning lab's deliberate failure and the illustrative cost calculation.
+
+**Next:** inspect a bounded direct-provider pipeline in [W-LLM-API-01 — direct API refund drafts](../../llm/refund-drafts/README.md), the course map's AI-API-01 row. Begin with its offline fake provider; its live check is separately triggered and paid. W-LC-02 later shows the call through LangChain.

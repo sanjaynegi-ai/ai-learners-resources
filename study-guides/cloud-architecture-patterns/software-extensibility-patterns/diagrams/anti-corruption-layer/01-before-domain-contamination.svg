@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="BEFORE: Domain contamination">
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="52" y="64" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#f8fafc">BEFORE: Domain contamination</text>
+<text x="52" y="98" font-family="Arial,sans-serif" font-size="16" fill="#a7b7ce">Every modern service speaks the legacy language</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#91a4c4"/></marker></defs>
+<path d="M315,200 L730,332" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<text x="522" y="256" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">direct</text>
+<path d="M315,340 L730,332" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<text x="522" y="326" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">direct</text>
+<path d="M315,470 L730,332" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<text x="522" y="391" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">direct</text>
+<rect x="55" y="150" width="260" height="100" rx="16" fill="#151F36" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="185.0" y="185" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Orders</text>
+<text x="185.0" y="213" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">CUST_NO and E104</text>
+<rect x="55" y="290" width="260" height="100" rx="16" fill="#151F36" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="185.0" y="325" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Customer</text>
+<text x="185.0" y="353" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">ACTIVE_FLAG and HOLD_CD</text>
+<rect x="55" y="430" width="260" height="80" rx="16" fill="#151F36" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="185.0" y="465" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Loyalty</text>
+<text x="185.0" y="493" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Legacy record codes</text>
+<rect x="730" y="265" width="300" height="135" rx="16" fill="#151F36" stroke="#fb7185" stroke-width="2.5"/>
+<text x="880.0" y="300" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Legacy Monolith</text>
+<text x="880.0" y="328" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Old API / old schema</text>
+<text x="880.0" y="350" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Old status and error codes</text>
+<rect x="45" y="527" width="1010" height="49" rx="12" fill="#1b2b43"/>
+<text x="550" y="557" font-family="Arial" font-size="17" fill="#e2e8f0" text-anchor="middle">Result: duplicated mapping and legacy assumptions spread across new services.</text>
+</svg>

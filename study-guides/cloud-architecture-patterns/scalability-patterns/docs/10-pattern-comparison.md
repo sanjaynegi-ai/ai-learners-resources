@@ -1,12 +1,20 @@
 # Chapter 10 — Pattern Comparison & Selection Guide
 
+> **Unit ID:** SG-SCALE-10 · **Capability:** AI-OPS-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
 > **Standalone study guide · Estimated study time: 90–110 minutes**
 >
 > **Running case study:** QuickCart, a fictional e-commerce platform.
 >
 > **Core lesson:** Measure the limiting resource, choose the smallest pattern that addresses it, protect correctness, and observe the next bottleneck.
+>
+> **You need:** SG-SCALE-01 to SG-SCALE-09.
+>
+> **You will produce:** Decision matrix with an unsuitable alternative and measured trigger to revisit.
 
-[← Previous: Integrated Architecture Case Study](09-architecture-case-study.md) · [Foundations](00-foundations.md)
+[SG-SCALE-09 — ← Previous: Integrated Architecture Case Study](09-architecture-case-study.md) · [SG-SCALE-00 — Foundations](00-foundations.md)
 
 ## 1. Learning objectives
 
@@ -611,7 +619,7 @@ QuickCart's validation, encoding, and thumbnail stages can process 120, 20, and 
 
 ## 22. The next-bottleneck principle
 
-![Next bottleneck](../diagrams/pattern-comparison/08-next-bottleneck.svg)
+![Every improvement reveals another constraint. Never assume the previous fix remains the current priority.](../diagrams/pattern-comparison/08-next-bottleneck.svg)
 
 **Diagram walkthrough**
 
@@ -674,7 +682,15 @@ Knowing pattern definitions is only the beginning. Architectural judgment improv
 
 The next chapter turns these comparisons into **Architecture Challenges**, including bottleneck diagnosis, capacity calculations, failure injection, and production design reviews.
 
-[Next: 11 — Architecture Challenges](11-architecture-challenges.md).
+[SG-SCALE-11 — Next: 11 — Architecture Challenges](11-architecture-challenges.md).
+
+## Completion checkpoint
+
+**You can now:** compare alternatives and next constraints.
+
+**Show it:** Decision matrix with an unsuitable alternative and measured trigger to revisit. Then attempt chapter 10's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-11 — Architecture Challenges Workbook](11-architecture-challenges.md).
 
 ---
 

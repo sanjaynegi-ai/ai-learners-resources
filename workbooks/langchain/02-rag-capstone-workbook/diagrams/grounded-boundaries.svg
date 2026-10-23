@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 420" role="img" aria-labelledby="title desc">
+<title id="title">Current authority surrounds evidence selection and answer delivery</title>
+<desc id="desc">Request flow resolves a trusted principal, filters current permitted evidence, ranks passages, validates a proposed quote, then rechecks permission and version. Untrusted source instructions and provider output cannot change the authority registry. Revocation or stale evidence results in no quoted response.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#60a5fa"/></marker></defs>
+<rect width="1120" height="420" rx="16" fill="#0b1220"/>
+<g font-family="Segoe UI, sans-serif" fill="#e2e8f0">
+<text x="30" y="45" font-size="24" font-weight="700">Evidence is allowed at selection and checked again at delivery</text>
+<text x="30" y="78" font-size="16" fill="#94a3b8">Arrows show request processing. Registry state is trusted; source text and proposals are data.</text>
+<g fill="#12233f" stroke="#334d70" stroke-width="2">
+<rect x="25" y="130" width="180" height="115" rx="10"/><rect x="245" y="130" width="180" height="115" rx="10"/>
+<rect x="465" y="130" width="180" height="115" rx="10"/><rect x="685" y="130" width="180" height="115" rx="10"/>
+<rect x="905" y="130" width="190" height="115" rx="10"/></g>
+<g font-size="17" font-weight="600" text-anchor="middle">
+<text x="115" y="160">1. Resolve identity</text><text x="335" y="160">2. Filter evidence</text>
+<text x="555" y="160">3. Rank passages</text><text x="775" y="160">4. Validate quote</text>
+<text x="1000" y="160">5. Recheck + deliver</text></g>
+<g font-size="15" text-anchor="middle" fill="#cbd5e1">
+<text x="115" y="194">Registry tenant / role</text><text x="115" y="222">Question has no authority</text>
+<text x="335" y="194">ACL, revision, expiry</text><text x="335" y="222">Before provider exposure</text>
+<text x="555" y="194">Lexical / toy hybrid</text><text x="555" y="222">Similarity is no permission</text>
+<text x="775" y="194">Known ID + exact claim</text><text x="775" y="222">Proposal is untrusted</text>
+<text x="1000" y="194">Current ACL + version</text><text x="1000" y="222">Otherwise no quote</text></g>
+<g stroke="#60a5fa" stroke-width="2.5" marker-end="url(#arrow)"><path d="M209 187H239"/><path d="M429 187H459"/><path d="M649 187H679"/><path d="M869 187H899"/></g>
+<rect x="30" y="285" width="1060" height="100" rx="10" fill="#172239" stroke="#f59e0b"/>
+<text x="50" y="317" font-size="17" fill="#fbbf24">Fail closed: revoke, expire, invalidate or delete → abstain without stale snippets.</text>
+<text x="50" y="347" font-size="16">Local rechecks demonstrate controls; they cannot retract provider disclosure or prove distributed consistency.</text>
+<text x="50" y="373" font-size="15" fill="#94a3b8">Curated extractive reference only. No general semantic verifier, live-model benchmark or deployment claim.</text>
+</g></svg>

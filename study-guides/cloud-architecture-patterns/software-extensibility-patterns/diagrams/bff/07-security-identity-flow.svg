@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 550" role="img" aria-label="Identity and authorization">
+<rect width="1000" height="550" fill="#0B1020"/>
+<text x="40" y="48" fill="#f8fafc" font-family="Arial,sans-serif" font-size="28" font-weight="bold">Identity and authorization</text>
+<text x="40" y="78" fill="#94a3b8" font-family="Arial,sans-serif" font-size="15">Gateway authentication does not replace service authorization</text>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#94a3b8"/></marker></defs>
+<line x1="220" y1="270" x2="290" y2="270" stroke="#94a3b8" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="475" y1="270" x2="545" y2="270" stroke="#94a3b8" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="730" y1="270" x2="800" y2="270" stroke="#94a3b8" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="35" y="215" width="185" height="115" rx="12" fill="#141f36" stroke="#22d3ee" stroke-width="2"/>
+<text x="127.5" y="245" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Client</text>
+<text x="127.5" y="268" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Access token</text>
+<rect x="290" y="215" width="185" height="115" rx="12" fill="#141f36" stroke="#fb923c" stroke-width="2"/>
+<text x="382.5" y="245" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Gateway</text>
+<text x="382.5" y="268" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Validate token</text>
+<text x="382.5" y="288" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Rate limits</text>
+<rect x="545" y="215" width="185" height="115" rx="12" fill="#141f36" stroke="#a78bfa" stroke-width="2"/>
+<text x="637.5" y="245" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">BFF</text>
+<text x="637.5" y="268" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">User context</text>
+<text x="637.5" y="288" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Token exchange</text>
+<rect x="800" y="215" width="165" height="115" rx="12" fill="#141f36" stroke="#34d399" stroke-width="2"/>
+<text x="882.5" y="245" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="bold">Domain</text>
+<text x="882.5" y="268" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Authorize action</text>
+<text x="882.5" y="288" text-anchor="middle" fill="#cbd5e1" font-family="Arial" font-size="13">Tenant isolation</text>
+<text x="40" y="516" fill="#a5b4fc" font-family="Arial" font-size="15">Do not trust arbitrary userId headers or expose service credentials to clients.</text>
+</svg>

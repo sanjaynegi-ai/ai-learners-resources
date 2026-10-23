@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="Swappable outbound adapters">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#73d7f7"/></marker></defs>
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="48" y="61" fill="#ffffff" font-family="Arial,sans-serif" font-size="30" font-weight="bold">Swappable outbound adapters</text>
+<text x="48" y="91" fill="#9eb4d1" font-family="Arial,sans-serif" font-size="16">Stable capability contracts; technology-specific implementations.</text>
+<rect x="35" y="225" width="230" height="100" rx="13" fill="#14243b" stroke="#35d0f2" stroke-width="2"/>
+<text x="150.0" y="256" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Checkout Core</text>
+<text x="150.0" y="281" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Needs capabilities</text>
+<rect x="340" y="225" width="225" height="100" rx="13" fill="#14243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="452.5" y="256" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Outbound Ports</text>
+<text x="452.5" y="281" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">OrderRepo / Payment</text>
+<rect x="710" y="112" width="285" height="85" rx="13" fill="#14243b" stroke="#34d399" stroke-width="2"/>
+<text x="852.5" y="143" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Postgres Adapter</text>
+<text x="852.5" y="168" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Order storage</text>
+<rect x="710" y="230" width="285" height="85" rx="13" fill="#14243b" stroke="#fb923c" stroke-width="2"/>
+<text x="852.5" y="261" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Alternative DB</text>
+<text x="852.5" y="286" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Migration option</text>
+<rect x="710" y="355" width="285" height="85" rx="13" fill="#14243b" stroke="#f472b6" stroke-width="2"/>
+<text x="852.5" y="386" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Provider Adapter</text>
+<text x="852.5" y="411" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Payment authorization</text>
+<line x1="265.0" y1="275.0" x2="340.0" y2="275.0" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="302.5" y="266.0" text-anchor="middle" fill="#facc15" font-size="12" font-family="Arial">calls</text>
+<line x1="565.0" y1="275.0" x2="710.0" y2="154.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="565.0" y1="275.0" x2="710.0" y2="272.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="637.5" y="264.75" text-anchor="middle" fill="#facc15" font-size="12" font-family="Arial">option</text>
+<line x1="565.0" y1="275.0" x2="710.0" y2="397.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="48" y="564" fill="#b9c9df" font-family="Arial" font-size="16">Replaceability requires contract tests and semantic compatibility.</text>
+</svg>

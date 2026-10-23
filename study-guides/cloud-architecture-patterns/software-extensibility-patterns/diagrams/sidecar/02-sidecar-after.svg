@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="After: co-located application and support process"><rect width="1200" height="440" fill="#0B1020"/><defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#e2e8f0" stroke-width="1.5"/></marker></defs><text x="30" y="43" fill="#f8fafc" font-size="26" font-weight="bold" font-family="Arial">After: co-located application and support process</text>
+<path d="M275 195 L350 195" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="312.5" y="186.0" fill="#fbbf24" font-family="Arial" font-size="14" text-anchor="middle">local</text>
+<path d="M590 195 L740 195" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="665.0" y="186.0" fill="#fbbf24" font-family="Arial" font-size="14" text-anchor="middle">network</text>
+<rect x="35" y="140" width="240" height="110" rx="12" fill="#17243B" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="155.0" y="186.0" font-family="Arial" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">Orders API</text>
+<text x="155.0" y="213.0" font-family="Arial" fill="#cbd5e1" font-size="14" text-anchor="middle">Business operations</text>
+<rect x="350" y="140" width="240" height="110" rx="12" fill="#17243B" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="470.0" y="186.0" font-family="Arial" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">Telemetry sidecar</text>
+<text x="470.0" y="213.0" font-family="Arial" fill="#cbd5e1" font-size="14" text-anchor="middle">Collect / enrich / export</text>
+<rect x="740" y="140" width="380" height="110" rx="12" fill="#17243B" stroke="#34d399" stroke-width="2.5"/>
+<text x="930.0" y="186.0" font-family="Arial" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">Observability backend</text>
+<text x="930.0" y="213.0" font-family="Arial" fill="#cbd5e1" font-size="14" text-anchor="middle">Store and analyze signals</text>
+<text x="30" y="407" fill="#fbbf24" font-family="Arial" font-size="15">The sidecar is separate from the application but shares a deployment boundary.</text></svg>

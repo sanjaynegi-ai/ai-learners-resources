@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "refund-drafts"
+version = "0.1.0"
+description = "W-LLM-API-01: direct provider API calls with structured output, validation and bounded execution"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "openai>=3.22.0",
+    "pydantic>=2.13.5",
+]
+
+[project.scripts]
+refund-drafts = "refund_drafts.cli:main"
+refund-drafts-diagnose = "refund_drafts.diagnose:main"
+refund-drafts-compare = "refund_drafts.compare:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+refund_drafts = ["prompts/*.txt"]
+
+[tool.uv]
+# Resolve only releases published before this date so locked versions are at least two weeks old.
+exclude-newer = "2026-09-30T00:00:00Z"

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="670" viewBox="0 0 1200 670">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker></defs>
+<rect width="1200" height="670" fill="#0b1020"/>
+<text x="45" y="58" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#f8fafc">QuickCart: integrated checkout architecture</text>
+<text x="45" y="88" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Combine patterns only where each adds a distinct capability.</text>
+<rect x="45" y="120" width="180" height="80" rx="14" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="61" y="152" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#38bdf8">Mobile App</text>
+<text x="61" y="178" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Checkout v2</text>
+<rect x="280" y="120" width="190" height="80" rx="14" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="296" y="152" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#a78bfa">Gateway</text>
+<text x="296" y="178" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Ingress controls</text>
+<rect x="525" y="120" width="190" height="80" rx="14" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="541" y="152" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#34d399">Mobile BFF</text>
+<text x="541" y="178" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Response shaping</text>
+<rect x="770" y="120" width="350" height="80" rx="14" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="786" y="152" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#fb923c">Checkout Domain</text>
+<text x="786" y="178" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Ports / adapters / invariants</text>
+<rect x="45" y="355" width="225" height="90" rx="14" fill="#17243b" stroke="#fb7185" stroke-width="2"/>
+<text x="61" y="387" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#fb7185">Feature Flags</text>
+<text x="61" y="413" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Exposure controls</text>
+<rect x="320" y="355" width="225" height="90" rx="14" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="336" y="387" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#38bdf8">Strangler Router</text>
+<text x="336" y="413" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Capability migration</text>
+<rect x="595" y="355" width="225" height="90" rx="14" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="611" y="387" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#a78bfa">ACL</text>
+<text x="611" y="413" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Legacy semantics</text>
+<rect x="870" y="355" width="250" height="90" rx="14" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="886" y="387" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#34d399">Ambassador</text>
+<text x="886" y="413" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Outbound provider policy</text>
+<path d="M 225 160.0 L 280 160.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 470 160.0 L 525 160.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 715 160.0 L 770 160.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 270 400.0 L 320 400.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 545 400.0 L 595 400.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 820 400.0 L 870 400.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 945.0 200 L 995.0 355" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<rect x="45" y="606" width="1110" height="42" rx="9" fill="#202c45"/>
+<text x="60" y="633" font-family="Arial,sans-serif" font-size="15" fill="#d5e2f3">Keep one authoritative writer and durable payment idempotency.</text>
+</svg>

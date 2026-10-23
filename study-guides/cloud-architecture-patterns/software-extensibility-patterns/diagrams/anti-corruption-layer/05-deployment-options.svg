@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="DEPLOYMENT CHOICES">
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="52" y="64" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#f8fafc">DEPLOYMENT CHOICES</text>
+<text x="52" y="98" font-family="Arial,sans-serif" font-size="16" fill="#a7b7ce">The ACL is a logical boundary, not necessarily a microservice</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#91a4c4"/></marker></defs>
+<rect x="55" y="185" width="295" height="200" rx="16" fill="#151F36" stroke="#34d399" stroke-width="2.5"/>
+<text x="202.5" y="220" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">In-process module</text>
+<text x="202.5" y="248" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Orders service</text>
+<text x="202.5" y="270" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Internal ACL adapter</text>
+<text x="202.5" y="292" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">No extra network hop</text>
+<rect x="400" y="185" width="295" height="200" rx="16" fill="#151F36" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="547.5" y="220" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Dedicated service</text>
+<text x="547.5" y="248" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Orders / Customer clients</text>
+<text x="547.5" y="270" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Shared ACL API</text>
+<text x="547.5" y="292" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Independent deployment</text>
+<rect x="745" y="185" width="295" height="200" rx="16" fill="#151F36" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="892.5" y="220" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Function adapter</text>
+<text x="892.5" y="248" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Infrequent integration</text>
+<text x="892.5" y="270" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Triggered execution</text>
+<text x="892.5" y="292" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Cold-start considerations</text>
+<rect x="45" y="527" width="1010" height="49" rx="12" fill="#1b2b43"/>
+<text x="550" y="557" font-family="Arial" font-size="17" fill="#e2e8f0" text-anchor="middle">Choose by ownership, reuse, traffic, latency, and operational cost.</text>
+</svg>

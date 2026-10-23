@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" role="img" aria-label="High availability: remove single-instance failure">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6" fill="none" stroke="#8da3bd" stroke-width="1.4"/></marker></defs>
+<rect width="960" height="470" fill="#0B1020"/>
+<text x="34" y="43" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#f8fafc">High availability: remove single-instance failure</text>
+<text x="34" y="447" font-family="Arial,sans-serif" font-size="16" fill="#b7c7df">Replicas, health checks, consistent policies and rollback.</text>
+<path d="M177 226 L276 126" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M177 226 L276 276" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M417 126 L546 201" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M417 276 L546 201" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M687 201 L751 201" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<rect x="45" y="195" width="132" height="62" rx="12" fill="#17243a" stroke="#38bdf8" stroke-width="2"/>
+<text x="111" y="231" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Edge LB</text>
+<rect x="285" y="95" width="132" height="62" rx="12" fill="#17243a" stroke="#34d399" stroke-width="2"/>
+<text x="351" y="131" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Gateway A</text>
+<rect x="285" y="245" width="132" height="62" rx="12" fill="#17243a" stroke="#34d399" stroke-width="2"/>
+<text x="351" y="281" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Gateway B</text>
+<rect x="555" y="170" width="132" height="62" rx="12" fill="#17243a" stroke="#a78bfa" stroke-width="2"/>
+<text x="621" y="206" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">BFF fleet</text>
+<rect x="760" y="170" width="132" height="62" rx="12" fill="#17243a" stroke="#fb923c" stroke-width="2"/>
+<text x="826" y="206" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Domain APIs</text>
+</svg>

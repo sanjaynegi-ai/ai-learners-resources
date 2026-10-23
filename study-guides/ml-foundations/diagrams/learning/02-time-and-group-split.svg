@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+  <title id="title">Split QuickCart tickets by time and keep each customer in one split</title>
+  <desc id="desc">A timeline of 12,000 synthetic tickets from January to December. January to August (8,000 tickets) is the training set, used to fit parameters. September to October (2,000) is the validation set, used many times to compare models and choose a threshold. November to December (2,000) is the test set, reported once after all choices are frozen. An amber marker above the validation period shows a refund-policy change on 1 October. Below, a correct example keeps all six near-identical tickets from customer C-0417 in the training split; an incorrect random split puts three in training and three in test, so the test score rewards memory.</desc>
+  <rect width="1100" height="520" fill="#0B1020"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#94A3B8" stroke-width="2"/></marker></defs>
+  <g font-family="Arial,sans-serif" fill="#F8FAFC">
+    <text x="40" y="40" font-size="24" font-weight="bold">Evaluate on the future you will actually predict</text>
+    <text x="795" y="78" font-size="14" fill="#FBBF24" text-anchor="middle">1 Oct: refund policy changed</text>
+    <rect x="60" y="100" width="653" height="70" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/>
+    <text x="386" y="130" font-size="18" font-weight="bold" text-anchor="middle">Training · Jan–Aug</text>
+    <text x="386" y="155" font-size="15" fill="#CBD5E1" text-anchor="middle">8,000 tickets</text>
+    <rect x="717" y="100" width="155" height="70" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/>
+    <text x="794" y="130" font-size="17" font-weight="bold" text-anchor="middle">Validation</text>
+    <text x="794" y="155" font-size="15" fill="#CBD5E1" text-anchor="middle">Sep–Oct · 2,000</text>
+    <rect x="876" y="100" width="164" height="70" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="958" y="130" font-size="17" font-weight="bold" text-anchor="middle">Test</text>
+    <text x="958" y="155" font-size="15" fill="#CBD5E1" text-anchor="middle">Nov–Dec · 2,000</text>
+    <path d="M787 86 L803 86 L795 97 Z" fill="#FBBF24"/>
+    <path d="M386 172 L220 236" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M794 172 L590 236" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M958 172 L910 236" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="60" y="240" width="320" height="80" rx="12" fill="#172136" stroke="#22D3EE"/>
+    <text x="220" y="272" font-size="17" font-weight="bold" text-anchor="middle">Fit parameters</text>
+    <text x="220" y="298" font-size="15" fill="#CBD5E1" text-anchor="middle">The model learns from these labels</text>
+    <rect x="420" y="240" width="340" height="80" rx="12" fill="#172136" stroke="#A78BFA"/>
+    <text x="590" y="272" font-size="17" font-weight="bold" text-anchor="middle">Compare models, pick a threshold</text>
+    <text x="590" y="298" font-size="15" fill="#CBD5E1" text-anchor="middle">Used many times while deciding</text>
+    <rect x="800" y="240" width="240" height="80" rx="12" fill="#172136" stroke="#FBBF24"/>
+    <text x="920" y="272" font-size="17" font-weight="bold" text-anchor="middle">Report once</text>
+    <text x="920" y="298" font-size="15" fill="#CBD5E1" text-anchor="middle">After choices are frozen</text>
+    <rect x="60" y="360" width="460" height="90" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/>
+    <text x="80" y="392" font-size="17" font-weight="bold">Group rule: same customer, same split</text>
+    <text x="80" y="420" font-size="15" fill="#CBD5E1">Customer C-0417 sent 6 near-identical tickets:</text>
+    <text x="80" y="440" font-size="15" fill="#CBD5E1">all 6 go to Training</text>
+    <rect x="580" y="360" width="460" height="90" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="600" y="392" font-size="17" font-weight="bold">Wrong: shuffle rows at random</text>
+    <text x="600" y="420" font-size="15" fill="#CBD5E1">3 copies in Training, 3 in Test:</text>
+    <text x="600" y="440" font-size="15" fill="#CBD5E1">the test score now rewards memory</text>
+    <text x="40" y="494" font-size="16">Synthetic counts. Train on the past, judge on later tickets from customers the model has not seen.</text>
+  </g>
+</svg>

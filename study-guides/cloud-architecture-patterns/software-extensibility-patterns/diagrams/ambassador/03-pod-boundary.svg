@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="Kubernetes Pod: application and proxy containers">
+<rect width="1200" height="440" fill="#0b1220"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="35" y="49" fill="#fff" font-family="Arial" font-weight="bold" font-size="27">Kubernetes Pod: application and proxy containers</text>
+<rect x="50" y="120" width="265" height="125" rx="13" fill="#18263b" stroke="#22d3ee" stroke-width="2.6"/>
+<text x="182.5" y="172.5" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">App container</text>
+<text x="182.5" y="200.5" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">localhost:15001</text>
+<rect x="415" y="120" width="265" height="125" rx="13" fill="#18263b" stroke="#a78bfa" stroke-width="2.6"/>
+<text x="547.5" y="172.5" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Proxy container</text>
+<text x="547.5" y="200.5" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Egress to provider</text>
+<rect x="790" y="120" width="300" height="125" rx="13" fill="#18263b" stroke="#34d399" stroke-width="2.6"/>
+<text x="940.0" y="172.5" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Provider API</text>
+<text x="940.0" y="200.5" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Outside cluster</text>
+<path d="M315 180 L415 180" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="365.0" y="168.0" text-anchor="middle" fill="#fbbf24" font-family="Arial" font-size="13">Pod network</text>
+<path d="M680 180 L790 180" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="735.0" y="168.0" text-anchor="middle" fill="#fbbf24" font-family="Arial" font-size="13">Outbound</text>
+<text x="35" y="403" fill="#fbbf24" font-family="Arial" font-size="16">Containers share Pod network namespace; filesystem sharing requires volumes.</text>
+</svg>

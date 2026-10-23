@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 360" role="img" aria-labelledby="title description">
+<title id="title">Host, MCP client, server and domain operation have separate responsibilities</title>
+<desc id="description">Requests travel from trusted host policy through an MCP client to a separately launched server and a read-only domain function. Results travel back as untrusted data for host validation. Tool discovery is not authorization.</desc>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#60a5fa"/></marker></defs>
+<rect width="1080" height="360" rx="16" fill="#0b1220"/>
+<g font-family="Segoe UI,sans-serif" fill="#e2e8f0">
+<text x="25" y="40" font-size="24" font-weight="700">A protocol carries a request; application policy grants permission</text>
+<g fill="#12233f" stroke="#334d70" stroke-width="2"><rect x="25" y="95" width="200" height="125" rx="10"/><rect x="300" y="95" width="200" height="125" rx="10"/><rect x="575" y="95" width="200" height="125" rx="10"/><rect x="850" y="95" width="200" height="125" rx="10"/></g>
+<g text-anchor="middle" font-size="18" font-weight="600"><text x="125" y="125">Host policy</text><text x="400" y="125">MCP client</text><text x="675" y="125">MCP server</text><text x="950" y="125">Domain read</text></g>
+<g text-anchor="middle" font-size="15" fill="#cbd5e1"><text x="125" y="160">Trusted launch identity</text><text x="125" y="188">Result validation</text><text x="400" y="160">Initialize / discover</text><text x="400" y="188">Correlate / bound calls</text><text x="675" y="160">Schema + role check</text><text x="675" y="188">No stdout diagnostics</text><text x="950" y="160">Synthetic stock only</text><text x="950" y="188">No purchases</text></g>
+<g stroke="#60a5fa" stroke-width="2.5" marker-end="url(#a)"><path d="M230 145H292"/><path d="M505 145H567"/><path d="M780 145H842"/><path d="M842 205H780"/><path d="M567 205H505"/><path d="M292 205H230"/></g>
+<text x="25" y="267" font-size="17">Upper arrows: request →     Lower arrows: result ← (untrusted until validated)</text>
+<text x="25" y="300" font-size="16" fill="#fbbf24">Discovery is not approval. Tool text cannot change identity or acquire new capabilities.</text>
+<text x="25" y="331" font-size="15" fill="#94a3b8">The Agents SDK loop runs in the host layer; MCP is transport/interoperability, not orchestration.</text>
+</g></svg>

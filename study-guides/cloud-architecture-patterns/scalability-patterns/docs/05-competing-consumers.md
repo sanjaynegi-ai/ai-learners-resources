@@ -1,12 +1,20 @@
 # Chapter 05 — Competing Consumers
 
+> **Unit ID:** SG-SCALE-05 · **Capability:** AI-AWS-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
 > **Standalone study guide · Estimated study time: 70–90 minutes**
 >
 > **Running case study:** QuickCart, a fictional e-commerce platform.
 >
 > **Core idea:** Multiple workers can process independent messages from a shared queue in parallel, but throughput, ordering, correctness, and downstream limits still matter.
+>
+> **You need:** SG-SCALE-04.
+>
+> **You will produce:** Worker/provider bound, duplicate-effect reasoning and regression scenario.
 
-[← Previous: Queue-Based Load Leveling](04-queue-based-load-leveling.md) · [Foundations](00-foundations.md)
+[SG-SCALE-04 — ← Previous: Queue-Based Load Leveling](04-queue-based-load-leveling.md) · [SG-SCALE-00 — Foundations](00-foundations.md)
 
 ## 1. Learning objectives
 
@@ -313,7 +321,7 @@ The extra 1,000 attempts may be throttled and retried, potentially increasing lo
 
 ## 13. Autoscaling the worker pool
 
-![Worker autoscaling](../diagrams/competing-consumers/07-worker-autoscaling.svg)
+![Autoscale consumers using backlog and completion time. Scale for useful completions, not simply the largest possible worker count.](../diagrams/competing-consumers/07-worker-autoscaling.svg)
 
 **Diagram walkthrough**
 
@@ -559,7 +567,15 @@ Can the data itself be divided into independent subsets?
 
 That leads to **Partitioning and Sharding**.
 
-[Next: 06 — Partitioning and Sharding](06-partitioning-sharding.md).
+[SG-SCALE-06 — Next: 06 — Partitioning and Sharding](06-partitioning-sharding.md).
+
+## Completion checkpoint
+
+**You can now:** explain concurrency, retries, ordering and idempotency.
+
+**Show it:** Worker/provider bound, duplicate-effect reasoning and regression scenario. Then attempt chapter 05's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-06 — Partitioning & Sharding](06-partitioning-sharding.md).
 
 ---
 

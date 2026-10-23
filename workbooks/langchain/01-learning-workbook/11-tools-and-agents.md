@@ -1,11 +1,33 @@
 # Chapter 11 — Tools and Agents: A Request Is Not Execution
 
+**Who decides whether a model-requested function actually runs?**
+
+> **Your goal:** Trace validation, trusted permission, execution budgets and tool results.<br>
+> **You need:** [Models and Messages](02-models-and-messages.md), [Structured Output](04-structured-output.md), retained `first_call.py` and the evidence boundaries from chapters 09-10.<br>
+> **Effort:** 100-130 minutes, plus optional live evaluation; estimated.<br>
+> **You will produce:** `tools_lab.py`, correlated message/audit traces and invalid/denied/failure/loop checks. **Status:** Draft; fixture and live evidence remain separate.
+
+**Fernwood** is the fictional organization used here for internal-note and equipment-policy questions. Use synthetic material throughout; these labs do not establish a deployed identity or authorization system.
+
+**Starting state:** Continue the same learner project. Create `tools_lab.py` beside `first_call.py` and follow only this chapter's dependency additions. The default scripted model exercises real local tool/runtime wiring, not live model choice.
+
+**Study route:** Inspect the direct function and schema, follow manual dispatch, then compare the managed runtime. Attempt failure and budget scenarios before the independent change. No real account mutation or consequential external action is needed.
+
+**Before executable steps:** use Python 3.11 via uv from the learner project named above, following each section's working directory. Default fixture checks make no paid model calls, and this chapter starts no server or interface process. Before optional hosted inference, choose a budget, request count, execution window and review plan; local models require their own compute allowance. Preserve private evidence and follow the chapter's cleanup/verification record below.
+
+<details>
+<summary>Reference: stable unit identity and historical verification limits</summary>
+
+> **Unit ID:** W-LC-11 · **Capability:** AI-TOOLS-01 · [Course map](../../../README.md#ordered-capability-map)
+> **Status:** Draft · **Runtime:** your W-LC-00 learner project (Python 3.11 via uv) · **Contract, cleanup and verification:** [W-LC-11 record](lesson-contract.md#w-lc-11).
 > **Study time:** 100–130 minutes, plus optional live evaluation.  
-> **Prerequisites:** [Models and Messages](02-models-and-messages.md), [Structured Output](04-structured-output.md), and learner-created `first_call.py`. Chapters 09–10 provide the evidence-versus-instructions context.  
+> **Prerequisites:** [W-LC-02 — Models and Messages](02-models-and-messages.md), [W-LC-04 — Structured Output](04-structured-output.md), and learner-created `first_call.py`. Chapters 09–10 provide the evidence-versus-instructions context.<br>
 > **Central question:** Who decides whether a model-requested function actually runs?  
 > **Running example:** Fernwood team-notes assistant.
 
-[Previous: Conversational RAG](10-conversational-rag.md) · [Index](README.md) · [Next: Streaming and Interfaces](12-streaming-and-interfaces.md)
+</details>
+
+[Previous core chapter](10-conversational-rag.md) | [Workbook index](README.md) | [Next core step](12-streaming-and-interfaces.md)
 
 ## Learning objectives
 
@@ -324,6 +346,9 @@ Find the assistant request ID, the corresponding `ToolMessage.tool_call_id`, its
 
 ## 6. Diagnose failures and limits
 
+> [!IMPORTANT]
+> A tool request, a function-entry audit and a completed business operation are different observations. Trace the call ID and outcome; neither valid arguments nor a confident final sentence grants permission or proves success.
+
 Run `invalid`, then `failure`. Both produce error results, but at different boundaries. A string fails the typed input schema before function entry. Spending above the cap is structurally valid yet fails the domain rule inside the function. Restore the successful amounts with `--case tool` and verify the result.
 
 The manual loop permits at most three model calls and two tool requests; all requests consume its request budget, including rejected ones. The managed loop uses run-scoped middleware limits of three model calls and two tool calls, with `exit_behavior="error"`. Budget checks prevent additional allowed execution; tool-call accounting in middleware should not be confused with successful business operations. This synchronous single-tool fixture tests the boundary directly.
@@ -433,13 +458,27 @@ Before moving on:
 - [ ] I can explain validation versus authorization without relying on model promises.
 - [ ] I labeled fixture, simulated-provider, and live results separately.
 
-The assistant's execution is now inspectable, but learners still wait for complete terminal responses. [Chapter 12](12-streaming-and-interfaces.md) introduces streaming and interfaces while preserving control over state and resource lifecycles.
+The assistant's execution is now inspectable, but learners still wait for complete terminal responses. [W-LC-12 — Chapter 12](12-streaming-and-interfaces.md) introduces streaming and interfaces while preserving control over state and resource lifecycles.
+
+## Evidence reflection
+
+Which decision belongs to trusted application policy rather than model-selected tool arguments? Explain what failed, what effect was prevented and what a real provider would still require. Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** turn a function into a typed tool, keep authorization in application code, and test invalid, denied, failing and looping tool calls.
+
+**Show it:** your tool tests and the execution audit beside the message trace.
+
+**Next:** [W-LC-12 — Streaming and Interfaces](12-streaming-and-interfaces.md).
 
 ## References  
+
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
 
 - [Official tools documentation](https://docs.langchain.com/oss/python/langchain/tools): typed definitions and execution responsibilities.
 - [Official agents documentation](https://docs.langchain.com/oss/python/langchain/agents): `create_agent` and message/tool loops.
 - [Official middleware documentation](https://docs.langchain.com/oss/python/langchain/middleware/built-in): model/tool call limits and error behavior.
-- [Chapter 04](04-structured-output.md): schema validation and its limits.
+- [W-LC-04 — Chapter 04](04-structured-output.md): schema validation and its limits.
 
 

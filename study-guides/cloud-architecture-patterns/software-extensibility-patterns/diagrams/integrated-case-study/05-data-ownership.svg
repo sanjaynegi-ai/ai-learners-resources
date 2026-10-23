@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7dd3fc"/></marker></defs>
+<rect width="1200" height="660" fill="#0b1020"/>
+<text x="48" y="54" font-family="Arial,sans-serif" font-weight="700" font-size="28" fill="#f1f5f9">Data ownership and migration</text>
+<text x="48" y="82" font-family="Arial,sans-serif" font-size="15" fill="#94a3b8">Avoid two independent writers for the same business fact</text>
+<rect x="65" y="155" width="255" height="145" rx="13" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="80" y="184" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb923c">Legacy monolith</text>
+<text x="80" y="208" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Initial order authority</text>
+<text x="80" y="227" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Writes legacy order DB</text>
+<rect x="430" y="155" width="260" height="145" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="445" y="184" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#a78bfa">Outbox / CDC</text>
+<text x="445" y="208" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Ordered change feed</text>
+<text x="445" y="227" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Replay + deduplication</text>
+<rect x="800" y="155" width="315" height="145" rx="13" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="815" y="184" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#38bdf8">New order read model</text>
+<text x="815" y="208" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Eventually consistent</text>
+<text x="815" y="227" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Rebuildable projection</text>
+<rect x="430" y="405" width="400" height="105" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="445" y="434" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#34d399">Cutover gate</text>
+<text x="445" y="458" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Reconcile counts, money, IDs</text>
+<text x="445" y="477" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Switch authority deliberately</text>
+<path d="M320,227.5 L430,227.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="375.0" y="219.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">committed events</text>
+<path d="M690,227.5 L800,227.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="745.0" y="219.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">project</text>
+<path d="M560.0,300 L630.0,405" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="595.0" y="344.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">evidence</text>
+<rect x="35" y="601" width="1130" height="40" rx="9" fill="#111a2d"/>
+<text x="52" y="626" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">No dual-write guarantee is implied; payments require reconciliation and idempotency.</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7dd3fc"/></marker></defs>
+<rect width="1200" height="660" fill="#0b1020"/>
+<text x="48" y="54" font-family="Arial,sans-serif" font-weight="700" font-size="28" fill="#f1f5f9">QuickCart: target architecture</text>
+<text x="48" y="82" font-family="Arial,sans-serif" font-size="15" fill="#94a3b8">Separate edge, experience, domain, and integration responsibilities</text>
+<rect x="35" y="155" width="170" height="105" rx="13" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="50" y="184" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#38bdf8">Client apps</text>
+<text x="50" y="208" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Web </text>
+<text x="50" y="227" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> mobile</text>
+<rect x="265" y="155" width="180" height="105" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="280" y="184" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#a78bfa">API Gateway</text>
+<text x="280" y="208" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Auth </text>
+<text x="280" y="227" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> quotas </text>
+<text x="280" y="246" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> routes</text>
+<rect x="510" y="145" width="210" height="125" rx="13" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="525" y="174" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#38bdf8">BFF layer</text>
+<text x="525" y="198" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Web BFF </text>
+<text x="525" y="217" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> Mobile BFF</text>
+<text x="525" y="236" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Response composition</text>
+<rect x="780" y="120" width="360" height="155" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="795" y="149" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#34d399">Domain services</text>
+<text x="795" y="173" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Catalog </text>
+<text x="795" y="192" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> pricing </text>
+<text x="795" y="211" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> inventory</text>
+<text x="795" y="230" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">checkout </text>
+<text x="795" y="249" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> orders </text>
+<text x="795" y="268" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> identity</text>
+<rect x="780" y="370" width="360" height="115" rx="13" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="795" y="399" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb923c">ACL + adapters</text>
+<text x="795" y="423" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Legacy semantics </text>
+<text x="795" y="442" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> partners</text>
+<rect x="260" y="385" width="460" height="95" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="275" y="414" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#a78bfa">Platform observability</text>
+<text x="275" y="438" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Traces </text>
+<text x="275" y="457" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> SLOs </text>
+<text x="275" y="476" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> audit </text>
+<text x="275" y="495" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> alerts</text>
+<path d="M205,207.5 L265,207.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="235.0" y="199.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">HTTPS</text>
+<path d="M445,207.5 L510,207.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="477.5" y="199.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">route</text>
+<path d="M720,207.5 L780,197.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="750.0" y="194.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">compose</text>
+<path d="M960.0,275 L960.0,370" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="960.0" y="314.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">translate</text>
+<path d="M615.0,270 L490.0,385" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="552.5" y="319.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">telemetry</text>
+<rect x="35" y="601" width="1130" height="40" rx="9" fill="#111a2d"/>
+<text x="52" y="626" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Patterns are used selectively; authoritative domain rules remain in domain services.</text>
+</svg>

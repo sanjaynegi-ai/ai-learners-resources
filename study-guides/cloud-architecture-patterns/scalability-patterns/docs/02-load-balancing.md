@@ -1,10 +1,18 @@
 # Pattern 02 — Load Balancing
 
+> **Unit ID:** SG-SCALE-02 · **Capability:** AI-AWS-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
+> **Platform boundary, checked 2026-10-14:** Excluding unhealthy targets is a conceptual routing policy, not a universal provider guarantee. AWS Application Load Balancer can fail open and route to unhealthy targets when all registered targets are unhealthy. Inspect the [official health-check behavior](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html) before applying this picture to AWS; health checks are not authorization or proof of business correctness.
+
 > **Complete self-study chapter · Estimated study time: 60–75 minutes**
 >
-> **Prerequisite:** [Foundations](00-foundations.md) and [Stateless Services](01-stateless-services.md)
+> **Prerequisite:** [SG-SCALE-00 — Foundations](00-foundations.md) and [SG-SCALE-01 — Stateless Services](01-stateless-services.md)
 >
 > **Central question:** How do we route incoming requests to healthy application instances without forcing clients to know or select individual servers?
+>
+> **You will produce:** Route/health diagram and failure policy; distinguish health detection from guaranteed successful requests.
 
 ## 1. Learning objectives
 
@@ -463,7 +471,15 @@ The next architectural question is:
 
 > **How many instances should exist, and when should that number change?**
 
-That leads to [03 — Horizontal Scaling & Autoscaling](03-autoscaling.md).
+That leads to [SG-SCALE-03 — 03 — Horizontal Scaling & Autoscaling](03-autoscaling.md).
+
+## Completion checkpoint
+
+**You can now:** explain routing versus state ownership.
+
+**Show it:** Route/health diagram and failure policy; distinguish health detection from guaranteed successful requests. Then attempt chapter 02's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-03 — Horizontal Scaling & Autoscaling](03-autoscaling.md).
 
 ---
 

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7dd3fc"/></marker></defs>
+<rect width="1200" height="660" fill="#0b1020"/>
+<text x="48" y="54" font-family="Arial,sans-serif" font-weight="700" font-size="28" fill="#f1f5f9">Migration scorecard and guardrails</text>
+<text x="48" y="82" font-family="Arial,sans-serif" font-size="15" fill="#94a3b8">Compare each cohort against explicit baselines</text>
+<rect x="45" y="160" width="255" height="145" rx="13" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="60" y="189" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#38bdf8">Customer outcomes</text>
+<text x="60" y="213" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Conversion </text>
+<text x="60" y="232" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> abandonment</text>
+<text x="60" y="251" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">p95 screen latency</text>
+<rect x="345" y="160" width="255" height="145" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="360" y="189" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#34d399">Reliability</text>
+<text x="360" y="213" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Error budget </text>
+<text x="360" y="232" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> 5xx</text>
+<text x="360" y="251" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Checkout completion</text>
+<rect x="645" y="160" width="255" height="145" rx="13" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="660" y="189" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb923c">Data correctness</text>
+<text x="660" y="213" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Order parity </text>
+<text x="660" y="232" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> stock drift</text>
+<text x="660" y="251" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Payment reconciliation</text>
+<rect x="945" y="160" width="210" height="145" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="960" y="189" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#a78bfa">Economics</text>
+<text x="960" y="213" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Compute </text>
+<text x="960" y="232" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> egress</text>
+<text x="960" y="251" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">On-call + delivery</text>
+<rect x="330" y="410" width="550" height="100" rx="13" fill="#17243b" stroke="#fb7185" stroke-width="2"/>
+<text x="345" y="439" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb7185">Go / hold / rollback decision</text>
+<text x="345" y="463" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Named owner, thresholds, evidence, and audit trail</text>
+<path d="M300,232.5 L330,460.0" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="315.0" y="338.25" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">measure</text>
+<path d="M472.5,305 L605.0,410" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="538.75" y="349.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">measure</text>
+<path d="M772.5,305 L605.0,410" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="688.75" y="349.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">measure</text>
+<path d="M945,232.5 L880,460.0" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="912.5" y="338.25" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">measure</text>
+<rect x="35" y="601" width="1130" height="40" rx="9" fill="#111a2d"/>
+<text x="52" y="626" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">A green infrastructure dashboard is not enough: customer and financial correctness matter.</text>
+</svg>

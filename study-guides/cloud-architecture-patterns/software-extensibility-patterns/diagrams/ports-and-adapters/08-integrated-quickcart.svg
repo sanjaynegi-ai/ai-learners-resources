@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="QuickCart: patterns working together">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#73d7f7"/></marker></defs>
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="48" y="61" fill="#ffffff" font-family="Arial,sans-serif" font-size="30" font-weight="bold">QuickCart: patterns working together</text>
+<text x="48" y="91" fill="#9eb4d1" font-family="Arial,sans-serif" font-size="16">Different boundaries solve different problems.</text>
+<rect x="30" y="145" width="200" height="85" rx="13" fill="#14243b" stroke="#35d0f2" stroke-width="2"/>
+<text x="130.0" y="176" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Web / Mobile</text>
+<text x="130.0" y="201" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Client experience</text>
+<rect x="290" y="145" width="210" height="85" rx="13" fill="#14243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="395.0" y="176" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Gateway + BFF</text>
+<text x="395.0" y="201" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Edge + shaping</text>
+<rect x="560" y="145" width="210" height="85" rx="13" fill="#14243b" stroke="#34d399" stroke-width="2"/>
+<text x="665.0" y="176" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">REST Adapter</text>
+<text x="665.0" y="201" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Inbound port</text>
+<rect x="830" y="145" width="235" height="85" rx="13" fill="#14243b" stroke="#fb923c" stroke-width="2"/>
+<text x="947.5" y="176" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Checkout Core</text>
+<text x="947.5" y="201" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Business rules</text>
+<rect x="830" y="325" width="235" height="85" rx="13" fill="#14243b" stroke="#f472b6" stroke-width="2"/>
+<text x="947.5" y="356" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Outbound Ports</text>
+<text x="947.5" y="381" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Persistence / payment</text>
+<rect x="510" y="425" width="235" height="85" rx="13" fill="#14243b" stroke="#facc15" stroke-width="2"/>
+<text x="627.5" y="456" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">ACL Adapter</text>
+<text x="627.5" y="481" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Legacy translation</text>
+<rect x="230" y="425" width="235" height="85" rx="13" fill="#14243b" stroke="#35d0f2" stroke-width="2"/>
+<text x="347.5" y="456" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Payment Adapter</text>
+<text x="347.5" y="481" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Optional Ambassador</text>
+<rect x="30" y="425" width="170" height="85" rx="13" fill="#14243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="115.0" y="456" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Order Storage</text>
+<text x="115.0" y="481" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Database adapter</text>
+<line x1="230.0" y1="187.5" x2="290.0" y2="187.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="500.0" y1="187.5" x2="560.0" y2="187.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="770.0" y1="187.5" x2="830.0" y2="187.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="947.5" y1="230.0" x2="947.5" y2="325.0" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="830.0" y1="367.5" x2="745.0" y2="467.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="830.0" y1="367.5" x2="465.0" y2="467.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="830.0" y1="367.5" x2="200.0" y2="467.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="48" y="564" fill="#b9c9df" font-family="Arial" font-size="16">The hexagonal boundary is inside the Checkout Service.</text>
+</svg>

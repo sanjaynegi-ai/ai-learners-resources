@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" role="img" aria-labelledby="title desc">
+<title id="title">Merchant support authority and evidence flow</title>
+<desc id="desc">API identity maps to trusted membership, filtering retrieval before a bounded provider call. Provider output is untrusted and validated with current permission checks. A separate order lookup and approval flow feed a local simulated effect transaction that rechecks current authority.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="#94A3B8"/></marker></defs>
+<rect width="1100" height="480" fill="#0B1020"/>
+<g font-family="Arial, sans-serif" fill="#F8FAFC">
+<text x="35" y="40" font-size="25" font-weight="bold">Evidence is data; authority remains in application state</text>
+<g fill="#172136" stroke="#22D3EE" stroke-width="2">
+<rect x="35" y="90" width="270" height="100" rx="12"/>
+<rect x="415" y="90" width="270" height="100" rx="12"/>
+<rect x="795" y="90" width="270" height="100" rx="12" stroke="#FBBF24"/>
+<rect x="795" y="285" width="270" height="100" rx="12"/>
+<rect x="415" y="285" width="270" height="100" rx="12" stroke="#4ADE80"/>
+<rect x="35" y="285" width="270" height="100" rx="12"/>
+</g>
+<g font-size="21" font-weight="bold">
+<text x="55" y="126">API / membership</text><text x="435" y="126">Authorized retrieval</text><text x="815" y="126">Bounded provider</text>
+<text x="815" y="321">Validate / recheck</text><text x="435" y="321">Approve / execute</text><text x="55" y="321">Trusted order lookup</text>
+</g>
+<g font-size="17" fill="#CBD5E1">
+<text x="55" y="158">Synthetic token → tenant</text><text x="435" y="158">Current ACL / revision</text><text x="815" y="158">Untrusted output</text>
+<text x="815" y="353">Exact quote, current ACL</text><text x="435" y="353">Atomic local effect only</text><text x="55" y="353">Tenant + order total</text>
+<text x="35" y="445">Solid arrows: request / decision flow. No public identity, TLS or remote payment guarantee is implied.</text>
+</g>
+<g stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#a)">
+<path d="M305 140 H410"/><path d="M685 140 H790"/><path d="M930 190 V280"/>
+<path d="M795 335 H690"/><path d="M305 335 H410"/>
+</g>
+<g font-size="16" fill="#CBD5E1"><text x="320" y="122">scope</text><text x="702" y="122">evidence</text>
+<text x="945" y="237">proposal</text><text x="704" y="317">review</text><text x="320" y="317">records</text>
+<text x="420" y="242">Execution rechecks actor, approver and policy inside the transaction</text></g>
+</g></svg>

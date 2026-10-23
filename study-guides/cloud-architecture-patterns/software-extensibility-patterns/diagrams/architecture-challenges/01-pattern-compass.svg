@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="610" viewBox="0 0 1100 610">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6" fill="none" stroke="#38bdf8" stroke-width="1.6"/></marker></defs>
+<rect width="1100" height="610" fill="#0b1020"/>
+<text x="45" y="55" fill="#f1f5f9" font-family="Arial,sans-serif" font-weight="bold" font-size="29">Select the boundary, then the pattern</text>
+<text x="45" y="86" fill="#94a3b8" font-family="Arial,sans-serif" font-size="15">Change pressure is the starting point, not technology preference</text>
+<rect x="55" y="160" width="290" height="100" rx="13" fill="#151f36" stroke="#38bdf8" stroke-width="2"/>
+<text x="200.0" y="194" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Client experience</text>
+<text x="200.0" y="219" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">BFF </text>
+<text x="200.0" y="239" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> Gateway</text>
+<rect x="405" y="160" width="290" height="100" rx="13" fill="#151f36" stroke="#a78bfa" stroke-width="2"/>
+<text x="550.0" y="194" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Legacy modernization</text>
+<text x="550.0" y="219" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Strangler Fig </text>
+<text x="550.0" y="239" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> ACL</text>
+<rect x="755" y="160" width="290" height="100" rx="13" fill="#151f36" stroke="#34d399" stroke-width="2"/>
+<text x="900.0" y="194" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Core extensibility</text>
+<text x="900.0" y="219" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Ports </text>
+<text x="900.0" y="239" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> Plugins</text>
+<rect x="55" y="360" width="290" height="100" rx="13" fill="#151f36" stroke="#fb923c" stroke-width="2"/>
+<text x="200.0" y="394" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Operational concerns</text>
+<text x="200.0" y="419" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Sidecar </text>
+<text x="200.0" y="439" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> Ambassador</text>
+<rect x="405" y="360" width="290" height="100" rx="13" fill="#151f36" stroke="#34d399" stroke-width="2"/>
+<text x="550.0" y="394" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Release safety</text>
+<text x="550.0" y="419" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Feature Flags</text>
+<rect x="755" y="360" width="290" height="100" rx="13" fill="#151f36" stroke="#fb7185" stroke-width="2"/>
+<text x="900.0" y="394" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">All decisions</text>
+<text x="900.0" y="419" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Ownership </text>
+<text x="900.0" y="439" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> Risk </text>
+<text x="900.0" y="459" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> Cost</text>
+<text x="45" y="580" fill="#94a3b8" font-size="14" font-family="Arial">Multiple patterns can coexist when they address different boundaries.</text></svg>

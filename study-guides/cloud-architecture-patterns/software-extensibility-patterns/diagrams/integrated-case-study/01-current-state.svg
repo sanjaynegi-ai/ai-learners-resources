@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7dd3fc"/></marker></defs>
+<rect width="1200" height="660" fill="#0b1020"/>
+<text x="48" y="54" font-family="Arial,sans-serif" font-weight="700" font-size="28" fill="#f1f5f9">QuickCart: current-state architecture</text>
+<text x="48" y="82" font-family="Arial,sans-serif" font-size="15" fill="#94a3b8">Legacy deployment and release coupling</text>
+<rect x="65" y="160" width="230" height="100" rx="13" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="80" y="189" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#38bdf8">Clients</text>
+<text x="80" y="213" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Web </text>
+<text x="80" y="232" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> Android </text>
+<text x="80" y="251" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> iOS</text>
+<rect x="465" y="145" width="290" height="140" rx="13" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="480" y="174" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb923c">Commerce monolith</text>
+<text x="480" y="198" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Catalog </text>
+<text x="480" y="217" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> pricing </text>
+<text x="480" y="236" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> checkout</text>
+<text x="480" y="255" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">accounts </text>
+<text x="480" y="274" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> fulfillment</text>
+<rect x="920" y="150" width="220" height="100" rx="13" fill="#17243b" stroke="#fb7185" stroke-width="2"/>
+<text x="935" y="179" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb7185">Shared database</text>
+<text x="935" y="203" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Orders + customer + stock</text>
+<rect x="460" y="385" width="300" height="115" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="475" y="414" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#a78bfa">Manual operations</text>
+<text x="475" y="438" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">One release train</text>
+<text x="475" y="457" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Fragile regression suite</text>
+<path d="M295,210.0 L465,215.0" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="380.0" y="204.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">many APIs</text>
+<path d="M755,215.0 L920,200.0" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="837.5" y="199.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">shared writes</text>
+<path d="M610.0,285 L610.0,385" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="610.0" y="327.0" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">deploy</text>
+<rect x="35" y="601" width="1130" height="40" rx="9" fill="#111a2d"/>
+<text x="52" y="626" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Illustrative baseline: shared code, shared database, and coordinated releases.</text>
+</svg>

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safe-actions"
+version = "0.1.0"
+description = "W-LLM-ACT-01: model-proposed tool calls with strict arguments, trusted authorization and durable idempotent side effects"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "pydantic==2.13.5",
+]
+
+[project.scripts]
+safe-actions = "safe_actions.demo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+# Resolve only releases published before this date so locked versions are at least two weeks old.
+exclude-newer = "2026-09-30T00:00:00Z"

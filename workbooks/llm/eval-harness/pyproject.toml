@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eval-harness"
+version = "0.1.0"
+description = "W-LLM-EVAL-01: versioned evaluation harness with held-out separation, slices, cost/latency and release gates"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "refund-drafts",
+]
+
+[project.scripts]
+eval-harness = "eval_harness.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+# Resolve only releases published before this date so locked versions are at least two weeks old.
+exclude-newer = "2026-09-30T00:00:00Z"
+
+[tool.uv.sources]
+refund-drafts = { path = "../refund-drafts", editable = true }
+

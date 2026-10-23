@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7dd3fc"/></marker></defs>
+<rect width="1200" height="660" fill="#0b1020"/>
+<text x="48" y="54" font-family="Arial,sans-serif" font-weight="700" font-size="28" fill="#f1f5f9">Four-wave migration roadmap</text>
+<text x="48" y="82" font-family="Arial,sans-serif" font-size="15" fill="#94a3b8">Move capabilities only when contracts, ownership, and rollback are ready</text>
+<rect x="50" y="160" width="250" height="140" rx="13" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="65" y="189" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#38bdf8">Wave 0: prepare</text>
+<text x="65" y="213" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Inventory dependencies</text>
+<text x="65" y="232" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Define SLOs + baselines</text>
+<text x="65" y="251" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Establish gateway</text>
+<rect x="340" y="160" width="250" height="140" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="355" y="189" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#34d399">Wave 1: catalog</text>
+<text x="355" y="213" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Read-only first</text>
+<text x="355" y="232" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Strangler routing</text>
+<text x="355" y="251" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Parity + canary</text>
+<rect x="630" y="160" width="250" height="140" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="645" y="189" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#a78bfa">Wave 2: experiences</text>
+<text x="645" y="213" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Web and mobile BFFs</text>
+<text x="645" y="232" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Versioned contracts</text>
+<text x="645" y="251" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Measure p95 + bytes</text>
+<rect x="920" y="160" width="240" height="140" rx="13" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="935" y="189" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb923c">Wave 3: checkout</text>
+<text x="935" y="213" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Own writes + outbox</text>
+<text x="935" y="232" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Idempotency + reconcile</text>
+<text x="935" y="251" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Explicit rollback plan</text>
+<rect x="350" y="410" width="500" height="100" rx="13" fill="#17243b" stroke="#fb7185" stroke-width="2"/>
+<text x="365" y="439" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb7185">Every wave: evidence gate</text>
+<text x="365" y="463" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Security </text>
+<text x="365" y="482" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> contracts </text>
+<text x="365" y="501" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> SLOs </text>
+<text x="365" y="520" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> cost </text>
+<text x="365" y="539" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> data consistency</text>
+<path d="M300,230.0 L340,230.0" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="320.0" y="222.0" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">gate</text>
+<path d="M590,230.0 L630,230.0" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="610.0" y="222.0" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">gate</text>
+<path d="M880,230.0 L920,230.0" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="900.0" y="222.0" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">gate</text>
+<path d="M755.0,300 L600.0,410" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="677.5" y="347.0" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">verify</text>
+<rect x="35" y="601" width="1130" height="40" rx="9" fill="#111a2d"/>
+<text x="52" y="626" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Timeboxes are hypotheses, not promises; migration speed depends on dependencies and data ownership.</text>
+</svg>

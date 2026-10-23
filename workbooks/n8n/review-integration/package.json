@@ -1,0 +1,14 @@
+{
+  "name": "quickcart-n8n-review-lab",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "n8n": "2.43.5"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "allowScripts": {
+    "sqlite3@5.1.7": true
+  }
+}

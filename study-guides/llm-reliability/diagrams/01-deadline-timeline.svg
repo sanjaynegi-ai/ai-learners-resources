@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 500" role="img" aria-labelledby="title desc">
+  <title id="title">One request's 8-second deadline, with and without propagation</title>
+  <desc id="desc">Two timelines from 0 to 10 simulated seconds, with the customer's 8-second deadline marked. Top row, deadline propagated: 1.2 s waiting in the queue, attempt 1 from 1.2 to 4.2 s ends in a provider error, 0.8 s jittered backoff, attempt 2 starts at 5.0 s with only 3.0 s remaining so its timeout is 3.0 s, and the customer gets a fallback acknowledgement at 8.0 s. Bottom row, no propagation: the same queue wait, attempt and backoff, but attempt 2 receives a fresh 5-second timeout, so the customer waits until 10.0 s, past the deadline, for the same fallback.</desc>
+  <rect width="1100" height="500" fill="#0B1020"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#94A3B8" stroke-width="2"/></marker></defs>
+  <g font-family="Arial,sans-serif" fill="#F8FAFC">
+    <text x="40" y="40" font-size="24" font-weight="bold">The deadline belongs to the customer, not to each call</text>
+    <line x1="100" y1="420" x2="1060" y2="420" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="100" y="446" font-size="14" fill="#CBD5E1" text-anchor="middle">0 s</text>
+    <text x="280" y="446" font-size="14" fill="#CBD5E1" text-anchor="middle">2</text>
+    <text x="460" y="446" font-size="14" fill="#CBD5E1" text-anchor="middle">4</text>
+    <text x="640" y="446" font-size="14" fill="#CBD5E1" text-anchor="middle">6</text>
+    <text x="820" y="446" font-size="14" fill="#CBD5E1" text-anchor="middle">8</text>
+    <text x="1000" y="446" font-size="14" fill="#CBD5E1" text-anchor="middle">10 s</text>
+    <line x1="820" y1="70" x2="820" y2="420" stroke="#FBBF24" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="826" y="86" font-size="15" fill="#FBBF24">Customer deadline (8 s)</text>
+    <text x="40" y="130" font-size="17" font-weight="bold">Propagated</text>
+    <rect x="100" y="150" width="108" height="56" rx="10" fill="#172136" stroke="#94A3B8"/>
+    <text x="154" y="183" font-size="14" text-anchor="middle">Queue 1.2 s</text>
+    <rect x="208" y="150" width="270" height="56" rx="10" fill="#172136" stroke="#A78BFA" stroke-width="2"/>
+    <text x="343" y="174" font-size="15" text-anchor="middle">Attempt 1</text>
+    <text x="343" y="194" font-size="13" fill="#CBD5E1" text-anchor="middle">provider error at 4.2 s</text>
+    <rect x="478" y="150" width="72" height="56" rx="10" fill="none" stroke="#94A3B8" stroke-dasharray="4 4"/>
+    <text x="514" y="183" font-size="13" fill="#CBD5E1" text-anchor="middle">wait 0.8</text>
+    <rect x="550" y="150" width="270" height="56" rx="10" fill="#172136" stroke="#22D3EE" stroke-width="2"/>
+    <text x="685" y="174" font-size="15" text-anchor="middle">Attempt 2: timeout 3.0 s</text>
+    <text x="685" y="194" font-size="13" fill="#CBD5E1" text-anchor="middle">= time remaining, not 5 s</text>
+    <rect x="828" y="150" width="210" height="56" rx="10" fill="#172136" stroke="#4ADE80" stroke-width="2"/>
+    <text x="933" y="174" font-size="15" text-anchor="middle">Fallback shown at 8.0 s</text>
+    <text x="933" y="194" font-size="13" fill="#CBD5E1" text-anchor="middle">customer waited as promised</text>
+    <text x="40" y="290" font-size="17" font-weight="bold">Not propagated</text>
+    <rect x="100" y="310" width="108" height="56" rx="10" fill="#172136" stroke="#94A3B8"/>
+    <text x="154" y="343" font-size="14" text-anchor="middle">Queue 1.2 s</text>
+    <rect x="208" y="310" width="270" height="56" rx="10" fill="#172136" stroke="#A78BFA" stroke-width="2"/>
+    <text x="343" y="334" font-size="15" text-anchor="middle">Attempt 1</text>
+    <text x="343" y="354" font-size="13" fill="#CBD5E1" text-anchor="middle">provider error at 4.2 s</text>
+    <rect x="478" y="310" width="72" height="56" rx="10" fill="none" stroke="#94A3B8" stroke-dasharray="4 4"/>
+    <text x="514" y="343" font-size="13" fill="#CBD5E1" text-anchor="middle">wait 0.8</text>
+    <rect x="550" y="310" width="450" height="56" rx="10" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="775" y="334" font-size="15" text-anchor="middle">Attempt 2: fresh 5 s timeout</text>
+    <text x="775" y="354" font-size="13" fill="#FBBF24" text-anchor="middle">fallback at 10.0 s: 2 s past the promise</text>
+    <text x="40" y="482" font-size="15" fill="#CBD5E1">Illustrative timings. Create the deadline once, at the edge; every wait inside it (queue, attempt, backoff) uses the time remaining.</text>
+  </g>
+</svg>

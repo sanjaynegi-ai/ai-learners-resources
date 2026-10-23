@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" role="img" aria-label="Progressive rollout gates">
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6" fill="none" stroke="#7dd3fc" stroke-width="1.5"/></marker></defs>
+<rect width="1000" height="540" fill="#0B1020"/>
+<text x="45" y="58" font-size="29" font-family="Arial,sans-serif" font-weight="bold" fill="#f8fafc">Progressive rollout gates</text>
+<text x="45" y="86" font-size="16" font-family="Arial,sans-serif" fill="#a5b4fc">A staged release with measurable promotion criteria</text>
+<path d="M250.0 190.0 L285.0 190.0" stroke="#7dd3fc" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M495.0 190.0 L530.0 190.0" stroke="#7dd3fc" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<path d="M740.0 190.0 L775.0 190.0" stroke="#7dd3fc" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+<rect x="50" y="150" width="190" height="80" rx="12" fill="#151e35" stroke="#22d3ee" stroke-width="2"/>
+<text x="145" y="181" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="bold" fill="#f8fafc">Internal</text>
+<text x="145" y="205" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#cbd5e1">staff only</text>
+<rect x="295" y="150" width="190" height="80" rx="12" fill="#151e35" stroke="#a78bfa" stroke-width="2"/>
+<text x="390" y="181" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="bold" fill="#f8fafc">Canary</text>
+<text x="390" y="205" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#cbd5e1">1 percent</text>
+<rect x="540" y="150" width="190" height="80" rx="12" fill="#151e35" stroke="#34d399" stroke-width="2"/>
+<text x="635" y="181" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="bold" fill="#f8fafc">Ramp</text>
+<text x="635" y="205" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#cbd5e1">5 to 25 percent</text>
+<rect x="785" y="150" width="190" height="80" rx="12" fill="#151e35" stroke="#fb923c" stroke-width="2"/>
+<text x="880" y="181" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="bold" fill="#f8fafc">General</text>
+<text x="880" y="205" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#cbd5e1">100 percent</text>
+<rect x="45" y="435" width="910" height="70" rx="10" fill="#111b30" stroke="#334155"/>
+<text x="65" y="463" font-size="15" font-family="Arial,sans-serif" fill="#e2e8f0">Percentages are illustrative; advance only after guardrails pass.</text>
+<text x="65" y="488" font-size="15" font-family="Arial,sans-serif" fill="#e2e8f0">Pause or roll back exposure when payment errors or p95 latency worsen.</text>
+</svg>

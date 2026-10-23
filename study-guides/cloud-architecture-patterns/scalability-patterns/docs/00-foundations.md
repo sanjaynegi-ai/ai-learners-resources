@@ -1,10 +1,20 @@
 # Foundations of Cloud Scalability
 
+> **Unit ID:** SG-SCALE-00 · **Capability:** AI-AWS-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
+> **Series status:** Draft for chapters 00–13. Substantive conceptual material exists; current publication checks are not established. This is an authoring-state declaration, not a claim of executed implementation or deployment.
+
 > **Chapter 00 · Self-study guide · Estimated study time: 45–60 minutes**
 >
 > **Running example:** QuickCart, a fictional online shopping platform.
 >
 > **Big idea:** Do not begin with a pattern name. First ask what is growing, where the bottleneck is, and what architectural change addresses it.
+>
+> **You need:** Backend request lifecycle experience.
+>
+> **You will produce:** One calculation with units/assumptions and a measurement plan; distinguish nominal capacity from useful throughput.
 
 ## Learning objectives
 
@@ -369,7 +379,15 @@ Suppose QuickCart adds more API servers. Alice logs in through Server A, which s
 
 This leads directly to the **Stateless Service Pattern**: keep durable or cross-request state outside individual service instances so the instances can be interchangeable.
 
-**Next chapter:** [01 — Stateless Services](01-stateless-services.md) 
+**Next chapter:** [SG-SCALE-01 — 01 — Stateless Services](01-stateless-services.md)
+
+## Completion checkpoint
+
+**You can now:** explain growth, latency, throughput and saturation without choosing a tool first.
+
+**Show it:** One calculation with units/assumptions and a measurement plan; distinguish nominal capacity from useful throughput. Then attempt chapter 00's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-01 — 01 — Stateless Service Pattern](01-stateless-services.md).
 
 ---
 

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="STRANGLER FIG + ACL">
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="52" y="64" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#f8fafc">STRANGLER FIG + ACL</text>
+<text x="52" y="98" font-family="Arial,sans-serif" font-size="16" fill="#a7b7ce">Routing and semantic translation are different jobs</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#91a4c4"/></marker></defs>
+<path d="M305,240 L450,200" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<text x="378" y="210" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">new</text>
+<path d="M305,240 L450,405" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<text x="378" y="312" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">legacy</text>
+<path d="M695,405 L820,405" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<text x="758" y="395" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">translate</text>
+<rect x="60" y="185" width="245" height="110" rx="16" fill="#151F36" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="182.5" y="220" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Capability router</text>
+<text x="182.5" y="248" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Old or new route</text>
+<rect x="450" y="145" width="245" height="110" rx="16" fill="#151F36" stroke="#34d399" stroke-width="2.5"/>
+<text x="572.5" y="180" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">New Customer</text>
+<text x="572.5" y="208" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Modern implementation</text>
+<rect x="450" y="350" width="245" height="110" rx="16" fill="#151F36" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="572.5" y="385" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">ACL</text>
+<text x="572.5" y="413" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Legacy translation</text>
+<rect x="820" y="350" width="225" height="110" rx="16" fill="#151F36" stroke="#fb923c" stroke-width="2.5"/>
+<text x="932.5" y="385" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Old Monolith</text>
+<text x="932.5" y="413" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Remaining capability</text>
+<rect x="45" y="527" width="1010" height="49" rx="12" fill="#1b2b43"/>
+<text x="550" y="557" font-family="Arial" font-size="17" fill="#e2e8f0" text-anchor="middle">Strangler Fig chooses the destination; ACL protects the domain boundary.</text>
+</svg>

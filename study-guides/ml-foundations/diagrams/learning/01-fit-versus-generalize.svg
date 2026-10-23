@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" role="img" aria-labelledby="title desc">
+  <title id="title">Training error keeps falling while validation error turns back up</title>
+  <desc id="desc">Illustrative chart, not measured data. The horizontal axis is model flexibility; the vertical axis is error rate, with more errors higher up. The solid cyan training-error curve falls steadily toward zero as flexibility grows. The dashed amber validation-error curve falls, reaches its lowest point in the middle, then rises again. Three zones are marked: too rigid on the left, a useful range in the middle where the model is chosen using validation data, and memorizing on the right, where a lookup of ticket IDs reaches near-zero training error while validation error gets worse.</desc>
+  <rect width="1100" height="480" fill="#0B1020"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#94A3B8" stroke-width="2"/></marker></defs>
+  <g font-family="Arial,sans-serif" fill="#F8FAFC">
+    <text x="40" y="40" font-size="24" font-weight="bold">Fitting the examples is not the same as generalizing</text>
+    <line x1="720" y1="66" x2="760" y2="66" stroke="#22D3EE" stroke-width="4"/><text x="770" y="71" font-size="15">Training error</text>
+    <line x1="900" y1="66" x2="940" y2="66" stroke="#FBBF24" stroke-width="4" stroke-dasharray="10 6"/><text x="950" y="71" font-size="15">Validation error</text>
+    <line x1="120" y1="380" x2="1045" y2="380" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="120" y1="380" x2="120" y2="92" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="580" y="408" font-size="15" fill="#CBD5E1" text-anchor="middle">Model flexibility: rigid rule → many parameters → lookup table</text>
+    <text x="40" y="104" font-size="15" fill="#CBD5E1">More</text><text x="40" y="122" font-size="15" fill="#CBD5E1">errors</text>
+    <text x="40" y="364" font-size="15" fill="#CBD5E1">Fewer</text><text x="40" y="382" font-size="15" fill="#CBD5E1">errors</text>
+    <line x1="400" y1="96" x2="400" y2="378" stroke="#334155" stroke-width="2" stroke-dasharray="6 6"/>
+    <line x1="720" y1="96" x2="720" y2="378" stroke="#334155" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="260" y="112" font-size="17" font-weight="bold" text-anchor="middle">Too rigid</text>
+    <text x="560" y="112" font-size="17" font-weight="bold" text-anchor="middle">Useful range</text>
+    <text x="880" y="112" font-size="17" font-weight="bold" text-anchor="middle">Memorizing</text>
+    <path d="M140 175 C 400 250, 700 335, 1020 362" fill="none" stroke="#22D3EE" stroke-width="4"/>
+    <path d="M140 130 C 360 250, 640 262, 1020 175" fill="none" stroke="#FBBF24" stroke-width="4" stroke-dasharray="10 6"/>
+    <circle cx="585" cy="232" r="8" fill="#FBBF24"/>
+    <text x="585" y="210" font-size="15" text-anchor="middle">Choose here, using validation data</text>
+    <text x="140" y="340" font-size="15" fill="#CBD5E1">Misses real patterns:</text>
+    <text x="140" y="360" font-size="15" fill="#CBD5E1">both errors stay high</text>
+    <text x="760" y="268" font-size="15" fill="#CBD5E1">Ticket-ID lookup: training</text>
+    <text x="760" y="288" font-size="15" fill="#CBD5E1">error near 0, validation worse</text>
+    <text x="40" y="440" font-size="16">Illustrative shape, not measured data. A falling training error alone cannot show</text>
+    <text x="40" y="462" font-size="16">that the model will work on next week’s tickets; only unseen examples can.</text>
+  </g>
+</svg>

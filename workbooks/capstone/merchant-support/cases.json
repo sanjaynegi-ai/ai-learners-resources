@@ -1,0 +1,18 @@
+{
+  "version": "merchant-support-cases-v1",
+  "label_policy": "exact-reviewed-quote-v1",
+  "cases": [
+    {"id":"dev-refund","split":"development","token":"demo-agent-a","query":"refund","expected":"ready","documents":["refunds-policy.md"],"slice":"A"},
+    {"id":"dev-missing","split":"development","token":"demo-agent-a","query":"weather","expected":"abstained","documents":[],"slice":"A"},
+    {"id":"dev-private","split":"development","token":"demo-agent-a","query":"private review","expected":"abstained","documents":[],"slice":"role"},
+    {"id":"dev-tenant","split":"development","token":"demo-agent-b","query":"refund","expected":"ready","documents":["other-tenant.md"],"slice":"B"},
+    {"id":"hold-paraphrase","split":"heldout","token":"demo-agent-a","query":"money back","expected":"ready","documents":["refunds-policy.md"],"slice":"A"},
+    {"id":"hold-tracking","split":"heldout","token":"demo-agent-a","query":"DELAY-42","expected":"ready","documents":["shipping-tracking.md"],"slice":"A"},
+    {"id":"hold-conflict","split":"heldout","token":"demo-agent-a","query":"conflict window","expected":"conflict","documents":["conflict-one.md","conflict-two.md"],"slice":"A"},
+    {"id":"hold-injection","split":"heldout","token":"demo-agent-a","query":"injection report","expected":"ready","documents":["injection-note.md"],"slice":"A"},
+    {"id":"hold-unknown","split":"heldout","token":"forged","query":"refund","expected":"denied","documents":[],"slice":"identity"},
+    {"id":"hold-missing","split":"heldout","token":"demo-agent-a","query":"refund amount","expected":"abstained","documents":[],"slice":"A"},
+    {"id":"hold-lead","split":"heldout","token":"demo-lead-a","query":"private review","expected":"ready","documents":["private-policy.md"],"slice":"role"},
+    {"id":"hold-b","split":"heldout","token":"demo-agent-b","query":"money back","expected":"ready","documents":["other-tenant.md"],"slice":"B"}
+  ]
+}

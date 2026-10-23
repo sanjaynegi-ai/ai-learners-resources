@@ -1,11 +1,28 @@
 # Chapter 05 — Chains and Runnables: Follow the Data
 
-> **Study time:** 70–90 minutes, plus optional live calls.  
-> **Prerequisites:** [Prompts](03-prompts.md), [Structured Output](04-structured-output.md), and learner-created `first_call.py` from Chapter 02.  
-> **Central question:** What crosses each stage, and how do we connect stages without losing required data?  
-> **Running example:** Fernwood team-notes assistant.
+**What crosses each workflow stage, and which facts disappear during a handoff?**
 
-[Previous: Structured Output](04-structured-output.md) · [Index](README.md) · [Next: Conversation History](06-conversation-history.md)
+> **Your goal:** Compose stages while preserving required data and explaining each input/output type.<br>
+> **You need:** [Prompts](03-prompts.md), [Structured Output](04-structured-output.md) and the unchanged Chapter 02 model helper.<br>
+> **Effort:** 70-90 minutes, plus optional live calls; estimated.<br>
+> **You will produce:** `chain_lab.py`, stage predictions, two repaired handoff failures and an independent variation. **Status:** Draft; local and live evidence must be reported separately.
+
+**Fernwood** is the fictional organization used in this workbook to study internal notes and equipment-policy questions. Its synthetic material lets you inspect evidence and context without real employee data. QuickCart remains the recurring commerce case in the wider course.
+
+**Starting state:** Create `chain_lab.py` in the same learner project, retaining `first_call.py` and earlier labs. The deterministic fixture route isolates composition from provider behavior.
+
+**Study route:** Execute explicit stages first, inspect the composed boundaries, reproduce the local failures and attempt the independent change. Count how many model calls a sequence or batch would make before enabling live inference.
+
+**Before executable steps:** work from your external `langchain-learning` root with Python 3.11 via uv. Follow the named dependency and file steps below; a copied snippet is not a verified project checkpoint. Offline formatting/fixture checks make no model calls. Hosted inference is paid; local inference uses downloaded models and compute. Before live runs, choose a spending budget, request count, time window and review plan. Preserve private evidence, never print keys, and stop any local service you started when finished. Detailed cleanup and historical verification limits remain in the [chapter record](lesson-contract.md#w-lc-05).
+
+<details>
+<summary>Reference: stable unit identity and project boundaries</summary>
+
+**Unit:** W-LC-05. **Capability:** AI-VALID-01. [Course map](../../../README.md#ordered-capability-map) | [Project starting states](../docs/project-boundaries.md) | [Verification and cleanup](lesson-contract.md#w-lc-05). Current Draft status does not turn a historical provider run into fresh evidence.
+
+</details>
+
+[Workbook index](README.md) | [Next workbook chapter](06-conversation-history.md)
 
 ## Learning objectives
 
@@ -17,6 +34,9 @@
 - Run a small batch and repair missing-key and incompatible-stage errors.
 
 ## 1. Intuition: handing work between desks
+
+> [!IMPORTANT]
+> A second model call is not an independent correctness check merely because it follows the first. Retain authoritative evidence and keep deterministic validation outside generated prose.
 
 Imagine one desk reads a policy and drafts an explanation. A second desk turns that draft into a checklist. Handing the second desk a bare paragraph loses the original evidence and intended reader. A labeled folder containing draft, evidence, and audience gives it the required context.
 
@@ -440,9 +460,23 @@ Its output becomes the next stage's input. Returning nothing forwards `None`, br
 - [ ] I can distinguish fixture execution, live inference, parsing, and validation.
 - [ ] I can count calls before running a batch.
 
-Revisit Sections 2 and 4 if a handoff's type is unclear, and Section 6 if a renamed key breaks the chain. Next, [Conversation History](06-conversation-history.md) will address follow-up questions: these independent workflow calls currently retain no conversation state. That chapter remains a scaffold until implemented.
+Revisit Sections 2 and 4 if a handoff's type is unclear, and Section 6 if a renamed key breaks the chain. Next, [W-LC-06 — Conversation History](06-conversation-history.md) will address follow-up questions: these independent workflow calls currently retain no conversation state.
+
+## Evidence reflection
+
+Which handoff failed when stages were composed? Explain whether composition changed the data contract or merely made the mismatch visible. Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** compose prompt, model and parser as runnables, predict the value at each boundary, and repair a missing-key or incompatible-stage error.
+
+**Show it:** your boundary predictions beside the observed values, and the repaired failing stage.
+
+**Next:** [W-LC-06 — Conversation History](06-conversation-history.md).
 
 ## References  
+
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
 
 - [RunnableSequence](https://reference.langchain.com/python/langchain-core/runnables/base/RunnableSequence) and [RunnableParallel](https://reference.langchain.com/python/langchain-core/runnables/base/RunnableParallel).
 - [Runnable interfaces and composition](https://reference.langchain.com/python/langchain-core/runnables/base).

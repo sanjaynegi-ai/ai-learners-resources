@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" role="img" aria-labelledby="title desc">
+  <title id="title">Evaluate each layer of a RAG request separately</title>
+  <desc id="desc">On the left, one QuickCart request moves down five steps: a test question from the golden case set, trusted retrieval that ranks only passages the requester may see, the evidence actually placed in the model prompt, the answer or abstention, and the delivered outcome. A dashed arrow from each step points right to what you check at that step. For the case set: versioned questions, categories, answerable and unanswerable cases, and evidence labels. For retrieval: Hit at K, Recall at K, Precision at K, MRR and nDCG, with any forbidden retrieval counted as a critical failure. For the prompt evidence: whether the required evidence was really included, and evidence coverage for questions that need more than one source. For the answer: correctness, faithfulness, completeness and abstention. For the outcome: coverage, ready-answer quality, latency, cost and human review load. The footer says a good number at one layer does not prove the next layer worked.</desc>
+  <rect width="1100" height="680" fill="#0B1020"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#94A3B8" stroke-width="2"/></marker>
+  </defs>
+  <g font-family="Arial,sans-serif" fill="#F8FAFC">
+    <text x="40" y="42" font-size="24" font-weight="bold">One request, five places to measure</text>
+    <text x="40" y="70" font-size="15" fill="#CBD5E1">Solid arrows: the request moves down.  Dashed arrows: what you check at that step.</text>
+
+    <!-- Left column: request path -->
+    <rect x="40" y="95" width="420" height="80" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/>
+    <text x="60" y="127" font-size="18" font-weight="bold">1  Test question</text>
+    <text x="60" y="153" font-size="15" fill="#CBD5E1">One case from the golden case set</text>
+
+    <rect x="40" y="210" width="420" height="80" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/>
+    <text x="60" y="242" font-size="18" font-weight="bold">2  Trusted retrieval</text>
+    <text x="60" y="268" font-size="15" fill="#CBD5E1">Ranks only passages this requester may see</text>
+
+    <rect x="40" y="325" width="420" height="80" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/>
+    <text x="60" y="357" font-size="18" font-weight="bold">3  Evidence in the prompt</text>
+    <text x="60" y="383" font-size="15" fill="#CBD5E1">What the model actually received</text>
+
+    <rect x="40" y="440" width="420" height="80" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/>
+    <text x="60" y="472" font-size="18" font-weight="bold">4  Answer or abstention</text>
+    <text x="60" y="498" font-size="15" fill="#CBD5E1">Claims, citations, or "not enough evidence"</text>
+
+    <rect x="40" y="555" width="420" height="80" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/>
+    <text x="60" y="587" font-size="18" font-weight="bold">5  Delivered outcome</text>
+    <text x="60" y="613" font-size="15" fill="#CBD5E1">Ready, abstained, conflict or denied</text>
+
+    <g stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)">
+      <line x1="250" y1="175" x2="250" y2="205"/>
+      <line x1="250" y1="290" x2="250" y2="320"/>
+      <line x1="250" y1="405" x2="250" y2="435"/>
+      <line x1="250" y1="520" x2="250" y2="550"/>
+    </g>
+
+    <!-- Dashed measurement links -->
+    <g stroke="#94A3B8" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)">
+      <line x1="462" y1="135" x2="572" y2="135"/>
+      <line x1="462" y1="250" x2="572" y2="250"/>
+      <line x1="462" y1="365" x2="572" y2="365"/>
+      <line x1="462" y1="480" x2="572" y2="480"/>
+      <line x1="462" y1="595" x2="572" y2="595"/>
+    </g>
+
+    <!-- Right column: what to check -->
+    <rect x="580" y="95" width="480" height="80" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="600" y="125" font-size="17" font-weight="bold">Case set</text>
+    <text x="600" y="150" font-size="14" fill="#CBD5E1">Versioned questions, categories, answerable and</text>
+    <text x="600" y="168" font-size="14" fill="#CBD5E1">unanswerable cases, evidence labels</text>
+
+    <rect x="580" y="210" width="480" height="80" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="600" y="240" font-size="17" font-weight="bold">Retrieval metrics</text>
+    <text x="600" y="265" font-size="14" fill="#CBD5E1">Hit@K, Recall@K, Precision@K, MRR, nDCG</text>
+    <text x="600" y="283" font-size="14" fill="#CBD5E1">Forbidden retrieval = critical failure</text>
+
+    <rect x="580" y="325" width="480" height="80" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="600" y="355" font-size="17" font-weight="bold">Evidence checks</text>
+    <text x="600" y="380" font-size="14" fill="#CBD5E1">Was the required evidence really included?</text>
+    <text x="600" y="398" font-size="14" fill="#CBD5E1">Evidence coverage for multi-source questions</text>
+
+    <rect x="580" y="440" width="480" height="80" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="600" y="470" font-size="17" font-weight="bold">Answer metrics</text>
+    <text x="600" y="495" font-size="14" fill="#CBD5E1">Correctness, faithfulness, completeness,</text>
+    <text x="600" y="513" font-size="14" fill="#CBD5E1">abstention on answerable and unanswerable cases</text>
+
+    <rect x="580" y="555" width="480" height="80" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="600" y="585" font-size="17" font-weight="bold">Outcome metrics</text>
+    <text x="600" y="610" font-size="14" fill="#CBD5E1">Coverage, ready-answer quality, latency,</text>
+    <text x="600" y="628" font-size="14" fill="#CBD5E1">cost and human review load</text>
+
+    <text x="40" y="664" font-size="15" fill="#CBD5E1">A good number at one layer does not prove that the next layer worked.</text>
+  </g>
+</svg>

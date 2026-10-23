@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="1120" height="620" fill="#0B1020"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#94a3b8"/></marker></defs>
+<text x="52" y="58" fill="#f8fafc" font-size="29" font-family="Arial,sans-serif" font-weight="bold">Plugin lifecycle: safe activation</text>
+<text x="52" y="91" fill="#94a3b8" font-size="17" font-family="Arial,sans-serif">A plugin is governed from build to retirement</text>
+<path d="M250,245.0 L315,245.0" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="282.5" y="235.0" text-anchor="middle" fill="#e2e8f0" font-size="14" font-family="Arial,sans-serif">publish</text>
+<path d="M520,245.0 L585,245.0" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="552.5" y="235.0" text-anchor="middle" fill="#e2e8f0" font-size="14" font-family="Arial,sans-serif">approve</text>
+<path d="M790,245.0 L855,245.0" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="822.5" y="235.0" text-anchor="middle" fill="#e2e8f0" font-size="14" font-family="Arial,sans-serif">deprecate</text>
+<rect x="45" y="180" width="205" height="130" rx="13" fill="#172238" stroke="#38bdf8" stroke-width="2.3"/>
+<text x="147.5" y="213" text-anchor="middle" fill="#f8fafc" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Package</text>
+<text x="147.5" y="240" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Manifest + binary</text>
+<text x="147.5" y="263" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Provenance</text>
+<rect x="315" y="180" width="205" height="130" rx="13" fill="#172238" stroke="#a78bfa" stroke-width="2.3"/>
+<text x="417.5" y="213" text-anchor="middle" fill="#f8fafc" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Validate</text>
+<text x="417.5" y="240" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Signature / policy</text>
+<text x="417.5" y="263" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Compatibility</text>
+<rect x="585" y="180" width="205" height="130" rx="13" fill="#172238" stroke="#34d399" stroke-width="2.3"/>
+<text x="687.5" y="213" text-anchor="middle" fill="#f8fafc" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Activate</text>
+<text x="687.5" y="240" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Register capability</text>
+<text x="687.5" y="263" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Health checks</text>
+<rect x="855" y="180" width="205" height="130" rx="13" fill="#172238" stroke="#fb923c" stroke-width="2.3"/>
+<text x="957.5" y="213" text-anchor="middle" fill="#f8fafc" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Retire</text>
+<text x="957.5" y="240" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Drain requests</text>
+<text x="957.5" y="263" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Revoke access</text>
+<rect x="42" y="533" width="1036" height="61" rx="10" fill="#111d32" stroke="#334155"/>
+<text x="62" y="560" fill="#93c5fd" font-size="15" font-family="Arial,sans-serif">A rollback plan is part of activation, not an afterthought.</text>
+</svg>

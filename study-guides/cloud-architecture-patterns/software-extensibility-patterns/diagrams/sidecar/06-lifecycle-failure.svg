@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="Failure and lifecycle: sidecar is not invisible"><rect width="1200" height="440" fill="#0B1020"/><defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#e2e8f0" stroke-width="1.5"/></marker></defs><text x="30" y="43" fill="#f8fafc" font-size="26" font-weight="bold" font-family="Arial">Failure and lifecycle: sidecar is not invisible</text>
+<path d="M270 195 L340 195" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M585 195 L655 195" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M900 195 L970 195" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="25" y="145" width="245" height="105" rx="12" fill="#17243B" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="147.5" y="188.5" font-family="Arial" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">Start</text>
+<text x="147.5" y="215.5" font-family="Arial" fill="#cbd5e1" font-size="14" text-anchor="middle">Config + credentials</text>
+<rect x="340" y="145" width="245" height="105" rx="12" fill="#17243B" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="462.5" y="188.5" font-family="Arial" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">Ready</text>
+<text x="462.5" y="215.5" font-family="Arial" fill="#cbd5e1" font-size="14" text-anchor="middle">Buffer / endpoint ready</text>
+<rect x="655" y="145" width="245" height="105" rx="12" fill="#17243B" stroke="#34d399" stroke-width="2.5"/>
+<text x="777.5" y="188.5" font-family="Arial" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">Runtime</text>
+<text x="777.5" y="215.5" font-family="Arial" fill="#cbd5e1" font-size="14" text-anchor="middle">Memory, CPU, retries</text>
+<rect x="970" y="145" width="205" height="105" rx="12" fill="#17243B" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="1072.5" y="188.5" font-family="Arial" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">Stop</text>
+<text x="1072.5" y="215.5" font-family="Arial" fill="#cbd5e1" font-size="14" text-anchor="middle">Flush or expire</text>
+<text x="30" y="407" fill="#fbbf24" font-family="Arial" font-size="15">Define readiness, restart policy, graceful shutdown, and the impact of collector outages.</text></svg>

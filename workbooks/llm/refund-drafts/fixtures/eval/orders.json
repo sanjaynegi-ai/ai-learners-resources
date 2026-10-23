@@ -1,0 +1,9 @@
+[
+  {"order_id": "QC-2001", "payment_method": "card", "refund_status": "issued", "expected_refund_date": "2026-10-20", "refund_amount": 30.00, "language": "en"},
+  {"order_id": "QC-2002", "payment_method": "bank_transfer", "refund_status": "pending", "expected_refund_date": null, "refund_amount": 80.00, "language": "en"},
+  {"order_id": "QC-2003", "payment_method": "wallet", "refund_status": "issued", "expected_refund_date": "2026-10-15", "refund_amount": 12.50, "language": "de"},
+  {"order_id": "QC-2004", "payment_method": "card", "refund_status": "issued", "expected_refund_date": "2026-10-22", "refund_amount": 45.00, "language": "hi"},
+  {"order_id": "QC-2005", "payment_method": "card", "refund_status": "not_requested", "expected_refund_date": null, "refund_amount": 0.00, "language": "en"},
+  {"order_id": "QC-2006", "payment_method": "bank_transfer", "refund_status": "issued", "expected_refund_date": "2026-10-18", "refund_amount": 200.00, "language": "en"},
+  {"order_id": "QC-2007", "payment_method": "card", "refund_status": "pending", "expected_refund_date": null, "refund_amount": 60.00, "language": "de"}
+]

@@ -1,12 +1,20 @@
 # Chapter 07 — Scatter–Gather
 
+> **Unit ID:** SG-SCALE-07 · **Capability:** AI-AWS-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
 > **Standalone study guide · Estimated study time: 75–95 minutes**
 >
 > **Running example:** QuickCart, a fictional e-commerce platform.
 >
 > **Core idea:** Send independent subrequests concurrently (**scatter**), collect their outcomes (**gather**), then combine them according to an explicit deadline and correctness policy.
+>
+> **You need:** SG-SCALE-06.
+>
+> **You will produce:** Fan-out/merge contract and explicit partial-result policy; separate product discovery from exact totals.
 
-[← Previous: Partitioning & Sharding](06-partitioning-sharding.md) · [Foundations](00-foundations.md)
+[SG-SCALE-06 — ← Previous: Partitioning & Sharding](06-partitioning-sharding.md) · [SG-SCALE-00 — Foundations](00-foundations.md)
 
 ## 1. Learning objectives
 
@@ -48,7 +56,7 @@ Suppose three shards respond in:
 
 A naive sequential coordinator queries them one after another.
 
-![Sequential queries](../diagrams/scatter-gather/01-sequential-bottleneck.svg)
+![Before: sequential shard queries add their latencies. Sequential work: roughly 370 ms plus coordination overhead.](../diagrams/scatter-gather/01-sequential-bottleneck.svg)
 
 **Diagram walkthrough**
 
@@ -569,7 +577,15 @@ The video must be validated, resized, encoded, thumbnailed, and analyzed. Each s
 
 That leads to **Pipes & Filters** — a pattern for composing processing stages into a reusable pipeline.
 
-[Next: 08 — Pipes & Filters](08-pipes-and-filters.md).
+[SG-SCALE-08 — Next: 08 — Pipes & Filters](08-pipes-and-filters.md).
+
+## Completion checkpoint
+
+**You can now:** explain deadlines, deduplication and completeness.
+
+**Show it:** Fan-out/merge contract and explicit partial-result policy; separate product discovery from exact totals. Then attempt chapter 07's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-08 — Pipes & Filters](08-pipes-and-filters.md).
 
 ---
 

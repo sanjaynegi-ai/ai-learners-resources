@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" role="img" aria-labelledby="title desc">
+<title id="title">Release evidence and incident recovery loop</title>
+<desc id="desc">A versioned candidate passes evaluation before bounded canary monitoring. Regression evidence halts rollout and restores a compatible artifact. Recovery probes return to review; rollout does not automatically resume.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="#94A3B8"/></marker></defs>
+<rect width="1100" height="400" fill="#0B1020"/>
+<g font-family="Arial, sans-serif" fill="#F8FAFC">
+<text x="40" y="42" font-size="25" font-weight="bold">Evidence controls exposure and recovery</text>
+<g fill="#172136" stroke="#22D3EE" stroke-width="2">
+<rect x="40" y="90" width="270" height="100" rx="12"/>
+<rect x="415" y="90" width="270" height="100" rx="12"/>
+<rect x="790" y="90" width="270" height="100" rx="12"/>
+<rect x="790" y="260" width="270" height="100" rx="12" stroke="#FBBF24"/>
+<rect x="415" y="260" width="270" height="100" rx="12" stroke="#4ADE80"/>
+</g>
+<g font-size="21" font-weight="bold">
+<text x="60" y="126">Versioned candidate</text><text x="435" y="126">Evaluation / review</text>
+<text x="810" y="126">Bounded canary</text><text x="810" y="296">Halt and restore</text>
+<text x="435" y="296">Recovery probes</text>
+</g>
+<g font-size="17" fill="#CBD5E1">
+<text x="60" y="158">Code, prompt, data, config</text><text x="435" y="158">Predeclared critical gates</text>
+<text x="810" y="158">Coverage, quality, cost</text><text x="810" y="328">Compatible artifact only</text>
+<text x="435" y="328">Compare fresh evidence</text>
+<text x="45" y="285">Logical decision flow only</text><text x="45" y="315">No automatic rollout resume</text>
+</g>
+<g stroke="#94A3B8" fill="none" stroke-width="2" marker-end="url(#arrow)">
+<path d="M310 140 H410"/><path d="M685 140 H785"/><path d="M925 190 V255"/>
+<path d="M790 310 H690"/><path d="M550 260 V195"/>
+</g>
+<g font-size="16" fill="#CBD5E1"><text x="324" y="124">evidence</text><text x="707" y="124">pass</text>
+<text x="940" y="225">regression</text><text x="703" y="292">verify</text><text x="560" y="230">review</text></g>
+</g></svg>

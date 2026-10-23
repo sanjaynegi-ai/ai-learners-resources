@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="610" viewBox="0 0 1100 610">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6" fill="none" stroke="#38bdf8" stroke-width="1.6"/></marker></defs>
+<rect width="1100" height="610" fill="#0b1020"/>
+<text x="45" y="55" fill="#f1f5f9" font-family="Arial,sans-serif" font-weight="bold" font-size="29">Catalog migration with single-writer ownership</text>
+<text x="45" y="86" fill="#94a3b8" font-family="Arial,sans-serif" font-size="15">Progressive reads; explicit write authority transfer</text>
+<path d="M260 275.0 L310 275.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="285.0" y="266.0" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">replicate</text>
+<path d="M530 275.0 L580 275.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="555.0" y="266.0" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">compare</text>
+<path d="M800 275.0 L850 275.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="825.0" y="266.0" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">cutover</text>
+<rect x="40" y="210" width="220" height="130" rx="13" fill="#151f36" stroke="#fb923c" stroke-width="2"/>
+<text x="150.0" y="244" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Stage 1</text>
+<text x="150.0" y="269" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Monolith reads/writes</text>
+<text x="150.0" y="289" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Observe behavior</text>
+<rect x="310" y="210" width="220" height="130" rx="13" fill="#151f36" stroke="#a78bfa" stroke-width="2"/>
+<text x="420.0" y="244" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Stage 2</text>
+<text x="420.0" y="269" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Monolith writes</text>
+<text x="420.0" y="289" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Shadow new reads</text>
+<rect x="580" y="210" width="220" height="130" rx="13" fill="#151f36" stroke="#38bdf8" stroke-width="2"/>
+<text x="690.0" y="244" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Stage 3</text>
+<text x="690.0" y="269" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Route selected reads</text>
+<text x="690.0" y="289" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">One writer remains</text>
+<rect x="850" y="210" width="220" height="130" rx="13" fill="#151f36" stroke="#34d399" stroke-width="2"/>
+<text x="960.0" y="244" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Stage 4</text>
+<text x="960.0" y="269" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Transfer writer</text>
+<text x="960.0" y="289" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Reconcile and retire</text>
+<text x="45" y="580" fill="#94a3b8" font-size="14" font-family="Arial">Write rollback requires explicit data compatibility and reconciliation.</text></svg>

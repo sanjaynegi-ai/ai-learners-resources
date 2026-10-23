@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="670" viewBox="0 0 1200 670">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker></defs>
+<rect width="1200" height="670" fill="#0b1020"/>
+<text x="45" y="58" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#f8fafc">Start with the change pressure</text>
+<text x="45" y="88" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">One symptom does not justify every pattern.</text>
+<rect x="440" y="120" width="320" height="70" rx="14" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="456" y="152" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#38bdf8">What must change?</text>
+<text x="456" y="178" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Find the unstable boundary</text>
+<rect x="45" y="300" width="245" height="92" rx="14" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="61" y="332" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#a78bfa">Client experience</text>
+<text x="61" y="358" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">BFF / API contract</text>
+<rect x="335" y="300" width="245" height="92" rx="14" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="351" y="332" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#34d399">External providers</text>
+<text x="351" y="358" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Ports / Plugins / ACL</text>
+<rect x="625" y="300" width="245" height="92" rx="14" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="641" y="332" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#fb923c">Legacy replacement</text>
+<text x="641" y="358" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Strangler / ACL</text>
+<rect x="915" y="300" width="245" height="92" rx="14" fill="#17243b" stroke="#fb7185" stroke-width="2"/>
+<text x="931" y="332" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#fb7185">Runtime policy</text>
+<text x="931" y="358" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Gateway / Sidecar</text>
+<rect x="335" y="470" width="535" height="85" rx="14" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="351" y="502" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#38bdf8">Cross-cutting release control</text>
+<text x="351" y="528" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Feature Flags + measurable guardrails</text>
+<path d="M 440 155.0 L 290 346.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 600.0 190 L 457.5 300" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 600.0 190 L 747.5 300" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 760 155.0 L 915 346.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 457.5 392 L 602.5 470" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 747.5 392 L 602.5 470" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<rect x="45" y="606" width="1110" height="42" rx="9" fill="#202c45"/>
+<text x="60" y="633" font-family="Arial,sans-serif" font-size="15" fill="#d5e2f3">Select the smallest combination that isolates a real change boundary.</text>
+</svg>

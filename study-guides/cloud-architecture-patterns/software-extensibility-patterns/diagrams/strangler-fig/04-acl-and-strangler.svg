@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#94a3b8"/></marker></defs>
+<rect width="1100" height="640" fill="#0B1020"/>
+<text x="45" y="62" fill="#f8fafc" font-size="30" font-family="Arial" font-weight="bold">04  ACL and Strangler Fig work together</text>
+<text x="45" y="93" fill="#94a3b8" font-size="17" font-family="Arial">Routing and semantic translation solve different problems</text>
+<path d="M230 262.5 L285 262.5" stroke="#94a3b8" stroke-width="2.6" fill="none" marker-end="url(#arrow)"/>
+<path d="M485 262.5 L540 262.5" stroke="#94a3b8" stroke-width="2.6" fill="none" marker-end="url(#arrow)"/>
+<text x="512.5" y="252.5" fill="#e2e8f0" font-size="14" font-family="Arial" text-anchor="middle">catalog path</text>
+<path d="M765 262.5 L825 262.5" stroke="#94a3b8" stroke-width="2.6" fill="none" marker-end="url(#arrow)"/>
+<text x="795.0" y="252.5" fill="#e2e8f0" font-size="14" font-family="Arial" text-anchor="middle">temporary read</text>
+<path d="M940.0 310 L940.0 380" stroke="#94a3b8" stroke-width="2.6" fill="none" marker-end="url(#arrow)"/>
+<text x="940.0" y="335.0" fill="#e2e8f0" font-size="14" font-family="Arial" text-anchor="middle">translate</text>
+<rect x="35" y="215" width="195" height="95" rx="13" fill="#15223b" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="132.5" y="247" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="bold" font-family="Arial">QuickCart Web</text>
+<text x="132.5" y="272" text-anchor="middle" fill="#cbd5e1" font-size="14" font-family="Arial">Product page</text>
+<rect x="285" y="215" width="200" height="95" rx="13" fill="#15223b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="385.0" y="247" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="bold" font-family="Arial">Strangler Router</text>
+<text x="385.0" y="272" text-anchor="middle" fill="#cbd5e1" font-size="14" font-family="Arial">Select owner</text>
+<rect x="540" y="215" width="225" height="95" rx="13" fill="#15223b" stroke="#34d399" stroke-width="2.5"/>
+<text x="652.5" y="247" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="bold" font-family="Arial">Catalog Service</text>
+<text x="652.5" y="272" text-anchor="middle" fill="#cbd5e1" font-size="14" font-family="Arial">Modern product model</text>
+<rect x="825" y="215" width="230" height="95" rx="13" fill="#15223b" stroke="#fb923c" stroke-width="2.5"/>
+<text x="940.0" y="247" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="bold" font-family="Arial">Legacy ACL</text>
+<text x="940.0" y="272" text-anchor="middle" fill="#cbd5e1" font-size="14" font-family="Arial">Map old semantics</text>
+<rect x="825" y="380" width="230" height="90" rx="13" fill="#15223b" stroke="#fb7185" stroke-width="2.5"/>
+<text x="940.0" y="412" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="bold" font-family="Arial">Legacy Catalog</text>
+<text x="940.0" y="437" text-anchor="middle" fill="#cbd5e1" font-size="14" font-family="Arial">Old stock/status codes</text>
+<rect x="45" y="548" width="1010" height="63" rx="10" fill="#17213a" stroke="#334155"/>
+<text x="62" y="573" fill="#cbd5e1" font-size="16" font-family="Arial">Strangler = which implementation receives traffic.</text>
+<text x="62" y="595" fill="#cbd5e1" font-size="16" font-family="Arial">ACL = how modern code speaks to legacy concepts.</text>
+</svg>

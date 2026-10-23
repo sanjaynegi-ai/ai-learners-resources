@@ -1,0 +1,13 @@
+{
+  "_note": "Expected outcome per evaluation case, decided before any prompt was compared. 'ready' means the facts allow a safe draft; 'needs_agent' means a correct system must hand the ticket to a person.",
+  "E-01": "ready",
+  "E-02": "needs_agent",
+  "E-03": "ready",
+  "E-04": "ready",
+  "E-05": "needs_agent",
+  "E-06": "ready",
+  "E-07": "needs_agent",
+  "E-08": "ready",
+  "E-09": "needs_agent",
+  "E-10": "ready"
+}

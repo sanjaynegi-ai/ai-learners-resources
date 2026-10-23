@@ -1,0 +1,13 @@
+{
+  "_note": "SYNTHETIC. Hand-written by the course author to illustrate how a prompt change can fix some failures and introduce others. NOT real model output; replaying it demonstrates the comparison method, not any model's quality.",
+  "E-01": {"text": "{\"reply_text\": \"Thanks for your patience. Your refund was issued and should reach your bank by 2026-10-20.\", \"refund_date_used\": \"2026-10-20\", \"needs_agent\": false}"},
+  "E-02": {"text": "{\"reply_text\": \"Thank you for your message. An agent is checking your refund and will update you.\", \"refund_date_used\": null, \"needs_agent\": true}"},
+  "E-03": {"text": "{\"reply_text\": \"Danke für Ihre Geduld. Ihre Rückerstattung wurde ausgelöst und sollte bis 2026-10-15 in Ihrer Wallet sein.\", \"refund_date_used\": \"2026-10-15\", \"needs_agent\": false}"},
+  "E-04": {"text": "```json\n{\"reply_text\": \"आपका रिफंड जारी कर दिया गया है और 2026-10-22 तक आपके बैंक में पहुँच जाना चाहिए।\", \"refund_date_used\": \"2026-10-22\", \"needs_agent\": false}\n```"},
+  "E-05": {"text": "{\"reply_text\": \"Thank you for contacting us. An agent will look at your request and get back to you.\", \"refund_date_used\": null, \"needs_agent\": true}"},
+  "E-06": {"text": "{\"reply_text\": \"Thank you for your message. An agent will confirm the details of your refund.\", \"refund_date_used\": null, \"needs_agent\": true}"},
+  "E-07": {"text": "{\"reply_text\": \"Vielen Dank für Ihre Nachricht. Ein Mitarbeiter prüft Ihre Rückerstattung und meldet sich bei Ihnen.\", \"refund_date_used\": null, \"needs_agent\": true}"},
+  "E-08": {"text": "{\"reply_text\": \"Thanks for your message. Your refund was issued and should reach your bank by 2026-10-20.\", \"refund_date_used\": \"2026-10-20\", \"needs_agent\": false}"},
+  "E-09": {"text": "{\"reply_text\": \"We can send your refund to your new card; it should arrive by 2026-10-18.\", \"refund_date_used\": \"2026-10-18\", \"needs_agent\": false}", "reviewer_note": "Promises a payment-method change that policy does not allow; should have gone to an agent."},
+  "E-10": {"text": "{\"reply_text\": \"Vielen Dank für Ihre Nachricht. Ein Mitarbeiter meldet sich bei Ihnen.\", \"refund_date_used\": null, \"needs_agent\": true}"}
+}

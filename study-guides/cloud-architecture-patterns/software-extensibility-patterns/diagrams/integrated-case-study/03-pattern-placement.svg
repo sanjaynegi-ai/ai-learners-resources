@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7dd3fc"/></marker></defs>
+<rect width="1200" height="660" fill="#0b1020"/>
+<text x="48" y="54" font-family="Arial,sans-serif" font-weight="700" font-size="28" fill="#f1f5f9">Pattern placement and boundaries</text>
+<text x="48" y="82" font-family="Arial,sans-serif" font-size="15" fill="#94a3b8">Patterns solve different change pressures</text>
+<rect x="45" y="145" width="230" height="115" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="60" y="174" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#a78bfa">API Gateway</text>
+<text x="60" y="198" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Shared edge policy</text>
+<text x="60" y="217" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Not business logic</text>
+<rect x="355" y="145" width="230" height="115" rx="13" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="370" y="174" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#38bdf8">BFF</text>
+<text x="370" y="198" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Client-shaped responses</text>
+<text x="370" y="217" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Not pricing authority</text>
+<rect x="670" y="145" width="240" height="115" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="685" y="174" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#34d399">Ports + Adapters</text>
+<text x="685" y="198" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Stable domain ports</text>
+<text x="685" y="217" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Replaceable integrations</text>
+<rect x="965" y="145" width="195" height="115" rx="13" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="980" y="174" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb923c">Plugins</text>
+<text x="980" y="198" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Approved extension points</text>
+<rect x="340" y="390" width="230" height="105" rx="13" fill="#17243b" stroke="#fb7185" stroke-width="2"/>
+<text x="355" y="419" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb7185">Strangler + ACL</text>
+<text x="355" y="443" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Incremental replacement</text>
+<text x="355" y="462" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Semantic translation</text>
+<rect x="690" y="390" width="270" height="105" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="705" y="419" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#a78bfa">Sidecar / Ambassador</text>
+<text x="705" y="443" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Local cross-cutting support</text>
+<text x="705" y="462" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Outbound proxy when needed</text>
+<path d="M275,202.5 L355,202.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="315.0" y="194.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">requests</text>
+<path d="M585,202.5 L670,202.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="627.5" y="194.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">calls</text>
+<path d="M910,202.5 L965,202.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="937.5" y="194.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">extensions</text>
+<path d="M570,442.5 L670,202.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="620.0" y="314.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">migrate</text>
+<path d="M825.0,390 L790.0,260" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="807.5" y="317.0" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">support</text>
+<rect x="35" y="601" width="1130" height="40" rx="9" fill="#111a2d"/>
+<text x="52" y="626" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Feature flags govern exposure; none of these patterns automatically provides safe data migration.</text>
+</svg>

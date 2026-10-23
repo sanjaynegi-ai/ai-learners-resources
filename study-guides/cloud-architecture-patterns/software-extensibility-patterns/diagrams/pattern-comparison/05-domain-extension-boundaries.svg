@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="670" viewBox="0 0 1200 670">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker></defs>
+<rect width="1200" height="670" fill="#0b1020"/>
+<text x="45" y="58" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#f8fafc">Domain, semantic, and extension boundaries</text>
+<text x="45" y="88" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Three interfaces with three different reasons to exist.</text>
+<rect x="45" y="250" width="250" height="110" rx="14" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="61" y="282" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#38bdf8">Checkout Core</text>
+<text x="61" y="308" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Business invariants</text>
+<text x="61" y="330" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Calls domain ports</text>
+<rect x="360" y="250" width="225" height="110" rx="14" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="376" y="282" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#a78bfa">Ports</text>
+<text x="376" y="308" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Payment / Shipping</text>
+<text x="376" y="330" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Stable contracts</text>
+<rect x="650" y="120" width="235" height="90" rx="14" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="666" y="152" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#34d399">Adapters</text>
+<text x="666" y="178" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">SDK / database</text>
+<rect x="650" y="275" width="235" height="90" rx="14" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="666" y="307" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#fb923c">ACL Adapter</text>
+<text x="666" y="333" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Legacy translation</text>
+<rect x="650" y="430" width="235" height="90" rx="14" fill="#17243b" stroke="#fb7185" stroke-width="2"/>
+<text x="666" y="462" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#fb7185">Plugin Host</text>
+<text x="666" y="488" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Approved extensions</text>
+<rect x="960" y="250" width="185" height="110" rx="14" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="976" y="282" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#38bdf8">Dependencies</text>
+<text x="976" y="308" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Legacy / Vendors</text>
+<path d="M 295 305.0 L 360 305.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 585 305.0 L 650 165.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 585 305.0 L 650 320.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 585 305.0 L 650 475.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 885 320.0 L 960 305.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<rect x="45" y="606" width="1110" height="42" rx="9" fill="#202c45"/>
+<text x="60" y="633" font-family="Arial,sans-serif" font-size="15" fill="#d5e2f3">A plugin is optional; an ACL protects meaning; ports protect dependency direction.</text>
+</svg>

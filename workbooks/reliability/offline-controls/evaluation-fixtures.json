@@ -1,0 +1,10 @@
+{
+  "version": "quickcart-fixtures-v1",
+  "label_policy": "exact authored answer or appropriate abstention; not model-generated labels",
+  "cases": [
+    {"id":"Q1","expected":"three days","result":{"status":"answered","answer":"three days","source_ids":["A"]},"attempt_units":2,"review_minutes":0},
+    {"id":"Q2","expected":"three days","result":{"status":"answered","answer":"100 days","source_ids":["A"]},"attempt_units":2,"review_minutes":2},
+    {"id":"Q3","expected":null,"result":{"status":"abstained","answer":"No authorized evidence","source_ids":[]},"attempt_units":0,"review_minutes":1},
+    {"id":"Q4","expected":"three days","error":"simulated timeout","attempt_units":1,"review_minutes":1}
+  ]
+}

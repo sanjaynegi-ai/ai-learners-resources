@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" role="img" aria-label="Do not confuse architectural roles">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6" fill="none" stroke="#8da3bd" stroke-width="1.4"/></marker></defs>
+<rect width="960" height="470" fill="#0B1020"/>
+<text x="34" y="43" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Do not confuse architectural roles</text>
+<text x="34" y="447" font-family="Arial,sans-serif" font-size="16" fill="#b7c7df">Inbound, client-specific, domain, translation and outbound concerns.</text>
+<path d="M157 231 L186 231" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M327 231 L356 231" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M497 231 L526 231" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M667 231 L696 131" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M667 231 L696 336" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<rect x="25" y="200" width="132" height="62" rx="12" fill="#17243a" stroke="#38bdf8" stroke-width="2"/>
+<text x="91" y="236" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Client</text>
+<rect x="195" y="200" width="132" height="62" rx="12" fill="#17243a" stroke="#34d399" stroke-width="2"/>
+<text x="261" y="236" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">API Gateway</text>
+<rect x="365" y="200" width="132" height="62" rx="12" fill="#17243a" stroke="#a78bfa" stroke-width="2"/>
+<text x="431" y="236" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Mobile BFF</text>
+<rect x="535" y="200" width="132" height="62" rx="12" fill="#17243a" stroke="#fb923c" stroke-width="2"/>
+<text x="601" y="236" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Domain API</text>
+<rect x="705" y="100" width="132" height="62" rx="12" fill="#17243a" stroke="#f472b6" stroke-width="2"/>
+<text x="771" y="136" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Legacy ACL</text>
+<rect x="705" y="305" width="132" height="62" rx="12" fill="#17243a" stroke="#f472b6" stroke-width="2"/>
+<text x="771" y="341" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Ambassador</text>
+</svg>

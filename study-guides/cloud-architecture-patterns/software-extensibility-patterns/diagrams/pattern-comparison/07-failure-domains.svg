@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="670" viewBox="0 0 1200 670">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker></defs>
+<rect width="1200" height="670" fill="#0b1020"/>
+<text x="45" y="58" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#f8fafc">Failure domains differ by pattern</text>
+<text x="45" y="88" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Contain impact and measure the correct customer outcome.</text>
+<rect x="45" y="145" width="250" height="105" rx="14" fill="#17243b" stroke="#fb7185" stroke-width="2"/>
+<text x="61" y="177" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#fb7185">Gateway outage</text>
+<text x="61" y="203" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Broad client impact</text>
+<text x="61" y="225" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Multi-zone + shedding</text>
+<rect x="345" y="145" width="250" height="105" rx="14" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="361" y="177" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#fb923c">Mobile BFF failure</text>
+<text x="361" y="203" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Mobile-specific impact</text>
+<text x="361" y="225" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Timeouts + fallback</text>
+<rect x="645" y="145" width="250" height="105" rx="14" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="661" y="177" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#34d399">Plugin crash</text>
+<text x="661" y="203" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Extension-specific impact</text>
+<text x="661" y="225" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Isolation + disable</text>
+<rect x="945" y="145" width="210" height="105" rx="14" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="961" y="177" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#a78bfa">ACL defect</text>
+<text x="961" y="203" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Semantic corruption</text>
+<text x="961" y="225" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Reconciliation</text>
+<rect x="290" y="375" width="620" height="115" rx="14" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="306" y="407" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#38bdf8">Journey-level observability</text>
+<text x="306" y="433" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Checkout success / p95 / duplicate charges</text>
+<text x="306" y="455" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Traces / owner / rollback readiness</text>
+<path d="M 295 197.5 L 290 432.5" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 470.0 250 L 600.0 375" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 770.0 250 L 600.0 375" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 945 197.5 L 910 432.5" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<rect x="45" y="606" width="1110" height="42" rx="9" fill="#202c45"/>
+<text x="60" y="633" font-family="Arial,sans-serif" font-size="15" fill="#d5e2f3">A green uptime dashboard does not prove semantic correctness.</text>
+</svg>

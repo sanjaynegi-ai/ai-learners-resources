@@ -1,4 +1,7 @@
 # LangChain: From First LLM Call to Production-Minded AI Applications
+
+> **Unit ID:** W-LC-REF-01 · **Use:** Draft reference route; numbered workbook units supply the current primary build path.
+> **Status:** Draft reference route; current complete verification and publication gates are not established.
 > **Standalone learner workbook** · Python + UV · Chat models · Prompt design · Chains · Conversation history · Embeddings · Retrieval · RAG · Agents
 
 <div style="background:#17324D;color:white;padding:18px 22px;border-radius:10px;">

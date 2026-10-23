@@ -1,13 +1,18 @@
 # Chapter 14 — LangGraph and LangSmith: Control Flow and Observation (Optional)
 
+> **Unit ID:** W-LC-14 · **Capability:** AI-GRAPH-01 · [Course map](../../../README.md#ordered-capability-map)
+> **Status:** Draft · **Runtime:** your W-LC-00 learner project (Python 3.11 via uv) · **Contract, cleanup and verification:** [W-LC-14 record](lesson-contract.md#w-lc-14).
+
 > **Study time:** 70–100 minutes, plus optional hosted tracing.  
-> **Prerequisites:** Python functions/dictionaries, [Chains and Runnables](05-chains-and-runnables.md), and [Debugging and Evaluation](13-debugging-testing-and-evaluation.md).  
+> **Prerequisites:** Python functions/dictionaries, [W-LC-05 — Chains and Runnables](05-chains-and-runnables.md), and [W-LC-13 — Debugging and Evaluation](13-debugging-testing-and-evaluation.md).<br>
 > **Central question:** What controls the next step, and what records what happened?  
 > **Running example:** Fernwood team-notes assistant.
 
-[Previous: Debugging and Evaluation](13-debugging-testing-and-evaluation.md) · [Index](README.md) · [Next: Guided Integration](15-guided-integration-lab.md)
+[W-LC-13 — Previous: Debugging and Evaluation](13-debugging-testing-and-evaluation.md) · [Index](README.md) · [W-LC-15 — Next: Guided Integration](15-guided-integration-lab.md)
 
 **Optional route:** You can skip this chapter and proceed to Chapter 15. The core workbook, integration lab, and assessment must not depend on this chapter's code or a LangSmith account. The complete local lab below needs neither a model service nor an external account.
+
+For the required deeper course route after this optional introduction, continue to [SG-GRAPH-00](../../../study-guides/stateful-orchestration/README.md) and [W-GRAPH-01](../../langgraph/approval-workflow/README.md): durable SQLite checkpoints, approval/revocation, crash recovery and independent quorum work. The original Fernwood integration still does not depend on this optional chapter.
 
 ## Learning objectives
 
@@ -370,9 +375,17 @@ Yes, if hosted tracing or another external integration is enabled. Model locatio
 - [ ] I completed local inspection, or additionally verified optional hosted trace receipt.
 - [ ] I can explain the limits of this fixture and the data sent by tracing.
 
-You can now continue to [Chapter 15](15-guided-integration-lab.md), whether you completed this optional graph exploration or skipped it. The integration route should compose the already taught core components without requiring these optional services.
+## Completion checkpoint
+
+**You can now:** explain the separate jobs of LangChain, LangGraph and LangSmith, build a bounded graph with explicit state, and say exactly what hosted tracing would upload.
+
+**Show it:** the checklist above, with your local node-update record.
+
+**Next:** continue to [W-LC-15 — Chapter 15](15-guided-integration-lab.md), whether you completed this optional graph exploration or skipped it. The integration route should compose the already taught core components without requiring these optional services.
 
 ## References  
+
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
 
 - [LangGraph Graph API](https://docs.langchain.com/oss/python/langgraph/graph-api): state, nodes, edges, reducers, and execution bounds.
 - [LangGraph persistence](https://docs.langchain.com/oss/python/langgraph/persistence): checkpoints, threads, and persistence responsibilities.

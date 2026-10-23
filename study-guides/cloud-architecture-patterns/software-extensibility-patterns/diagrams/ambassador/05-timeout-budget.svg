@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="End-to-end time budget: one deadline, bounded hops">
+<rect width="1200" height="440" fill="#0b1220"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="35" y="49" fill="#fff" font-family="Arial" font-weight="bold" font-size="27">End-to-end time budget: one deadline, bounded hops</text>
+<rect x="35" y="135" width="230" height="120" rx="13" fill="#18263b" stroke="#22d3ee" stroke-width="2.6"/>
+<text x="150.0" y="185.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Client budget</text>
+<text x="150.0" y="213.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">1,500 ms total</text>
+<rect x="335" y="135" width="230" height="120" rx="13" fill="#18263b" stroke="#a78bfa" stroke-width="2.6"/>
+<text x="450.0" y="185.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Service work</text>
+<text x="450.0" y="213.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">200 ms</text>
+<rect x="635" y="135" width="230" height="120" rx="13" fill="#18263b" stroke="#34d399" stroke-width="2.6"/>
+<text x="750.0" y="185.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Proxy + network</text>
+<text x="750.0" y="213.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">250 ms</text>
+<rect x="935" y="135" width="230" height="120" rx="13" fill="#18263b" stroke="#fbbf24" stroke-width="2.6"/>
+<text x="1050.0" y="185.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Provider</text>
+<text x="1050.0" y="213.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">800 ms allowance</text>
+<path d="M265 195 L335 195" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M565 195 L635 195" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M865 195 L935 195" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="35" y="403" fill="#fbbf24" font-family="Arial" font-size="16">Keep remaining budget for response, jitter, and cleanup; values are illustrative.</text>
+</svg>

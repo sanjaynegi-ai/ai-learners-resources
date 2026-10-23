@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="Multiple inbound adapters">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#73d7f7"/></marker></defs>
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="48" y="61" fill="#ffffff" font-family="Arial,sans-serif" font-size="30" font-weight="bold">Multiple inbound adapters</text>
+<text x="48" y="91" fill="#9eb4d1" font-family="Arial,sans-serif" font-size="16">One use case; multiple ways to request the same business action.</text>
+<rect x="45" y="140" width="250" height="90" rx="13" fill="#14243b" stroke="#35d0f2" stroke-width="2"/>
+<text x="170.0" y="171" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">REST Controller</text>
+<text x="170.0" y="196" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">HTTP / JSON</text>
+<rect x="45" y="280" width="250" height="90" rx="13" fill="#14243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="170.0" y="311" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">CLI Command</text>
+<text x="170.0" y="336" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Arguments</text>
+<rect x="45" y="420" width="250" height="90" rx="13" fill="#14243b" stroke="#34d399" stroke-width="2"/>
+<text x="170.0" y="451" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Message Consumer</text>
+<text x="170.0" y="476" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Command message</text>
+<rect x="400" y="270" width="220" height="100" rx="13" fill="#14243b" stroke="#fb923c" stroke-width="2"/>
+<text x="510.0" y="301" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">PlaceOrder Port</text>
+<text x="510.0" y="326" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Typed command</text>
+<rect x="730" y="270" width="275" height="100" rx="13" fill="#14243b" stroke="#f472b6" stroke-width="2"/>
+<text x="867.5" y="301" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Checkout Use Case</text>
+<text x="867.5" y="326" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">One set of business rules</text>
+<line x1="295.0" y1="185.0" x2="400.0" y2="320.0" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="295.0" y1="325.0" x2="400.0" y2="320.0" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="295.0" y1="465.0" x2="400.0" y2="320.0" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="620.0" y1="320.0" x2="730.0" y2="320.0" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="675.0" y="311.0" text-anchor="middle" fill="#facc15" font-size="12" font-family="Arial">execute</text>
+<text x="48" y="564" fill="#b9c9df" font-family="Arial" font-size="16">Authentication and authorization rules must be consistently enforced.</text>
+</svg>

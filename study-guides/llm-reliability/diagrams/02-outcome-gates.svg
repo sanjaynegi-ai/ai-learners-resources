@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
+  <title id="title">Every request passes four gates and ends in one honest outcome</title>
+  <desc id="desc">A request flows down four gates. Gate 1, admission: is the queue below its limit and is there token budget to reserve? Gate 2, circuit breaker: is the provider considered healthy? Gate 3, bounded call: within the time remaining, with retries only for retryable errors and within the retry budget. Gate 4, classify: did the model answer or abstain? Each of the first three gates has an arrow to a Fallback box listing reasons: queue full, budget exhausted, breaker open, deadline, attempts or retry budget exhausted, quota exhausted. Gate 4 leads to Ready when the model answered, or Abstained when it said the facts were insufficient. A separate note says a customer leaving at any point cancels the work and releases reservations. A footer states that only Ready is an AI success, and that each outcome is counted separately with its own denominator.</desc>
+  <rect width="1100" height="600" fill="#0B1020"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#94A3B8" stroke-width="2"/></marker></defs>
+  <g font-family="Arial,sans-serif" fill="#F8FAFC">
+    <text x="40" y="40" font-size="24" font-weight="bold">Four gates, four honest outcomes</text>
+    <rect x="40" y="70" width="420" height="72" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/>
+    <text x="60" y="100" font-size="17" font-weight="bold">1 Admission</text>
+    <text x="60" y="125" font-size="14" fill="#CBD5E1">Queue below limit? Token budget reservable?</text>
+    <rect x="40" y="172" width="420" height="72" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/>
+    <text x="60" y="202" font-size="17" font-weight="bold">2 Circuit breaker</text>
+    <text x="60" y="227" font-size="14" fill="#CBD5E1">Is the provider currently considered healthy?</text>
+    <rect x="40" y="274" width="420" height="92" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/>
+    <text x="60" y="304" font-size="17" font-weight="bold">3 Bounded call</text>
+    <text x="60" y="329" font-size="14" fill="#CBD5E1">Timeout = time remaining; retry only retryable</text>
+    <text x="60" y="351" font-size="14" fill="#CBD5E1">errors, with jittered backoff and a retry budget</text>
+    <rect x="40" y="396" width="420" height="72" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/>
+    <text x="60" y="426" font-size="17" font-weight="bold">4 Classify the answer</text>
+    <text x="60" y="451" font-size="14" fill="#CBD5E1">Did the model answer, or say it lacks the facts?</text>
+    <path d="M250 142 L250 166" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M250 244 L250 268" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M250 366 L250 390" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="640" y="90" width="420" height="200" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="660" y="122" font-size="18" font-weight="bold">Fallback</text>
+    <text x="660" y="148" font-size="14" fill="#CBD5E1">Customer: honest acknowledgement, fast</text>
+    <text x="660" y="170" font-size="14" fill="#CBD5E1">Agent: handles the ticket</text>
+    <text x="660" y="200" font-size="14" fill="#FBBF24">queue full · budget exhausted · breaker open</text>
+    <text x="660" y="222" font-size="14" fill="#FBBF24">deadline · attempts exhausted</text>
+    <text x="660" y="244" font-size="14" fill="#FBBF24">retry budget exhausted · quota exhausted</text>
+    <text x="660" y="272" font-size="13" fill="#CBD5E1">Not an AI success; count it separately</text>
+    <path d="M460 106 L634 150" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M460 208 L634 190" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M460 320 L634 240" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <text x="500" y="120" font-size="13" fill="#CBD5E1">no</text>
+    <text x="500" y="196" font-size="13" fill="#CBD5E1">open</text>
+    <text x="500" y="292" font-size="13" fill="#CBD5E1">gave up</text>
+    <rect x="640" y="320" width="200" height="72" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/>
+    <text x="740" y="350" font-size="18" font-weight="bold" text-anchor="middle">Ready</text>
+    <text x="740" y="374" font-size="13" fill="#CBD5E1" text-anchor="middle">a draft for the agent</text>
+    <rect x="860" y="320" width="200" height="72" rx="12" fill="#172136" stroke="#94A3B8" stroke-width="2"/>
+    <text x="960" y="350" font-size="18" font-weight="bold" text-anchor="middle">Abstained</text>
+    <text x="960" y="374" font-size="13" fill="#CBD5E1" text-anchor="middle">model: facts missing</text>
+    <path d="M460 420 L700 398" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M460 440 L920 398" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="640" y="484" width="420" height="52" rx="12" fill="none" stroke="#94A3B8" stroke-dasharray="6 5"/>
+    <text x="660" y="516" font-size="14" fill="#CBD5E1">Customer leaves at any gate: cancel work, release reservations</text>
+    <text x="40" y="560" font-size="16">Only Ready is an AI success. Report ready, abstained, fallback (by reason) and cancelled</text>
+    <text x="40" y="584" font-size="16">separately, each over the same denominator of requests.</text>
+  </g>
+</svg>

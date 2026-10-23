@@ -1,12 +1,20 @@
 # Chapter 08 — Pipes & Filters
 
+> **Unit ID:** SG-SCALE-08 · **Capability:** AI-AWS-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
 > **Standalone self-study chapter · Estimated study time: 80–100 minutes**
 >
 > **Running case study:** QuickCart, a fictional e-commerce platform.
 >
 > **Core idea:** Split a complex transformation into well-defined stages (filters), connect them with explicit data handoffs (pipes), and manage each stage independently.
+>
+> **You need:** SG-SCALE-04 to SG-SCALE-05.
+>
+> **You will produce:** Stage/ownership contract, bottleneck calculation and stale-version rejection rule.
 
-[← Previous: Scatter–Gather](07-scatter-gather.md) · [Foundations](00-foundations.md)
+[SG-SCALE-07 — ← Previous: Scatter–Gather](07-scatter-gather.md) · [SG-SCALE-00 — Foundations](00-foundations.md)
 
 ## 1. Learning objectives
 
@@ -112,7 +120,7 @@ Not every step needs to run sequentially.
 
 After validation, QuickCart may encode the video and generate its thumbnail concurrently. A publication gate waits for both required outputs.
 
-![Branch and join](../diagrams/pipes-filters/03-branch-and-join.svg)
+![Branch after validation, then join required outputs. Parallel branches are possible only after shared prerequisites complete.](../diagrams/pipes-filters/03-branch-and-join.svg)
 
 **Diagram walkthrough**
 
@@ -141,7 +149,7 @@ Assume a simple sequential pipeline where each item must pass through three stag
 | Encoding | 20 items/minute |
 | Thumbnail | 100 items/minute |
 
-![Pipeline bottleneck](../diagrams/pipes-filters/04-stage-bottleneck.svg)
+![Throughput is constrained by the slowest required stage. Stable throughput is at most 20 items/min until encoding capacity improves.](../diagrams/pipes-filters/04-stage-bottleneck.svg)
 
 **Diagram walkthrough**
 
@@ -213,7 +221,7 @@ A pipeline may increase overall throughput while an overloaded stage still cause
 
 An asynchronous pipeline often uses queues to buffer work between filters.
 
-![Stage queues](../diagrams/pipes-filters/05-stage-queues.svg)
+![Durable stage queues enable buffering and recovery. Queues absorb bursts; workers determine stage throughput.](../diagrams/pipes-filters/05-stage-queues.svg)
 
 **Diagram walkthrough**
 
@@ -365,7 +373,7 @@ This is a correctness problem, not just a performance optimization.
 
 For QuickCart, a video becomes visible only after its **required** processing outputs and checks succeed.
 
-![Production workflow](../diagrams/pipes-filters/09-production-architecture.svg)
+![QuickCart: upload, branch, verify, and publish. Only publish when the required artifacts and checks have succeeded.](../diagrams/pipes-filters/09-production-architecture.svg)
 
 **Diagram walkthrough**
 
@@ -697,7 +705,15 @@ A production system rarely uses one pattern in isolation. QuickCart may use stat
 
 The goal is not to use every pattern. The goal is to apply the right pattern to a measured problem while preserving correctness, operability, and cost control.  
 
-[Next: 09 — Architecture Case Study](09-architecture-case-study.md).
+[SG-SCALE-09 — Next: 09 — Architecture Case Study](09-architecture-case-study.md).
+
+## Completion checkpoint
+
+**You can now:** explain immutable artifacts and publish conditions.
+
+**Show it:** Stage/ownership contract, bottleneck calculation and stale-version rejection rule. Then attempt chapter 08's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-09 — Integrated QuickCart Architecture Case Study](09-architecture-case-study.md).
 
 ---
 

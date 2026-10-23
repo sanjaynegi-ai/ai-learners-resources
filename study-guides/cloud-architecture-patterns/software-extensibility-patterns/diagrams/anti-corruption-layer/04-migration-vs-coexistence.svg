@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="TWO LIFECYCLES FOR AN ACL">
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="52" y="64" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#f8fafc">TWO LIFECYCLES FOR AN ACL</text>
+<text x="52" y="98" font-family="Arial,sans-serif" font-size="16" fill="#a7b7ce">The boundary may be temporary or permanent</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#91a4c4"/></marker></defs>
+<path d="M300,230 L420,230" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<path d="M670,230 L790,230" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<path d="M300,420 L420,420" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<path d="M670,420 L790,420" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="50" y="180" width="250" height="100" rx="16" fill="#151F36" stroke="#fb923c" stroke-width="2.5"/>
+<text x="175.0" y="215" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Migration</text>
+<text x="175.0" y="243" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Old capabilities</text>
+<rect x="420" y="180" width="250" height="100" rx="16" fill="#151F36" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="545.0" y="215" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">ACL</text>
+<text x="545.0" y="243" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Translation during change</text>
+<rect x="790" y="180" width="250" height="100" rx="16" fill="#151F36" stroke="#34d399" stroke-width="2.5"/>
+<text x="915.0" y="215" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Modern services</text>
+<text x="915.0" y="243" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">ACL eventually retired</text>
+<rect x="50" y="370" width="250" height="100" rx="16" fill="#151F36" stroke="#fb923c" stroke-width="2.5"/>
+<text x="175.0" y="405" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Legacy loyalty</text>
+<text x="175.0" y="433" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Still valuable</text>
+<rect x="420" y="370" width="250" height="100" rx="16" fill="#151F36" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="545.0" y="405" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Permanent ACL</text>
+<text x="545.0" y="433" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Owned and monitored</text>
+<rect x="790" y="370" width="250" height="100" rx="16" fill="#151F36" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="915.0" y="405" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Modern consumers</text>
+<text x="915.0" y="433" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Clean domain models</text>
+<rect x="45" y="527" width="1010" height="49" rx="12" fill="#1b2b43"/>
+<text x="550" y="557" font-family="Arial" font-size="17" fill="#e2e8f0" text-anchor="middle">Migration: remove the adapter when possible. Coexistence: operate it as a product.</text>
+</svg>

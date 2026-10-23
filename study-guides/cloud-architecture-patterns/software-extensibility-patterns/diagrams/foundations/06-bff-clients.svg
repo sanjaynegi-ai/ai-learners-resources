@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-label="BFFs tailor client experiences; domain rules remain shared">
+<rect width="1200" height="460" fill="#0b1220"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="34" y="45" fill="#fff" font-size="26" font-weight="bold" font-family="Arial">BFFs tailor client experiences; domain rules remain shared</text>
+<path d="M275 145 L385 145" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M275 290 L385 290" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M645 145 L795 200" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M645 290 L795 250" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<rect x="35" y="100" width="240" height="90" rx="13" fill="#17243b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="155.0" y="137.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Web UI</text>
+<text x="155.0" y="163.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Rich desktop view</text>
+<rect x="35" y="245" width="240" height="90" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="155.0" y="282.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Mobile UI</text>
+<text x="155.0" y="308.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Compact low-roundtrip view</text>
+<rect x="385" y="100" width="260" height="90" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2.5"/>
+<text x="515.0" y="137.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Web BFF</text>
+<text x="515.0" y="163.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Compose desktop model</text>
+<rect x="385" y="245" width="260" height="90" rx="13" fill="#17243b" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="515.0" y="282.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Mobile BFF</text>
+<text x="515.0" y="308.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Compose mobile model</text>
+<rect x="795" y="165" width="355" height="120" rx="13" fill="#17243b" stroke="#fb7185" stroke-width="2.5"/>
+<text x="972.5" y="217.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Shared domain services</text>
+<text x="972.5" y="243.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Catalog, pricing, checkout</text>
+<text x="34" y="419" fill="#fbbf24" font-family="Arial" font-size="15">BFFs shape client responses; they must not duplicate authoritative pricing or checkout rules.</text>
+</svg>

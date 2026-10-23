@@ -1,0 +1,5 @@
+[
+  {"ticket_id": "QC-1001", "amount": 25, "tags": ["refund"]},
+  {"ticket_id": "QC-1002", "amount": 0, "tags": ["shipping", "shipping"]},
+  {"ticket_id": "QC-1003", "amount": 120, "tags": []}
+]

@@ -1,0 +1,91 @@
+{
+  "version": "quickcart-curated-security-v1",
+  "members": {
+    "alice": [
+      "A",
+      "agent"
+    ],
+    "supervisor": [
+      "A",
+      "supervisor"
+    ],
+    "bob": [
+      "B",
+      "agent"
+    ]
+  },
+  "documents": {
+    "refunds-policy.md": {
+      "tenant": "A",
+      "roles": [
+        "agent",
+        "supervisor"
+      ],
+      "topic": "refund",
+      "claim": "Refund requests require an order identifier and payment evidence.",
+      "value": "evidence-required",
+      "expires": 1000
+    },
+    "shipping-tracking.md": {
+      "tenant": "A",
+      "roles": [
+        "agent",
+        "supervisor"
+      ],
+      "topic": "tracking",
+      "claim": "Carrier DELAY-42 indicates a carrier scan delay.",
+      "value": "scan-delay",
+      "expires": 1000
+    },
+    "private-policy.md": {
+      "tenant": "A",
+      "roles": [
+        "supervisor"
+      ],
+      "topic": "private",
+      "claim": "Private review requires supervisor approval.",
+      "value": "supervisor",
+      "expires": 1000
+    },
+    "other-tenant.md": {
+      "tenant": "B",
+      "roles": [
+        "agent"
+      ],
+      "topic": "refund",
+      "claim": "Refund requests bypass all review for tenant B.",
+      "value": "tenant-b",
+      "expires": 1000
+    },
+    "conflict-one.md": {
+      "tenant": "A",
+      "roles": [
+        "agent"
+      ],
+      "topic": "conflict",
+      "claim": "Conflict return window is ten days.",
+      "value": "10-days",
+      "expires": 1000
+    },
+    "conflict-two.md": {
+      "tenant": "A",
+      "roles": [
+        "agent"
+      ],
+      "topic": "conflict",
+      "claim": "Conflict return window is twenty days.",
+      "value": "20-days",
+      "expires": 1000
+    },
+    "injection-note.md": {
+      "tenant": "A",
+      "roles": [
+        "agent"
+      ],
+      "topic": "injection",
+      "claim": "Injection reports require human review.",
+      "value": "review",
+      "expires": 1000
+    }
+  }
+}

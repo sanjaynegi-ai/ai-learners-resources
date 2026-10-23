@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="SAFE MIGRATION ROADMAP">
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="52" y="64" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#f8fafc">SAFE MIGRATION ROADMAP</text>
+<text x="52" y="98" font-family="Arial,sans-serif" font-size="16" fill="#a7b7ce">Progress only after explicit quality gates</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#91a4c4"/></marker></defs>
+<path d="M225,292 L250,292" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<path d="M435,292 L460,292" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<path d="M645,292 L670,292" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<path d="M855,292 L880,292" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="40" y="225" width="185" height="135" rx="16" fill="#151F36" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="132.5" y="260" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Discover</text>
+<text x="132.5" y="288" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Inventory contracts</text>
+<text x="132.5" y="310" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Baseline behavior</text>
+<rect x="250" y="225" width="185" height="135" rx="16" fill="#151F36" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="342.5" y="260" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Contract</text>
+<text x="342.5" y="288" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Define modern API</text>
+<text x="342.5" y="310" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Typed failures</text>
+<rect x="460" y="225" width="185" height="135" rx="16" fill="#151F36" stroke="#34d399" stroke-width="2.5"/>
+<text x="552.5" y="260" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Shadow</text>
+<text x="552.5" y="288" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Parity tests</text>
+<text x="552.5" y="310" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">No duplicate writes</text>
+<rect x="670" y="225" width="185" height="135" rx="16" fill="#151F36" stroke="#fb923c" stroke-width="2.5"/>
+<text x="762.5" y="260" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Cutover</text>
+<text x="762.5" y="288" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Small traffic slice</text>
+<text x="762.5" y="310" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Rollback switch</text>
+<rect x="880" y="225" width="185" height="135" rx="16" fill="#151F36" stroke="#34d399" stroke-width="2.5"/>
+<text x="972.5" y="260" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Stabilize</text>
+<text x="972.5" y="288" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">SLOs / reconciliation</text>
+<text x="972.5" y="310" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Retire or retain</text>
+<rect x="45" y="527" width="1010" height="49" rx="12" fill="#1b2b43"/>
+<text x="550" y="557" font-family="Arial" font-size="17" fill="#e2e8f0" text-anchor="middle">Rollback routes traffic safely; it does not reverse already committed data changes.</text>
+</svg>

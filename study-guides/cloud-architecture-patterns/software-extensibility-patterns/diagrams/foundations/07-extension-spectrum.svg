@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-label="An extension spectrum: code, process, service, and edge">
+<rect width="1200" height="460" fill="#0b1220"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="34" y="45" fill="#fff" font-size="26" font-weight="bold" font-family="Arial">An extension spectrum: code, process, service, and edge</text>
+<path d="M280 185 L325 185" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M580 185 L625 185" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M880 185 L925 185" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<rect x="25" y="125" width="255" height="120" rx="13" fill="#17243b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="152.5" y="177.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">In-process</text>
+<text x="152.5" y="203.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Library / ports-adapters</text>
+<rect x="325" y="125" width="255" height="120" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="452.5" y="177.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Colocated</text>
+<text x="452.5" y="203.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Sidecar / Ambassador</text>
+<rect x="625" y="125" width="255" height="120" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2.5"/>
+<text x="752.5" y="177.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Separate service</text>
+<text x="752.5" y="203.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">ACL / BFF / gateway</text>
+<rect x="925" y="125" width="255" height="120" rx="13" fill="#17243b" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="1052.5" y="177.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Runtime switch</text>
+<text x="1052.5" y="203.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Feature flags / plugins</text>
+<text x="34" y="419" fill="#fbbf24" font-family="Arial" font-size="15">These are not maturity levels; choose the least costly boundary that satisfies the need.</text>
+</svg>

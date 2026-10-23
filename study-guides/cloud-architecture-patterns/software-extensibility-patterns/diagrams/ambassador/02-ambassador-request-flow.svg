@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="After: Payment Service uses a local Ambassador">
+<rect width="1200" height="440" fill="#0b1220"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="35" y="49" fill="#fff" font-family="Arial" font-weight="bold" font-size="27">After: Payment Service uses a local Ambassador</text>
+<rect x="35" y="145" width="265" height="115" rx="13" fill="#18263b" stroke="#22d3ee" stroke-width="2.6"/>
+<text x="167.5" y="192.5" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Payment Service</text>
+<text x="167.5" y="220.5" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Business intent + key</text>
+<rect x="410" y="145" width="265" height="115" rx="13" fill="#18263b" stroke="#a78bfa" stroke-width="2.6"/>
+<text x="542.5" y="192.5" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Ambassador Proxy</text>
+<text x="542.5" y="220.5" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">TLS / route / observe</text>
+<rect x="785" y="145" width="320" height="115" rx="13" fill="#18263b" stroke="#34d399" stroke-width="2.6"/>
+<text x="945.0" y="192.5" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Payment Provider</text>
+<text x="945.0" y="220.5" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">External HTTPS endpoint</text>
+<path d="M300 200 L410 200" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="355.0" y="188.0" text-anchor="middle" fill="#fbbf24" font-family="Arial" font-size="13">local</text>
+<path d="M675 200 L785 200" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="730.0" y="188.0" text-anchor="middle" fill="#fbbf24" font-family="Arial" font-size="13">TLS</text>
+<text x="35" y="403" fill="#fbbf24" font-family="Arial" font-size="16">Payment Service owns charging decisions and duplicate protection.</text>
+</svg>

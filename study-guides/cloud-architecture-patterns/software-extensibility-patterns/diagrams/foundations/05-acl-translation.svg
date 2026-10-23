@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-label="ACL: translate meaning, not just field names">
+<rect width="1200" height="460" fill="#0b1220"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="34" y="45" fill="#fff" font-size="26" font-weight="bold" font-family="Arial">ACL: translate meaning, not just field names</text>
+<path d="M295 200 L385 200" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<text x="340" y="190" text-anchor="middle" fill="#fbbf24" font-size="13" font-family="Arial">modern contract</text>
+<path d="M745 200 L835 200" fill="none" stroke="#cbd5e1" stroke-width="2.4" marker-end="url(#arr)"/>
+<text x="790" y="190" text-anchor="middle" fill="#fbbf24" font-size="13" font-family="Arial">legacy contract</text>
+<rect x="35" y="140" width="260" height="120" rx="13" fill="#17243b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="165.0" y="192.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Modern Orders API</text>
+<text x="165.0" y="218.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">CustomerId / Active</text>
+<rect x="385" y="140" width="360" height="120" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="565.0" y="192.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Anti-Corruption Layer</text>
+<text x="565.0" y="218.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Map fields, status, errors</text>
+<rect x="835" y="140" width="320" height="120" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2.5"/>
+<text x="995.0" y="192.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Legacy Monolith</text>
+<text x="995.0" y="218.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">CUST_NO / ACTIVE_FLAG=Y</text>
+<text x="34" y="419" fill="#fbbf24" font-family="Arial" font-size="15">An ACL is a logical boundary: module or service, temporary or long-lived.</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="610" viewBox="0 0 1100 610">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6" fill="none" stroke="#38bdf8" stroke-width="1.6"/></marker></defs>
+<rect width="1100" height="610" fill="#0b1020"/>
+<text x="45" y="55" fill="#f1f5f9" font-family="Arial,sans-serif" font-weight="bold" font-size="29">QuickCart: a pragmatic 90-day pilot</text>
+<text x="45" y="86" fill="#94a3b8" font-family="Arial,sans-serif" font-size="15">Distinct boundaries; no need to deploy every pattern</text>
+<path d="M230 277.5 L290 277.5" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<path d="M490 277.5 L550 162.5" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="520.0" y="211.0" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">product</text>
+<path d="M490 277.5 L550 387.5" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="520.0" y="323.5" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">profile</text>
+<path d="M770 387.5 L820 387.5" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="795.0" y="378.5" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">translate</text>
+<path d="M770 162.5 L820 162.5" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="795.0" y="153.5" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">checkout</text>
+<rect x="45" y="225" width="185" height="105" rx="13" fill="#151f36" stroke="#38bdf8" stroke-width="2"/>
+<text x="137.5" y="259" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Mobile clients</text>
+<text x="137.5" y="284" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Product views</text>
+<rect x="290" y="225" width="200" height="105" rx="13" fill="#151f36" stroke="#a78bfa" stroke-width="2"/>
+<text x="390.0" y="259" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Mobile BFF</text>
+<text x="390.0" y="284" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Screen composition</text>
+<rect x="550" y="115" width="220" height="95" rx="13" fill="#151f36" stroke="#fb923c" stroke-width="2"/>
+<text x="660.0" y="149" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Legacy monolith</text>
+<text x="660.0" y="174" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Catalog </text>
+<text x="660.0" y="194" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> Orders</text>
+<rect x="550" y="340" width="220" height="95" rx="13" fill="#151f36" stroke="#a78bfa" stroke-width="2"/>
+<text x="660.0" y="374" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Customer ACL</text>
+<text x="660.0" y="399" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">CRM translation</text>
+<rect x="820" y="115" width="240" height="95" rx="13" fill="#151f36" stroke="#34d399" stroke-width="2"/>
+<text x="940.0" y="149" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Payment orchestration</text>
+<text x="940.0" y="174" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Idempotency </text>
+<text x="940.0" y="194" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> reconcile</text>
+<rect x="820" y="340" width="240" height="95" rx="13" fill="#151f36" stroke="#fb7185" stroke-width="2"/>
+<text x="940.0" y="374" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Legacy CRM</text>
+<text x="940.0" y="399" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Customer source</text>
+<text x="45" y="580" fill="#94a3b8" font-size="14" font-family="Arial">Keep source-of-truth boundaries explicit; defer a full mesh and plugin runtime.</text></svg>

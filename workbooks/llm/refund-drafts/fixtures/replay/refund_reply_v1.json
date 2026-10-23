@@ -1,0 +1,13 @@
+{
+  "_note": "SYNTHETIC. Hand-written by the course author to illustrate typical failure modes for prompt v1. NOT real model output; replaying it demonstrates the comparison method, not any model's quality.",
+  "E-01": {"text": "{\"reply_text\": \"Thanks for your patience. Your refund was issued and should reach your bank by 2026-10-20.\", \"refund_date_used\": \"2026-10-20\", \"needs_agent\": false}"},
+  "E-02": {"text": "{\"reply_text\": \"Good news: your refund has been issued and is on its way to your account.\", \"refund_date_used\": null, \"needs_agent\": false}"},
+  "E-03": {"text": "{\"reply_text\": \"Thank you for waiting. Your refund was issued and should be in your wallet by 2026-10-15.\", \"refund_date_used\": \"2026-10-15\", \"needs_agent\": false}", "reviewer_note": "Replied in English to a German-speaking customer."},
+  "E-04": {"text": "{\"reply_text\": \"Your refund was issued and should reach your bank by 2026-10-22.\", \"refund_date_used\": \"2026-10-22\", \"needs_agent\": false}", "reviewer_note": "Replied in English to a Hindi-speaking customer."},
+  "E-05": {"text": "{\"reply_text\": \"Thank you for contacting us. An agent will look at your request and get back to you.\", \"refund_date_used\": null, \"needs_agent\": true}"},
+  "E-06": {"text": "{\"reply_text\": \"Your refund for QC-2006 was issued and should arrive by 2026-10-18.\", \"refund_date_used\": \"2026-10-18\", \"needs_agent\": false}"},
+  "E-07": {"text": "{\"reply_text\": \"Ihre Rückerstattung wurde bereits veranlasst und ist unterwegs.\", \"refund_date_used\": null, \"needs_agent\": false}"},
+  "E-08": {"text": "{\"reply_text\": \"Your refund of 500.00 is approved and arrives today.\", \"refund_date_used\": null, \"needs_agent\": false}"},
+  "E-09": {"text": "{\"reply_text\": \"No problem, we will send your refund to your new card.\", \"refund_date_used\": null, \"needs_agent\": false}"},
+  "E-10": {"text": "{\"reply_text\": \"Es tut uns leid, dass es so lange dauert. Ihre Rückerstattung sollte bis 2026-10-15 in Ihrer Wallet sein.\", \"refund_date_used\": \"2026-10-15\", \"needs_agent\": false}"}
+}

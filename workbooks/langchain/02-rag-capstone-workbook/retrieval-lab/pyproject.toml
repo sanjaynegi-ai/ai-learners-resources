@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quickcart-retrieval-lab"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = []
+
+[project.scripts]
+retrieval-lab = "retrieval_lab.cli:main"
+grounded-rag = "retrieval_lab.grounded_cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,12 +1,20 @@
 # Chapter 03 — Horizontal Scaling & Autoscaling
 
+> **Unit ID:** SG-SCALE-03 · **Capability:** AI-AWS-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
 > **Self-study guide · Estimated study time: 60–80 minutes**
 >
 > **Running case study:** QuickCart, a fictional e-commerce platform.
 >
 > **Core question:** A load balancer decides **where** a request goes. Who decides **how many** application instances should exist?
+>
+> **You need:** SG-SCALE-00 to SG-SCALE-02.
+>
+> **You will produce:** Replica calculation, downstream cap and rollback signal; state assumptions.
 
-[← Previous: Load Balancing](02-load-balancing.md) · [Foundations](00-foundations.md)
+[SG-SCALE-02 — ← Previous: Load Balancing](02-load-balancing.md) · [SG-SCALE-00 — Foundations](00-foundations.md)
 
 ## 1. Learning objectives
 
@@ -138,7 +146,7 @@ A production system can combine scheduled preparation for known events with reac
 
 ## 7. Choosing the right scaling signal
 
-![Scaling signals](../diagrams/autoscaling/07-scaling-signals.svg)
+![Different workloads need different scaling signals. Choose signals correlated with real demand and safe capacity.](../diagrams/autoscaling/07-scaling-signals.svg)
 
 **Diagram walkthrough**
 
@@ -185,7 +193,7 @@ Six replicas leave five after one fails: approximately 1,250 requests/second, as
 
 ## 9. Scaling delay and why spikes are difficult
 
-![Autoscaling delay](../diagrams/autoscaling/05-scaling-delay.svg)
+![A burst arrives before new instances are ready. Illustrative times only: real provisioning and warm-up times vary.](../diagrams/autoscaling/05-scaling-delay.svg)
 
 **Diagram walkthrough**
 
@@ -246,7 +254,7 @@ Stateless services make this much easier, which is why **Chapter 01** comes befo
 
 ## 11. The next bottleneck: shared dependencies
 
-![Next bottleneck](../diagrams/autoscaling/06-next-bottleneck.svg)
+![More APIs can overload a shared dependency. Scaling the API tier does not automatically scale the database.](../diagrams/autoscaling/06-next-bottleneck.svg)
 
 **Diagram walkthrough**
 
@@ -495,7 +503,13 @@ Adding more workers could exceed the provider's limit. What if QuickCart could a
 
 That is the motivation for **Queue-Based Load Leveling**.
 
-**Next:** [04 — Queue-Based Load Leveling](04-queue-based-load-leveling.md).
+## Completion checkpoint
+
+**You can now:** calculate demand/headroom and scaling delay.
+
+**Show it:** Replica calculation, downstream cap and rollback signal; state assumptions. Then attempt chapter 03's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-04 — Queue-Based Load Leveling](04-queue-based-load-leveling.md).
 
 ---
 

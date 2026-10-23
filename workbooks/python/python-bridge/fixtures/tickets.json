@@ -1,0 +1,4 @@
+[
+  {"ticket_id":"QC-001","amount":10,"tags":["shipping","shipping"]},
+  {"ticket_id":"QC-002","amount":20,"tags":["returns"]}
+]

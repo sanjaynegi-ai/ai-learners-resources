@@ -1,13 +1,27 @@
 # Chapter 17 — Revision and Assessment: Explain the Whole Pipeline
 
+**Can you explain and verify the whole pipeline without trusting a plausible answer?**
+
+> **Your goal:** Assess written/practical evidence and select targeted repairs.<br>
+> **You need:** Core chapters 00-13, [integration evidence](15-guided-integration-lab.md) and attempted [practice challenges](16-practice-challenges.md).<br>
+> **Effort:** 40-60 minutes revision, then 90-120 assessment; estimated.<br>
+> **You will produce:** A scored assessment, evidence references and a repair/recheck plan. **Status:** Draft; unpiloted, evidence limits remain explicit.
+
+**Starting point:** Use your completed personal `fernwood-notes` project for integration evidence and preserve the earlier `langchain-learning` lab records. The required runtime is the project being assessed, not an environment copied from another lab.
+
+**Study route:** Attempt reconstruction and assessment before revealing answers. Keep weak dimensions and critical boundaries visible. Chapter 14, Gradio, Wikipedia and hosted tracing remain optional; the glossary is a reference, not the next compulsory build.
+
+<details>
+<summary>Reference: unit identity, versions and historical verification</summary>
+
+> **Unit ID:** W-LC-17 · **Capability:** AI-INTEGRATE-01 · [Course map](../../../README.md#ordered-capability-map)
+> **Status:** Draft · **Runtime:** your W-LC-00 learner project (Python 3.11 via uv) · **Contract, cleanup and verification:** [W-LC-17 record](lesson-contract.md#w-lc-17).
 > **Study time:** 40–60 minutes revision, then 90–120 minutes assessment.  
-> **Prerequisites:** Core Chapters 00–13, [guided integration](15-guided-integration-lab.md), and attempted [practice challenges](16-practice-challenges.md).  
+> **Prerequisites:** Core Chapters 00–13, [W-LC-15 — guided integration](15-guided-integration-lab.md), and attempted [W-LC-16 — practice challenges](16-practice-challenges.md).<br>
 > **Central question:** Can you explain, verify, and defend the assistant without relying on a plausible-looking response?  
 > **Running example:** Fernwood team-notes assistant.
 
-[Previous: Practice Challenges](16-practice-challenges.md) · [Index](README.md) · [Next: Glossary](18-glossary.md)
-
-Chapter 14, LangSmith, Gradio, Wikipedia, and live paid services are **not prerequisites for the core assessment**. Complete the deterministic route and label any live checks untested. Optional extensions do not earn replacement credit for missing core evidence.
+</details>
 
 ## Learning objectives
 
@@ -18,6 +32,9 @@ Chapter 14, LangSmith, Gradio, Wikipedia, and live paid services are **not prere
 - Complete a scored written/practical assessment and turn weak results into a repair plan.
 
 ## 1. Reconstruct the mechanism before revising
+
+> [!IMPORTANT]
+> Keep the existing rubric and essential boundaries intact. Optional features cannot compensate for missing core evidence, and a self-score is not independent certification.
 
 Without looking below, describe the path from a file to a displayed answer. Name what runs during indexing, what runs for each question, and where conversation history belongs.
 
@@ -186,7 +203,7 @@ uv run tools_lab.py --mode agent --case denied
 uv run terminal_stream.py --fail
 ```
 
-These are offline diagnostic entry points, not a sequential installation recipe. The last command deliberately exits nonzero after partial output. Query commands require completed matching snapshots; do not create one implicitly inside a UI request. Use [Chapter 15's file-order table](15-guided-integration-lab.md) if a file is missing.
+These are offline diagnostic entry points, not a sequential installation recipe. The last command deliberately exits nonzero after partial output. Query commands require completed matching snapshots; do not create one implicitly inside a UI request. Use [W-LC-15 — Chapter 15's file-order table](15-guided-integration-lab.md) if a file is missing.
 
 ## 7. Final assessment — core route only
 
@@ -260,7 +277,7 @@ Use the Chapter 15 learner project or recreate it from the complete-snippet map.
 
 **Submission:** A project tree and configuration summary without secrets; command/test results; a per-case review table; a before/after failure or change trace; and a short trade-off statement. Label deterministic, simulated-provider, live, manual-review, browser-unverified, and untested evidence accurately. If live services are available, include their results as a separate appendix; they do not replace core contract/isolation checks or automatically add points.
 
-**Scoring:** Apply the [five-category rubric in Chapter 16](16-practice-challenges.md#3-ten-point-self-study-rubric): understanding 2, implementation 2, verification 2, failure/correctness 2, trade-offs 2. Give verification credit for repeatable positive and negative evidence, not a screenshot of fluent prose. If you cannot run an interactive browser, automated UI checks plus an explicit visual-verification limitation can establish the deterministic scope; do not claim visual behavior passed.
+**Scoring:** Apply the [W-LC-16 — five-category rubric in Chapter 16](16-practice-challenges.md#3-ten-point-self-study-rubric): understanding 2, implementation 2, verification 2, failure/correctness 2, trade-offs 2. Give verification credit for repeatable positive and negative evidence, not a screenshot of fluent prose. If you cannot run an interactive browser, automated UI checks plus an explicit visual-verification limitation can establish the deterministic scope; do not claim visual behavior passed.
 
 <details><summary>One reasonable practical solution and marking guidance</summary>
 
@@ -294,15 +311,15 @@ Copy this table into your learner notes before revealing solutions:
 
 | Weak item/category | Revisit | Practice retry |
 |---|---|---|
-| A1 / conceptual types | [02 messages](02-models-and-messages.md), [03 prompts](03-prompts.md), [04 schema](04-structured-output.md), [05 composition](05-chains-and-runnables.md) | Chapter 16 Challenge 2; trace actual input/output types |
-| A2 / retrieval diagnosis | [07 embeddings](07-embeddings-and-similarity.md), [08 retrieval](08-documents-and-retrieval.md), [09 grounding](09-grounded-rag.md) | Challenge 3; compare exact passages, not just source IDs |
-| A3 / history correctness | [06 history](06-conversation-history.md), [10 rewriting](10-conversational-rag.md) | Challenge 4; isolation/eviction/clear traces |
-| A4 / permission or execution | [11 tools](11-tools-and-agents.md) | Challenge 5; correlate messages and audit |
-| A5 / quantitative judgment | [13 evaluation](13-debugging-testing-and-evaluation.md) | Recalculate case counts; Challenge 3 controlled comparison |
-| B implementation / environment | [00 setup](00-environment-setup.md), [15 integration](15-guided-integration-lab.md) | Challenge 1, then rebuild the integration file-order map |
-| B verification / state lifecycle | [12 interfaces](12-streaming-and-interfaces.md), [13 evaluation](13-debugging-testing-and-evaluation.md) | Challenge 6; prove no partial commits or query-time ingestion |
-| B failure/correctness | [09 grounding](09-grounded-rag.md), [11 tools](11-tools-and-agents.md), [15 integration](15-guided-integration-lab.md) | Challenges 2, 5, and 6; target the actual failed boundary |
-| B trade-offs / transfer | [08 retrieval](08-documents-and-retrieval.md), [13 evaluation](13-debugging-testing-and-evaluation.md) | Challenge 7; new documents, missing facts, and explicit costs/limits |
+| A1 / conceptual types | [W-LC-02 — 02 messages](02-models-and-messages.md), [W-LC-03 — 03 prompts](03-prompts.md), [W-LC-04 — 04 schema](04-structured-output.md), [W-LC-05 — 05 composition](05-chains-and-runnables.md) | Chapter 16 Challenge 2; trace actual input/output types |
+| A2 / retrieval diagnosis | [W-LC-07 — 07 embeddings](07-embeddings-and-similarity.md), [W-LC-08 — 08 retrieval](08-documents-and-retrieval.md), [W-LC-09 — 09 grounding](09-grounded-rag.md) | Challenge 3; compare exact passages, not just source IDs |
+| A3 / history correctness | [W-LC-06 — 06 history](06-conversation-history.md), [W-LC-10 — 10 rewriting](10-conversational-rag.md) | Challenge 4; isolation/eviction/clear traces |
+| A4 / permission or execution | [W-LC-11 — 11 tools](11-tools-and-agents.md) | Challenge 5; correlate messages and audit |
+| A5 / quantitative judgment | [W-LC-13 — 13 evaluation](13-debugging-testing-and-evaluation.md) | Recalculate case counts; Challenge 3 controlled comparison |
+| B implementation / environment | [W-LC-00 — 00 setup](00-environment-setup.md), [W-LC-15 — 15 integration](15-guided-integration-lab.md) | Challenge 1, then rebuild the integration file-order map |
+| B verification / state lifecycle | [W-LC-12 — 12 interfaces](12-streaming-and-interfaces.md), [W-LC-13 — 13 evaluation](13-debugging-testing-and-evaluation.md) | Challenge 6; prove no partial commits or query-time ingestion |
+| B failure/correctness | [W-LC-09 — 09 grounding](09-grounded-rag.md), [W-LC-11 — 11 tools](11-tools-and-agents.md), [W-LC-15 — 15 integration](15-guided-integration-lab.md) | Challenges 2, 5, and 6; target the actual failed boundary |
+| B trade-offs / transfer | [W-LC-08 — 08 retrieval](08-documents-and-retrieval.md), [W-LC-13 — 13 evaluation](13-debugging-testing-and-evaluation.md) | Challenge 7; new documents, missing facts, and explicit costs/limits |
 
 For each weak item, choose one repair and rerun the original criterion. Record original score, repair, changed evidence, new score, and help used. Do not silently replace the failed attempt. A high average with one broken trust/state boundary is a reason for focused practice, not a reason to ignore it.
 
@@ -315,13 +332,27 @@ For each weak item, choose one repair and rerun the original criterion. Record o
 - [ ] I mapped weak items to specific chapter/exercise retries and rechecked a repair.
 - [ ] I can state what remains unverified before moving to a larger project.
 
-Use the [glossary](18-glossary.md) to revisit terminology, then the [separate RAG capstone](../02-rag-capstone-workbook/README.md) for a larger independent project. Optional framework/tracing knowledge can enrich that work, but it does not replace the core reasoning and evidence assessed here.
+Use the [W-LC-18 — glossary](18-glossary.md) to revisit terminology, then continue on the course map to SG-REL-00 (linked below), where the [separate RAG capstone](../02-rag-capstone-workbook/README.md) you built at AI-RAG-01 returns as the permission-aware reference. Optional framework/tracing knowledge can enrich that work, but it does not replace the core reasoning and evidence assessed here.
+
+## Evidence reflection
+
+Intuition: revision is a boundary review, not a certificate of recall. Which weak dimension needs a repair, and what would change your release decision after an unfamiliar requirement? Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** complete the scored written and practical assessment and turn each weak result into a repair plan.
+
+**Show it:** your assessment record and repair plan; a self-score is not independent certification.
+
+**Next:** [SG-REL-00 — Reliable model calls](../../../study-guides/llm-reliability/docs/00-reliable-model-calls.md), the course map's next required row (AI-RELIABLE-01).
 
 ## References  
 
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
+
 - [Shared materials](shared-materials.md): policy facts, fixed questions, and abstention contract.
-- [Practice challenges and rubric](16-practice-challenges.md): graduated exercises and repair evidence.
-- [Evaluation](13-debugging-testing-and-evaluation.md) and [integration](15-guided-integration-lab.md): commands, measurement limits, and actual fixture outcomes.
+- [W-LC-16 — Practice challenges and rubric](16-practice-challenges.md): graduated exercises and repair evidence.
+- [W-LC-13 — Evaluation](13-debugging-testing-and-evaluation.md) and [W-LC-15 — integration](15-guided-integration-lab.md): commands, measurement limits, and actual fixture outcomes.
 - [uv locking/syncing](https://docs.astral.sh/uv/concepts/projects/sync/) and [dependencies](https://docs.astral.sh/uv/concepts/projects/dependencies/): project workflow reference.
 
 

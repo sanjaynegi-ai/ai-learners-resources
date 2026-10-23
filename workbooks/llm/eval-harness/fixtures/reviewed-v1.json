@@ -1,0 +1,424 @@
+{
+  "schema_version": 1,
+  "dataset_version": "quickcart-reviewed-v1",
+  "evidence_kind": "synthetic",
+  "gates": {
+    "minimum_slice_n": 2,
+    "minimum_accuracy": 0.75,
+    "maximum_regression": 0.1,
+    "minimum_answerable_coverage": 0.75,
+    "maximum_p95_ms": 500,
+    "maximum_cost_per_request_usd": 0.003,
+    "minimum_quality": 0.9
+  },
+  "cases": [
+    {
+      "id": "D-01",
+      "group": "D-order-1",
+      "split": "development",
+      "slices": [
+        "routine"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "D-02",
+      "group": "D-order-2",
+      "split": "development",
+      "slices": [
+        "routine"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "D-03",
+      "group": "D-order-3",
+      "split": "development",
+      "slices": [
+        "routine"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "D-04",
+      "group": "D-order-4",
+      "split": "development",
+      "slices": [
+        "routine"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "D-05",
+      "group": "D-order-5",
+      "split": "development",
+      "slices": [
+        "policy_change"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "D-06",
+      "group": "D-order-6",
+      "split": "development",
+      "slices": [
+        "policy_change"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "D-07",
+      "group": "D-order-7",
+      "split": "development",
+      "slices": [
+        "missing_facts"
+      ],
+      "expected": "abstained",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "D-08",
+      "group": "D-order-8",
+      "split": "development",
+      "slices": [
+        "missing_facts"
+      ],
+      "expected": "abstained",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "H-01",
+      "group": "H-order-1",
+      "split": "heldout",
+      "slices": [
+        "routine"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "H-02",
+      "group": "H-order-2",
+      "split": "heldout",
+      "slices": [
+        "routine"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "H-03",
+      "group": "H-order-3",
+      "split": "heldout",
+      "slices": [
+        "routine"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "H-04",
+      "group": "H-order-4",
+      "split": "heldout",
+      "slices": [
+        "routine"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "H-05",
+      "group": "H-order-5",
+      "split": "heldout",
+      "slices": [
+        "policy_change"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "H-06",
+      "group": "H-order-6",
+      "split": "heldout",
+      "slices": [
+        "policy_change"
+      ],
+      "expected": "ready",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "H-07",
+      "group": "H-order-7",
+      "split": "heldout",
+      "slices": [
+        "missing_facts"
+      ],
+      "expected": "abstained",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    },
+    {
+      "id": "H-08",
+      "group": "H-order-8",
+      "split": "heldout",
+      "slices": [
+        "missing_facts"
+      ],
+      "expected": "abstained",
+      "review_basis": "Synthetic rubric: use current policy; no unsupported commitment; abstain when facts are missing."
+    }
+  ],
+  "runs": {
+    "baseline": {
+      "versions": {
+        "application": "synthetic-scenario-v1",
+        "prompt": "synthetic-baseline-v1",
+        "model": "NONE-authored-observations",
+        "schema": "review-record-v1",
+        "pricing": "invented-USD-v1"
+      },
+      "records": {
+        "D-01": {
+          "status": "failed",
+          "correct": false,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "D-02": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "D-03": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "D-04": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "D-05": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "D-06": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "D-07": {
+          "status": "abstained",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "D-08": {
+          "status": "abstained",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "H-01": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "H-02": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "H-03": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "H-04": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "H-05": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "H-06": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "H-07": {
+          "status": "abstained",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        },
+        "H-08": {
+          "status": "abstained",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 400,
+          "cost_usd": 0.002
+        }
+      }
+    },
+    "candidate": {
+      "versions": {
+        "application": "synthetic-scenario-v1",
+        "prompt": "synthetic-candidate-v1",
+        "model": "NONE-authored-observations",
+        "schema": "review-record-v1",
+        "pricing": "invented-USD-v1"
+      },
+      "records": {
+        "D-01": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "D-02": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "D-03": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "D-04": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "D-05": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "D-06": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "D-07": {
+          "status": "abstained",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "D-08": {
+          "status": "abstained",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "H-01": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "H-02": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "H-03": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "H-04": {
+          "status": "ready",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "H-05": {
+          "status": "ready",
+          "correct": false,
+          "unsafe": true,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "H-06": {
+          "status": "failed",
+          "correct": false,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "H-07": {
+          "status": "abstained",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        },
+        "H-08": {
+          "status": "abstained",
+          "correct": true,
+          "unsafe": false,
+          "latency_ms": 300,
+          "cost_usd": 0.001
+        }
+      }
+    }
+  }
+}

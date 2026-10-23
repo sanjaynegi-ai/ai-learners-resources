@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="610" viewBox="0 0 1100 610">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6" fill="none" stroke="#38bdf8" stroke-width="1.6"/></marker></defs>
+<rect width="1100" height="610" fill="#0b1020"/>
+<text x="45" y="55" fill="#f1f5f9" font-family="Arial,sans-serif" font-weight="bold" font-size="29">Payment timeout is an unknown outcome</text>
+<text x="45" y="86" fill="#94a3b8" font-family="Arial,sans-serif" font-size="15">Reconcile before deciding whether another charge is safe</text>
+<path d="M255 275.0 L330 275.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<path d="M535 275.0 L610 175.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="572.5" y="216.0" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">success</text>
+<path d="M535 275.0 L610 385.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="572.5" y="321.0" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">timeout</text>
+<path d="M815 385.0 L855 385.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="835.0" y="376.0" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">verify</text>
+<rect x="50" y="220" width="205" height="110" rx="13" fill="#151f36" stroke="#38bdf8" stroke-width="2"/>
+<text x="152.5" y="254" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Payment intent</text>
+<text x="152.5" y="279" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Persist ID + key</text>
+<rect x="330" y="220" width="205" height="110" rx="13" fill="#151f36" stroke="#a78bfa" stroke-width="2"/>
+<text x="432.5" y="254" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Provider request</text>
+<text x="432.5" y="279" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Submit once</text>
+<rect x="610" y="125" width="205" height="100" rx="13" fill="#151f36" stroke="#34d399" stroke-width="2"/>
+<text x="712.5" y="159" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Confirmed</text>
+<text x="712.5" y="184" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Record outcome</text>
+<rect x="610" y="335" width="205" height="100" rx="13" fill="#151f36" stroke="#fb7185" stroke-width="2"/>
+<text x="712.5" y="369" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Timeout / unknown</text>
+<text x="712.5" y="394" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Do not auto-failover</text>
+<rect x="855" y="335" width="200" height="100" rx="13" fill="#151f36" stroke="#fb923c" stroke-width="2"/>
+<text x="955.0" y="369" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Reconciliation</text>
+<text x="955.0" y="394" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Query </text>
+<text x="955.0" y="414" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> webhook </text>
+<text x="955.0" y="434" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> audit</text>
+<text x="45" y="580" fill="#94a3b8" font-size="14" font-family="Arial">An outbound proxy cannot know whether a remote payment committed.</text></svg>

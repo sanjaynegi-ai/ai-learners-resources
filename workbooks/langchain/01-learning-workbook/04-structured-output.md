@@ -1,11 +1,28 @@
 # Chapter 04 — Structured Output: Contracts Before Consumption
 
-> **Study time:** 65–90 minutes, plus optional live extraction.  
-> **Prerequisite:** [Prompts](03-prompts.md) and Chapter 02's learner-created `first_call.py`.  
-> **Central question:** How do we turn model output into typed data while keeping truth and permission separate?  
-> **Running example:** Fernwood team-notes assistant.
+**Can a perfectly valid object still describe the wrong reimbursement request?**
 
-[Previous: Prompts](03-prompts.md) · [Index](README.md) · [Next: Chains and Runnables](05-chains-and-runnables.md)
+> **Your goal:** Validate structured data while keeping evidence, business rules and permission separate.<br>
+> **You need:** [Prompts](03-prompts.md) and Chapter 02's complete `first_call.py`.<br>
+> **Effort:** 65-90 minutes, plus optional live extraction; estimated.<br>
+> **You will produce:** `structured_output_lab.py`, fixture checks and a schema-valid factual counterexample. **Status:** Draft; local and live evidence must be reported separately.
+
+**Fernwood** is the fictional organization used in this workbook to study internal notes and equipment-policy questions. Its synthetic material lets you inspect evidence and context without real employee data. QuickCart remains the recurring commerce case in the wider course.
+
+**Starting state:** Create `structured_output_lab.py` beside the retained `first_call.py`. Keep the same project environment and follow this chapter's dependency additions. Begin with deterministic fixtures, not provider schema support.
+
+**Study route:** Trace schema constraints, run the valid and invalid fixtures, explain the wrong-amount counterexample, then add the independent field. Native extraction and text-parsing fallback are separate optional observations.
+
+**Before executable steps:** work from your external `langchain-learning` root with Python 3.11 via uv. Follow the named dependency and file steps below; a copied snippet is not a verified project checkpoint. Offline formatting/fixture checks make no model calls. Hosted inference is paid; local inference uses downloaded models and compute. Before live runs, choose a spending budget, request count, time window and review plan. Preserve private evidence, never print keys, and stop any local service you started when finished. Detailed cleanup and historical verification limits remain in the [chapter record](lesson-contract.md#w-lc-04).
+
+<details>
+<summary>Reference: stable unit identity and project boundaries</summary>
+
+**Unit:** W-LC-04. **Capability:** AI-VALID-01. [Course map](../../../README.md#ordered-capability-map) | [Project starting states](../docs/project-boundaries.md) | [Verification and cleanup](lesson-contract.md#w-lc-04). Current Draft status does not turn a historical provider run into fresh evidence.
+
+</details>
+
+[Workbook index](README.md) | [Next workbook chapter](05-chains-and-runnables.md)
 
 ## Learning objectives
 
@@ -293,7 +310,7 @@ The [ChatOpenAI integration](https://docs.langchain.com/oss/python/integrations/
 
 The lab reuses `gpt-4o-mini` or `llama3.1:8b` and Chapter 02's timeouts, 200-token generation limits, and hosted `max_retries=0`. A truncated result must fail rather than be repaired silently. If your route rejects the schema or model capability, record the error class, adapter/server versions, and model identifier. Constructor acceptance alone is not success.
 
-**Working directory:** Learner project root, with the chosen `.env` and service ready.
+**Working directory:** Learner project root, with the chosen `.env` and service ready. The next block makes three requests; confirm hosted spending bounds or local compute allowance before executing. Fallbacks and reruns add requests and must be planned separately.
 
 ```powershell
 uv run --locked python structured_output_lab.py --generate --case normal --mode native
@@ -333,6 +350,9 @@ This ordinary model call requests JSON, followed by local parsing and validation
 | Valid object, wrong amount | Factual extraction failure | Compare every field with evidence |
 
 ## 7. Four boundaries to keep separate
+
+> [!IMPORTANT]
+> A schema-valid amount can be faithfully extracted yet exceed policy. It can also be below the ceiling while the caller lacks permission. Name which boundary failed before choosing the repair.
 
 | Boundary | Lab example | Still does not establish |
 |---|---|---|
@@ -426,9 +446,23 @@ No provider schema constraint. It requests JSON through instructions, then rejec
 - [ ] I can distinguish policy, permission, schema, and evidence checks.
 - [ ] I recorded native/fallback results only if actually observed.
 
-Repeat Sections 2 and 5 if validation errors remain confusing; revisit Sections 1 and 7 if a valid object still feels equivalent to truth or permission. Next, [Chains and Runnables](05-chains-and-runnables.md) will compose these steps while tracking each boundary's type. That chapter remains a scaffold until implemented.
+Repeat Sections 2 and 5 if validation errors remain confusing; revisit Sections 1 and 7 if a valid object still feels equivalent to truth or permission. Next, [W-LC-05 — Chains and Runnables](05-chains-and-runnables.md) will compose these steps while tracking each boundary's type.
+
+## Evidence reflection
+
+Which output passed schema validation but lacked evidence or business correctness? State the separate enforcement/evaluation decision needed before using it. Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** define and test a schema, distinguish a valid object from a supported claim and handle failed extraction without consuming raw output as validated data.
+
+**Show it:** one accepted fixture, one diagnosed validation failure, the schema-valid wrong-amount case and your independent field checks. Add native/fallback results only for routes executed; label the rest untested.
+
+**Next:** [W-LC-05 — Chains and Runnables](05-chains-and-runnables.md).
 
 ## References  
+
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
 
 - [Pydantic models](https://docs.pydantic.dev/latest/concepts/models/), [fields](https://docs.pydantic.dev/latest/concepts/fields/), and [serialization](https://docs.pydantic.dev/latest/concepts/serialization/).
 - [ChatOpenAI integration](https://docs.langchain.com/oss/python/integrations/chat/openai) and [ChatOllama integration](https://docs.langchain.com/oss/python/integrations/chat/ollama).

@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "langchain-mechanisms-lab"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = ["langchain-core==1.6.10", "pydantic==2.14.1"]
+[project.scripts]
+lc-mechanisms = "lc_mechanisms.demo:main"
+[tool.setuptools.packages.find]
+where = ["src"]

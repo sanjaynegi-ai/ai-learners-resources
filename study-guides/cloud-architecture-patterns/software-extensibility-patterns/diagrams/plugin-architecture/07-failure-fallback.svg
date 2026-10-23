@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="1120" height="620" fill="#0B1020"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#94a3b8"/></marker></defs>
+<text x="52" y="58" fill="#f8fafc" font-size="29" font-family="Arial,sans-serif" font-weight="bold">Failure handling and fallback</text>
+<text x="52" y="91" fill="#94a3b8" font-size="17" font-family="Arial,sans-serif">Protect checkout from an unhealthy extension</text>
+<path d="M305,257.5 L405,257.5" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="355.0" y="247.5" text-anchor="middle" fill="#e2e8f0" font-size="14" font-family="Arial,sans-serif">bounded call</text>
+<path d="M685,257.5 L790,257.5" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="737.5" y="247.5" text-anchor="middle" fill="#e2e8f0" font-size="14" font-family="Arial,sans-serif">external request</text>
+<rect x="45" y="185" width="260" height="145" rx="13" fill="#172238" stroke="#38bdf8" stroke-width="2.3"/>
+<text x="175.0" y="218" text-anchor="middle" fill="#f8fafc" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Checkout</text>
+<text x="175.0" y="245" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Quote deadline</text>
+<text x="175.0" y="268" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Fallback policy</text>
+<rect x="405" y="185" width="280" height="145" rx="13" fill="#172238" stroke="#a78bfa" stroke-width="2.3"/>
+<text x="545.0" y="218" text-anchor="middle" fill="#f8fafc" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Plugin Runner</text>
+<text x="545.0" y="245" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Timeout / breaker</text>
+<text x="545.0" y="268" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Bounded concurrency</text>
+<rect x="790" y="185" width="280" height="145" rx="13" fill="#172238" stroke="#34d399" stroke-width="2.3"/>
+<text x="930.0" y="218" text-anchor="middle" fill="#f8fafc" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Carrier API</text>
+<text x="930.0" y="245" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Slow / unavailable</text>
+<text x="930.0" y="268" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Unknown outcome</text>
+<rect x="42" y="533" width="1036" height="61" rx="10" fill="#111d32" stroke="#334155"/>
+<text x="62" y="560" fill="#93c5fd" font-size="15" font-family="Arial,sans-serif">Quote fallback may be safe; purchasing a shipping label requires idempotency and reconciliation.</text>
+</svg>

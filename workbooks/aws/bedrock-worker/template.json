@@ -1,0 +1,288 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Transform": "AWS::Serverless-2016-10-31",
+  "Description": "SkillUp synthetic Bedrock queue worker; live checks require explicit budget and account authorization",
+  "Parameters": {
+    "ModelId": {
+      "Type": "String",
+      "AllowedPattern": "[A-Za-z0-9._:-]+",
+      "Description": "Eligible single-region on-demand foundation model ID; no inference profiles in this lab"
+    },
+    "EnableProcessing": {
+      "Type": "String",
+      "Default": "false",
+      "AllowedValues": [
+        "true",
+        "false"
+      ]
+    }
+  },
+  "Conditions": {
+    "ProcessingEnabled": {
+      "Fn::Equals": [
+        {
+          "Ref": "EnableProcessing"
+        },
+        "true"
+      ]
+    }
+  },
+  "Resources": {
+    "DeadLetterQueue": {
+      "Type": "AWS::SQS::Queue",
+      "Properties": {
+        "MessageRetentionPeriod": 1209600,
+        "SqsManagedSseEnabled": true
+      }
+    },
+    "Jobs": {
+      "Type": "AWS::SQS::Queue",
+      "Properties": {
+        "VisibilityTimeout": 180,
+        "MessageRetentionPeriod": 86400,
+        "MaximumMessageSize": 4096,
+        "SqsManagedSseEnabled": true,
+        "RedrivePolicy": {
+          "deadLetterTargetArn": {
+            "Fn::GetAtt": [
+              "DeadLetterQueue",
+              "Arn"
+            ]
+          },
+          "maxReceiveCount": 3
+        }
+      }
+    },
+    "Results": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "BillingMode": "PAY_PER_REQUEST",
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "id",
+            "AttributeType": "S"
+          }
+        ],
+        "KeySchema": [
+          {
+            "AttributeName": "id",
+            "KeyType": "HASH"
+          }
+        ]
+      }
+    },
+    "Logs": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": {
+          "Fn::Sub": "/aws/lambda/${AWS::StackName}-worker"
+        },
+        "RetentionInDays": 7
+      }
+    },
+    "WorkerRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Policies": [
+          {
+            "PolicyName": "BoundedWorker",
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "sqs:ReceiveMessage",
+                    "sqs:DeleteMessage",
+                    "sqs:GetQueueAttributes"
+                  ],
+                  "Resource": {
+                    "Fn::GetAtt": [
+                      "Jobs",
+                      "Arn"
+                    ]
+                  }
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "dynamodb:GetItem",
+                    "dynamodb:PutItem",
+                    "dynamodb:UpdateItem"
+                  ],
+                  "Resource": {
+                    "Fn::GetAtt": [
+                      "Results",
+                      "Arn"
+                    ]
+                  }
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "bedrock:InvokeModel"
+                  ],
+                  "Resource": {
+                    "Fn::Sub": "arn:${AWS::Partition}:bedrock:${AWS::Region}::foundation-model/${ModelId}"
+                  }
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "logs:CreateLogStream",
+                    "logs:PutLogEvents"
+                  ],
+                  "Resource": {
+                    "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/${AWS::StackName}-worker:*"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "Worker": {
+      "Type": "AWS::Serverless::Function",
+      "DependsOn": "Logs",
+      "Properties": {
+        "FunctionName": {
+          "Fn::Sub": "${AWS::StackName}-worker"
+        },
+        "Runtime": "python3.11",
+        "Architectures": [
+          "x86_64"
+        ],
+        "Handler": "bedrock_worker.app.handler",
+        "CodeUri": "src/",
+        "MemorySize": 256,
+        "Timeout": 30,
+        "ReservedConcurrentExecutions": 2,
+        "Role": {
+          "Fn::GetAtt": [
+            "WorkerRole",
+            "Arn"
+          ]
+        },
+        "Environment": {
+          "Variables": {
+            "MODEL_ID": {
+              "Ref": "ModelId"
+            },
+            "TABLE_NAME": {
+              "Ref": "Results"
+            },
+            "QUEUE_ARN": {
+              "Fn::GetAtt": [
+                "Jobs",
+                "Arn"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Mapping": {
+      "Type": "AWS::Lambda::EventSourceMapping",
+      "Properties": {
+        "EventSourceArn": {
+          "Fn::GetAtt": [
+            "Jobs",
+            "Arn"
+          ]
+        },
+        "FunctionName": {
+          "Ref": "Worker"
+        },
+        "BatchSize": 1,
+        "MaximumBatchingWindowInSeconds": 0,
+        "FunctionResponseTypes": [
+          "ReportBatchItemFailures"
+        ],
+        "ScalingConfig": {
+          "MaximumConcurrency": 2
+        },
+        "Enabled": {
+          "Fn::If": [
+            "ProcessingEnabled",
+            true,
+            false
+          ]
+        }
+      }
+    },
+    "FailureMetric": {
+      "Type": "AWS::Logs::MetricFilter",
+      "Properties": {
+        "LogGroupName": {
+          "Ref": "Logs"
+        },
+        "FilterPattern": "{ $.event = \"job_failed\" }",
+        "MetricTransformations": [
+          {
+            "MetricNamespace": "SkillUpLab",
+            "MetricName": {
+              "Fn::Sub": "${AWS::StackName}-Failures"
+            },
+            "MetricValue": "1",
+            "DefaultValue": 0
+          }
+        ]
+      }
+    },
+    "FailureAlarm": {
+      "Type": "AWS::CloudWatch::Alarm",
+      "Properties": {
+        "Namespace": "SkillUpLab",
+        "MetricName": {
+          "Fn::Sub": "${AWS::StackName}-Failures"
+        },
+        "Statistic": "Sum",
+        "Period": 60,
+        "EvaluationPeriods": 1,
+        "Threshold": 1,
+        "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+        "TreatMissingData": "notBreaching"
+      }
+    }
+  },
+  "Outputs": {
+    "QueueUrl": {
+      "Value": {
+        "Ref": "Jobs"
+      }
+    },
+    "DeadLetterQueueUrl": {
+      "Value": {
+        "Ref": "DeadLetterQueue"
+      }
+    },
+    "TableName": {
+      "Value": {
+        "Ref": "Results"
+      }
+    },
+    "FunctionName": {
+      "Value": {
+        "Ref": "Worker"
+      }
+    },
+    "MappingId": {
+      "Value": {
+        "Ref": "Mapping"
+      }
+    }
+  }
+}

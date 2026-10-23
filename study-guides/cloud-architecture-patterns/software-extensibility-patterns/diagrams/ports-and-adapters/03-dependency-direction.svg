@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="Calls vs dependencies">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#73d7f7"/></marker></defs>
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="48" y="61" fill="#ffffff" font-family="Arial,sans-serif" font-size="30" font-weight="bold">Calls vs dependencies</text>
+<text x="48" y="91" fill="#9eb4d1" font-family="Arial,sans-serif" font-size="16">Runtime direction is not the same as source-code dependency.</text>
+<rect x="65" y="165" width="225" height="95" rx="13" fill="#14243b" stroke="#35d0f2" stroke-width="2"/>
+<text x="177.5" y="196" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">REST Adapter</text>
+<text x="177.5" y="221" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Runtime caller</text>
+<rect x="440" y="165" width="225" height="95" rx="13" fill="#14243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="552.5" y="196" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Checkout Core</text>
+<text x="552.5" y="221" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Port contracts</text>
+<rect x="815" y="165" width="225" height="95" rx="13" fill="#14243b" stroke="#34d399" stroke-width="2"/>
+<text x="927.5" y="196" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Postgres Adapter</text>
+<text x="927.5" y="221" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Runtime dependency</text>
+<rect x="65" y="360" width="225" height="90" rx="13" fill="#14243b" stroke="#fb923c" stroke-width="2"/>
+<text x="177.5" y="391" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">REST source</text>
+<text x="177.5" y="416" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Imports core API</text>
+<rect x="440" y="360" width="225" height="90" rx="13" fill="#14243b" stroke="#f472b6" stroke-width="2"/>
+<text x="552.5" y="391" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Core contracts</text>
+<text x="552.5" y="416" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">No vendor imports</text>
+<rect x="815" y="360" width="225" height="90" rx="13" fill="#14243b" stroke="#facc15" stroke-width="2"/>
+<text x="927.5" y="391" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Postgres source</text>
+<text x="927.5" y="416" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Implements port</text>
+<line x1="290.0" y1="212.5" x2="440.0" y2="212.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="365.0" y="203.5" text-anchor="middle" fill="#facc15" font-size="12" font-family="Arial">runtime</text>
+<line x1="665.0" y1="212.5" x2="815.0" y2="212.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="740.0" y="203.5" text-anchor="middle" fill="#facc15" font-size="12" font-family="Arial">runtime</text>
+<line x1="290.0" y1="405.0" x2="440.0" y2="405.0" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="365.0" y="396.0" text-anchor="middle" fill="#facc15" font-size="12" font-family="Arial">source imports</text>
+<line x1="815.0" y1="405.0" x2="665.0" y2="405.0" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="740.0" y="396.0" text-anchor="middle" fill="#facc15" font-size="12" font-family="Arial">source imports</text>
+<text x="48" y="564" fill="#b9c9df" font-family="Arial" font-size="16">Lower right arrow points inward: infrastructure depends on core abstractions.</text>
+</svg>

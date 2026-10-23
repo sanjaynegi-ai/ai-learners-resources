@@ -1,12 +1,20 @@
 # Chapter 06 — Partitioning & Sharding
 
+> **Unit ID:** SG-SCALE-06 · **Capability:** AI-AWS-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
 > **Standalone self-study guide · Estimated study time: 80–100 minutes**
 >
 > **Running example:** QuickCart, a fictional e-commerce platform.
 >
 > **Core question:** How can we split a growing dataset and its workload across multiple partitions while preserving correct reads, writes, and operational control?
+>
+> **You need:** SG-SCALE-00, SG-SCALE-05.
+>
+> **You will produce:** Shard-key decision, tenant-access boundary and migration/rollback assumptions.
 
-[← Previous: Competing Consumers](05-competing-consumers.md) · [Foundations](00-foundations.md)
+[SG-SCALE-05 — ← Previous: Competing Consumers](05-competing-consumers.md) · [SG-SCALE-00 — Foundations](00-foundations.md)
 
 ## 1. Learning objectives
 
@@ -136,7 +144,7 @@ A simple educational routing rule is:
 
 `shardIndex = hash(customerId) mod numberOfShards`
 
-![Hash routing](../diagrams/partitioning/03-hash-routing.svg)
+![Hash partitioning: deterministic key-to-shard routing. Changing shard count changes many modulo assignments; use migration planning.](../diagrams/partitioning/03-hash-routing.svg)
 
 **Diagram walkthrough**
 
@@ -195,7 +203,7 @@ This is an architectural option, not a universal solution; implementations and g
 
 ## 9. Hot partitions: the uneven-load problem
 
-![Hot shard](../diagrams/partitioning/05-hot-shard.svg)
+![Hot shard: uneven load despite several partitions. Partition count alone does not guarantee balanced load.](../diagrams/partitioning/05-hot-shard.svg)
 
 **Diagram walkthrough**
 
@@ -227,7 +235,7 @@ This is an architectural option, not a universal solution; implementations and g
 
 ## 10. Cross-shard queries, joins, and transactions
 
-![Cross-shard query](../diagrams/partitioning/06-cross-shard-query.svg)
+![Cross-shard query requires fan-out and merge. Cross-shard joins and global sorting are more expensive than key-local lookups.](../diagrams/partitioning/06-cross-shard-query.svg)
 
 **Diagram walkthrough**
 
@@ -262,7 +270,7 @@ This is an architectural option, not a universal solution; implementations and g
 
 When one shard becomes too large or hot, the team may need to move data to a new owner.
 
-![Shard rebalancing](../diagrams/partitioning/07-rebalancing.svg)
+![Rebalancing: migrate ownership without losing writes. Use explicit consistency, cutover, rollback, and verification procedures.](../diagrams/partitioning/07-rebalancing.svg)
 
 **Diagram walkthrough**
 
@@ -558,7 +566,15 @@ How can the application query several independent services or shards in parallel
 
 That leads to **Scatter–Gather**.
 
-[Next: 07 — Scatter–Gather](07-scatter-gather.md).
+[SG-SCALE-07 — Next: 07 — Scatter–Gather](07-scatter-gather.md).
+
+## Completion checkpoint
+
+**You can now:** explain hotspots, ownership and migration.
+
+**Show it:** Shard-key decision, tenant-access boundary and migration/rollback assumptions. Then attempt chapter 06's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-07 — Scatter–Gather](07-scatter-gather.md).
 
 ---
 

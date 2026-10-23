@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#94a3b8"/></marker></defs>
+<rect width="1100" height="640" fill="#0B1020"/>
+<text x="45" y="62" fill="#f8fafc" font-size="30" font-family="Arial" font-weight="bold">05  Data ownership transition</text>
+<text x="45" y="93" fill="#94a3b8" font-size="17" font-family="Arial">Avoid uncontrolled dual-write and split-brain states</text>
+<path d="M305 247.5 L420 247.5" stroke="#94a3b8" stroke-width="2.6" fill="none" marker-end="url(#arrow)"/>
+<text x="362.5" y="237.5" fill="#e2e8f0" font-size="14" font-family="Arial" text-anchor="middle">change events</text>
+<path d="M670 247.5 L790 247.5" stroke="#94a3b8" stroke-width="2.6" fill="none" marker-end="url(#arrow)"/>
+<text x="730.0" y="237.5" fill="#e2e8f0" font-size="14" font-family="Arial" text-anchor="middle">project updates</text>
+<path d="M545.0 300 L547.5 370" stroke="#94a3b8" stroke-width="2.6" fill="none" marker-end="url(#arrow)"/>
+<rect x="60" y="195" width="245" height="105" rx="13" fill="#15223b" stroke="#fb923c" stroke-width="2.5"/>
+<text x="182.5" y="227" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="bold" font-family="Arial">Legacy Database</text>
+<text x="182.5" y="252" text-anchor="middle" fill="#cbd5e1" font-size="14" font-family="Arial">Initial source of truth</text>
+<rect x="420" y="195" width="250" height="105" rx="13" fill="#15223b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="545.0" y="227" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="bold" font-family="Arial">Outbox / CDC</text>
+<text x="545.0" y="252" text-anchor="middle" fill="#cbd5e1" font-size="14" font-family="Arial">Ordered events + replay</text>
+<rect x="790" y="195" width="245" height="105" rx="13" fill="#15223b" stroke="#34d399" stroke-width="2.5"/>
+<text x="912.5" y="227" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="bold" font-family="Arial">Catalog Store</text>
+<text x="912.5" y="252" text-anchor="middle" fill="#cbd5e1" font-size="14" font-family="Arial">Read model first</text>
+<rect x="425" y="370" width="245" height="95" rx="13" fill="#15223b" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="547.5" y="402" text-anchor="middle" fill="#f8fafc" font-size="19" font-weight="bold" font-family="Arial">Ownership decision</text>
+<text x="547.5" y="427" text-anchor="middle" fill="#cbd5e1" font-size="14" font-family="Arial">Who accepts writes?</text>
+<rect x="45" y="548" width="1010" height="63" rx="10" fill="#17213a" stroke="#334155"/>
+<text x="62" y="573" fill="#cbd5e1" font-size="16" font-family="Arial">CDC can support migration, but consistency, ordering, replay and reconciliation need design.</text>
+<text x="62" y="595" fill="#cbd5e1" font-size="16" font-family="Arial">Only one authoritative writer per entity or operation at a time.</text>
+</svg>

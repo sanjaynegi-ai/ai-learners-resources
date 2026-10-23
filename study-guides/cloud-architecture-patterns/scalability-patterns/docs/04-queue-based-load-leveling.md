@@ -1,10 +1,18 @@
 # Chapter 04 — Queue-Based Load Leveling
 
+> **Unit ID:** SG-SCALE-04 · **Capability:** AI-AWS-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
 > **Standalone self-study chapter · Estimated study time: 70–90 minutes**  
 > **Running case study:** QuickCart, a fictional e-commerce platform.  
 > **Key idea:** A queue is a **time buffer**, not a speed booster.
+>
+> **You need:** SG-SCALE-00 to SG-SCALE-03.
+>
+> **You will produce:** Backlog calculation and oldest-age alert with owner; distinguish accepted from completed work.
 
-[← Previous: Autoscaling](03-autoscaling.md) · [Foundations](00-foundations.md)
+[SG-SCALE-03 — ← Previous: Autoscaling](03-autoscaling.md) · [SG-SCALE-00 — Foundations](00-foundations.md)
 
 ## 1. Learning objectives
 
@@ -185,7 +193,7 @@ Broker semantics vary; verify the guarantees of the chosen platform.
 
 A worker sends an email successfully, then crashes before acknowledging the message. The broker cannot know whether the email was sent, so it may deliver the message again.
 
-![Idempotent consumer](../diagrams/queue/05-idempotency.svg)
+![Handle duplicate deliveries safely. An external provider may require its own idempotency key.](../diagrams/queue/05-idempotency.svg)
 
 **Diagram explanation**
 
@@ -485,7 +493,15 @@ QuickCart can now buffer work. But suppose a single worker handles only 100 jobs
 
 That leads to **Competing Consumers**.
 
-[Next: 05 — Competing Consumers](05-competing-consumers.md).
+[SG-SCALE-05 — Next: 05 — Competing Consumers](05-competing-consumers.md).
+
+## Completion checkpoint
+
+**You can now:** explain backlog and durable acceptance.
+
+**Show it:** Backlog calculation and oldest-age alert with owner; distinguish accepted from completed work. Then attempt chapter 04's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-05 — Competing Consumers](05-competing-consumers.md).
 
 ---
 

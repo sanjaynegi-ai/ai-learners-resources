@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="610" viewBox="0 0 1100 610">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6" fill="none" stroke="#38bdf8" stroke-width="1.6"/></marker></defs>
+<rect width="1100" height="610" fill="#0b1020"/>
+<text x="45" y="55" fill="#f1f5f9" font-family="Arial,sans-serif" font-weight="bold" font-size="29">Classify failure before choosing a fallback</text>
+<text x="45" y="86" fill="#94a3b8" font-family="Arial,sans-serif" font-size="15">Presentation degradation and financial correctness require different responses</text>
+<path d="M275 277.5 L360 165.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="317.5" y="212.25" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">optional</text>
+<path d="M275 277.5 L360 400.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="317.5" y="329.75" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">critical</text>
+<path d="M645 165.0 L735 165.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<path d="M645 400.0 L735 400.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<rect x="55" y="220" width="220" height="115" rx="13" fill="#151f36" stroke="#38bdf8" stroke-width="2"/>
+<text x="165.0" y="254" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Dependency fails</text>
+<text x="165.0" y="279" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Timeout </text>
+<text x="165.0" y="299" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> bad data</text>
+<rect x="360" y="110" width="285" height="110" rx="13" fill="#151f36" stroke="#34d399" stroke-width="2"/>
+<text x="502.5" y="144" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Optional presentation</text>
+<text x="502.5" y="169" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Reviews or suggestions</text>
+<rect x="360" y="345" width="285" height="110" rx="13" fill="#151f36" stroke="#fb7185" stroke-width="2"/>
+<text x="502.5" y="379" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Critical correctness</text>
+<text x="502.5" y="404" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Payment </text>
+<text x="502.5" y="424" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> authorization</text>
+<rect x="735" y="110" width="295" height="110" rx="13" fill="#151f36" stroke="#34d399" stroke-width="2"/>
+<text x="882.5" y="144" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Degrade safely</text>
+<text x="882.5" y="169" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Partial response + signal</text>
+<rect x="735" y="345" width="295" height="110" rx="13" fill="#151f36" stroke="#fb923c" stroke-width="2"/>
+<text x="882.5" y="379" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Hold and reconcile</text>
+<text x="882.5" y="404" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Fail closed </text>
+<text x="882.5" y="424" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> investigate</text>
+<text x="45" y="580" fill="#94a3b8" font-size="14" font-family="Arial">Fallback policy must follow business semantics, not just HTTP status codes.</text></svg>

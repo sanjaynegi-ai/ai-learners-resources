@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" role="img" aria-label="Deadline budget and failure paths">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6" fill="none" stroke="#8da3bd" stroke-width="1.4"/></marker></defs>
+<rect width="960" height="470" fill="#0B1020"/>
+<text x="34" y="43" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Deadline budget and failure paths</text>
+<text x="34" y="447" font-family="Arial,sans-serif" font-size="16" fill="#b7c7df">Bound timeouts; avoid unsafe retries and overload amplification.</text>
+<path d="M157 226 L206 226" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M347 226 L396 226" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M537 226 L586 226" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<rect x="25" y="195" width="132" height="62" rx="12" fill="#17243a" stroke="#38bdf8" stroke-width="2"/>
+<text x="91" y="231" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Request</text>
+<rect x="215" y="195" width="132" height="62" rx="12" fill="#17243a" stroke="#34d399" stroke-width="2"/>
+<text x="281" y="231" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Gateway</text>
+<rect x="405" y="195" width="132" height="62" rx="12" fill="#17243a" stroke="#a78bfa" stroke-width="2"/>
+<text x="471" y="231" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">BFF</text>
+<rect x="595" y="195" width="132" height="62" rx="12" fill="#17243a" stroke="#fb7185" stroke-width="2"/>
+<text x="661" y="231" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Slow Catalog</text>
+</svg>

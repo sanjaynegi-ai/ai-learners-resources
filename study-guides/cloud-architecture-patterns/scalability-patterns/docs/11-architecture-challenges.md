@@ -1,12 +1,20 @@
 # Chapter 11 — Architecture Challenges Workbook
 
+> **Unit ID:** SG-SCALE-11 · **Capability:** AI-DEFEND-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
 > **Standalone practice chapter · Estimated study time: 2–3 hours**
 >
 > **Running case study:** QuickCart, a fictional e-commerce platform.
 >
 > **Purpose:** Turn the eight scalability patterns into practical diagnostic and design skills. The worked answers are **examples**, not the only valid architectures.
+>
+> **You need:** SG-SCALE-01 to SG-SCALE-10.
+>
+> **You will produce:** Attempt the existing public rubric before solutions; preserve failure evidence and repair critical correctness gaps.
 
-[← Previous: Pattern Comparison](10-pattern-comparison.md) · [Integrated Case Study](09-architecture-case-study.md)
+[SG-SCALE-10 — ← Previous: Pattern Comparison](10-pattern-comparison.md) · [SG-SCALE-09 — Integrated Case Study](09-architecture-case-study.md)
 
 ## 1. How to use this workbook
 
@@ -24,7 +32,7 @@ You can complete one challenge per study session or treat the entire chapter as 
 
 ## 2. The QuickCart architecture decision method
 
-![Diagnosis workflow](../diagrams/architecture-challenges/01-diagnosis-workflow.svg)
+![Architectural diagnosis: evidence before patterns. Never select a pattern solely from a symptom.](../diagrams/architecture-challenges/01-diagnosis-workflow.svg)
 
 **Diagram walkthrough**
 
@@ -141,7 +149,7 @@ QuickCart has three healthy API replicas, each able to serve **300 requests/seco
 
 A flash sale is expected to drive **2,400 requests/second**. Each API replica has a measured sustainable capacity of **400 requests/second** at the target latency. The team wants **25% spare capacity relative to forecast demand**.
 
-![Flash-sale checkout](../diagrams/architecture-challenges/02-flash-sale-checkout.svg)
+![Challenge: checkout under a flash-sale burst. API scaling alone cannot fix database contention or unsafe retries.](../diagrams/architecture-challenges/02-flash-sale-checkout.svg)
 
 **Diagram walkthrough**
 
@@ -183,7 +191,7 @@ A flash sale is expected to drive **2,400 requests/second**. Each API replica ha
 
 QuickCart produces **12,000 notification jobs/minute** for five minutes. A notification provider accepts at most **1,000 successful requests/minute**. The queue starts empty, and all notifications are assumed independent.
 
-![Notification queue](../diagrams/architecture-challenges/03-notification-queue.svg)
+![Challenge: backlog versus provider rate limit. Queue buffering and worker parallelism are different levers.](../diagrams/architecture-challenges/03-notification-queue.svg)
 
 **Diagram walkthrough**
 
@@ -257,7 +265,7 @@ Scale against oldest-message age and measured successful completion rate, with a
 
 QuickCart's checkout flow writes an order, then publishes an `OrderPlaced` event to a queue. Sometimes the database commit succeeds but the queue publish fails. Sometimes the consumer sends an email and crashes before acknowledging.
 
-![Failure injection](../diagrams/architecture-challenges/07-failure-injection.svg)
+![Challenge: survive failure without duplicate effects. Crash after side effect but before acknowledgment requires idempotency.](../diagrams/architecture-challenges/07-failure-injection.svg)
 
 **Diagram walkthrough**
 
@@ -305,7 +313,7 @@ QuickCart has three database shards. Traffic distribution is:
 
 Total incoming customer queries: **30,000/second**. Each shard's safe measured capacity is **10,000 queries/second**.
 
-![Hot shard](../diagrams/architecture-challenges/04-shard-hotspot.svg)
+![Challenge: three shards but one is hot. Average load hides tenant and key skew.](../diagrams/architecture-challenges/04-shard-hotspot.svg)
 
 **Diagram walkthrough**
 
@@ -353,7 +361,7 @@ QuickCart searches four independent product shards:
 
 The interactive search deadline is **500 ms**. Product discovery permits partial results **if clearly marked**. An exact financial report does not.
 
-![Search deadline](../diagrams/architecture-challenges/05-search-deadline.svg)
+![Challenge: fan-out with one straggler. A timeout is not permission to silently omit required data.](../diagrams/architecture-challenges/05-search-deadline.svg)
 
 **Diagram walkthrough**
 
@@ -903,7 +911,15 @@ Ask:
 
 **Final principle:** Every pattern moves complexity somewhere. A strong architect explains both **what becomes easier** and **what becomes harder**.  
 
-[Next: 12 — Summary of Scalability Design Patterns](12-quick-revision.md).
+[SG-SCALE-12 — Next: 12 — Summary of Scalability Design Patterns](12-quick-revision.md).
+
+## Completion checkpoint
+
+**You can now:** diagnose, calculate and explain a design.
+
+**Show it:** Attempt the existing public rubric before solutions; preserve failure evidence and repair critical correctness gaps. Then attempt chapter 11's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-12 — Quick Revision & Final Self-Assessment](12-quick-revision.md).
 
 ---
 

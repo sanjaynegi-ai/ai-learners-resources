@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="Before: network policies leak into business services">
+<rect width="1200" height="440" fill="#0b1220"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="35" y="49" fill="#fff" font-family="Arial" font-weight="bold" font-size="27">Before: network policies leak into business services</text>
+<rect x="35" y="125" width="255" height="130" rx="13" fill="#18263b" stroke="#22d3ee" stroke-width="2.6"/>
+<text x="162.5" y="180.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Orders API</text>
+<text x="162.5" y="208.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Custom TLS / retries</text>
+<rect x="355" y="125" width="255" height="130" rx="13" fill="#18263b" stroke="#a78bfa" stroke-width="2.6"/>
+<text x="482.5" y="180.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Payments API</text>
+<text x="482.5" y="208.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Custom TLS / routing</text>
+<rect x="675" y="125" width="255" height="130" rx="13" fill="#18263b" stroke="#34d399" stroke-width="2.6"/>
+<text x="802.5" y="180.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Notifications API</text>
+<text x="802.5" y="208.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Custom timeouts / logs</text>
+<text x="35" y="403" fill="#fbbf24" font-family="Arial" font-size="16">Different implementations drift; unsafe retries can repeat business effects.</text>
+</svg>

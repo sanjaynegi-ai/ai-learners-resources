@@ -1,0 +1,22 @@
+name: quickcart-delivery-lab
+services:
+  api:
+    image: ${QUICKCART_IMAGE:?Set QUICKCART_IMAGE to the reviewed local image ID}
+    pull_policy: never
+    ports:
+      - "127.0.0.1:18000:8000"
+    environment:
+      QUICKCART_TRIAGE_TIMEOUT_SECONDS: ${QUICKCART_TRIAGE_TIMEOUT_SECONDS:-0.5}
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 64
+    restart: "no"
+    stop_grace_period: 10s
+    logging:
+      driver: json-file
+      options:
+        max-size: "1m"
+        max-file: "2"

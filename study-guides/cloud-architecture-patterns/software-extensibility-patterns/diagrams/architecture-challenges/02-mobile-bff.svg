@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="610" viewBox="0 0 1100 610">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6" fill="none" stroke="#38bdf8" stroke-width="1.6"/></marker></defs>
+<rect width="1100" height="610" fill="#0b1020"/>
+<text x="45" y="55" fill="#f1f5f9" font-family="Arial,sans-serif" font-weight="bold" font-size="29">Mobile-specific composition</text>
+<text x="45" y="86" fill="#94a3b8" font-family="Arial,sans-serif" font-size="15">Client-facing payload shaping; shared domain authority</text>
+<path d="M245 290.0 L335 290.0" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="290.0" y="281.0" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">one call</text>
+<path d="M565 290.0 L680 162.5" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<text x="622.5" y="217.25" fill="#cbd5e1" font-size="12" text-anchor="middle" font-family="Arial">fan-out</text>
+<path d="M565 290.0 L680 277.5" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<path d="M565 290.0 L680 392.5" stroke="#38bdf8" stroke-width="2" marker-end="url(#a)" fill="none" opacity=".9"/>
+<rect x="55" y="235" width="190" height="110" rx="13" fill="#151f36" stroke="#38bdf8" stroke-width="2"/>
+<text x="150.0" y="269" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Mobile apps</text>
+<text x="150.0" y="294" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Android </text>
+<text x="150.0" y="314" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> iOS</text>
+<rect x="335" y="235" width="230" height="110" rx="13" fill="#151f36" stroke="#a78bfa" stroke-width="2"/>
+<text x="450.0" y="269" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Mobile BFF</text>
+<text x="450.0" y="294" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Compose </text>
+<text x="450.0" y="314" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> shape </text>
+<text x="450.0" y="334" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial"> cache</text>
+<rect x="680" y="120" width="325" height="85" rx="13" fill="#151f36" stroke="#34d399" stroke-width="2"/>
+<text x="842.5" y="154" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Catalog service</text>
+<text x="842.5" y="179" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Product descriptions</text>
+<rect x="680" y="235" width="325" height="85" rx="13" fill="#151f36" stroke="#fb923c" stroke-width="2"/>
+<text x="842.5" y="269" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Pricing service</text>
+<text x="842.5" y="294" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Authoritative prices</text>
+<rect x="680" y="350" width="325" height="85" rx="13" fill="#151f36" stroke="#fb7185" stroke-width="2"/>
+<text x="842.5" y="384" fill="#f8fafc" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Inventory service</text>
+<text x="842.5" y="409" fill="#cbd5e1" text-anchor="middle" font-size="13" font-family="Arial">Authoritative stock</text>
+<text x="45" y="580" fill="#94a3b8" font-size="14" font-family="Arial">The BFF does not calculate discounts or reserve stock.</text></svg>

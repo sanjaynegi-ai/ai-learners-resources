@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="Similar-looking components protect different boundaries">
+<rect width="1200" height="440" fill="#0b1220"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="35" y="49" fill="#fff" font-family="Arial" font-weight="bold" font-size="27">Similar-looking components protect different boundaries</text>
+<rect x="25" y="120" width="260" height="120" rx="13" fill="#18263b" stroke="#22d3ee" stroke-width="2.6"/>
+<text x="155.0" y="170.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Sidecar</text>
+<text x="155.0" y="198.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Co-located support</text>
+<rect x="320" y="120" width="260" height="120" rx="13" fill="#18263b" stroke="#a78bfa" stroke-width="2.6"/>
+<text x="450.0" y="170.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Ambassador</text>
+<text x="450.0" y="198.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Outbound proxy</text>
+<rect x="615" y="120" width="260" height="120" rx="13" fill="#18263b" stroke="#34d399" stroke-width="2.6"/>
+<text x="745.0" y="170.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">API Gateway</text>
+<text x="745.0" y="198.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Inbound edge</text>
+<rect x="910" y="120" width="260" height="120" rx="13" fill="#18263b" stroke="#fbbf24" stroke-width="2.6"/>
+<text x="1040.0" y="170.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Service Mesh</text>
+<text x="1040.0" y="198.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Fleet-wide policy</text>
+<text x="35" y="403" fill="#fbbf24" font-family="Arial" font-size="16">Ambassador is a networking role often implemented as a sidecar.</text>
+</svg>

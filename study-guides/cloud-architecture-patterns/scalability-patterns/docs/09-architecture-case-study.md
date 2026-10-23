@@ -1,12 +1,20 @@
 # Chapter 09 — Integrated QuickCart Architecture Case Study
 
+> **Unit ID:** SG-SCALE-09 · **Capability:** AI-OPS-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
 > **Independent study guide · Estimated study time: 90–120 minutes**
 >
 > **Scenario:** QuickCart, a fictional e-commerce platform, must survive a flash sale without losing acknowledged orders, overloading its notification provider, or making search and media processing unreliable.
 >
 > **Learning approach:** Follow the symptoms, identify the limiting resource, select a pattern, calculate its impact, and decide what becomes the next bottleneck.
+>
+> **You need:** SG-SCALE-01 to SG-SCALE-08.
+>
+> **You will produce:** ADR, failure timeline, useful business metrics, security/cost assumptions and incident owner.
 
-[← Previous: Pipes & Filters](08-pipes-and-filters.md) · [Foundations](00-foundations.md)
+[SG-SCALE-08 — ← Previous: Pipes & Filters](08-pipes-and-filters.md) · [SG-SCALE-00 — Foundations](00-foundations.md)
 
 ## 1. Learning objectives
 
@@ -60,7 +68,7 @@ At the beginning, the architecture is straightforward:
 
 `Customers → One API server → One database → Email provider`
 
-![Before growth](../diagrams/architecture-case-study/01-before-growth.svg)
+![QuickCart before the flash sale. One slow dependency can delay the customer request.](../diagrams/architecture-case-study/01-before-growth.svg)
 
 **Diagram walkthrough**
 
@@ -145,7 +153,7 @@ An architecture cannot be evaluated without specifying what each user-facing ope
 
 This is the most important request flow because it changes business state.
 
-![Checkout sequence](../diagrams/architecture-case-study/03-checkout-sequence.svg)
+![Checkout success is not notification delivery. Return an order ID after durable commit; email delivery is a separate state.](../diagrams/architecture-case-study/03-checkout-sequence.svg)
 
 **Diagram walkthrough**
 
@@ -227,7 +235,7 @@ outbox:
 
 The notification provider accepts at most **1,000 messages/minute** in this exercise.
 
-![Capacity bottleneck](../diagrams/architecture-case-study/04-capacity-bottlenecks.svg)
+![Flash-sale capacity is bounded by each dependency. More workers cannot exceed the downstream provider limit.](../diagrams/architecture-case-study/04-capacity-bottlenecks.svg)
 
 **Diagram walkthrough**
 
@@ -467,7 +475,7 @@ Product videos have a different scaling profile from checkout. They can take sec
 
 ## 15. Observability: one dashboard is not enough
 
-![Observability map](../diagrams/architecture-case-study/08-observability-map.svg)
+![Trace user journeys and monitor capacity boundaries. Separate order-success, notification-age, search, and media-readiness SLOs.](../diagrams/architecture-case-study/08-observability-map.svg)
 
 **Diagram walkthrough**
 
@@ -844,7 +852,15 @@ Measure the current limiting resource, choose the smallest appropriate intervent
 
 With the eight core patterns and the integrated QuickCart case complete, the natural next learning artifact is a **Pattern Comparison & Selection Guide**. It should contrast the patterns by symptom, design intent, benefits, trade-offs, failure modes, and the questions an architect should ask before choosing.
 
-[Next: 10 — Pattern Comparison & Selection Guide](10-pattern-comparison.md).
+[SG-SCALE-10 — Next: 10 — Pattern Comparison & Selection Guide](10-pattern-comparison.md).
+
+## Completion checkpoint
+
+**You can now:** defend a phased QuickCart design.
+
+**Show it:** ADR, failure timeline, useful business metrics, security/cost assumptions and incident owner. Then attempt chapter 09's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-10 — Pattern Comparison & Selection Guide](10-pattern-comparison.md).
 
 ---
 

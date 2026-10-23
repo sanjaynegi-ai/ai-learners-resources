@@ -1,11 +1,33 @@
 # Chapter 13 — Debugging, Testing, and Evaluation: Locate the Failed Handoff
 
+**Which handoff failed, and what evidence would justify your proposed repair?**
+
+> **Your goal:** Test application boundaries and compare behavior without hiding failed cases.<br>
+> **You need:** [Retrieval](08-documents-and-retrieval.md), [Grounded RAG](09-grounded-rag.md), [Conversational RAG](10-conversational-rag.md) and their complete files.<br>
+> **Effort:** 110-150 minutes, plus optional live evaluation/review; estimated.<br>
+> **You will produce:** `test_workbook.py`, an evaluation log, retry diagnosis and a one-variable comparison. **Status:** Draft; fixture and live evidence remain separate.
+
+**Fernwood** is the fictional organization used here for internal-note and equipment-policy questions. Use synthetic material throughout; these labs do not establish a deployed identity or authorization system.
+
+**Starting state:** Continue the existing learner project and preserve its source/index snapshots. Add the prescribed development dependencies and create the test, collector and retry files below. Do not copy historical reports as your own observations.
+
+**Study route:** Run deterministic tests, collect the fixed fixture cases, review support/citations manually, then compare one declared change. Live evaluation is explicitly selected and needs its own budget; indexing cost is separate from query-time evaluation.
+
+**Before executable steps:** use Python 3.11 via uv from the learner project named above, following each section's working directory. Default fixture checks make no paid model calls, and this chapter starts no server or interface process. Before optional hosted inference, choose a budget, request count, execution window and review plan; local models require their own compute allowance. Preserve private evidence and follow the chapter's cleanup/verification record below.
+
+<details>
+<summary>Reference: stable unit identity and historical verification limits</summary>
+
+> **Unit ID:** W-LC-13 · **Capability:** AI-EVAL-01 · [Course map](../../../README.md#ordered-capability-map)
+> **Status:** Draft · **Runtime:** your W-LC-00 learner project (Python 3.11 via uv) · **Contract, cleanup and verification:** [W-LC-13 record](lesson-contract.md#w-lc-13).
 > **Study time:** 110–150 minutes, plus optional live evaluation and evidence review.  
-> **Prerequisites:** [Retrieval](08-documents-and-retrieval.md), [Grounded RAG](09-grounded-rag.md), [Conversational RAG](10-conversational-rag.md), and their complete learner files.  
+> **Prerequisites:** [W-LC-08 — Retrieval](08-documents-and-retrieval.md), [W-LC-09 — Grounded RAG](09-grounded-rag.md), [W-LC-10 — Conversational RAG](10-conversational-rag.md), and their complete learner files.<br>
 > **Central question:** Which stage failed, and what evidence would show that a change helped?  
 > **Running example:** Fernwood team-notes assistant.
 
-[Previous: Streaming and Interfaces](12-streaming-and-interfaces.md) · [Index](README.md) · [Next: LangGraph and LangSmith](14-langgraph-and-langsmith.md)
+</details>
+
+[Previous core chapter](12-streaming-and-interfaces.md) | [Workbook index](README.md) | [Next core step](15-guided-integration-lab.md)
 
 ## Learning objectives
 
@@ -372,6 +394,9 @@ Expect two attempts then success; two attempts then nonzero failure; and one att
 
 ## 5. Measure and review
 
+> [!IMPORTANT]
+> A collector finishing successfully does not mean its answers passed review. Retain failed rows, count abstentions separately from delivered answers, and label unavailable usage as missing rather than zero.
+
 Use the captured rows and the shared golden-case table. Review each row **before** averaging. Leave unreviewed judgments `null`; never turn missing data into a pass. Put 1 for pass, 0 for fail, or a reasoned `not_applicable` in a learner review copy, and preserve the original collected run.
 
 | Measure | How to judge/calculate | Important limit |
@@ -500,9 +525,19 @@ Invalid inputs and permanent bad requests need correction, while repeated writes
 - [ ] I compared one-variable changes, including a non-improving result.
 - [ ] I observed timeout recovery, exhausted retries, and a non-retried bad request.
 
-The pipeline is now measurable without an external evaluation account. [Chapter 14](14-langgraph-and-langsmith.md) introduces optional explicit graph control and trace inspection while keeping these offline checks useful.
+The pipeline is now measurable without an external evaluation account. Continue to the guided integration below. [W-LC-14](14-langgraph-and-langsmith.md) is optional graph/trace enrichment; it is not a prerequisite for integration and the course map places its extension with later orchestration work.
+
+## Completion checkpoint
+
+**You can now:** locate a failure by boundary, write offline tests, run a separately selected live evaluation with stated denominators, and report one-variable changes honestly, including those that did not help.
+
+**Show it:** your offline tests and evaluation log, with failures kept rather than removed.
+
+**Next:** [W-LC-15 — Guided Integration Lab](15-guided-integration-lab.md). W-LC-14 is optional.
 
 ## References  
+
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
 
 - [pytest monkeypatch documentation](https://docs.pytest.org/en/stable/how-to/monkeypatch.html): scoped dependency replacement and cleanup.
 - [LangChain testing overview](https://docs.langchain.com/oss/python/langchain/test): testing application behavior separately from service integration.

@@ -1,13 +1,22 @@
 # Chapter 18 — Glossary: Find the Meaning, Then Trace the Example
 
+> **Unit ID:** W-LC-18 · **Capability:** AI-LLM-01 · [Course map](../../../README.md#ordered-capability-map)
+> **Status:** Draft reference · **Contract, cleanup and verification:** [W-LC-18 record](lesson-contract.md#w-lc-18).
+
 > **Study time:** Use as a reference; allow 30–45 minutes for a first review.  
 > **Prerequisite:** None for lookup; linked chapters develop each topic.  
 > **Central question:** What does this term mean in the actual application?  
 > **Running example:** Fernwood team-notes assistant.
 
-[Previous: Revision and Assessment](17-revision-and-assessment.md) · [Workbook index](README.md) · [Next project: RAG capstone](../02-rag-capstone-workbook/README.md)
+[W-LC-17 — Previous: Revision and Assessment](17-revision-and-assessment.md) · [Workbook index](README.md) · [Course map next: SG-REL-00](../../../study-guides/llm-reliability/docs/00-reliable-model-calls.md)
 
 Terms are grouped by responsibility so related ideas can be compared. Use the alphabetical index for a direct lookup. Each definition includes a concrete case example; follow its topic's chapter links for mechanics and hands-on instructions. Optional frameworks are marked optional and are not prerequisites for the core workbook.
+
+## Reference learning objectives
+
+- Find a term and explain it using its Fernwood example.
+- Distinguish commonly confused responsibilities such as retrieval and grounding, schema validity and truth, or history and authorization.
+- Follow the linked chapter to reproduce the mechanism or investigate a weak area.
 
 ## Alphabetical index
 
@@ -38,7 +47,7 @@ Terms are grouped by responsibility so related ideas can be compared. Use the al
 
 ## 1. Environment and model foundations
 
-Read: [Environment Setup](00-environment-setup.md), [Foundations](01-foundations.md), [Models and Messages](02-models-and-messages.md).
+Read: [W-LC-00 — Environment Setup](00-environment-setup.md), [W-LC-01 — Foundations](01-foundations.md), [W-LC-02 — Models and Messages](02-models-and-messages.md).
 
 | Term | Plain-English meaning | Case example and boundary |
 |---|---|---|
@@ -57,7 +66,7 @@ Read: [Environment Setup](00-environment-setup.md), [Foundations](01-foundations
 
 ## 2. Messages, prompts, and composition
 
-Read: [Models and Messages](02-models-and-messages.md), [Prompts](03-prompts.md), [Structured Output](04-structured-output.md), [Chains and Runnables](05-chains-and-runnables.md).
+Read: [W-LC-02 — Models and Messages](02-models-and-messages.md), [W-LC-03 — Prompts](03-prompts.md), [W-LC-04 — Structured Output](04-structured-output.md), [W-LC-05 — Chains and Runnables](05-chains-and-runnables.md).
 
 | Term | Plain-English meaning | Case example and boundary |
 |---|---|---|
@@ -78,7 +87,7 @@ Read: [Models and Messages](02-models-and-messages.md), [Prompts](03-prompts.md)
 
 ## 3. Documents, embeddings, and retrieval
 
-Read: [Embeddings and Similarity](07-embeddings-and-similarity.md), [Documents and Retrieval](08-documents-and-retrieval.md).
+Read: [W-LC-07 — Embeddings and Similarity](07-embeddings-and-similarity.md), [W-LC-08 — Documents and Retrieval](08-documents-and-retrieval.md).
 
 | Term | Plain-English meaning | Case example and boundary |
 |---|---|---|
@@ -103,7 +112,7 @@ Read: [Embeddings and Similarity](07-embeddings-and-similarity.md), [Documents a
 
 ## 4. Grounded answers and conversational context
 
-Read: [Grounded RAG](09-grounded-rag.md), [Conversation History](06-conversation-history.md), [Conversational RAG](10-conversational-rag.md).
+Read: [W-LC-09 — Grounded RAG](09-grounded-rag.md), [W-LC-06 — Conversation History](06-conversation-history.md), [W-LC-10 — Conversational RAG](10-conversational-rag.md).
 
 | Term | Plain-English meaning | Case example and boundary |
 |---|---|---|
@@ -120,7 +129,7 @@ Read: [Grounded RAG](09-grounded-rag.md), [Conversation History](06-conversation
 
 ## 5. Tools and execution control
 
-Read: [Tools and Agents](11-tools-and-agents.md).
+Read: [W-LC-11 — Tools and Agents](11-tools-and-agents.md).
 
 | Term | Plain-English meaning | Case example and boundary |
 |---|---|---|
@@ -136,7 +145,7 @@ Read: [Tools and Agents](11-tools-and-agents.md).
 
 ## 6. Interfaces, state, and observation
 
-Read: [Streaming and Interfaces](12-streaming-and-interfaces.md), [Guided Integration](15-guided-integration-lab.md).
+Read: [W-LC-12 — Streaming and Interfaces](12-streaming-and-interfaces.md), [W-LC-15 — Guided Integration](15-guided-integration-lab.md).
 
 | Term | Plain-English meaning | Case example and boundary |
 |---|---|---|
@@ -148,7 +157,7 @@ Read: [Streaming and Interfaces](12-streaming-and-interfaces.md), [Guided Integr
 
 ## 7. Testing and evaluation
 
-Read: [Debugging, Testing, and Evaluation](13-debugging-testing-and-evaluation.md), [Revision and Assessment](17-revision-and-assessment.md).
+Read: [W-LC-13 — Debugging, Testing, and Evaluation](13-debugging-testing-and-evaluation.md), [W-LC-17 — Revision and Assessment](17-revision-and-assessment.md).
 
 | Term | Plain-English meaning | Case example and boundary |
 |---|---|---|
@@ -159,7 +168,7 @@ Read: [Debugging, Testing, and Evaluation](13-debugging-testing-and-evaluation.m
 
 ## 8. Framework roles and optional graph concepts
 
-Read: [Foundations](01-foundations.md), [Tools and Agents](11-tools-and-agents.md), and optional [LangGraph and LangSmith](14-langgraph-and-langsmith.md).
+Read: [W-LC-01 — Foundations](01-foundations.md), [W-LC-11 — Tools and Agents](11-tools-and-agents.md), and optional [W-LC-14 — LangGraph and LangSmith](14-langgraph-and-langsmith.md).
 
 | Term | Plain-English meaning | Case example and boundary |
 |---|---|---|
@@ -203,7 +212,19 @@ Validation and authorization. Satisfying input constraints is different from gra
 - [ ] I can distinguish a model request, application execution, and authorization.
 - [ ] I know which optional concepts can be skipped on the core route.
 
-Return to [Chapter 17](17-revision-and-assessment.md) for the final scorecard or [Chapter 16](16-practice-challenges.md) for targeted practice. Continue to the [RAG capstone workbook](../02-rag-capstone-workbook/README.md) when ready for the next independent project.
+Return to [W-LC-17 — Chapter 17](17-revision-and-assessment.md) for the final scorecard or [W-LC-16 — Chapter 16](16-practice-challenges.md) for targeted practice. Then continue on the course map to [SG-REL-00 — Reliable model calls](../../../study-guides/llm-reliability/docs/00-reliable-model-calls.md); the [RAG capstone workbook](../02-rag-capstone-workbook/README.md) from AI-RAG-01 returns there as the permission-aware reference.
+
+## Evidence reflection
+
+Before looking up a term, predict its meaning and one backend consequence. After lookup, explain what changed and where to revisit the full mechanism. As a reference unit, this retrieves taught knowledge rather than introducing a new build. Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** look up a term, read its Fernwood example, and follow it to the chapter that teaches it.
+
+**Show it:** explain one term in your own words with its case consequence, then check it against the linked chapter.
+
+**Next:** return to the chapter you were studying from the [workbook index](README.md).
 
 ## References and verification
 

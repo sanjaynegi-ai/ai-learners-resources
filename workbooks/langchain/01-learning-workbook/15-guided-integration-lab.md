@@ -1,11 +1,33 @@
 # Chapter 15 — Guided Integration: Build the Fernwood Notes Assistant
 
+**Can you assemble and explain the whole assistant from an empty project?**
+
+> **Your goal:** Verify component joins, state ownership and evidence behavior in a fresh assembly.<br>
+> **You need:** Core chapters 00-13 and their evidence; Chapter 14 is optional and not used here.<br>
+> **Effort:** 2-3 hours, plus optional live evaluation; estimated.<br>
+> **You will produce:** A separate `fernwood-notes` project, integration checks and all thirteen shared case records. **Status:** Draft; fixture and live evidence remain separate.
+
+**Fernwood** is the fictional organization used here for internal-note and equipment-policy questions. Use synthetic material throughout; these labs do not establish a deployed identity or authorization system.
+
+**Starting state:** Start a new empty personal `fernwood-notes` directory as instructed below. Preserve `langchain-learning` and the separate QuickCart package. Follow the explicit file creation order and new project environment instead of copying an old virtual environment.
+
+**Study route:** Assemble imports/configuration, index fixture sources explicitly, build service/UI/checks, then inspect known failures. Run all thirteen cases; collection success is not semantic success. Explain document-only limitations before considering optional tools.
+
+**Before executable steps:** use Python 3.11 via uv from the learner project named above, following each section's working directory. Default fixture checks make no paid model calls. Local interfaces start processes that you must stop when finished. Before optional hosted inference, choose a budget, request count, execution window and review plan; local models require their own compute allowance. Preserve private evidence and follow the chapter's cleanup/verification record below.
+
+<details>
+<summary>Reference: stable unit identity and historical verification limits</summary>
+
+> **Unit ID:** W-LC-15 · **Capability:** AI-INTEGRATE-01 · [Course map](../../../README.md#ordered-capability-map)
+> **Status:** Draft · **Runtime:** a new empty `fernwood-notes` project you create here (Python 3.11 via uv) · **Contract, cleanup and verification:** [W-LC-15 record](lesson-contract.md#w-lc-15).
 > **Study time:** 2–3 hours, plus optional live evaluation.  
 > **Prerequisites:** Core Chapters 00–13; Chapter 14 is optional and is not used here.  
 > **Central question:** Can you assemble, inspect, and test the whole assistant from workbook instructions alone?  
 > **Running example:** Fernwood team-notes assistant.
 
-[Previous: Optional Framework Extensions](14-langgraph-and-langsmith.md) · [Index](README.md) · [Next: Practice Challenges](16-practice-challenges.md)
+</details>
+
+[Previous core chapter](13-debugging-testing-and-evaluation.md) | [Workbook index](README.md) | [Next core step](16-practice-challenges.md)
 
 ## Learning objectives
 
@@ -14,7 +36,7 @@
 - Connect bounded conversational rewriting to grounded answering and visible evidence.
 - Keep history isolated per UI session and commit it only after a valid response.
 - Run all thirteen shared standalone evaluation cases and document known failures.
-- Explain document-only answer boundaries and the next capstone's responsibilities.
+- Explain document-only answer boundaries and what the permission-aware RAG capstone adds.
 
 ## 1. Intuition: assemble the workshop, then inspect the joins
 
@@ -73,13 +95,13 @@ Save the **complete runnable file** snippet named in each linked chapter, not an
 
 | Order | Learner file | Complete source / purpose |
 |---|---|---|
-| 1 | `first_call.py` | [Chapter 02](02-models-and-messages.md), configuration/model/text-block helpers |
-| 2 | `embedding_lab.py` | [Chapter 07](07-embeddings-and-similarity.md), hosted/local embedding profiles and prefixes |
-| 3 | `retrieval_lab.py` | [Chapter 08](08-documents-and-retrieval.md), loading/chunks/manifest/persistence/query helpers |
+| 1 | `first_call.py` | [W-LC-02 — Chapter 02](02-models-and-messages.md), configuration/model/text-block helpers |
+| 2 | `embedding_lab.py` | [W-LC-07 — Chapter 07](07-embeddings-and-similarity.md), hosted/local embedding profiles and prefixes |
+| 3 | `retrieval_lab.py` | [W-LC-08 — Chapter 08](08-documents-and-retrieval.md), loading/chunks/manifest/persistence/query helpers |
 | 4 | Five `knowledge/*.txt` files | [Shared materials](shared-materials.md), all complete UTF-8 source blocks, unchanged |
-| 5 | `rag_lab.py` | [Chapter 09](09-grounded-rag.md), evidence prompt/fixture/answer validation |
-| 6 | `conversation_rag_lab.py` | [Chapter 10](10-conversational-rag.md), rewrite prompt/schema/fixture and constants |
-| 7 | `interface_backend.py` | [Chapter 12](12-streaming-and-interfaces.md), reusable locked query/answer backend |
+| 5 | `rag_lab.py` | [W-LC-09 — Chapter 09](09-grounded-rag.md), evidence prompt/fixture/answer validation |
+| 6 | `conversation_rag_lab.py` | [W-LC-10 — Chapter 10](10-conversational-rag.md), rewrite prompt/schema/fixture and constants |
+| 7 | `interface_backend.py` | [W-LC-12 — Chapter 12](12-streaming-and-interfaces.md), reusable locked query/answer backend |
 | 8 | `notes_service.py` | Complete new glue file below |
 | 9 | `notes_app.py` | Complete new integrated Streamlit interface below |
 | 10 | `integration_check.py` | Complete end-to-end checks and thirteen-case collector below |
@@ -407,6 +429,9 @@ The live batch makes thirteen query-embedding calls and up to thirteen answer ca
 
 ## 5. Final project tree and acceptance walkthrough
 
+> [!IMPORTANT]
+> Keep all thirteen collected cases, including the known fixture failures. A clean project build or zero collector exit code does not turn unanswered cases into correct answers; preserve the case-by-case review.
+
 ```text
 fernwood-notes/
   .python-version
@@ -539,11 +564,25 @@ No. Preserve actual provenance and separate modes. External facts do not establi
 - [ ] I collected all shared cases and documented known failures honestly.
 - [ ] I can explain why external tools must preserve separate provenance and authorization.
 
-Continue with [practice challenges](16-practice-challenges.md), then use the separate [RAG capstone workbook](../02-rag-capstone-workbook/README.md) as the next project. Its [project brief](../02-rag-capstone-workbook/00-project-brief.md) is the starting point for a more independent design. This lab assembles taught components; it does not replace that capstone or claim its scaffold is already a completed course.
+Continue with [W-LC-16 — practice challenges](16-practice-challenges.md). The separate [RAG capstone workbook](../02-rag-capstone-workbook/README.md), which the course map places earlier at AI-RAG-01 and reuses at AI-RELIABLE-01, remains the larger permission-aware design; its [W-RAG-00 — project brief](../02-rag-capstone-workbook/00-project-brief.md) states that scope. This lab assembles taught components; it does not replace that capstone or claim its scaffold is already a completed course.
+
+## Evidence reflection
+
+Which integration join required the most repair? Explain its contract, one remaining limitation and the next measured constraint rather than adding a new framework automatically. Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** build the notes assistant from an empty project, separate ingestion from query-time resources, and run all thirteen shared cases with known failures documented.
+
+**Show it:** your independently assembled project, integration checks and thirteen-case record with support/citation review and known failures preserved. State the fixture/live route, source/index configuration and assistance used. Close any UI process you started after retaining private evidence.
+
+**Next:** [W-LC-16 — Practice Challenges](16-practice-challenges.md).
 
 ## References  
 
-- Core complete snippets: [models](02-models-and-messages.md), [embeddings](07-embeddings-and-similarity.md), [retrieval](08-documents-and-retrieval.md), [RAG](09-grounded-rag.md), [conversation](10-conversational-rag.md), [UI/backend](12-streaming-and-interfaces.md).
-- [Shared corpus and golden cases](shared-materials.md); [evaluation rubric](13-debugging-testing-and-evaluation.md).
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
+
+- Core complete snippets: [W-LC-02 — models](02-models-and-messages.md), [W-LC-07 — embeddings](07-embeddings-and-similarity.md), [W-LC-08 — retrieval](08-documents-and-retrieval.md), [W-LC-09 — RAG](09-grounded-rag.md), [W-LC-10 — conversation](10-conversational-rag.md), [W-LC-12 — UI/backend](12-streaming-and-interfaces.md).
+- [Shared corpus and golden cases](shared-materials.md); [W-LC-13 — evaluation rubric](13-debugging-testing-and-evaluation.md).
 - [Streamlit Session State](https://docs.streamlit.io/develop/api-reference/caching-and-state/st.session_state) and [resource cache](https://docs.streamlit.io/develop/api-reference/caching-and-state/st.cache_resource): state ownership and resource reuse.
 

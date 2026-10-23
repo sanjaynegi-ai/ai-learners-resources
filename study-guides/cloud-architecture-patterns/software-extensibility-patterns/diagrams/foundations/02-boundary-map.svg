@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-label="Four boundaries protected by four core patterns">
+<rect width="1200" height="460" fill="#0b1220"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="34" y="45" fill="#fff" font-size="26" font-weight="bold" font-family="Arial">Four boundaries protected by four core patterns</text>
+<rect x="25" y="125" width="250" height="110" rx="13" fill="#17243b" stroke="#22d3ee" stroke-width="2.5"/>
+<text x="150.0" y="172.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Sidecar</text>
+<text x="150.0" y="198.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Support vs business</text>
+<rect x="320" y="125" width="250" height="110" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="445.0" y="172.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">Ambassador</text>
+<text x="445.0" y="198.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">App vs outbound transport</text>
+<rect x="615" y="125" width="250" height="110" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2.5"/>
+<text x="740.0" y="172.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">ACL</text>
+<text x="740.0" y="198.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Modern vs legacy domain</text>
+<rect x="910" y="125" width="250" height="110" rx="13" fill="#17243b" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="1035.0" y="172.0" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="17" fill="#fff">BFF</text>
+<text x="1035.0" y="198.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#cbd5e1">Client vs shared services</text>
+<text x="34" y="419" fill="#fbbf24" font-family="Arial" font-size="15">The patterns are complementary: they protect different responsibilities.</text>
+</svg>

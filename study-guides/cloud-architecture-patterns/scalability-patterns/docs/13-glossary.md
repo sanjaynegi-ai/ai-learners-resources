@@ -1,10 +1,22 @@
 # Chapter 13 — Glossary of Scalability & Distributed Systems
 
+> **Unit ID:** SG-SCALE-13 · **Capability:** AI-AWS-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
 > **Standalone reference chapter · QuickCart study guide**
 >
 > **How to use:** Search this Markdown file with **Ctrl+F / Cmd+F**, or jump from the alphabetical index and topic sections below. Each term has a plain-English meaning and a QuickCart example.
+>
+> **Your goal:** Explain a term with its QuickCart consequence and its limit, without introducing a new prerequisite.
+>
+> **Effort:** 20–30 minutes for a first review, then on demand (estimate).
+>
+> **You need:** Nothing beyond the chapter that taught the term.
+>
+> **You will produce:** Three term/contrast explanations pointing to taught concepts; no new prerequisite is introduced.
 
-[← Previous: Quick Revision](12-quick-revision.md) · [Pattern Comparison](10-pattern-comparison.md) · [Architecture Challenges](11-architecture-challenges.md)
+[SG-SCALE-12 — ← Previous: Quick Revision](12-quick-revision.md) · [SG-SCALE-10 — Pattern Comparison](10-pattern-comparison.md) · [SG-SCALE-11 — Architecture Challenges](11-architecture-challenges.md)
 
 ## 1. What this glossary covers
 
@@ -14,7 +26,7 @@ This chapter defines the vocabulary used throughout the QuickCart scalability co
 
 ## 2. A one-minute mental map
 
-![Eight patterns map](../diagrams/glossary/07-pattern-map.svg)
+![Eight patterns, four architectural questions. First identify the limiting resource; then select the smallest suitable pattern.](../diagrams/glossary/07-pattern-map.svg)
 
 **Diagram walkthrough**
 
@@ -34,17 +46,17 @@ The entries are grouped by topic below. Use the links to jump to the section con
 
 **B:** [Backlog](#backlog) · [Backpressure](#backpressure) · [Bottleneck](#bottleneck) · [Branch and join](#branch-and-join) · [Bulkhead](#bulkhead) · [Burst](#burst)
 
-**C:** [Capacity](#capacity) · [Chaos / failure injection](#chaos-failure-injection) · [Checkpoint](#checkpoint) · [Circuit breaker](#circuit-breaker) · [Competing Consumers](#competing-consumers) · [Completeness policy](#completeness-policy) · [Concurrency](#concurrency) · [Connection draining](#connection-draining) · [Consistent hashing](#consistent-hashing) · [Consumer](#consumer) · [Content-addressed artifact](#content-addressed-artifact) · [Cooldown / hysteresis](#cooldown-hysteresis) · [Correlation ID](#correlation-id) · [Cost per successful operation](#cost-per-successful-operation) · [Cross-shard query](#cross-shard-query)
+**C:** [Capacity](#capacity) · [Chaos / failure injection](#chaos--failure-injection) · [Checkpoint](#checkpoint) · [Circuit breaker](#circuit-breaker) · [Competing Consumers](#competing-consumers) · [Completeness policy](#completeness-policy) · [Concurrency](#concurrency) · [Connection draining](#connection-draining) · [Consistent hashing](#consistent-hashing) · [Consumer](#consumer) · [Content-addressed artifact](#content-addressed-artifact) · [Cooldown / hysteresis](#cooldown--hysteresis) · [Correlation ID](#correlation-id) · [Cost per successful operation](#cost-per-successful-operation) · [Cross-shard query](#cross-shard-query)
 
 **D:** [Data retention](#data-retention) · [Dead-letter queue (DLQ)](#dead-letter-queue-dlq) · [Deadline](#deadline) · [Deduplication](#deduplication) · [Delivery SLO](#delivery-slo) · [Directory-based routing](#directory-based-routing) · [Distributed tracing](#distributed-tracing) · [Distributed transaction](#distributed-transaction)
 
 **E:** [Elasticity](#elasticity) · [Error budget](#error-budget) · [Eventual consistency](#eventual-consistency) · [Exactly-once effect](#exactly-once-effect) · [Exponential backoff](#exponential-backoff)
 
-**F:** [Failover](#failover) · [Fan-in / gather](#fan-in-gather) · [Fan-out](#fan-out) · [Fault tolerance](#fault-tolerance) · [Filter](#filter)
+**F:** [Failover](#failover) · [Fan-in / gather](#fan-in--gather) · [Fan-out](#fan-out) · [Fault tolerance](#fault-tolerance) · [Filter](#filter)
 
 **G:** [Global rate limiter](#global-rate-limiter) · [Graceful degradation](#graceful-degradation)
 
-**H:** [Hash partitioning](#hash-partitioning) · [Headroom](#headroom) · [Health check](#health-check) · [Horizontal partitioning](#horizontal-partitioning) · [Horizontal scaling / scale out](#horizontal-scaling-scale-out) · [Hot key](#hot-key) · [Hot shard](#hot-shard)
+**H:** [Hash partitioning](#hash-partitioning) · [Headroom](#headroom) · [Health check](#health-check) · [Horizontal partitioning](#horizontal-partitioning) · [Horizontal scaling / scale out](#horizontal-scaling--scale-out) · [Hot key](#hot-key) · [Hot shard](#hot-shard)
 
 **I:** [Idempotency](#idempotency) · [Idempotency key](#idempotency-key)
 
@@ -56,17 +68,17 @@ The entries are grouped by topic below. Use the links to jump to the section con
 
 **O:** [Object storage](#object-storage) · [Observability](#observability) · [Ordering guarantee](#ordering-guarantee)
 
-**P:** [p50 / median](#p50-median) · [p95 / p99](#p95-p99) · [Partial result](#partial-result) · [Partition](#partition) · [Partition key](#partition-key) · [Pipe](#pipe) · [Pipes & Filters](#pipes-filters) · [Poison message](#poison-message) · [Predictive scaling](#predictive-scaling) · [Producer](#producer) · [Publication gate](#publication-gate)
+**P:** [p50 / median](#p50--median) · [p95 / p99](#p95--p99) · [Partial result](#partial-result) · [Partition](#partition) · [Partition key](#partition-key) · [Pipe](#pipe) · [Pipes & Filters](#pipes--filters) · [Poison message](#poison-message) · [Predictive scaling](#predictive-scaling) · [Producer](#producer) · [Publication gate](#publication-gate)
 
 **Q:** [Queries per second (QPS)](#queries-per-second-qps) · [Queue](#queue) · [Queue-Based Load Leveling](#queue-based-load-leveling)
 
 **R:** [Range partitioning](#range-partitioning) · [Rate limiting](#rate-limiting) · [Reactive scaling](#reactive-scaling) · [Read replica](#read-replica) · [Readiness check](#readiness-check) · [Rebalancing](#rebalancing) · [Recovery point objective (RPO)](#recovery-point-objective-rpo) · [Recovery time objective (RTO)](#recovery-time-objective-rto) · [Redelivery](#redelivery) · [Reliability](#reliability) · [Replica](#replica) · [Replication](#replication) · [Requests per second (RPS)](#requests-per-second-rps) · [Response time](#response-time) · [Retry](#retry) · [Return on investment (ROI)](#return-on-investment-roi) · [Round robin](#round-robin)
 
-**S:** [Saga](#saga) · [Saturation](#saturation) · [Scale-out lag](#scale-out-lag) · [Scatter–Gather](#scatter-gather) · [Scheduled scaling](#scheduled-scaling) · [Schema evolution](#schema-evolution) · [Service-level agreement (SLA)](#service-level-agreement-sla) · [Service-level indicator (SLI)](#service-level-indicator-sli) · [Service-level objective (SLO)](#service-level-objective-slo) · [Sharding](#sharding) · [Stage contract](#stage-contract) · [Stage-specific autoscaling](#stage-specific-autoscaling) · [Stateful service](#stateful-service) · [Stateless service](#stateless-service) · [Sticky session / session affinity](#sticky-session-session-affinity) · [Straggler](#straggler)
+**S:** [Saga](#saga) · [Saturation](#saturation) · [Scale-out lag](#scale-out-lag) · [Scatter–Gather](#scattergather) · [Scheduled scaling](#scheduled-scaling) · [Schema evolution](#schema-evolution) · [Service-level agreement (SLA)](#service-level-agreement-sla) · [Service-level indicator (SLI)](#service-level-indicator-sli) · [Service-level objective (SLO)](#service-level-objective-slo) · [Sharding](#sharding) · [Stage contract](#stage-contract) · [Stage-specific autoscaling](#stage-specific-autoscaling) · [Stateful service](#stateful-service) · [Stateless service](#stateless-service) · [Sticky session / session affinity](#sticky-session--session-affinity) · [Straggler](#straggler)
 
 **T:** [Tail latency](#tail-latency) · [Throughput](#throughput) · [Timeout](#timeout) · [Top-K merge](#top-k-merge) · [Transactional outbox](#transactional-outbox)
 
-**V:** [Vertical partitioning](#vertical-partitioning) · [Vertical scaling / scale up](#vertical-scaling-scale-up) · [Virtual shard / logical partition](#virtual-shard-logical-partition) · [Visibility timeout / lease](#visibility-timeout-lease)
+**V:** [Vertical partitioning](#vertical-partitioning) · [Vertical scaling / scale up](#vertical-scaling--scale-up) · [Virtual shard / logical partition](#virtual-shard--logical-partition) · [Visibility timeout / lease](#visibility-timeout--lease)
 
 **W:** [Workflow orchestrator](#workflow-orchestrator) · [Workflow version](#workflow-version)
 
@@ -201,7 +213,7 @@ The entries are grouped by topic below. Use the links to jump to the section con
 
 ### 4.2 Scaling and traffic routing
 
-![Scaling vocabulary](../diagrams/glossary/02-scale-up-scale-out.svg)
+![Scale up versus scale out. Scaling application replicas cannot remove every database or provider limit.](../diagrams/glossary/02-scale-up-scale-out.svg)
 
 **Diagram walkthrough:** Scale up gives one node more resources; scale out adds nodes; a shared database can remain limiting even after application scaling.
 
@@ -333,7 +345,7 @@ The entries are grouped by topic below. Use the links to jump to the section con
 
 ### 4.3 Queues, consumers, and delivery
 
-![Queue lifecycle](../diagrams/glossary/03-queue-worker-lifecycle.svg)
+![Message lifecycle: queue, lease, acknowledge, retry. A consumer may run a job more than once after crash or acknowledgment loss.](../diagrams/glossary/03-queue-worker-lifecycle.svg)
 
 **Diagram walkthrough:** Producers publish work; queues hold it; consumers claim and process it; acknowledgment or redelivery determines the next step. Repeated execution is possible.
 
@@ -483,7 +495,7 @@ The entries are grouped by topic below. Use the links to jump to the section con
 
 ### 4.4 Data distribution and queries
 
-![Distributed data](../diagrams/glossary/04-data-distribution.svg)
+![Sharding, replication, and distributed queries. Replication copies data; sharding divides distinct ownership.](../diagrams/glossary/04-data-distribution.svg)
 
 **Diagram walkthrough:** A partition key selects a data owner. Different shards hold different subsets. Cross-shard queries may fan out and merge responses. Replicas copy data rather than divide ownership.
 
@@ -1135,6 +1147,14 @@ A mechanism that limits incoming work when downstream capacity cannot safely kee
 - How do we know the business outcome is correct?
 
 > **Measure the constraint → choose the smallest appropriate pattern → preserve correctness → observe the next constraint.**
+
+## Completion checkpoint
+
+**You can now:** define a term with a case consequence and a limitation.
+
+**Show it:** Three term/contrast explanations pointing to taught concepts; no new prerequisite is introduced. Then attempt chapter 13's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** return to the [course map](../../../../README.md#ordered-capability-map) row that sent you here; this series is read at need.
 
 ---
 

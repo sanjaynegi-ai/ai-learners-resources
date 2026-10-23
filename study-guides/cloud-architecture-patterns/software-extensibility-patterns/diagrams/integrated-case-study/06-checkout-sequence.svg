@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7dd3fc"/></marker></defs>
+<rect width="1200" height="660" fill="#0b1020"/>
+<text x="48" y="54" font-family="Arial,sans-serif" font-weight="700" font-size="28" fill="#f1f5f9">Checkout: reliability boundaries</text>
+<text x="48" y="82" font-family="Arial,sans-serif" font-size="15" fill="#94a3b8">One business operation; controlled timeouts and explicit state transitions</text>
+<rect x="55" y="145" width="190" height="110" rx="13" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="70" y="174" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#38bdf8">Mobile app</text>
+<text x="70" y="198" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Submit checkout</text>
+<text x="70" y="217" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Idempotency key</text>
+<rect x="315" y="145" width="190" height="110" rx="13" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="330" y="174" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#a78bfa">Gateway + BFF</text>
+<text x="330" y="198" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Validate token</text>
+<text x="330" y="217" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Pass request context</text>
+<rect x="575" y="145" width="250" height="135" rx="13" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="590" y="174" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#34d399">Checkout domain</text>
+<text x="590" y="198" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Authorize + reserve</text>
+<text x="590" y="217" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Order state machine</text>
+<rect x="905" y="145" width="245" height="135" rx="13" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="920" y="174" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb923c">Adapters / providers</text>
+<text x="920" y="198" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Payment </text>
+<text x="920" y="217" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb"> inventory</text>
+<text x="920" y="236" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Fulfillment</text>
+<rect x="575" y="395" width="270" height="105" rx="13" fill="#17243b" stroke="#fb7185" stroke-width="2"/>
+<text x="590" y="424" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fb7185">Reconciliation worker</text>
+<text x="590" y="448" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Resolve uncertain outcomes</text>
+<text x="590" y="467" font-family="Arial,sans-serif" font-size="13" fill="#d5deeb">Audit + alert</text>
+<path d="M245,200.0 L315,200.0" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="280.0" y="192.0" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">POST</text>
+<path d="M505,200.0 L575,212.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="540.0" y="198.25" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">once</text>
+<path d="M825,212.5 L905,212.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="865.0" y="204.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">idempotent calls</text>
+<path d="M905,212.5 L845,447.5" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="875.0" y="322.0" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">uncertain</text>
+<path d="M700.0,280 L710.0,395" fill="none" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="705.0" y="329.5" font-family="Arial,sans-serif" font-size="12" fill="#fbbf24" text-anchor="middle">pending</text>
+<rect x="35" y="601" width="1130" height="40" rx="9" fill="#111a2d"/>
+<text x="52" y="626" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Do not blindly retry charges; preserve idempotency across clients, BFFs, and providers.</text>
+</svg>

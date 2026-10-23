@@ -1,12 +1,22 @@
 # Chapter 12 — Quick Revision & Final Self-Assessment
 
+> **Unit ID:** SG-SCALE-12 · **Capability:** AI-DEFEND-01 · [Course map](../../../../README.md#ordered-capability-map)
+
+[Learning contract and transfer check](learning-contract.md) · [Course map](../../../../README.md)
+
 > **Fast-reference study chapter · 30–45 minutes to revise · 60–90 minutes with all exercises**
 >
 > **Running example:** QuickCart, a fictional e-commerce platform.
 >
 > **Purpose:** Review the eight scalability patterns, rehearse the important formulas, and test whether you can make architectural decisions without relying on memorized buzzwords.
+>
+> **Your goal:** Retrieve the reasoning and formulas from chapters 00–11 without relying on pattern names.
+>
+> **You need:** an attempt at SG-SCALE-00 to SG-SCALE-11.
+>
+> **You will produce:** Completed recall/numerical checks plus weak-topic repair list; self-score is not certification.
 
-[← Previous: Architecture Challenges](11-architecture-challenges.md) · [Integrated Case Study](09-architecture-case-study.md) · [Pattern Comparison](10-pattern-comparison.md)
+[SG-SCALE-11 — ← Previous: Architecture Challenges](11-architecture-challenges.md) · [SG-SCALE-09 — Integrated Case Study](09-architecture-case-study.md) · [SG-SCALE-10 — Pattern Comparison](10-pattern-comparison.md)
 
 ## 1. How to use this chapter
 
@@ -45,7 +55,7 @@ The central habit to practice is:
 
 ## 3. The pattern-selection reflex
 
-![Pattern selection](../diagrams/quick-revision/01-pattern-selection.svg)
+![Start with the limiting resource. Architecture begins with evidence, not with a preferred technology.](../diagrams/quick-revision/01-pattern-selection.svg)
 
 **Diagram walkthrough**
 
@@ -73,7 +83,7 @@ The central habit to practice is:
 
 ## 4. Routing versus capacity
 
-![Routing and scaling](../diagrams/quick-revision/02-traffic-scaling.svg)
+![Routing and capacity are separate decisions. Statelessness makes replicas interchangeable; autoscaling changes their number.](../diagrams/quick-revision/02-traffic-scaling.svg)
 
 **Diagram walkthrough**
 
@@ -90,7 +100,7 @@ A load balancer does **not** create capacity by itself. An autoscaler does **not
 
 ## 5. Queues versus consumers
 
-![Queue and consumers](../diagrams/quick-revision/03-queue-consumers.svg)
+![Buffering does not increase downstream capacity. Backlog grows whenever arrival rate exceeds successful completion rate.](../diagrams/quick-revision/03-queue-consumers.svg)
 
 **Diagram walkthrough**
 
@@ -120,7 +130,7 @@ A load balancer does **not** create capacity by itself. An autoscaler does **not
 
 ## 7. Pipes & Filters: the bottleneck rule
 
-![Pipeline bottleneck](../diagrams/quick-revision/05-pipeline-bottleneck.svg)
+![Pipeline throughput is limited by the slowest required stage. Add capacity at the limiting stage, not at a stage that already has headroom.](../diagrams/quick-revision/05-pipeline-bottleneck.svg)
 
 **Diagram walkthrough**
 
@@ -135,7 +145,7 @@ A load balancer does **not** create capacity by itself. An autoscaler does **not
 
 ## 8. Essential formulas cheat sheet
 
-![Formula summary](../diagrams/quick-revision/06-formulas.svg)
+![Four calculations to remember. Assumptions matter: steady rates, independent work, and bounded overhead.](../diagrams/quick-revision/06-formulas.svg)
 
 **Diagram walkthrough**
 
@@ -550,7 +560,15 @@ You have now covered:
 
 A useful final reference artifact is a **glossary** defining key terms such as throughput, latency, concurrency, backpressure, idempotency, partition key, tail latency, and SLO.
 
-[Next: Glossary](13-glossary.md).
+[SG-SCALE-13 — Next: Glossary](13-glossary.md).
+
+## Completion checkpoint
+
+**You can now:** explain distinctions and formula limits.
+
+**Show it:** Completed recall/numerical checks plus weak-topic repair list; self-score is not certification. Then attempt chapter 12's unfamiliar transfer check in the [learning contract](learning-contract.md).
+
+**Next:** [SG-SCALE-13 — Glossary of Scalability & Distributed Systems](13-glossary.md).
 
 ---
 

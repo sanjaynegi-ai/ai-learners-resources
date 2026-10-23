@@ -1,0 +1,3 @@
+condition,limit_cents,approval
+damaged within 30 days,5000,supervisor required
+late with DELAY-42,1000,support review required

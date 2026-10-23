@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 540" role="img" aria-labelledby="title desc">
+  <title id="title">Your code assembles the context; only some of it is trusted</title>
+  <desc id="desc">On the left, one request's context window is shown as a stack of five parts, top to bottom: system instructions written and versioned by your team, which are trusted; conversation history, which contains untrusted user text; retrieved documents and tool results, untrusted and delimited; the current user message, untrusted; and space reserved for the output, set by max tokens. An arrow leads to the model, and another to the model's output, which is labelled untrusted until validated. A final arrow leads to your code, which validates the format, checks business rules and authorizes any action using trusted identity. A note states that instructions inside untrusted parts are data, not commands, and that the prompt cannot enforce permissions.</desc>
+  <rect width="1100" height="540" fill="#0B1020"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#94A3B8" stroke-width="2"/></marker></defs>
+  <g font-family="Arial,sans-serif" fill="#F8FAFC">
+    <text x="40" y="40" font-size="24" font-weight="bold">The context is assembled by your code, from sources you trust differently</text>
+    <rect x="40" y="70" width="470" height="380" rx="14" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="60" y="96" font-size="15" fill="#CBD5E1">One request's context window</text>
+    <rect x="60" y="110" width="430" height="58" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/>
+    <text x="80" y="136" font-size="17" font-weight="bold">System instructions</text>
+    <text x="80" y="158" font-size="14" fill="#22D3EE">Trusted: written, reviewed and versioned by you</text>
+    <rect x="60" y="178" width="430" height="58" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="80" y="204" font-size="17" font-weight="bold">Conversation history</text>
+    <text x="80" y="226" font-size="14" fill="#FBBF24">Untrusted: earlier user turns and model replies</text>
+    <rect x="60" y="246" width="430" height="58" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="80" y="272" font-size="17" font-weight="bold">Retrieved documents and tool results</text>
+    <text x="80" y="294" font-size="14" fill="#FBBF24">Untrusted data, clearly delimited</text>
+    <rect x="60" y="314" width="430" height="58" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="80" y="340" font-size="17" font-weight="bold">Current user message</text>
+    <text x="80" y="362" font-size="14" fill="#FBBF24">Untrusted input</text>
+    <rect x="60" y="382" width="430" height="52" rx="12" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 5"/>
+    <text x="80" y="414" font-size="16" fill="#CBD5E1">Reserved for the output (max tokens)</text>
+    <path d="M510 260 L594 260" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="600" y="215" width="190" height="90" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/>
+    <text x="695" y="255" font-size="18" font-weight="bold" text-anchor="middle">Model</text>
+    <text x="695" y="280" font-size="14" fill="#CBD5E1" text-anchor="middle">Generates tokens</text>
+    <path d="M695 305 L695 349" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="600" y="355" width="190" height="90" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="695" y="393" font-size="17" font-weight="bold" text-anchor="middle">Model output</text>
+    <text x="695" y="418" font-size="14" fill="#FBBF24" text-anchor="middle">Untrusted until validated</text>
+    <path d="M790 400 L844 400" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="850" y="330" width="210" height="140" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/>
+    <text x="870" y="362" font-size="17" font-weight="bold">Your code</text>
+    <text x="870" y="388" font-size="14" fill="#CBD5E1">Validate the format</text>
+    <text x="870" y="410" font-size="14" fill="#CBD5E1">Check business rules</text>
+    <text x="870" y="432" font-size="14" fill="#CBD5E1">Authorize actions using</text>
+    <text x="870" y="454" font-size="14" fill="#CBD5E1">trusted identity</text>
+    <text x="40" y="490" font-size="16">Instructions found inside untrusted parts are data, not commands. A prompt can ask; only code can enforce.</text>
+    <text x="40" y="516" font-size="15" fill="#CBD5E1">Arrows show request order. Sizes are not to scale; every part, including the output, counts toward the window.</text>
+  </g>
+</svg>

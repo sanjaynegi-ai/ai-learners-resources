@@ -1,12 +1,28 @@
-# Chapter 02 — Models and Messages: Your First Real Call
+# Chapter 02 — Models and Messages: Inspect a Framework Call
 
-> **Estimated study time:** 60–90 minutes, plus provider setup if unfinished.  
-> **Prerequisites:** [Environment Setup](00-environment-setup.md) and [Foundations](01-foundations.md).  
-> **Central question:** What exactly enters a chat model call, and how do we inspect what comes back?  
-> **Running example:** Fernwood team-notes assistant.  
+**What enters a framework-backed model call, and what comes back besides text?**
 
+> **Your goal:** Inspect messages, response blocks and metadata without mistaking transport success for correctness.<br>
+> **You need:** [Application foundations](01-foundations.md), [environment setup](00-environment-setup.md) and the [direct-provider comparison](../../llm/refund-drafts/lesson-2-diagnose-and-compare.md).<br>
+> **Effort:** 60-90 minutes, plus unfinished provider setup; estimated.<br>
+> **You will produce:** `first_call.py`, a synthetic response inspector and a diagnosed input/configuration failure. **Status:** Draft; local and live evidence must be reported separately.
 
-[Previous: Foundations](01-foundations.md) · [Index](README.md) · [Next: Prompts](03-prompts.md)
+**Fernwood** is the fictional organization used in this workbook to study internal notes and equipment-policy questions. Its synthetic material lets you inspect evidence and context without real employee data. QuickCart remains the recurring commerce case in the wider course.
+
+**Starting state:** Create `first_call.py` and `inspect_message.py` in your existing external `langchain-learning` project. Keep its private configuration, metadata and lockfile. This helper is reused by later chapters; do not copy the refund-drafts project environment into it.
+
+**Study route:** Read the message boundary, prepare only your chosen adapter, build the helper, then use `--inspect-only` and the synthetic-message exercise before a real request. This is your first framework call in this workbook, following the earlier direct-provider lesson.
+
+**Before executable steps:** work from your external `langchain-learning` root with Python 3.11 via uv. Follow the named dependency and file steps below; a copied snippet is not a verified project checkpoint. Offline formatting/fixture checks make no model calls. Hosted inference is paid; local inference uses downloaded models and compute. Before live runs, choose a spending budget, request count, time window and review plan. Preserve private evidence, never print keys, and stop any local service you started when finished. Detailed cleanup and historical verification limits remain in the [chapter record](lesson-contract.md#w-lc-02).
+
+<details>
+<summary>Reference: stable unit identity and project boundaries</summary>
+
+**Unit:** W-LC-02. **Capability:** AI-CALL-01. [Course map](../../../README.md#ordered-capability-map) | [Project starting states](../docs/project-boundaries.md) | [Verification and cleanup](lesson-contract.md#w-lc-02). Current Draft status does not turn a historical provider run into fresh evidence.
+
+</details>
+
+[Workbook index](README.md) | [Next workbook chapter](03-prompts.md)
 
 ## Learning objectives
 
@@ -253,6 +269,8 @@ Inspection only: no adapter constructed or model called.
 
 Hosted configuration prints `Provider: openai`. This option still checks configuration but does not verify adapter installation, authentication, model availability, or service health.
 
+**Before the live step:** the next command attempts one request using the configured output limit and timeout, with hosted retries disabled. Confirm account/model access and spending bounds, or local service readiness, first. Keep inspection-only evidence separate if the route remains unavailable.
+
 Then make one real request:
 
 ```powershell
@@ -275,6 +293,9 @@ Elapsed seconds: <measured duration>
 A short explanation is the target, not a guaranteed exact answer. Record whether it follows the requested format and whether it makes unsupported Fernwood claims. Do not label the answer grounded in company evidence: none was retrieved.
 
 ### Usage and metadata interpretation
+
+> [!IMPORTANT]
+> Missing usage means not reported here, not zero tokens or zero cost. A successful response establishes transport behavior; correctness still needs separate review.
 
 When `usage_metadata` is populated, typical standardized fields include `input_tokens`, `output_tokens`, and `total_tokens`; additional details may be present. A missing value is not zero usage. Local measurements are not automatically an API bill, and hosted cost needs actual provider accounting and current rates.
 
@@ -456,5 +477,17 @@ No. That measures format compliance. Groundedness requires supporting evidence a
 - [ ] I can distinguish string content from blocks and absent usage from zero usage.
 - [ ] I can demonstrate input/configuration failure without exposing a secret.
 
-Our next problem is repeated prompt text scattered across scripts. [Prompts](03-prompts.md) will introduce reusable templates and their failure modes. That chapter remains a scaffold until implemented.
+Our next problem is repeated prompt text scattered across scripts. [W-LC-03 — Prompts](03-prompts.md) will introduce reusable templates and their failure modes.
 
+
+## Evidence reflection
+
+Trace the mechanism from typed messages through the provider call to response blocks. Which observed field proves transport succeeded, and which checks still cannot establish semantic correctness? Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** invoke your chat adapter with typed system and human messages, read an `AIMessage`'s content and metadata, and reject an empty question or missing configuration before any request.
+
+**Show it:** request inspection, the synthetic-message lab and a safe input/configuration failure with its repaired rerun. Add your actual response and route diagnosis if inference ran; otherwise name the blocker. Do not spend a request on invalid credentials just to create failure evidence.
+
+**Next:** [W-LC-03 — Prompts](03-prompts.md).

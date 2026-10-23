@@ -1,12 +1,34 @@
 # Chapter 00 — Environment Setup
 
-> **This chapter:** Create and verify a learner-owned Python environment, then prepare your model route.  
-> **Estimated study time:** 60–90 minutes, plus installation and model-download time.  
-> **Prerequisites:** PowerShell, an editor, and internet access for installation or Python downloads.  
-> **Central question:** How do we make sure our application runs with the intended Python and dependencies?  
-  
+**How do you prove which Python, dependencies and configuration your application is actually using?** Set up one learner-owned project, verify each boundary separately and keep evidence you can use when a later call fails.
 
-[Workbook index](README.md) · [Next chapter: Foundations](01-foundations.md)
+> **Your goal:** Create a reproducible Python project and prepare one model route.<br>
+> **You need:** The LLM conceptual guides, PowerShell, an editor and internet access for any required downloads.<br>
+> **Effort:** 60-90 minutes, plus installation and model downloads; estimated.<br>
+> **You will produce:** Interpreter/configuration evidence, a lockfile and an honestly labelled route check. **Status:** Draft; current verification limits are in the [chapter record](lesson-contract.md#w-lc-00).
+
+This begins a separate learner-owned `langchain-learning` project. It does not replace your QuickCart API or reuse its environment. The established workbook uses **Fernwood**, a fictional organization whose team asks questions about internal notes and equipment policy. That narrower document-question scenario helps expose context and evidence choices; QuickCart remains the course's recurring commerce case.
+
+## Choose a setup path before installing
+
+1. **Inspect before installing:** sections 1-7 explain interpreter/environment selection. Reuse working tools; installing every provider package is unnecessary.
+2. **Create once:** sections 8-12 create the external learner project, configuration and sanity check. If resuming, inspect your existing project instead of initializing over it.
+3. **Prepare one route:** section 13 offers local Ollama checks or hosted configuration. Local downloads require suitable compute and storage. Hosted configuration checks only presence, not authentication, model access or billing.
+4. **Record the boundary:** section 14 diagnoses failures. Keep interpreter, configuration, service reachability and model behavior as separate evidence.
+
+> [!IMPORTANT]
+> The foundations exercise that follows is offline. You may defer model downloads or provider access until the first model lesson, but record that route as pending. Never describe a key-presence check as a successful model call.
+
+**Before executable steps:** use Windows PowerShell and the Python 3.11 interpreter selected below. Commands may install software or download packages/models; choose the documented route deliberately. No paid model call is required here. Keep secrets in your private configuration. Retain your lockfile and evidence; stop any local model service you start when you finish. Exact working directories are stated at each step.
+
+<details>
+<summary>Reference: unit identity</summary>
+
+**Unit ID:** W-LC-00. **Capability:** AI-LLM-01. **Runtime:** your external learner project, Python 3.11 via uv. [Course map](../../../README.md#ordered-capability-map) and [execution/verification contract](lesson-contract.md#w-lc-00).
+
+</details>
+
+[Workbook index](README.md) | [Next: application foundations](01-foundations.md)
 
 ## Learning objectives for this section
 
@@ -184,7 +206,7 @@ It reports the executable that actually runs the process. Shell defaults and edi
 
 **Starting state:** uv is available, the previous interpreter check succeeded, and you have chosen a personal projects directory outside this repository. No API key or LangChain dependency is needed yet. Do not run these commands inside the workbook folder or another uv workspace.
 
-### Step 1 ? Check your location and target name
+### Step 1 — Check your location and target name
 
 Open PowerShell in your chosen personal projects directory, then run:
 
@@ -195,7 +217,7 @@ Test-Path -LiteralPath ./langchain-learning
 
 The second command should return `False`. If it returns `True`, inspect the existing directory before proceeding. If it is your project from an earlier attempt, continue there rather than initializing again. Otherwise choose a different unused project name and adjust subsequent paths consistently; do not delete personal work to follow the lesson.
 
-### Step 2 ? Initialize once
+### Step 2 — Initialize once
 
 **Working directory:** Your personal projects directory, the parent of the new project.
 
@@ -211,7 +233,7 @@ cd langchain-learning
 
 Project creation writes metadata and starter files; it is not a model call and does not install LangChain. See [uv project creation](https://docs.astral.sh/uv/concepts/projects/init/).
 
-### Step 3 ? Inspect what was generated
+### Step 3 — Inspect what was generated
 
 **Working directory:** The new `langchain-learning` project root.
 
@@ -233,7 +255,7 @@ langchain-learning/
 
 The generated `main.py` is a starter script, and `README.md` is the learner project's own description. Neither is the workbook file you are reading. With this initialization command alone, `.venv/` and `uv.lock` are not expected yet; later project execution or dependency management creates them as needed. Additional generated details may vary with uv releases.
 
-**Illustrative fragment ? generated metadata to inspect, not a file replacement:**
+**Illustrative fragment — generated metadata to inspect, not a file replacement:**
 
 ```toml
 [project]
@@ -250,14 +272,14 @@ The `.python-version` file should contain:
 3.11
 ```
 
-### Step 4 ? Distinguish compatibility from selection
+### Step 4 — Distinguish compatibility from selection
 
 | Setting | Question it answers | Meaning here |
 |---|---|---|
 | `requires-python = ">=3.11"` in `pyproject.toml` | Which interpreter versions does the project declare compatible? | Python 3.11 and newer satisfy this declared lower bound |
 | `3.11` in `.python-version` | Which interpreter should uv prefer for this directory? | Select a Python 3.11 patch release |
 
-A compatibility declaration is not proof that every future Python version has been tested. Our course verification baseline remains 3.11. The generated lower bound also does not mean ?use exactly 3.11.? The directory's version-selection file guides that choice. See [uv Python version selection](https://docs.astral.sh/uv/concepts/python-versions/).
+A compatibility declaration is not proof that every future Python version has been tested. Our course verification baseline remains 3.11. The generated lower bound also does not mean “use exactly 3.11.” The directory's version-selection file guides that choice. See [uv Python version selection](https://docs.astral.sh/uv/concepts/python-versions/).
 
 For example, changing only `.python-version` to `3.10` would request an interpreter that does not satisfy `>=3.11`. Changing only `requires-python` to `>=3.12` would make the existing 3.11 selection incompatible. Do not make either change in your working project; this is a reasoning exercise.
 
@@ -653,5 +675,19 @@ Compare initialization date, requirements, interpreter compatibility, and each l
 
 
 
-The environment is ready for the next learning problem: what do messages, models, and frameworks actually do? Continue to [Foundations](01-foundations.md), then [Models and Messages](02-models-and-messages.md). Those chapter files are still scaffolds until their implementation phases are completed.
+The environment is ready for the next learning problem: what do messages, models, and frameworks actually do?
 
+
+## Evidence reflection
+
+Which setup assumption failed first: interpreter, working directory, credentials or model availability? Explain the diagnostic evidence and what another machine could change. Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** create a uv-managed project, prove which Python interpreter runs it, and distinguish configuration preparation from a successful service/model check.
+
+**Show it:** your recorded `uv run python --version`, sanity-check result and route status. For hosted setup, label authentication and model access as unverified until an actual call; for local setup, record which service/model checks ran. If deferred, label the route pending. Keep the [W-LC-00 record](lesson-contract.md#w-lc-00) alongside this evidence rather than claiming an unexecuted check passed.
+
+**Finish safely:** preserve project metadata, lockfile and private evidence. Stop any local inference service you started if it is no longer needed. Keep model downloads only if you intend to reuse them; follow the provider tool's removal instructions when reclaiming disk space. Do not delete an existing learner project to restart setup.
+
+**Next:** [W-LC-01 — Foundations](01-foundations.md).

@@ -1,0 +1,4 @@
+quickcart-retrieval-lab
+fastapi==0.142.1
+uvicorn==0.54.0
+boto3==1.43.113

@@ -1,0 +1,6 @@
+[
+  {"order_id": "QC-1001", "payment_method": "card", "refund_status": "issued", "expected_refund_date": "2026-10-21", "refund_amount": 25.00, "language": "en"},
+  {"order_id": "QC-1002", "payment_method": "bank_transfer", "refund_status": "pending", "expected_refund_date": null, "refund_amount": 140.00, "language": "en"},
+  {"order_id": "QC-1003", "payment_method": "wallet", "refund_status": "issued", "expected_refund_date": "2026-10-16", "refund_amount": 60.50, "language": "de"},
+  {"order_id": "QC-1004", "payment_method": "card", "refund_status": "not_requested", "expected_refund_date": null, "refund_amount": 0.00, "language": "en"}
+]

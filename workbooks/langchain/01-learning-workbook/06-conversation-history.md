@@ -1,11 +1,28 @@
 # Chapter 06 — Conversation History: Remember Within a Boundary
 
-> **Study time:** 70–90 minutes, plus optional live calls.  
-> **Prerequisites:** [Chains and Runnables](05-chains-and-runnables.md), message roles from Chapter 02, and learner-created `first_call.py`.  
-> **Central question:** Where do earlier turns live, which ones enter the next request, and whose conversation do they belong to?  
-> **Running example:** Fernwood team-notes assistant.
+**Where do earlier turns live, and who is allowed to use them?**
 
-[Previous: Chains and Runnables](05-chains-and-runnables.md) · [Index](README.md) · [Next: Embeddings and Similarity](07-embeddings-and-similarity.md)
+> **Your goal:** Demonstrate bounded session history, isolation, eviction and loss on restart.<br>
+> **You need:** [Chains and Runnables](05-chains-and-runnables.md), message roles and retained `first_call.py`; [stateless-service reasoning](../../../study-guides/cloud-architecture-patterns/scalability-patterns/docs/01-stateless-services.md) for the course's state capability.<br>
+> **Effort:** 70-90 minutes, plus optional live calls; estimated.<br>
+> **You will produce:** `history_lab.py`, A/B isolation checks, eviction/restart evidence and a per-session clear exercise. **Status:** Draft; local and live evidence must be reported separately.
+
+**Fernwood** is the fictional organization used in this workbook to study internal notes and equipment-policy questions. Its synthetic material lets you inspect evidence and context without real employee data. QuickCart remains the recurring commerce case in the wider course.
+
+**Starting state:** Create `history_lab.py` in the same learner project. The lab uses a sequential, in-memory store; it does not introduce a database or authenticated service. Keep Chapter 02's helper for the optional live route.
+
+**Study route:** Compare stateless, manual and runnable-managed fixture modes. Inspect growth and restart behavior, repair the placeholder mismatch, then implement per-session clear. Manual history is the baseline; the wrapper is the documented compatibility comparison, not a reason to add an agent.
+
+**Before executable steps:** work from your external `langchain-learning` root with Python 3.11 via uv. Follow the named dependency and file steps below; a copied snippet is not a verified project checkpoint. Offline formatting/fixture checks make no model calls. Hosted inference is paid; local inference uses downloaded models and compute. Before live runs, choose a spending budget, request count, time window and review plan. Preserve private evidence, never print keys, and stop any local service you started when finished. Detailed cleanup and historical verification limits remain in the [chapter record](lesson-contract.md#w-lc-06).
+
+<details>
+<summary>Reference: stable unit identity and project boundaries</summary>
+
+**Unit:** W-LC-06. **Capability:** AI-STATE-01. [Course map](../../../README.md#ordered-capability-map) | [Project starting states](../docs/project-boundaries.md) | [Verification and cleanup](lesson-contract.md#w-lc-06). Current Draft status does not turn a historical provider run into fresh evidence.
+
+</details>
+
+[Workbook index](README.md) | [Next workbook chapter](07-embeddings-and-similarity.md)
 
 ## Learning objectives
 
@@ -75,7 +92,9 @@ Both routes also use the previously installed `langchain-core` and `python-doten
 
 ## 4. Build manual history first, then compare the wrapper
 
-**Version boundary:** The tested langchain-core 1.6.9 emits a deprecation warning for `RunnableWithMessageHistory`, directing new agent persistence work to LangGraph. Manual history is this lab's default. The wrapper path remains an explicit compatibility exercise to understand existing runnable applications; do not suppress its warning or mistake it for the recommended agent API. `BaseChatMessageHistory` is likewise a compatibility interface; our small subclass implements the shared store contract for both demonstrations. See the [official core source](https://github.com/langchain-ai/langchain/blob/master/libs/core/langchain_core/runnables/history.py) and the agent comparison in Section 7.
+**Current compatibility note (2026-10-14):** The supplemental checkpoint on `langchain-core==1.6.10` emits a deprecation warning for `RunnableWithMessageHistory`. Keep manual history as the baseline; the wrapper below is a legacy comparison, not a recommendation for new persistent services. See the [executed mechanisms checkpoint](mechanisms-lab/README.md) and [current contract review](lesson-contract.md). Durable orchestration belongs to the deeper stateful module; suppressing a warning does not implement persistence.
+
+**Version boundary:** Both the chapter's original route (langchain-core 1.6.9) and the 1.6.10 checkpoint emit a deprecation warning for `RunnableWithMessageHistory`, directing new agent persistence work to LangGraph. Manual history is this lab's default. The wrapper path remains an explicit compatibility exercise to understand existing runnable applications; do not suppress its warning or mistake it for the recommended agent API. `BaseChatMessageHistory` is likewise a compatibility interface; our small subclass implements the shared store contract for both demonstrations. See the [official core source](https://github.com/langchain-ai/langchain/blob/master/libs/core/langchain_core/runnables/history.py) and the agent comparison in Section 7.
 
 **Complete runnable file — `history_lab.py`:** Create in your learner project root. Read `BoundedHistory`, then `make_chat()`. Its manual branch exposes the same read → invoke → append responsibility that the runnable wrapper manages.
 
@@ -345,6 +364,9 @@ Agent checkpointing is not a replacement class to drop into `MessagesPlaceholder
 
 ### Sessions, identity, and concurrency
 
+> [!IMPORTANT]
+> A session ID selects state; it does not grant permission. The A/B fixture demonstrates separate sequential histories, not authenticated tenant isolation or safe concurrent writes.
+
 A session ID selects state. Authentication establishes who is calling; authorization establishes whether that caller may access the selected conversation. This CLI's A/B allowlist is a demonstration constraint, not an ownership check. In a service, verify the authenticated user/tenant's access before history lookup; never trust an arbitrary client ID to grant access. Guess-resistant IDs do not replace this check.
 
 The dictionary belongs to one process. Two workers have independent copies. Concurrent turns for the same session can race, read stale context, or overwrite expected ordering. This lab executes turns sequentially and provides no locks, shared database, TTL, durable transactions, or cross-worker coordination. A reusable class name does not solve those concerns.
@@ -432,9 +454,23 @@ No. Newer retained replies may repeat it, or the model may guess. Inspect retain
 - [ ] I can explain why session IDs are not permission checks.
 - [ ] I distinguish fixture results from live recall quality.
 
-If follow-ups remain confusing, revisit Sections 2 and 4. If state seems persistent, repeat the separate-process probe. Next, [Embeddings and Similarity](07-embeddings-and-similarity.md) will address finding relevant documents rather than remembering conversation turns. That chapter remains a scaffold until implemented.
+If follow-ups remain confusing, revisit Sections 2 and 4. If state seems persistent, repeat the separate-process probe. The next problem is finding relevant documents rather than remembering conversation turns; the course map's retrieval row begins with the guide named below, then reaches [W-LC-07 — Embeddings and Similarity](07-embeddings-and-similarity.md).
+
+## Evidence reflection
+
+Which state belongs to the caller and which resource can be shared? Explain how your answer changes after restart or when a different session asks the same question. Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** add bounded per-session history, demonstrate separate A/B context in this sequential lab, and explain why session IDs do not establish authentication or authorization.
+
+**Show it:** fixture isolation, eviction, restart and per-session clear checks, with their single-process/sequential limits. Report live recall separately; a correct fixture transcript is not evidence of model memory quality.
+
+**Next:** read [SG-RAG-00 — Retrieval foundations](../../../study-guides/retrieval-foundations/README.md), which starts the course map's AI-RETRIEVE-01 row before the offline checkpoint and W-LC-07.
 
 ## References  
+
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
 
 - [RunnableWithMessageHistory](https://reference.langchain.com/python/langchain-core/runnables/history/RunnableWithMessageHistory).
 - [BaseChatMessageHistory](https://reference.langchain.com/python/langchain-core/chat_history/BaseChatMessageHistory).

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="REQUEST AND RESPONSE PATH">
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="52" y="64" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#f8fafc">REQUEST AND RESPONSE PATH</text>
+<text x="52" y="98" font-family="Arial,sans-serif" font-size="16" fill="#a7b7ce">The ACL translates both directions</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#91a4c4"/></marker></defs>
+<path d="M325,285 L415,285" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<text x="370" y="275" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">1. request</text>
+<path d="M685,285 L775,285" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<text x="730" y="275" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">2. invoke</text>
+<rect x="55" y="210" width="270" height="150" rx="16" fill="#151F36" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="190.0" y="245" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Orders domain</text>
+<text x="190.0" y="273" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">GetCustomerEligibility</text>
+<text x="190.0" y="295" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Modern customer ID</text>
+<text x="190.0" y="317" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Typed domain result</text>
+<rect x="415" y="210" width="270" height="150" rx="16" fill="#151F36" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="550.0" y="245" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">ACL</text>
+<text x="550.0" y="273" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Translate request</text>
+<text x="550.0" y="295" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Validate response</text>
+<text x="550.0" y="317" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Map errors and statuses</text>
+<rect x="775" y="210" width="270" height="150" rx="16" fill="#151F36" stroke="#fb923c" stroke-width="2.5"/>
+<text x="910.0" y="245" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Legacy customer</text>
+<text x="910.0" y="273" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">CUST_MSTR</text>
+<text x="910.0" y="295" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">ACTIVE_FLAG / HOLD_CD</text>
+<text x="910.0" y="317" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">E104 or old records</text>
+<rect x="45" y="527" width="1010" height="49" rx="12" fill="#1b2b43"/>
+<text x="550" y="557" font-family="Arial" font-size="17" fill="#e2e8f0" text-anchor="middle">Return path: legacy record → ACL translation → modern domain result.</text>
+</svg>

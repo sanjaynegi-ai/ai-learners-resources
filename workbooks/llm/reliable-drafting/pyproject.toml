@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reliable-drafting"
+version = "0.1.0"
+description = "W-LLM-REL-01: retries, deadlines, cancellation, concurrency, budgets, fallbacks and abstention, simulated offline"
+requires-python = ">=3.11,<3.12"
+dependencies = []
+
+[project.scripts]
+reliable-drafting = "reliable_drafting.simulate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

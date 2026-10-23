@@ -1,0 +1,115 @@
+{
+  "id": "reviewDENIED1",
+  "name": "QuickCart local review admission",
+  "active": false,
+  "nodes": [
+    {
+      "id": "manual",
+      "name": "Manual synthetic event",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "event",
+      "name": "Synthetic envelope",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        0
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "event_id",
+              "name": "event_id",
+              "value": "DENIED1",
+              "type": "string"
+            },
+            {
+              "id": "ticket_id",
+              "name": "ticket_id",
+              "value": "T1",
+              "type": "string"
+            },
+            {
+              "id": "text",
+              "name": "text",
+              "value": "Synthetic refund inquiry",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "http",
+      "name": "Python review boundary",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        480,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 500,
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8765/review",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Lab-Key",
+              "value": "wrong"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "timeout": 1500
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Manual synthetic event": {
+      "main": [
+        [
+          {
+            "node": "Synthetic envelope",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Synthetic envelope": {
+      "main": [
+        [
+          {
+            "node": "Python review boundary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "executionTimeout": 15,
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "none"
+  }
+}

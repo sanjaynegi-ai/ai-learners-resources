@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" role="img" aria-labelledby="title desc">
+  <title id="title">An LLM generates text one token at a time in a loop</title>
+  <desc id="desc">Five steps in a loop. The context, holding instructions, history and the ticket as tokens, goes to the model. The model scores every token in its vocabulary. The scores become a probability distribution; in the illustrative example the next token after "Your refund will arrive in" is "3" at 51 percent, "5" at 31 percent, "a" at 11 percent and "two" at 7 percent. One token is sampled using temperature and top-p settings. The chosen token is appended to the context and the loop repeats. A footer lists the stop conditions: an end token, a stop sequence, the max-tokens limit or the context-window limit.</desc>
+  <rect width="1100" height="470" fill="#0B1020"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#94A3B8" stroke-width="2"/></marker></defs>
+  <g font-family="Arial,sans-serif" fill="#F8FAFC">
+    <text x="40" y="40" font-size="24" font-weight="bold">Generation is a loop: score, sample, append, repeat</text>
+    <rect x="40" y="80" width="290" height="120" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/>
+    <text x="60" y="112" font-size="18" font-weight="bold">1 Context (tokens)</text>
+    <text x="60" y="140" font-size="15" fill="#CBD5E1">Instructions + history + ticket</text>
+    <text x="60" y="162" font-size="15" fill="#CBD5E1">+ every token generated so far</text>
+    <text x="60" y="184" font-size="15" fill="#CBD5E1">Bounded by the context window</text>
+    <rect x="410" y="80" width="280" height="120" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/>
+    <text x="430" y="112" font-size="18" font-weight="bold">2 Model</text>
+    <text x="430" y="140" font-size="15" fill="#CBD5E1">Scores every token in its</text>
+    <text x="430" y="162" font-size="15" fill="#CBD5E1">vocabulary as the possible</text>
+    <text x="430" y="184" font-size="15" fill="#CBD5E1">next token</text>
+    <rect x="770" y="80" width="290" height="120" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/>
+    <text x="790" y="112" font-size="18" font-weight="bold">3 Probabilities</text>
+    <text x="790" y="140" font-size="15" fill="#CBD5E1">"…arrive in" → "3" 51% · "5" 31%</text>
+    <text x="790" y="162" font-size="15" fill="#CBD5E1">"a" 11% · "two" 7%</text>
+    <text x="790" y="184" font-size="15" fill="#CBD5E1">(illustrative)</text>
+    <path d="M330 140 L404 140" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M690 140 L764 140" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M915 200 L915 254" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="770" y="260" width="290" height="110" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="790" y="292" font-size="18" font-weight="bold">4 Sample one token</text>
+    <text x="790" y="320" font-size="15" fill="#CBD5E1">Temperature and top-p shape</text>
+    <text x="790" y="342" font-size="15" fill="#CBD5E1">the choice; "5" can win</text>
+    <rect x="410" y="260" width="280" height="110" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/>
+    <text x="430" y="292" font-size="18" font-weight="bold">5 Append and repeat</text>
+    <text x="430" y="320" font-size="15" fill="#CBD5E1">The chosen token becomes</text>
+    <text x="430" y="342" font-size="15" fill="#CBD5E1">input for the next step</text>
+    <path d="M770 315 L696 315" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M410 315 L185 315 L185 206" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <text x="200" y="300" font-size="15" fill="#CBD5E1">next token</text>
+    <text x="40" y="420" font-size="16">Stops at an end token, a stop sequence, the max-tokens limit, or the context-window limit.</text>
+    <text x="40" y="446" font-size="15" fill="#CBD5E1">Nothing in the loop checks facts or policy: a fluent "3 days" is a likely token, not a verified promise.</text>
+  </g>
+</svg>

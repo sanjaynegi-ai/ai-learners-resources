@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" role="img" aria-label="After: one governed entry point">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6" fill="none" stroke="#8da3bd" stroke-width="1.4"/></marker></defs>
+<rect width="960" height="470" fill="#0B1020"/>
+<text x="34" y="43" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#f8fafc">After: one governed entry point</text>
+<text x="34" y="447" font-family="Arial,sans-serif" font-size="16" fill="#b7c7df">Edge policies are shared; client composition stays in BFFs.</text>
+<path d="M172 151 L261 231" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M172 311 L261 231" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M402 231 L486 141" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M402 231 L486 301" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M627 141 L706 231" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<path d="M627 301 L706 231" stroke="#8da3bd" stroke-width="2.3" fill="none" marker-end="url(#arrow)"/>
+<rect x="40" y="120" width="132" height="62" rx="12" fill="#17243a" stroke="#38bdf8" stroke-width="2"/>
+<text x="106" y="156" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Web client</text>
+<rect x="40" y="280" width="132" height="62" rx="12" fill="#17243a" stroke="#38bdf8" stroke-width="2"/>
+<text x="106" y="316" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Mobile app</text>
+<rect x="270" y="200" width="132" height="62" rx="12" fill="#17243a" stroke="#34d399" stroke-width="2"/>
+<text x="336" y="236" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">API Gateway</text>
+<rect x="495" y="110" width="132" height="62" rx="12" fill="#17243a" stroke="#a78bfa" stroke-width="2"/>
+<text x="561" y="146" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Web BFF</text>
+<rect x="495" y="270" width="132" height="62" rx="12" fill="#17243a" stroke="#a78bfa" stroke-width="2"/>
+<text x="561" y="306" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Mobile BFF</text>
+<rect x="715" y="200" width="132" height="62" rx="12" fill="#17243a" stroke="#fb923c" stroke-width="2"/>
+<text x="781" y="236" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Domain APIs</text>
+</svg>

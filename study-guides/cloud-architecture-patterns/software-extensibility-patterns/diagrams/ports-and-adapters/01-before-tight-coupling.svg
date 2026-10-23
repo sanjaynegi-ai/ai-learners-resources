@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="Before: technology and policy tangled">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#73d7f7"/></marker></defs>
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="48" y="61" fill="#ffffff" font-family="Arial,sans-serif" font-size="30" font-weight="bold">Before: technology and policy tangled</text>
+<text x="48" y="91" fill="#9eb4d1" font-family="Arial,sans-serif" font-size="16">A change to a provider can force changes to checkout rules.</text>
+<rect x="35" y="205" width="175" height="94" rx="13" fill="#14243b" stroke="#35d0f2" stroke-width="2"/>
+<text x="122.5" y="236" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">HTTP Client</text>
+<text x="122.5" y="261" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">POST /checkout</text>
+<rect x="300" y="185" width="280" height="135" rx="13" fill="#14243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="440.0" y="216" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Checkout Handler</text>
+<text x="440.0" y="241" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">validation + pricing</text>
+<text x="440.0" y="260" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">SQL + provider SDK</text>
+<rect x="735" y="115" width="275" height="85" rx="13" fill="#14243b" stroke="#34d399" stroke-width="2"/>
+<text x="872.5" y="146" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">PostgreSQL</text>
+<text x="872.5" y="171" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">ORM + SQL</text>
+<rect x="735" y="260" width="275" height="85" rx="13" fill="#14243b" stroke="#fb923c" stroke-width="2"/>
+<text x="872.5" y="291" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Payment Provider</text>
+<text x="872.5" y="316" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Vendor SDK</text>
+<rect x="735" y="405" width="275" height="85" rx="13" fill="#14243b" stroke="#f472b6" stroke-width="2"/>
+<text x="872.5" y="436" fill="#f8fafc" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">Event Broker</text>
+<text x="872.5" y="461" fill="#bbd0e4" text-anchor="middle" font-family="Arial" font-size="13">Broker client</text>
+<line x1="210.0" y1="252.0" x2="300.0" y2="252.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="255.0" y="243.25" text-anchor="middle" fill="#facc15" font-size="12" font-family="Arial">request</text>
+<line x1="580.0" y1="252.5" x2="735.0" y2="157.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="657.5" y="196.0" text-anchor="middle" fill="#facc15" font-size="12" font-family="Arial">SQL</text>
+<line x1="580.0" y1="252.5" x2="735.0" y2="302.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="657.5" y="268.5" text-anchor="middle" fill="#facc15" font-size="12" font-family="Arial">charge</text>
+<line x1="580.0" y1="252.5" x2="735.0" y2="447.5" stroke="#73d7f7" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="657.5" y="341.0" text-anchor="middle" fill="#facc15" font-size="12" font-family="Arial">publish</text>
+<text x="48" y="564" fill="#b9c9df" font-family="Arial" font-size="16">Business decisions are mixed with transport and infrastructure.</text>
+</svg>

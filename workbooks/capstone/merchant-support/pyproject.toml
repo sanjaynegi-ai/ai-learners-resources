@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quickcart-merchant-support"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = ["quickcart-retrieval-lab", "fastapi==0.142.1", "uvicorn==0.54.0", "boto3==1.43.113"]
+
+[dependency-groups]
+dev = ["httpx2==2.13.1"]
+
+[tool.uv.sources]
+quickcart-retrieval-lab = { path = "../../langchain/02-rag-capstone-workbook/retrieval-lab" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

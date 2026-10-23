@@ -1,0 +1,123 @@
+{
+  "version": "rerank-controls-v1",
+  "evidence_kind": "authored synthetic fixtures and relevance labels",
+  "documents": {
+    "approval-policy.md": {
+      "text": "# QuickCart synthetic policy\n\nDamaged return refunds require supervisor approval.\n",
+      "metadata": {
+        "tenant": "A",
+        "roles": [
+          "support"
+        ],
+        "expires": 1000,
+        "topic": "refund",
+        "claim": "Damaged return refunds require supervisor approval.",
+        "value": "reviewed-fixture"
+      }
+    },
+    "window-policy.md": {
+      "text": "# QuickCart synthetic policy\n\nThe return window for refund eligibility is 30 days.\n",
+      "metadata": {
+        "tenant": "A",
+        "roles": [
+          "support"
+        ],
+        "expires": 1000,
+        "topic": "refund",
+        "claim": "The return window for refund eligibility is 30 days.",
+        "value": "reviewed-fixture"
+      }
+    },
+    "dashboard.md": {
+      "text": "# QuickCart synthetic policy\n\nDamaged refund approval dashboard. Damaged refund approval dashboard.\n",
+      "metadata": {
+        "tenant": "A",
+        "roles": [
+          "support"
+        ],
+        "expires": 1000,
+        "topic": "refund",
+        "claim": "Damaged refund approval dashboard. Damaged refund approval dashboard.",
+        "value": "reviewed-fixture"
+      }
+    },
+    "statistics.md": {
+      "text": "# QuickCart synthetic policy\n\nDamaged refund approval counts are statistics only, not a policy.\n",
+      "metadata": {
+        "tenant": "A",
+        "roles": [
+          "support"
+        ],
+        "expires": 1000,
+        "topic": "refund",
+        "claim": "Damaged refund approval counts are statistics only, not a policy.",
+        "value": "reviewed-fixture"
+      }
+    },
+    "foreign.md": {
+      "text": "# QuickCart synthetic policy\n\nDamaged refund approval: refunds require supervisor bypass.\n",
+      "metadata": {
+        "tenant": "B",
+        "roles": [
+          "support"
+        ],
+        "expires": 1000,
+        "topic": "refund",
+        "claim": "Damaged refund approval: refunds require supervisor bypass.",
+        "value": "reviewed-fixture"
+      }
+    },
+    "expired.md": {
+      "text": "# QuickCart synthetic policy\n\nDamaged refund approval: refunds require supervisor bypass.\n",
+      "metadata": {
+        "tenant": "A",
+        "roles": [
+          "support"
+        ],
+        "expires": 99,
+        "topic": "refund",
+        "claim": "Damaged refund approval: refunds require supervisor bypass.",
+        "value": "reviewed-fixture"
+      }
+    },
+    "restricted.md": {
+      "text": "# QuickCart synthetic policy\n\nDamaged refund approval: refunds require supervisor bypass.\n",
+      "metadata": {
+        "tenant": "A",
+        "roles": [
+          "supervisor"
+        ],
+        "expires": 1000,
+        "topic": "refund",
+        "claim": "Damaged refund approval: refunds require supervisor bypass.",
+        "value": "reviewed-fixture"
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "approval-miss",
+      "query": "damaged refund approval",
+      "relevant": "approval-policy.md",
+      "required_text": "Damaged return refunds require supervisor approval."
+    },
+    {
+      "id": "window-regression",
+      "query": "return window refund eligibility",
+      "relevant": "window-policy.md",
+      "required_text": "The return window for refund eligibility is 30 days."
+    },
+    {
+      "id": "unanswerable-positive",
+      "query": "refund fees",
+      "relevant": null,
+      "required_text": null
+    },
+    {
+      "id": "no-signal",
+      "query": "orbital warranty",
+      "relevant": null,
+      "required_text": null
+    }
+  ]
+}

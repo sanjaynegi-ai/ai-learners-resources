@@ -1,11 +1,30 @@
 # Chapter 09 — Grounded RAG: Answer from Evidence
 
+**Which supplied passage supports each factual claim in the answer?** A retrieved source ID is a starting point for inspection, not proof that the generated answer used it correctly.
+
+> **Your goal:** Trace evidence through prompt construction and assess the returned claims.<br>
+> **You need:** [Chapter 08](08-documents-and-retrieval.md), its `retrieval_lab.py`, `first_call.py` and the [guided RAG evidence](../02-rag-capstone-workbook/13-revision-and-assessment.md).<br>
+> **Effort:** 90-120 minutes, plus optional live runs; estimated.<br>
+> **You will produce:** `rag_lab.py`, case results and a passage-by-passage citation audit. **Status:** Draft; fixture and live observations remain separate.
+
+**Project transition:** return to your external `langchain-learning` project, using Python 3.11 via uv and its existing lockfile. Keep the completed QuickCart `retrieval-lab` package and independent recall evidence separate. This chapter uses **Fernwood**, the fictional organization whose equipment policy and internal notes form the established framework corpus.
+
+**Study route:** inspect the evidence contract, reopen the matching fixture index, build the answer lab and run deterministic cases first. Live indexing and answering use embeddings/model calls with separate costs and limits. Confirm a budget, request count and review plan before choosing that route; no live call is needed for fixture inspection. Preserve private evidence and follow the [chapter cleanup/verification record](lesson-contract.md#w-lc-09).
+
+<details>
+<summary>Reference: unit metadata and historical verification limits</summary>
+
+> **Unit ID:** W-LC-09 · **Capability:** AI-RAG-01 · [Course map](../../../README.md#ordered-capability-map)
+> **Status:** Draft · **Runtime:** your W-LC-00 learner project (Python 3.11 via uv) · **Contract, cleanup and verification:** [W-LC-09 record](lesson-contract.md#w-lc-09).
+
 > **Study time:** 90–120 minutes, plus optional live runs.  
-> **Prerequisites:** [Chapter 08](08-documents-and-retrieval.md), its learner-created `retrieval_lab.py`, and `first_call.py`.  
+> **Prerequisites:** [W-LC-08 — Chapter 08](08-documents-and-retrieval.md), its learner-created `retrieval_lab.py`, and `first_call.py`.<br>
 > **Central question:** Which supplied passage supports each claim in an answer?  
 > **Running example:** Fernwood team-notes assistant.
 
-[Previous: Documents and Retrieval](08-documents-and-retrieval.md) · [Index](README.md) · [Next: Conversational RAG](10-conversational-rag.md)
+[Previous on the course map: guided RAG build](../02-rag-capstone-workbook/13-revision-and-assessment.md) · [W-LC-08 — previous workbook chapter](08-documents-and-retrieval.md) · [Index](README.md) · [W-LC-10 — Next: Conversational RAG](10-conversational-rag.md)
+
+</details>
 
 ## Learning objectives
 
@@ -358,6 +377,9 @@ It has valid structure and a real supplied source ID. It can pass `parse_respons
 
 ## 7. Decisions and limitations
 
+> [!IMPORTANT]
+> Source membership is a structural check. A real source ID can accompany a wrong number or missing qualification; inspect every factual claim against the actual passage before describing an answer as grounded.
+
 This is **two-step RAG**: retrieval then generation, with a predictable control path. An agent can decide when to retrieve, but adds decisions and failure modes; learn this path before adding that machinery. There is no conversation history or follow-up rewriting yet.
 
 More passages can improve coverage and also add distractions, conflicting policies, tokens, and latency. A distance threshold can reject weak matches but cannot prove that remaining passages answer the question. Use Chapter 08's retrieval comparisons and an evidence audit together.
@@ -441,14 +463,24 @@ Before moving on:
 - [ ] I can diagnose a false answer with a real source ID.
 - [ ] I can explain the limits of message separation and the injection test.
 
-Now ask “What is the allowance?” followed by “And when do I submit it?” This script handles each question independently; the second question has an unclear referent. [Chapter 10](10-conversational-rag.md) introduces conversational retrieval and inspects rewritten questions before answering.
+Now ask “What is the allowance?” followed by “And when do I submit it?” This script handles each question independently; the second question has an unclear referent. [W-LC-10 — Chapter 10](10-conversational-rag.md) introduces conversational retrieval and inspects rewritten questions before answering.
+
+## Completion checkpoint
+
+**You can now:** trace retrieval, prompt construction and answer validation, keep document text out of trusted instructions, and diagnose unsupported answers with the answerable, unsupported, irrelevant and injection cases.
+
+**Show it:** your case results with each citation checked against the supplied passages.
+
+**Next:** [W-LC-10 — Conversational RAG](10-conversational-rag.md).
 
 ## References  
 
-- [Official LangChain retrieval overview](https://docs.langchain.com/oss/python/langchain/retrieval): indexing components and retrieval-augmented generation.
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
+
+- [Official LangChain semantic-search tutorial](https://docs.langchain.com/oss/python/langchain/knowledge-base): documents, splitters, embeddings, vector stores and retrievers, the indexing components behind retrieval-augmented generation.
 - [Official model documentation](https://docs.langchain.com/oss/python/langchain/models): model invocation and response handling.
 - [Official guardrails documentation](https://docs.langchain.com/oss/python/langchain/guardrails): layered controls and their scope.
 - [Pydantic model validators](https://docs.pydantic.dev/latest/concepts/validators/#model-validators): cross-field contract checks.
-- [Chapter 08](08-documents-and-retrieval.md) and [shared materials](shared-materials.md): index lifecycle, corpus, golden cases, and evaluation contract.
+- [W-LC-08 — Chapter 08](08-documents-and-retrieval.md) and [shared materials](shared-materials.md): index lifecycle, corpus, golden cases, and evaluation contract.
 
 

@@ -1,0 +1,5 @@
+[
+  {"token_sha256": "5bcba914b7a61782242eef7dee09b663c51c0f1bb4695eaf6e7fb3492d8aa10c", "tenant": "merchant-a", "role": "agent"},
+  {"token_sha256": "3f9c64a872d5dec1e4af34043ce6d1605482ca047a2dd9a9ff6f355a94d7cd79", "tenant": "merchant-a", "role": "supervisor"},
+  {"token_sha256": "d87819aaa1e956c6f94a93b0a17be0d55060cb6c50033c5dca6cca92552d3b31", "tenant": "merchant-b", "role": "agent"}
+]

@@ -1,11 +1,33 @@
 # Chapter 12 — Streaming and Interfaces: Show Progress, Preserve State
 
+**What runs again during an interface interaction, and what state must remain separate?**
+
+> **Your goal:** Show progress and evidence while preserving session and resource boundaries.<br>
+> **You need:** [Grounded RAG](09-grounded-rag.md) and its files, response blocks from Chapter 02 and history ownership from Chapter 06.<br>
+> **Effort:** 100-130 minutes, plus optional Gradio/live practice; estimated.<br>
+> **You will produce:** Terminal streaming, a tested backend and a Streamlit session-clear/error demonstration. **Status:** Draft; fixture and live evidence remain separate.
+
+**Fernwood** is the fictional organization used here for internal-note and equipment-policy questions. Use synthetic material throughout; these labs do not establish a deployed identity or authorization system.
+
+**Starting state:** Continue `langchain-learning`. Retain the earlier RAG/index helpers; create `terminal_stream.py`, `interface_backend.py` and `streamlit_app.py` in the specified order. Gradio is optional, not a second required interface.
+
+**Study route:** Start with offline terminal streaming, then inspect the backend before launching Streamlit. Verify evidence, safe errors, reruns and per-session clearing without re-indexing. Display history and model context are different responsibilities.
+
+**Before executable steps:** use Python 3.11 via uv from the learner project named above, following each section's working directory. Default fixture checks make no paid model calls. Local interfaces start processes that you must stop when finished. Before optional hosted inference, choose a budget, request count, execution window and review plan; local models require their own compute allowance. Preserve private evidence and follow the chapter's cleanup/verification record below.
+
+<details>
+<summary>Reference: stable unit identity and historical verification limits</summary>
+
+> **Unit ID:** W-LC-12 · **Capability:** AI-EVAL-01 · [Course map](../../../README.md#ordered-capability-map)
+> **Status:** Draft · **Runtime:** your W-LC-00 learner project (Python 3.11 via uv) · **Contract, cleanup and verification:** [W-LC-12 record](lesson-contract.md#w-lc-12).
 > **Study time:** 100–130 minutes, plus optional Gradio/live practice.  
-> **Prerequisites:** [Chapter 09](09-grounded-rag.md) and its complete learner files; message blocks from Chapter 02 and history boundaries from Chapter 06.  
+> **Prerequisites:** [W-LC-09 — Chapter 09](09-grounded-rag.md) and its complete learner files; message blocks from Chapter 02 and history boundaries from Chapter 06.<br>
 > **Central question:** What runs again when a user interacts, and what should survive that rerun?  
 > **Running example:** Fernwood team-notes assistant.
 
-[Previous: Tools and Agents](11-tools-and-agents.md) · [Index](README.md) · [Next: Debugging, Testing, and Evaluation](13-debugging-testing-and-evaluation.md)
+</details>
+
+[Previous core chapter](11-tools-and-agents.md) | [Workbook index](README.md) | [Next core step](13-debugging-testing-and-evaluation.md)
 
 ## Learning objectives
 
@@ -385,6 +407,9 @@ For live mode, stop the server, set `$env:WORKBOOK_LIVE = "1"`, and rerun after 
 
 ## 8. Decisions and limitations
 
+> [!IMPORTANT]
+> Partial streamed text has not passed final answer validation. Keep provisional progress distinct from a completed answer, and clear stale content on failure rather than leaving an earlier result visible.
+
 UI reruns are not conversation turns. Put model calls behind submissions, keep ingestion out of rendering, and choose state lifetimes deliberately. A shared resource cache improves reuse but requires thread-safety and a clear configuration boundary. This single-process teaching app serializes work; production capacity, cancellation, authentication, permissions, timeouts, and cleanup need further design.
 
 Streaming reduces time to first visible text; total generation can still take just as long. Users may act on drafts before corrections arrive. For structured output, completion and validation are useful acceptance boundaries. Neither validation nor a polished interface proves grounding; keep passage inspection available.
@@ -456,13 +481,27 @@ Current-session UI records only. It does not delete vectors, documents, provider
 - [ ] I verified no indexing occurs on reruns or submissions.
 - [ ] I labeled live and optional-interface checks honestly.
 
-The interface now exposes progress and evidence. [Chapter 13](13-debugging-testing-and-evaluation.md) turns these checks into systematic diagnosis and evaluation rather than relying on a few successful demonstrations.
+The interface now exposes progress and evidence. [W-LC-13 — Chapter 13](13-debugging-testing-and-evaluation.md) turns these checks into systematic diagnosis and evaluation rather than relying on a few successful demonstrations.
+
+## Evidence reflection
+
+Which UI rerun/state assumption would cause duplicate work or history leakage? Explain your regression evidence and what remains visually or interactively unverified. Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** stream model output, build a Streamlit interface over a separately tested answer function, and keep cached resources, displayed history and model context apart.
+
+**Show it:** an interface run with evidence, a safe error and per-session clearing without re-indexing. State whether each observation used fixtures or live inference. Stop UI processes with Ctrl+C after retaining your evidence; clearing display history does not delete the index or provider-held data.
+
+**Next:** [W-LC-13 — Debugging, Testing and Evaluation](13-debugging-testing-and-evaluation.md).
 
 ## References  
+
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
 
 - [LangChain models](https://docs.langchain.com/oss/python/langchain/models): standalone model streaming and message chunks.
 - [Streamlit execution flow](https://docs.streamlit.io/develop/api-reference/execution-flow): rerun behavior and explicit control flow.
 - [Streamlit resource cache](https://docs.streamlit.io/develop/api-reference/caching-and-state/st.cache_resource): shared-resource lifecycle and thread-safety responsibilities.
 - [Gradio source and documentation](https://github.com/gradio-app/gradio): optional Blocks, State, event queues, and launch configuration; installed signatures were also inspected.
-- [Chapter 09](09-grounded-rag.md): prompt/validation contract and index profiles.
+- [W-LC-09 — Chapter 09](09-grounded-rag.md): prompt/validation contract and index profiles.
 

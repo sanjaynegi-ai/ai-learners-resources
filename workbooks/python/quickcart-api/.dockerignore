@@ -1,0 +1,10 @@
+*
+!Dockerfile
+!pyproject.toml
+!requirements-ci.txt
+!src/
+!src/**
+!fixtures/
+!fixtures/synthetic-principals.json
+**/__pycache__
+**/*.pyc

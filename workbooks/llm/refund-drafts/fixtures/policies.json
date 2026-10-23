@@ -1,0 +1,5 @@
+{
+  "card": "Card refunds reach the customer's bank 5-10 business days after the refund is issued.",
+  "bank_transfer": "Bank-transfer refunds are issued after the returned item passes inspection, usually within 3 business days of arrival.",
+  "wallet": "Wallet refunds are credited to the QuickCart wallet within 1 business day of issue."
+}

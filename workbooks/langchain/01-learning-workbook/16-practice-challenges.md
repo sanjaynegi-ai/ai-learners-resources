@@ -1,11 +1,27 @@
 # Chapter 16 — Practice Challenges: Explain, Build, Break, and Defend
 
+**Can you solve a changed requirement and show why the result is correct?**
+
+> **Your goal:** Attempt, diagnose and defend bounded changes without following a worked solution.<br>
+> **You need:** Core chapters 00-13 and [Guided Integration](15-guided-integration-lab.md).<br>
+> **Effort:** 3-5 hours across sessions, estimated; targeted rework varies.<br>
+> **You will produce:** Seven scored challenge records with artifacts, failures, repairs and disclosed help. **Status:** Draft; unpiloted, evidence limits remain explicit.
+
+**Starting point:** Work in your existing personal `fernwood-notes` integration project where the challenge builds on that assistant; use `langchain-learning` only when revisiting its original lab. Challenge 7 starts a separate studio-policy workspace. Preserve each project's metadata, lockfile and baseline before changing it.
+
+**Study route:** Predict acceptance evidence, attempt one challenge, reveal hints progressively, then compare reasoning and rerun a repair. The small studio scenario checks transfer beyond memorized Fernwood wording; QuickCart remains the wider course domain.
+
+<details>
+<summary>Reference: unit identity, versions and historical verification</summary>
+
+> **Unit ID:** W-LC-16 · **Capability:** AI-INTEGRATE-01 · [Course map](../../../README.md#ordered-capability-map)
+> **Status:** Draft · **Runtime:** your W-LC-00 learner project (Python 3.11 via uv) · **Contract, cleanup and verification:** [W-LC-16 record](lesson-contract.md#w-lc-16).
 > **Study time:** 3–5 hours across several sessions; repeat weak areas before moving on.  
-> **Prerequisites:** Core Chapters 00–13 and the [guided integration lab](15-guided-integration-lab.md). Chapter 14, Gradio, Wikipedia, and hosted tracing are optional and are not assessed here.  
+> **Prerequisites:** Core Chapters 00–13 and the [W-LC-15 — guided integration lab](15-guided-integration-lab.md). Chapter 14, Gradio, Wikipedia, and hosted tracing are optional and are not assessed here.<br>
 > **Central question:** Can you solve a changed problem and produce evidence that your solution works?  
 > **Running examples:** Fernwood notes assistant and a small independent studio-policy transfer exercise.
 
-[Previous: Guided Integration](15-guided-integration-lab.md) · [Index](README.md) · [Next: Revision and Assessment](17-revision-and-assessment.md)
+</details>
 
 ## Learning objectives
 
@@ -16,6 +32,9 @@
 - Score your reasoning, implementation, verification, correctness, and trade-offs and identify what to revisit.
 
 ## 1. How to use these challenges
+
+> [!TIP]
+> Keep one record per attempt: requirement, prediction, acceptance check, observed failure, repair and assistance. Repeat the changed task independently after consulting a worked answer before claiming ownership.
 
 Close the worked solution before starting. Predict the outcome, write down the expected evidence, implement in your own learner project, then test. Reveal Hint 1 only if you cannot identify the mechanism; Hint 2 narrows the implementation. Read the solution after your attempt and compare reasoning, not just final prose.
 
@@ -51,8 +70,12 @@ Only if the actual acceptance criteria are met. A real source ID can accompany a
 Get-Location
 uv run python --version
 uv sync --locked
-uv run python -c "import langchain_core, langchain_openai, langchain_ollama; print('Imports passed')"
+uv run python -c "import langchain_core; print('Core import passed')"
+uv run python -c "import langchain_openai; print('Hosted adapter import passed')"   # hosted route
+uv run python -c "import langchain_ollama; print('Local adapter import passed')"    # local route
 ```
+
+Run the adapter import for the route you installed in Chapter 02; Chapter 15's project declares both. A missing adapter you never chose is not a failure.
 
 **Deliverables:** Working directory, Python version, locked-sync/import outcomes, and a short diagnosis naming which facts are still unknown. Identify how you would check hosted configuration or the local service without exposing a key.
 
@@ -354,14 +377,14 @@ All seven total at most 70 points; average challenge score is total divided by s
 
 | Observed weakness | Revisit | Retry evidence |
 |---|---|---|
-| Cannot reproduce environment/imports | [00 setup](00-environment-setup.md), [02 models](02-models-and-messages.md) | Challenge 1 directory/interpreter/lock/configuration boundary record |
-| Confuses JSON validity with truth | [04 structured output](04-structured-output.md), [09 grounding](09-grounded-rag.md) | Challenge 2 claim-support table and unknown-ID rejection |
-| Treats nearest document as an answer | [07 embeddings](07-embeddings-and-similarity.md), [08 retrieval](08-documents-and-retrieval.md) | Challenge 3 exact passages and unchanged unsupported-case behavior |
-| Mixes sessions or assumes unlimited memory | [06 history](06-conversation-history.md), [10 conversational RAG](10-conversational-rag.md) | Challenge 4 isolated inputs, eviction, clearing |
-| Treats tool request as permission/execution | [11 tools](11-tools-and-agents.md) | Challenge 5 correlated messages and audit counts |
-| UI reruns rebuild or corrupt state | [12 interfaces](12-streaming-and-interfaces.md), [15 integration](15-guided-integration-lab.md) | Challenge 6 no-ingestion/no-partial-commit checks |
-| Cannot judge whether a change helped | [13 evaluation](13-debugging-testing-and-evaluation.md) | Challenge 3 one-variable comparison with a non-improving case |
-| Hard-codes Fernwood assumptions | [03 prompts](03-prompts.md), [08 retrieval](08-documents-and-retrieval.md), [15 integration](15-guided-integration-lab.md) | Challenge 7 new-domain cases and no stale policy/source IDs |
+| Cannot reproduce environment/imports | [W-LC-00 — 00 setup](00-environment-setup.md), [W-LC-02 — 02 models](02-models-and-messages.md) | Challenge 1 directory/interpreter/lock/configuration boundary record |
+| Confuses JSON validity with truth | [W-LC-04 — 04 structured output](04-structured-output.md), [W-LC-09 — 09 grounding](09-grounded-rag.md) | Challenge 2 claim-support table and unknown-ID rejection |
+| Treats nearest document as an answer | [W-LC-07 — 07 embeddings](07-embeddings-and-similarity.md), [W-LC-08 — 08 retrieval](08-documents-and-retrieval.md) | Challenge 3 exact passages and unchanged unsupported-case behavior |
+| Mixes sessions or assumes unlimited memory | [W-LC-06 — 06 history](06-conversation-history.md), [W-LC-10 — 10 conversational RAG](10-conversational-rag.md) | Challenge 4 isolated inputs, eviction, clearing |
+| Treats tool request as permission/execution | [W-LC-11 — 11 tools](11-tools-and-agents.md) | Challenge 5 correlated messages and audit counts |
+| UI reruns rebuild or corrupt state | [W-LC-12 — 12 interfaces](12-streaming-and-interfaces.md), [W-LC-15 — 15 integration](15-guided-integration-lab.md) | Challenge 6 no-ingestion/no-partial-commit checks |
+| Cannot judge whether a change helped | [W-LC-13 — 13 evaluation](13-debugging-testing-and-evaluation.md) | Challenge 3 one-variable comparison with a non-improving case |
+| Hard-codes Fernwood assumptions | [W-LC-03 — 03 prompts](03-prompts.md), [W-LC-08 — 08 retrieval](08-documents-and-retrieval.md), [W-LC-15 — 15 integration](15-guided-integration-lab.md) | Challenge 7 new-domain cases and no stale policy/source IDs |
 
 Choose one repair, define the expected changed observation, and rerun the same case. Preserve failed evidence alongside the fixed result. If a change does not improve the relevant criterion, record that outcome and revise the diagnosis instead of adding unrelated complexity.
 
@@ -394,11 +417,25 @@ Complete contract/control-flow/retrieval-fixture checks, review passages manuall
 - [ ] I scored each attempt, identified weak categories, and reran a targeted repair.
 - [ ] I distinguished deterministic, simulated-provider, live, and untested results.
 
-Continue to [Revision and Assessment](17-revision-and-assessment.md) to consolidate the core material. For a larger independent project, use the separate [RAG capstone](../02-rag-capstone-workbook/README.md); the tiny studio transfer here is deliberately limited to two documents and five questions.
+Continue to [W-LC-17 — Revision and Assessment](17-revision-and-assessment.md) to consolidate the core material. The larger permission-aware project is the separate [RAG capstone](../02-rag-capstone-workbook/README.md) from AI-RAG-01; the tiny studio transfer here is deliberately limited to two documents and five questions.
+
+## Evidence reflection
+
+Intuition: treat the unfamiliar brief like a changed API contract, not a request to reproduce a screenshot. This analogy does not prove model quality. Which evidence changed your implementation, and what did you need to attempt without the worked solution? Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** diagnose and repair failures without step-by-step instructions, verify a bounded change on success and failure paths, and transfer the pipeline to a new corpus.
+
+**Show it:** your scored challenge records, including at least one failure you diagnosed yourself.
+
+**Next:** [W-LC-17 — Revision and Assessment](17-revision-and-assessment.md).
 
 ## References  
 
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
+
 - [Shared Fernwood cases](shared-materials.md): fixed corpus and policy expectations for Challenges 2–6.
-- [Chapter 13](13-debugging-testing-and-evaluation.md): comparisons, metrics, offline tests, and safe diagnosis.
-- [Chapter 15](15-guided-integration-lab.md): complete learner-project creation order and integration contracts.
+- [W-LC-13 — Chapter 13](13-debugging-testing-and-evaluation.md): comparisons, metrics, offline tests, and safe diagnosis.
+- [W-LC-15 — Chapter 15](15-guided-integration-lab.md): complete learner-project creation order and integration contracts.
 

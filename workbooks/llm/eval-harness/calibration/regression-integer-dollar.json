@@ -1,0 +1,15 @@
+{
+  "id": "REG-CAL-04",
+  "origin": "CAL-04",
+  "evidence_kind": "authored_demo_diagnosis",
+  "packet_sha256": "7a29ed50c3ff403d2c6b7ba5bc7fd1fec4ac61adf975f76b3701f09febebe59f",
+  "rubric_sha256": "cf0a6338c9081d2271ba291c931d392d245e4c71af82cebb0b7c4d0d0653f270",
+  "observed_response": {
+    "status": "ready",
+    "text": "Your refund of $5000 is expected by 2026-10-12.",
+    "refund_date_used": "2026-10-12"
+  },
+  "expected_harmful": true,
+  "expected_problem": "unsupported_amount",
+  "scope": "Narrow explicit integer dollar matcher; not general monetary or semantic validation"
+}

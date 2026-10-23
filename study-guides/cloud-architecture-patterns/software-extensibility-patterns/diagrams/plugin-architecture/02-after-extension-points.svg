@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+<rect width="1120" height="620" fill="#0B1020"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#94a3b8"/></marker></defs>
+<text x="52" y="58" fill="#f8fafc" font-size="29" font-family="Arial,sans-serif" font-weight="bold">After: a stable core with extension points</text>
+<text x="52" y="91" fill="#94a3b8" font-size="17" font-family="Arial,sans-serif">Contracts isolate provider-specific implementations</text>
+<path d="M290,260.0 L380,260.0" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="335.0" y="250.0" text-anchor="middle" fill="#e2e8f0" font-size="14" font-family="Arial,sans-serif">invokes</text>
+<path d="M690,260.0 L785,180.0" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="737.5" y="210.0" text-anchor="middle" fill="#e2e8f0" font-size="14" font-family="Arial,sans-serif">dispatch</text>
+<path d="M690,260.0 L785,370.0" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="737.5" y="305.0" text-anchor="middle" fill="#e2e8f0" font-size="14" font-family="Arial,sans-serif">dispatch</text>
+<rect x="50" y="190" width="240" height="140" rx="13" fill="#172238" stroke="#38bdf8" stroke-width="2.3"/>
+<text x="170.0" y="223" text-anchor="middle" fill="#f8fafc" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Checkout Core</text>
+<text x="170.0" y="250" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Order validation</text>
+<text x="170.0" y="273" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Domain decisions</text>
+<rect x="380" y="190" width="310" height="140" rx="13" fill="#172238" stroke="#a78bfa" stroke-width="2.3"/>
+<text x="535.0" y="223" text-anchor="middle" fill="#f8fafc" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Extension Contract</text>
+<text x="535.0" y="250" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">ShippingQuote v1</text>
+<text x="535.0" y="273" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Capability registry</text>
+<rect x="785" y="120" width="270" height="120" rx="13" fill="#172238" stroke="#34d399" stroke-width="2.3"/>
+<text x="920.0" y="153" text-anchor="middle" fill="#f8fafc" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Carrier A Plugin</text>
+<text x="920.0" y="180" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Implements interface</text>
+<rect x="785" y="310" width="270" height="120" rx="13" fill="#172238" stroke="#fb923c" stroke-width="2.3"/>
+<text x="920.0" y="343" text-anchor="middle" fill="#f8fafc" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Carrier B Plugin</text>
+<text x="920.0" y="370" text-anchor="middle" fill="#cbd5e1" font-size="15" font-family="Arial,sans-serif">Implements interface</text>
+<rect x="42" y="533" width="1036" height="61" rx="10" fill="#111d32" stroke="#334155"/>
+<text x="62" y="560" fill="#93c5fd" font-size="15" font-family="Arial,sans-serif">Core owns business rules; plugins implement narrow external capabilities.</text>
+</svg>

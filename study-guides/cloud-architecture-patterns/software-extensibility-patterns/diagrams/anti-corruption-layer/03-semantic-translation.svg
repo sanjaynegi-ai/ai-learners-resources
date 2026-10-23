@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="TRANSLATION: More than renaming">
+<rect width="1100" height="600" fill="#0B1020"/>
+<text x="52" y="64" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#f8fafc">TRANSLATION: More than renaming</text>
+<text x="52" y="98" font-family="Arial,sans-serif" font-size="16" fill="#a7b7ce">Syntax, meaning, validation, and controlled failures</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#91a4c4"/></marker></defs>
+<path d="M335,290 L420,290" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<text x="378" y="280" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">parse</text>
+<path d="M680,290 L765,290" fill="none" stroke="#91a4c4" stroke-width="3" marker-end="url(#arr)"/>
+<text x="722" y="280" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">domain</text>
+<rect x="55" y="200" width="280" height="180" rx="16" fill="#151F36" stroke="#fb923c" stroke-width="2.5"/>
+<text x="195.0" y="235" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Legacy representation</text>
+<text x="195.0" y="263" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">CUST_NO = 000042</text>
+<text x="195.0" y="285" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">ACTIVE_FLAG = Y</text>
+<text x="195.0" y="307" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">HOLD_CD = 07</text>
+<text x="195.0" y="329" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">E104</text>
+<rect x="420" y="200" width="260" height="180" rx="16" fill="#151F36" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="550.0" y="235" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Explicit mapping</text>
+<text x="550.0" y="263" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Canonical IDs</text>
+<text x="550.0" y="285" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Validate known codes</text>
+<text x="550.0" y="307" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Translate meaning</text>
+<text x="550.0" y="329" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Reject unknown values</text>
+<rect x="765" y="200" width="280" height="180" rx="16" fill="#151F36" stroke="#34d399" stroke-width="2.5"/>
+<text x="905.0" y="235" font-family="Arial" font-size="20" font-weight="bold" fill="#f8fafc" text-anchor="middle">Modern contract</text>
+<text x="905.0" y="263" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">customerId = cust-42</text>
+<text x="905.0" y="285" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">status = RESTRICTED</text>
+<text x="905.0" y="307" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">CustomerNotFound</text>
+<text x="905.0" y="329" font-family="Arial" font-size="15" fill="#cbd5e1" text-anchor="middle">Typed integration errors</text>
+<rect x="45" y="527" width="1010" height="49" rx="12" fill="#1b2b43"/>
+<text x="550" y="557" font-family="Arial" font-size="17" fill="#e2e8f0" text-anchor="middle">Unknown legacy values must not silently become business approvals.</text>
+</svg>

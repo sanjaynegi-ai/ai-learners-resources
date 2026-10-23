@@ -166,4 +166,4 @@ For comparisons, also record date, provider/model, prompt revision, embedding mo
 | Groundedness | Whether claims are supported by supplied evidence | Evidence can itself be wrong outside the exercise |
 | Abstention | Declining a substantive answer when evidence is insufficient | It is not proof the topic has no real-world answer |
 
-Return to the [chapter index](README.md). The full glossary is developed in a later phase.
+Return to the [chapter index](README.md). Use the [W-LC-18 — full glossary](18-glossary.md) for definitions and chapter links.

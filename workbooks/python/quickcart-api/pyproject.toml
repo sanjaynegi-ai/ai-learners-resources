@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quickcart-api"
+version = "0.1.0"
+description = "Synthetic QuickCart ticket API for the AI-PY-01 bridge; offline mock triage provider"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "fastapi>=0.142.1",
+    "uvicorn>=0.54.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+# Resolve only releases published before this date so locked versions are at least two weeks old.
+exclude-newer = "2026-09-30T00:00:00Z"
+
+[dependency-groups]
+dev = [
+    "httpx2>=2.13.1",
+]

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" role="img" aria-labelledby="title desc">
+  <title id="title">Escalation model confusion matrix on 2,000 synthetic test tickets</title>
+  <desc id="desc">A two-by-two confusion matrix. Columns are the actual outcome: 160 escalated and 1,840 not escalated. Rows are the prediction: 184 predicted escalate and 1,816 predicted do not escalate. Cells: 112 true positives, 72 false alarms, 48 missed escalations and 1,768 correctly left alone. A side panel computes accuracy as 1,880 of 2,000, or 94.0 percent; base rate 160 of 2,000, or 8.0 percent; precision 112 of 184, or 60.9 percent; recall 112 of 160, or 70.0 percent. It notes that always predicting no escalation scores 92.0 percent accuracy with 0 percent recall.</desc>
+  <rect width="1100" height="480" fill="#0B1020"/>
+  <g font-family="Arial,sans-serif" fill="#F8FAFC">
+    <text x="40" y="40" font-size="24" font-weight="bold">Every metric is a count divided by a stated denominator</text>
+    <text x="345" y="92" font-size="16" font-weight="bold" text-anchor="middle">Actual: escalated</text>
+    <text x="345" y="112" font-size="15" fill="#CBD5E1" text-anchor="middle">160 tickets</text>
+    <text x="565" y="92" font-size="16" font-weight="bold" text-anchor="middle">Actual: not escalated</text>
+    <text x="565" y="112" font-size="15" fill="#CBD5E1" text-anchor="middle">1,840 tickets</text>
+    <text x="40" y="180" font-size="16" font-weight="bold">Predicted:</text>
+    <text x="40" y="202" font-size="16" font-weight="bold">escalate</text>
+    <text x="40" y="224" font-size="15" fill="#CBD5E1">184 flagged</text>
+    <text x="40" y="320" font-size="16" font-weight="bold">Predicted:</text>
+    <text x="40" y="342" font-size="16" font-weight="bold">don’t escalate</text>
+    <text x="40" y="364" font-size="15" fill="#CBD5E1">1,816 not flagged</text>
+    <rect x="240" y="130" width="210" height="125" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/>
+    <text x="345" y="190" font-size="30" font-weight="bold" text-anchor="middle">112</text>
+    <text x="345" y="220" font-size="15" fill="#CBD5E1" text-anchor="middle">true positive</text>
+    <rect x="460" y="130" width="210" height="125" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="565" y="190" font-size="30" font-weight="bold" text-anchor="middle">72</text>
+    <text x="565" y="220" font-size="15" fill="#CBD5E1" text-anchor="middle">false alarm</text>
+    <rect x="240" y="270" width="210" height="125" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/>
+    <text x="345" y="330" font-size="30" font-weight="bold" text-anchor="middle">48</text>
+    <text x="345" y="360" font-size="15" fill="#CBD5E1" text-anchor="middle">missed escalation</text>
+    <rect x="460" y="270" width="210" height="125" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/>
+    <text x="565" y="330" font-size="30" font-weight="bold" text-anchor="middle">1,768</text>
+    <text x="565" y="360" font-size="15" fill="#CBD5E1" text-anchor="middle">correctly left alone</text>
+    <rect x="710" y="80" width="350" height="315" rx="12" fill="#172136" stroke="#22D3EE"/>
+    <text x="730" y="114" font-size="17" font-weight="bold">Accuracy</text>
+    <text x="730" y="136" font-size="15" fill="#CBD5E1">(112 + 1,768) / 2,000 = 94.0%</text>
+    <text x="730" y="170" font-size="17" font-weight="bold">Base rate</text>
+    <text x="730" y="192" font-size="15" fill="#CBD5E1">160 / 2,000 = 8.0%</text>
+    <text x="730" y="226" font-size="17" font-weight="bold">Precision (of flagged)</text>
+    <text x="730" y="248" font-size="15" fill="#CBD5E1">112 / 184 = 60.9%</text>
+    <text x="730" y="282" font-size="17" font-weight="bold">Recall (of real escalations)</text>
+    <text x="730" y="304" font-size="15" fill="#CBD5E1">112 / 160 = 70.0%</text>
+    <text x="730" y="342" font-size="15" fill="#FBBF24">Always “no”: 92.0% accuracy,</text>
+    <text x="730" y="364" font-size="15" fill="#FBBF24">0% recall, 0 flags to review</text>
+    <text x="40" y="440" font-size="16">Synthetic counts. Read precision and recall with their denominators: “60.9% of 184 flags” and</text>
+    <text x="40" y="462" font-size="16">“70.0% of 160 escalations” say more than either percentage alone.</text>
+  </g>
+</svg>

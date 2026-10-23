@@ -1,11 +1,30 @@
 # Chapter 07 — Embeddings and Similarity: Rank Without Guessing Truth
 
+**How can vectors rank related text, and what does similarity fail to prove?**
+
+> **Your goal:** Compute similarity, diagnose invalid vectors and compare retrieval signals.<br>
+> **You need:** [Retrieval foundations](../../../study-guides/retrieval-foundations/README.md), the [offline checkpoint](../02-rag-capstone-workbook/retrieval-lab/README.md), [Conversation History](06-conversation-history.md) and retained `first_call.py`.<br>
+> **Effort:** 70-90 minutes, plus optional live embedding calls; estimated.<br>
+> **You will produce:** `embedding_lab.py`, manual/NumPy calculations and a paraphrase/identifier comparison. **Status:** Draft; unpiloted.
+
+Fernwood is the fictional organization used in this workbook for internal-note and equipment-policy questions. QuickCart supplies the wider course scenario; keep their synthetic corpora and project environments distinct.
+
+**Study route:** Continue your external Python 3.11 `langchain-learning` project. Create `embedding_lab.py` beside `first_call.py`; run authored vectors and arithmetic checks first. Live embeddings require the chosen adapter, account or local model and a separate spending/resource allowance. Record fixture results separately from learned-model results.
+
+<details>
+<summary>Reference: unit identity, prerequisites and verification limits</summary>
+
+> **Unit ID:** W-LC-07 · **Capability:** AI-RETRIEVE-01 · [Course map](../../../README.md#ordered-capability-map)
+> **Status:** Draft · **Runtime:** your W-LC-00 learner project (Python 3.11 via uv) · **Contract, cleanup and verification:** [W-LC-07 record](lesson-contract.md#w-lc-07).
+
 > **Study time:** 70–90 minutes, plus optional live embedding calls.  
-> **Prerequisites:** [Conversation History](06-conversation-history.md), basic Python lists, and learner-created `first_call.py` from Chapter 02.  
+> **Prerequisites:** [W-LC-06 — Conversation History](06-conversation-history.md), basic Python lists, and learner-created `first_call.py` from Chapter 02.<br>
 > **Central question:** How can numeric vectors help find related text, and what does their similarity fail to prove?  
 > **Running example:** Fernwood team-notes assistant.
 
-[Previous: Conversation History](06-conversation-history.md) · [Index](README.md) · [Next: Documents and Retrieval](08-documents-and-retrieval.md)
+[Previous on the course map: offline retrieval checkpoint](../02-rag-capstone-workbook/retrieval-lab/README.md) · [W-LC-06 — previous workbook chapter](06-conversation-history.md) · [Index](README.md) · [W-LC-08 — Next: Documents and Retrieval](08-documents-and-retrieval.md)
+
+</details>
 
 ## Learning objectives
 
@@ -348,6 +367,9 @@ Both should exit 2. The first refuses division by a zero norm; the second refuse
 
 ## 7. Similarity, relevance, and truth
 
+> [!IMPORTANT]
+> Highest-ranked means closest among the candidates considered. It does not establish that any candidate is relevant, current or permitted. Keep no-answer queries in your evaluation.
+
 | Question | Meaning | How to assess |
 |---|---|---|
 | Similar? | Vectors point in related directions | Model-dependent metric/ranking |
@@ -454,9 +476,23 @@ No. Coordinate meaning and model-specific configuration must agree. Rebuild docu
 - [ ] I can configure one embedding route and explain the local prefixes.
 - [ ] I know which changes require rebuilding document vectors.
 
-Repeat Section 2 if the arithmetic is unclear, and Sections 5–7 if scores feel like confidence. Next, [Documents and Retrieval](08-documents-and-retrieval.md) will add document metadata, chunking, and a persistent index so we do not embed the corpus on every query run. That chapter remains a scaffold until implemented.
+Repeat Section 2 if the arithmetic is unclear, and Sections 5–7 if scores feel like confidence. Next, [W-LC-08 — Documents and Retrieval](08-documents-and-retrieval.md) will add document metadata, chunking, and a persistent index so we do not embed the corpus on every query run.
+
+## Evidence reflection
+
+Which assumption makes a cosine ranking useful, and what would change with a different model or query? Explain why nearest does not mean authorized or answerable. Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** compute cosine similarity by hand and with NumPy, compare embeddings against a keyword baseline, and reject zero or mismatched vectors.
+
+**Show it:** your manual and NumPy results side by side, plus the paraphrase and identifier comparison.
+
+**Next:** [W-LC-08 — Documents and Retrieval](08-documents-and-retrieval.md).
 
 ## References  
+
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
 
 - [OpenAIEmbeddings integration](https://docs.langchain.com/oss/python/integrations/embeddings/openai) and [OllamaEmbeddings integration](https://docs.langchain.com/oss/python/integrations/embeddings/ollama).
 - [Nomic model/task prefixes](https://huggingface.co/nomic-ai/nomic-embed-text-v1.5), [Ollama model tag](https://ollama.com/library/nomic-embed-text), and [Ollama embeddings guidance](https://docs.ollama.com/capabilities/embeddings).

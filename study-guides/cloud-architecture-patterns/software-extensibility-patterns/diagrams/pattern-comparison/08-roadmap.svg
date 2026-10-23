@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="670" viewBox="0 0 1200 670">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker></defs>
+<rect width="1200" height="670" fill="#0b1020"/>
+<text x="45" y="58" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#f8fafc">Pragmatic pattern adoption roadmap</text>
+<text x="45" y="88" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Sequence work around invariants, measurement, and safe retirement.</text>
+<rect x="45" y="230" width="210" height="110" rx="14" fill="#17243b" stroke="#38bdf8" stroke-width="2"/>
+<text x="61" y="262" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#38bdf8">1. Baseline</text>
+<text x="61" y="288" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Map dependencies</text>
+<text x="61" y="310" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Define invariants</text>
+<rect x="285" y="230" width="210" height="110" rx="14" fill="#17243b" stroke="#a78bfa" stroke-width="2"/>
+<text x="301" y="262" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#a78bfa">2. Isolate</text>
+<text x="301" y="288" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Ports / ACL</text>
+<text x="301" y="310" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Contract tests</text>
+<rect x="525" y="230" width="210" height="110" rx="14" fill="#17243b" stroke="#34d399" stroke-width="2"/>
+<text x="541" y="262" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#34d399">3. Optimize</text>
+<text x="541" y="288" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">BFF if justified</text>
+<text x="541" y="310" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Trace client p95</text>
+<rect x="765" y="230" width="180" height="110" rx="14" fill="#17243b" stroke="#fb923c" stroke-width="2"/>
+<text x="781" y="262" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#fb923c">4. Migrate</text>
+<text x="781" y="288" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Strangler / flags</text>
+<text x="781" y="310" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Canary + reconcile</text>
+<rect x="975" y="230" width="180" height="110" rx="14" fill="#17243b" stroke="#fb7185" stroke-width="2"/>
+<text x="991" y="262" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#fb7185">5. Retire</text>
+<text x="991" y="288" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Remove legacy</text>
+<text x="991" y="310" font-family="Arial,sans-serif" font-size="14" fill="#d4dce9">Clean up flags</text>
+<path d="M 255 285.0 L 285 285.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 495 285.0 L 525 285.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 735 285.0 L 765 285.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<path d="M 945 285.0 L 975 285.0" stroke="#94a3b8" stroke-width="2.2" fill="none" marker-end="url(#arrow)" opacity=".85"/>
+<rect x="45" y="606" width="1110" height="42" rx="9" fill="#202c45"/>
+<text x="60" y="633" font-family="Arial,sans-serif" font-size="15" fill="#d5e2f3">Every phase needs an accountable owner, success metric, and recovery plan.</text>
+</svg>

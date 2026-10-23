@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 460" role="img" aria-labelledby="title desc">
+  <title id="title">QuickCart offline controls: trusted decisions stay outside retrieved text</title>
+  <desc id="desc">A synthetic authenticated identity enters trusted retrieval and action checks. SQLite holds current tenant grants and idempotency records. Retrieved instructions are data and cannot supply approval. A single-process runner bounds concurrent calls and synthetic attempt units; it does not enforce provider billing.</desc>
+  <rect width="1100" height="460" fill="#0B1020"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#94A3B8" stroke-width="2"/></marker></defs>
+  <g font-family="Arial,sans-serif" fill="#F8FAFC">
+    <text x="30" y="42" font-size="24" font-weight="bold">Trusted policy controls the effect</text>
+    <rect x="30" y="100" width="225" height="95" rx="12" fill="#172136" stroke="#22D3EE"/>
+    <text x="50" y="135" font-size="19">Trusted fixture identity</text><text x="50" y="163" font-size="15" fill="#CBD5E1">Not model-supplied claims</text>
+    <rect x="350" y="100" width="300" height="95" rx="12" fill="#172136" stroke="#4ADE80"/>
+    <text x="370" y="135" font-size="19">Retrieval and action checks</text><text x="370" y="163" font-size="15" fill="#CBD5E1">Tenant, grant, role, approval</text>
+    <rect x="760" y="100" width="300" height="95" rx="12" fill="#172136" stroke="#A78BFA"/>
+    <text x="780" y="135" font-size="19">SQLite current records</text><text x="780" y="163" font-size="15" fill="#CBD5E1">Grants + simulated effect keys</text>
+    <rect x="350" y="285" width="300" height="95" rx="12" fill="#172136" stroke="#FBBF24"/>
+    <text x="370" y="320" font-size="19">Untrusted retrieved note</text><text x="370" y="348" font-size="15" fill="#CBD5E1">Data cannot authorize a refund</text>
+    <rect x="760" y="285" width="300" height="95" rx="12" fill="#172136" stroke="#22D3EE"/>
+    <text x="780" y="320" font-size="19">Separate runner limits</text><text x="780" y="348" font-size="15" fill="#CBD5E1">Slots, timeout, attempt units</text>
+    <text x="30" y="430" font-size="16" fill="#CBD5E1">Offline simulation only: no real authentication, vector store, payment provider or monetary cap.</text>
+  </g>
+  <g stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M255 147 H350"/><path d="M650 147 H760"/><path d="M500 285 V195"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="14" fill="#CBD5E1">
+    <text x="275" y="132">identity</text><text x="675" y="132">recheck</text><text x="515" y="245">data only</text>
+  </g>
+</svg>

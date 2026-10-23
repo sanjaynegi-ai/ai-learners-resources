@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "quickcart-approval-workflow"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = ["langgraph==1.2.15", "langgraph-checkpoint-sqlite==3.1.2"]
+[project.scripts]
+approval-workflow = "approval_workflow.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,11 +1,30 @@
 # Chapter 08 — Documents and Retrieval: Build Once, Inspect Every Handoff
 
+**How do files become a searchable snapshot that can be reopened without re-indexing every question?**
+
+> **Your goal:** Preserve source identity, compare chunks and verify index/query boundaries.<br>
+> **You need:** [Embeddings and Similarity](07-embeddings-and-similarity.md), `embedding_lab.py` and `first_call.py`.<br>
+> **Effort:** 100-130 minutes, plus optional live indexing/PDF practice; estimated.<br>
+> **You will produce:** `retrieval_lab.py`, snapshot manifests, fixed-query comparisons and an empty-result check. **Status:** Draft; unpiloted.
+
+Fernwood, our fictional organization, needs policy passages with traceable source identity and revision. This chapter studies persistent retrieval; it does not yet establish authenticated document access or answer correctness.
+
+**Study route:** Continue the external Python 3.11 `langchain-learning` project and retain both prerequisite helpers. Build the prescribed synthetic files, inspect chunks and use the fixture index first. Live indexing embeds documents and queries, so budget that route separately. Never mix fixture/live snapshots or delete an index merely to hide a revision mismatch.
+
+<details>
+<summary>Reference: unit identity, prerequisites and verification limits</summary>
+
+> **Unit ID:** W-LC-08 · **Capability:** AI-RETRIEVE-01 · [Course map](../../../README.md#ordered-capability-map)
+> **Status:** Draft · **Runtime:** your W-LC-00 learner project (Python 3.11 via uv) · **Contract, cleanup and verification:** [W-LC-08 record](lesson-contract.md#w-lc-08).
+
 > **Study time:** 100–130 minutes, plus optional live indexing/PDF practice.  
-> **Prerequisites:** [Embeddings and Similarity](07-embeddings-and-similarity.md), learner-created `embedding_lab.py` and `first_call.py`.  
+> **Prerequisites:** [W-LC-07 — Embeddings and Similarity](07-embeddings-and-similarity.md), learner-created `embedding_lab.py` and `first_call.py`.<br>
 > **Central question:** How do we turn files into a reproducible searchable snapshot without re-indexing on every question?  
 > **Running example:** Fernwood team-notes assistant.
 
-[Previous: Embeddings and Similarity](07-embeddings-and-similarity.md) · [Index](README.md) · [Next: Grounded RAG](09-grounded-rag.md)
+[W-LC-07 — Previous: Embeddings and Similarity](07-embeddings-and-similarity.md) · [Index](README.md) · [W-LC-09 — Next: Grounded RAG](09-grounded-rag.md)
+
+</details>
 
 ## Learning objectives
 
@@ -561,9 +580,22 @@ No records may satisfy a metadata filter, or all top-k candidates may exceed the
 - [ ] I compared required passage facts, including the unsupported IP question.
 - [ ] I observed an empty filter result and can rebuild into a new revision.
 
-Revisit Sections 4–6 if lifecycle or distance semantics are unclear. Next, [Grounded RAG](09-grounded-rag.md) will format retrieved passages as evidence and generate an answer while assessing support. That chapter remains a scaffold until implemented.
+Revisit Sections 4–6 if lifecycle or distance semantics are unclear. The next problem is turning retrieved passages into a supported answer. The course map first teaches permissions and grounding (named below) and the guided RAG build; [W-LC-09 — Grounded RAG](09-grounded-rag.md) then applies them in this workbook.
+
+## Completion checkpoint
+
+> [!IMPORTANT]
+> A persistent index is a derived snapshot. Record the source revision and embedding/chunk configuration that created it; successful reopening does not establish freshness or permission.
+
+**You can now:** load documents with source metadata, compare two chunk configurations on fixed questions, and reopen a persisted Chroma index without re-embedding.
+
+**Show it:** your chunk comparison, a query against the reopened index and the unchanged-snapshot skip message.
+
+**Next:** read [SG-RAG-01 — Permissions and grounding](../../../study-guides/retrieval-foundations/permissions-and-grounding.md), which starts the course map's AI-RAG-01 row.
 
 ## References  
+
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
 
 - [Recursive splitter](https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter).
 - [LangChain Chroma integration](https://docs.langchain.com/oss/python/integrations/vectorstores/chroma) and [Chroma collection configuration](https://docs.trychroma.com/docs/collections/configure).

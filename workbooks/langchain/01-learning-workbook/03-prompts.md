@@ -1,11 +1,28 @@
 # Chapter 03 — Prompts: Reusable Instructions and Their Limits
 
-> **Study time:** 50–70 minutes, plus optional live comparisons.  
-> **Prerequisites:** [Models and Messages](02-models-and-messages.md); keep its learner-created `first_call.py`.  
-> **Central question:** How do we reuse a prompt without confusing variable formatting, validation, and factual reliability?  
-> **Running example:** Fernwood team-notes assistant.
+**What does a reusable prompt template guarantee, and what remains unchecked?**
 
-[Previous: Models and Messages](02-models-and-messages.md) · [Index](README.md) · [Next: Structured Output](04-structured-output.md)
+> **Your goal:** Separate variable formatting, model invocation and evaluation of the answer.<br>
+> **You need:** [Models and Messages](02-models-and-messages.md), its complete `first_call.py`, and the [prompt/context guide](../../../study-guides/llm-foundations/docs/01-designing-prompts-and-context.md).<br>
+> **Effort:** 50-70 minutes, plus optional live comparisons; estimated.<br>
+> **You will produce:** Inspectable prompt variants, a repaired missing-variable failure and a comparison record. **Status:** Draft; local and live evidence must be reported separately.
+
+**Fernwood** is the fictional organization used in this workbook to study internal notes and equipment-policy questions. Its synthetic material lets you inspect evidence and context without real employee data. QuickCart remains the recurring commerce case in the wider course.
+
+**Starting state:** Continue the same learner project and retain `first_call.py`. Add the prompt lab beside it using the complete file below. Template inspection does not require a running model service.
+
+**Study route:** Predict required variables, inspect formatted messages, repair the local failure, then attempt variant C before revealing its solution. Use fixed inputs for any optional generation comparison and label an unexecuted comparison as pending.
+
+**Before executable steps:** work from your external `langchain-learning` root with Python 3.11 via uv. Follow the named dependency and file steps below; a copied snippet is not a verified project checkpoint. Offline formatting/fixture checks make no model calls. Hosted inference is paid; local inference uses downloaded models and compute. Before live runs, choose a spending budget, request count, time window and review plan. Preserve private evidence, never print keys, and stop any local service you started when finished. Detailed cleanup and historical verification limits remain in the [chapter record](lesson-contract.md#w-lc-03).
+
+<details>
+<summary>Reference: stable unit identity and project boundaries</summary>
+
+**Unit:** W-LC-03. **Capability:** AI-CALL-01. [Course map](../../../README.md#ordered-capability-map) | [Project starting states](../docs/project-boundaries.md) | [Verification and cleanup](lesson-contract.md#w-lc-03). Current Draft status does not turn a historical provider run into fresh evidence.
+
+</details>
+
+[Workbook index](README.md) | [Next workbook chapter](04-structured-output.md)
 
 ## Learning objectives
 
@@ -267,7 +284,10 @@ Run `--missing-variable` again: the repaired branch should exit with code 0 with
 
 ## 7. Compare variants on the fixed cases
 
-After previews work, learners with an available route may run:
+> [!TIP]
+> Write expected facts and failure criteria before generation. Keep format compliance, supported claims and appropriate abstention separate; one successful sentence cannot establish all three.
+
+After previews work, learners with an available route may run these **six generation attempts**. Confirm the hosted spending budget or local resource allowance first; each uses Chapter 02's configured limits. If unavailable, keep previews and label model-quality comparison untested:
 
 ```powershell
 uv run --locked python prompt_lab.py --case equipment --variant A --generate
@@ -375,9 +395,23 @@ No. The application must validate permissions before executing actions. Model in
 - [ ] I compared the fixed previews and recorded live results only if actually observed.
 - [ ] I can distinguish requested behavior from enforced controls.
 
-Next, [Structured Output](04-structured-output.md) will replace fragile prose conventions with typed data contracts and explain what those contracts still cannot prove. That chapter remains a scaffold until implemented.
+Next, [W-LC-04 — Structured Output](04-structured-output.md) will replace fragile prose conventions with typed data contracts and explain what those contracts still cannot prove.
+
+## Evidence reflection
+
+Which prompt variable or instruction boundary changed the result? Explain why a passing example cannot establish reliability on unfamiliar policy questions. Record the original attempt, observed result, repair and remaining uncertainty in your private learning log.
+
+## Completion checkpoint
+
+**You can now:** build role-aware prompt templates, repair a missing-variable error before inference, and compare two instruction variants on the same inputs, while explaining why prompt wording is not a security boundary.
+
+**Show it:** both rendered variants on fixed inputs, the repaired missing-variable failure and your independent variant. If generation ran, add observed differences and review criteria; otherwise label model-quality conclusions untested.
+
+**Next:** [W-LC-04 — Structured Output](04-structured-output.md).
 
 ## References  
+
+Classification, effort, access and check date for these links: [W-LC source record](source-record.md).
 
 - [ChatPromptTemplate API](https://reference.langchain.com/python/langchain_core/prompts/chat/ChatPromptTemplate)
 - [LangChain model invocation and provider interfaces](https://docs.langchain.com/oss/python/langchain/models)

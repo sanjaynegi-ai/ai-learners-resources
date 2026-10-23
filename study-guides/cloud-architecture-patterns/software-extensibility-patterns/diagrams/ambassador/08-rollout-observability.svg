@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="Roll out Ambassador with measured safety">
+<rect width="1200" height="440" fill="#0b1220"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L9 5 L0 10" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></marker></defs>
+<text x="35" y="49" fill="#fff" font-family="Arial" font-weight="bold" font-size="27">Roll out Ambassador with measured safety</text>
+<rect x="25" y="145" width="250" height="110" rx="13" fill="#18263b" stroke="#22d3ee" stroke-width="2.6"/>
+<text x="150.0" y="190.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Baseline</text>
+<text x="150.0" y="218.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Direct calls</text>
+<rect x="335" y="145" width="250" height="110" rx="13" fill="#18263b" stroke="#a78bfa" stroke-width="2.6"/>
+<text x="460.0" y="190.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Canary</text>
+<text x="460.0" y="218.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Small traffic slice</text>
+<rect x="645" y="145" width="250" height="110" rx="13" fill="#18263b" stroke="#34d399" stroke-width="2.6"/>
+<text x="770.0" y="190.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Compare</text>
+<text x="770.0" y="218.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">p99 / errors / cost</text>
+<rect x="955" y="145" width="220" height="110" rx="13" fill="#18263b" stroke="#fbbf24" stroke-width="2.6"/>
+<text x="1065.0" y="190.0" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#fff">Expand</text>
+<text x="1065.0" y="218.0" text-anchor="middle" font-size="13" font-family="Arial" fill="#cbd5e1">Or rollback</text>
+<path d="M275 200 L335 200" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M585 200 L645 200" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M895 200 L955 200" fill="none" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="35" y="403" fill="#fbbf24" font-family="Arial" font-size="16">Test fail-closed behavior, certificates, identity, and proxy restarts.</text>
+</svg>
