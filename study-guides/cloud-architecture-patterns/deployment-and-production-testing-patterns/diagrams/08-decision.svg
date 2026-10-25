@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 665" role="img" aria-labelledby="title desc">
+<title id="title">Make promotion a reviewable decision</title><desc id="desc">Candidate checks lead to limited exposure, then promotion or verified recovery.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/></marker></defs>
+<rect width="760" height="665" rx="14" fill="#0B1020"/>
+<g font-family="Arial, sans-serif" fill="#F8FAFC">
+<text x="30" y="43" font-size="26" font-weight="bold">Make promotion a reviewable decision</text>
+<rect x="100" y="85" width="560" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="117" text-anchor="middle" font-size="23" font-weight="bold">Identified candidate</text><text x="380.0" y="146" text-anchor="middle" font-size="20" fill="#CBD5E1">Artifact, configuration and state assumptions</text>
+<path d="M 380 167 V 205" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="100" y="210" width="560" height="82" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/><text x="380.0" y="242" text-anchor="middle" font-size="23" font-weight="bold">Compatibility + pre-release checks</text><text x="380.0" y="271" text-anchor="middle" font-size="20" fill="#CBD5E1">Verify recovery assumptions before exposure</text>
+<path d="M 380 292 V 330" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="100" y="335" width="560" height="82" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/><text x="380.0" y="367" text-anchor="middle" font-size="23" font-weight="bold">Limited exposure + useful evidence</text><text x="380.0" y="396" text-anchor="middle" font-size="20" fill="#CBD5E1">Apply declared gates and critical invariants</text>
+<path d="M 270 417 V 455 H 190 V 495" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 490 417 V 455 H 570 V 495" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="35" y="500" width="310" height="82" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/><text x="190.0" y="532" text-anchor="middle" font-size="23" font-weight="bold">Promote</text><text x="190.0" y="561" text-anchor="middle" font-size="20" fill="#CBD5E1">Next bounded stage</text>
+<rect x="415" y="500" width="310" height="82" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/><text x="570.0" y="532" text-anchor="middle" font-size="23" font-weight="bold">Stop and recover</text><text x="570.0" y="561" text-anchor="middle" font-size="20" fill="#CBD5E1">Verify compatible service</text>
+<text x="35" y="630" font-size="19" fill="#CBD5E1">Insufficient evidence: hold exposure and investigate.</text>
+</g></svg>

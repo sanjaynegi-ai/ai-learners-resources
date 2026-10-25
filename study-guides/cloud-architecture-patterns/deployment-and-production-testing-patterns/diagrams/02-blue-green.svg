@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 600" role="img" aria-labelledby="title desc">
+<title id="title">Two fleets can share one failure domain</title><desc id="desc">Router branches to current and candidate; both access shared state.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/></marker></defs>
+<rect width="760" height="600" rx="14" fill="#0B1020"/>
+<g font-family="Arial, sans-serif" fill="#F8FAFC">
+<text x="30" y="43" font-size="26" font-weight="bold">Two fleets can share one failure domain</text>
+<rect x="180" y="85" width="400" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="117" text-anchor="middle" font-size="23" font-weight="bold">Traffic router</text><text x="380.0" y="146" text-anchor="middle" font-size="20" fill="#CBD5E1">Switch under an explicit policy</text>
+<path d="M 285 167 V 205 H 190 V 245" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 475 167 V 205 H 570 V 245" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="35" y="250" width="310" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="190.0" y="282" text-anchor="middle" font-size="23" font-weight="bold">Blue: current</text><text x="190.0" y="311" text-anchor="middle" font-size="20" fill="#CBD5E1">Retain recovery capacity</text>
+<rect x="415" y="250" width="310" height="82" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/><text x="570.0" y="282" text-anchor="middle" font-size="23" font-weight="bold">Green: candidate</text><text x="570.0" y="311" text-anchor="middle" font-size="20" fill="#CBD5E1">Validate before exposure</text>
+<path d="M 190 332 V 390 H 310 V 435" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 570 332 V 390 H 450 V 435" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="140" y="440" width="480" height="82" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/><text x="380.0" y="472" text-anchor="middle" font-size="23" font-weight="bold">Shared data and dependencies</text><text x="380.0" y="501" text-anchor="middle" font-size="20" fill="#CBD5E1">Both versions must understand current state</text>
+<text x="35" y="565" font-size="19" fill="#CBD5E1">Routing back does not undo writes or external effects.</text>
+</g></svg>

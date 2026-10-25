@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 640" role="img" aria-labelledby="title desc">
+<title id="title">Bound entry and active work</title><desc id="desc">Requests pass a tenant and global gate, then a bounded pool; rejected work is explicit.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/></marker></defs>
+<rect width="760" height="640" rx="14" fill="#0B1020"/>
+<g font-family="Arial, sans-serif" fill="#F8FAFC">
+<text x="32" y="43" font-size="26" font-weight="bold">Bound entry and active work</text>
+<rect x="65" y="85" width="410" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="270.0" y="117" text-anchor="middle" font-size="23" font-weight="bold">Authenticated requests</text><text x="270.0" y="146" text-anchor="middle" font-size="20" fill="#CBD5E1">Trusted tenant and operation identity</text>
+<path d="M 270 167 V 210" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="65" y="215" width="410" height="82" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/><text x="270.0" y="247" text-anchor="middle" font-size="23" font-weight="bold">Admission gate</text><text x="270.0" y="276" text-anchor="middle" font-size="20" fill="#CBD5E1">Tenant + aggregate budget</text>
+<path d="M 475 256 H 505" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="510" y="215" width="220" height="82" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/><text x="620.0" y="247" text-anchor="middle" font-size="23" font-weight="bold">Refused</text><text x="620.0" y="276" text-anchor="middle" font-size="20" fill="#CBD5E1">Explicit outcome</text>
+<path d="M 270 297 V 345" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="290" y="327" font-size="19" fill="#CBD5E1">admitted</text>
+<rect x="65" y="350" width="410" height="82" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/><text x="270.0" y="382" text-anchor="middle" font-size="23" font-weight="bold">Bounded active pool</text><text x="270.0" y="411" text-anchor="middle" font-size="20" fill="#CBD5E1">Short wait or explicit refusal</text>
+<path d="M 270 432 V 480" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="65" y="485" width="410" height="82" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/><text x="270.0" y="517" text-anchor="middle" font-size="23" font-weight="bold">Dependency</text><text x="270.0" y="546" text-anchor="middle" font-size="20" fill="#CBD5E1">Outbound quota also applies</text>
+<text x="65" y="609" font-size="19" fill="#CBD5E1">Admission is not completed business work.</text>
+</g></svg>

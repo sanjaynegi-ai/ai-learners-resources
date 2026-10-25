@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 705" role="img" aria-labelledby="title desc">
+<title id="title">One deadline across all attempts</title><desc id="desc">A vertical time budget totals 1800 milliseconds within a 2000 millisecond deadline.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/></marker></defs>
+<rect width="760" height="705" rx="14" fill="#0B1020"/>
+<g font-family="Arial, sans-serif" fill="#F8FAFC">
+<text x="32" y="43" font-size="26" font-weight="bold">One deadline across all attempts</text>
+<rect x="100" y="80" width="560" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="112" text-anchor="middle" font-size="23" font-weight="bold">Initial work: 200 ms</text><text x="380.0" y="141" text-anchor="middle" font-size="20" fill="#CBD5E1">Admission, validation and setup</text>
+<path d="M 380 162 V 185" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="100" y="190" width="560" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="222" text-anchor="middle" font-size="23" font-weight="bold">Attempt 1: at most 600 ms</text><text x="380.0" y="251" text-anchor="middle" font-size="20" fill="#CBD5E1">Remaining deadline limits this call</text>
+<path d="M 380 272 V 295" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="100" y="300" width="560" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="332" text-anchor="middle" font-size="23" font-weight="bold">Backoff: at most 200 ms</text><text x="380.0" y="361" text-anchor="middle" font-size="20" fill="#CBD5E1">Wait consumes the same budget</text>
+<path d="M 380 382 V 405" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="100" y="410" width="560" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="442" text-anchor="middle" font-size="23" font-weight="bold">Attempt 2: at most 600 ms</text><text x="380.0" y="471" text-anchor="middle" font-size="20" fill="#CBD5E1">Only if safe and budget permits</text>
+<path d="M 380 492 V 515" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="100" y="520" width="560" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="552" text-anchor="middle" font-size="23" font-weight="bold">Response: 200 ms</text><text x="380.0" y="581" text-anchor="middle" font-size="20" fill="#CBD5E1">Return confirmed or explicit pending state</text>
+<text x="100" y="644" font-size="19" fill="#CBD5E1">Planned maximum: 1,800 ms. Outer deadline: 2,000 ms.</text>
+<text x="100" y="676" font-size="19" fill="#CBD5E1">Illustrative budget; no remote cancellation guarantee.</text>
+</g></svg>

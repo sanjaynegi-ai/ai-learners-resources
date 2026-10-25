@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 750" role="img" aria-labelledby="title desc">
+<title id="title">A hypothesis, a bounded fault, a recovery</title><desc id="desc">Experimental stages preserve observation, stopping and recovery boundaries.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/></marker></defs>
+<rect width="760" height="750" rx="14" fill="#0B1020"/>
+<g font-family="Arial, sans-serif" fill="#F8FAFC">
+<text x="30" y="43" font-size="26" font-weight="bold">A hypothesis, a bounded fault, a recovery</text>
+<rect x="70" y="85" width="620" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="117" text-anchor="middle" font-size="23" font-weight="bold">Baseline + falsifiable hypothesis</text><text x="380.0" y="146" text-anchor="middle" font-size="20" fill="#CBD5E1">Define useful service and the workload</text>
+<path d="M 380 167 V 205" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="70" y="210" width="620" height="82" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/><text x="380.0" y="242" text-anchor="middle" font-size="23" font-weight="bold">Inject a bounded disturbance</text><text x="380.0" y="271" text-anchor="middle" font-size="20" fill="#CBD5E1">Named target, intensity and maximum duration</text>
+<path d="M 380 292 V 330" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="70" y="335" width="620" height="82" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/><text x="380.0" y="367" text-anchor="middle" font-size="23" font-weight="bold">Observe and stop when required</text><text x="380.0" y="396" text-anchor="middle" font-size="20" fill="#CBD5E1">Abort on violated gates or stale telemetry</text>
+<path d="M 380 417 V 455" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="70" y="460" width="620" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="492" text-anchor="middle" font-size="23" font-weight="bold">Remove fault and restore service</text><text x="380.0" y="521" text-anchor="middle" font-size="20" fill="#CBD5E1">Stopping injection may leave residual effects</text>
+<path d="M 380 542 V 580" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="70" y="585" width="620" height="82" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/><text x="380.0" y="617" text-anchor="middle" font-size="23" font-weight="bold">Verify recovery before expansion</text><text x="380.0" y="646" text-anchor="middle" font-size="20" fill="#CBD5E1">Reconcile work; repair and retain regression</text>
+<text x="40" y="715" font-size="19" fill="#CBD5E1">Paper design only; no live production fault is requested.</text>
+</g></svg>

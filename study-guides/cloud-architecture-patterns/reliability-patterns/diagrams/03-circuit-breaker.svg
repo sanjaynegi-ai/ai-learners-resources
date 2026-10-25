@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 655" role="img" aria-labelledby="title desc">
+<title id="title">Stop, probe, then restore traffic</title><desc id="desc">Closed trips to open, cooldown allows half-open; successful probes close, failed probes reopen.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/></marker></defs>
+<rect width="760" height="655" rx="14" fill="#0B1020"/>
+<g font-family="Arial, sans-serif" fill="#F8FAFC">
+<text x="32" y="43" font-size="26" font-weight="bold">Stop, probe, then restore traffic</text>
+<rect x="220" y="90" width="320" height="82" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/><text x="380.0" y="122" text-anchor="middle" font-size="23" font-weight="bold">CLOSED</text><text x="380.0" y="151" text-anchor="middle" font-size="20" fill="#CBD5E1">Calls pass; observe outcomes</text>
+<path d="M 380 172 V 245" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="397" y="211" font-size="19" fill="#CBD5E1">sample + threshold</text>
+<rect x="220" y="250" width="320" height="82" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/><text x="380.0" y="282" text-anchor="middle" font-size="23" font-weight="bold">OPEN</text><text x="380.0" y="311" text-anchor="middle" font-size="20" fill="#CBD5E1">Reject calls to dependency</text>
+<path d="M 380 332 V 405" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="399" y="372" font-size="19" fill="#CBD5E1">cooldown ends</text>
+<rect x="220" y="410" width="320" height="82" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/><text x="380.0" y="442" text-anchor="middle" font-size="23" font-weight="bold">HALF-OPEN</text><text x="380.0" y="471" text-anchor="middle" font-size="20" fill="#CBD5E1">Bounded representative probes</text>
+<path d="M 220 450 H 95 V 130 H 215" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 540 450 H 660 V 291 H 545" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="27" y="545" font-size="19" fill="#CBD5E1">Left return: enough probe successes → CLOSED</text>
+<text x="27" y="580" font-size="19" fill="#CBD5E1">Right return: probe failure → OPEN</text>
+<text x="27" y="625" font-size="19" fill="#CBD5E1">State transitions; in-flight calls still need timeouts.</text>
+</g></svg>

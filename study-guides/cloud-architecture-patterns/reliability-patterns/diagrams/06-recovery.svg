@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 635" role="img" aria-labelledby="title desc">
+<title id="title">Restore service and resolve obligations</title><desc id="desc">Containment precedes reconciliation, cautious resumption and useful-outcome verification.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/></marker></defs>
+<rect width="760" height="635" rx="14" fill="#0B1020"/>
+<g font-family="Arial, sans-serif" fill="#F8FAFC">
+<text x="32" y="43" font-size="26" font-weight="bold">Restore service and resolve obligations</text>
+<rect x="80" y="85" width="600" height="82" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/><text x="380.0" y="117" text-anchor="middle" font-size="23" font-weight="bold">Contain</text><text x="380.0" y="146" text-anchor="middle" font-size="20" fill="#CBD5E1">Cap demand; stop unsafe effects</text>
+<path d="M 380 167 V 210" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="80" y="215" width="600" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="247" text-anchor="middle" font-size="23" font-weight="bold">Reconcile</text><text x="380.0" y="276" text-anchor="middle" font-size="20" fill="#CBD5E1">Compare durable intent and actual effects</text>
+<path d="M 380 297 V 340" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="80" y="345" width="600" height="82" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/><text x="380.0" y="377" text-anchor="middle" font-size="23" font-weight="bold">Resume cautiously</text><text x="380.0" y="406" text-anchor="middle" font-size="20" fill="#CBD5E1">Validate probes and small replay batches</text>
+<path d="M 380 427 V 470" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="80" y="475" width="600" height="82" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/><text x="380.0" y="507" text-anchor="middle" font-size="23" font-weight="bold">Verify useful recovery</text><text x="380.0" y="536" text-anchor="middle" font-size="20" fill="#CBD5E1">Resolve or assign every affected obligation</text>
+<text x="80" y="602" font-size="19" fill="#CBD5E1">Green process health does not close pending orders.</text>
+</g></svg>

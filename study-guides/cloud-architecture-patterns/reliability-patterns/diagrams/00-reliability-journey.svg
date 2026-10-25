@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 615" role="img" aria-labelledby="title desc">
+<title id="title">Reliability: preserve the promise</title><desc id="desc">Four learning stages connect classification, bounds, containment and recovery.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/></marker></defs>
+<rect width="760" height="615" rx="14" fill="#0B1020"/>
+<g font-family="Arial, sans-serif" fill="#F8FAFC">
+<text x="32" y="43" font-size="26" font-weight="bold">Reliability: preserve the promise</text>
+<rect x="100" y="85" width="560" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="117" text-anchor="middle" font-size="23" font-weight="bold">1. Classify</text><text x="380.0" y="146" text-anchor="middle" font-size="20" fill="#CBD5E1">What is promised? What is unknown?</text>
+<path d="M 380 167 V 205" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="100" y="210" width="560" height="82" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/><text x="380.0" y="242" text-anchor="middle" font-size="23" font-weight="bold">2. Bound</text><text x="380.0" y="271" text-anchor="middle" font-size="20" fill="#CBD5E1">Admission, deadlines and safe attempts</text>
+<path d="M 380 292 V 330" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="100" y="335" width="560" height="82" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/><text x="380.0" y="367" text-anchor="middle" font-size="23" font-weight="bold">3. Contain</text><text x="380.0" y="396" text-anchor="middle" font-size="20" fill="#CBD5E1">Breakers, isolation and honest fallback</text>
+<path d="M 380 417 V 455" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="100" y="460" width="560" height="82" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/><text x="380.0" y="492" text-anchor="middle" font-size="23" font-weight="bold">4. Recover</text><text x="380.0" y="521" text-anchor="middle" font-size="20" fill="#CBD5E1">Durable records, reconciliation and replay</text>
+<text x="100" y="585" font-size="19" fill="#CBD5E1">Learning order; not a network architecture.</text>
+</g></svg>

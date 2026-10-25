@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 625" role="img" aria-labelledby="title desc">
+<title id="title">Compatibility must outlive the rollout</title><desc id="desc">Expand support, migrate safely, verify retirement criteria, then contract.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/></marker></defs>
+<rect width="760" height="625" rx="14" fill="#0B1020"/>
+<g font-family="Arial, sans-serif" fill="#F8FAFC">
+<text x="30" y="43" font-size="26" font-weight="bold">Compatibility must outlive the rollout</text>
+<rect x="70" y="85" width="620" height="82" rx="12" fill="#172136" stroke="#22D3EE" stroke-width="2"/><text x="380.0" y="117" text-anchor="middle" font-size="23" font-weight="bold">Expand</text><text x="380.0" y="146" text-anchor="middle" font-size="20" fill="#CBD5E1">Add compatible readers and representations</text>
+<path d="M 380 167 V 205" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="70" y="210" width="620" height="82" rx="12" fill="#172136" stroke="#A78BFA" stroke-width="2"/><text x="380.0" y="242" text-anchor="middle" font-size="23" font-weight="bold">Migrate</text><text x="380.0" y="271" text-anchor="middle" font-size="20" fill="#CBD5E1">Move writers; bounded backfill and reconciliation</text>
+<path d="M 380 292 V 330" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="70" y="335" width="620" height="82" rx="12" fill="#172136" stroke="#FBBF24" stroke-width="2"/><text x="380.0" y="367" text-anchor="middle" font-size="23" font-weight="bold">Verify the retirement gate</text><text x="380.0" y="396" text-anchor="middle" font-size="20" fill="#CBD5E1">Old consumers, delayed events and rollback needs</text>
+<path d="M 380 417 V 455" fill="none" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="70" y="460" width="620" height="82" rx="12" fill="#172136" stroke="#4ADE80" stroke-width="2"/><text x="380.0" y="492" text-anchor="middle" font-size="23" font-weight="bold">Contract</text><text x="380.0" y="521" text-anchor="middle" font-size="20" fill="#CBD5E1">Remove old support only after obligations end</text>
+<text x="40" y="590" font-size="19" fill="#CBD5E1">Change phases across releases; not one atomic deployment.</text>
+</g></svg>
